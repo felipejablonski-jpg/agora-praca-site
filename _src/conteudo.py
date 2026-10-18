@@ -10,7 +10,7 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
-        "slug": "locais-de-votacao-segundo-turno",
+        "slug": "locais-de-votacao-segundo-turno", "thumb": "img/thumb/locais.jpg",
         "data": "2026-10-18", "ordem": 4,
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Justiça Eleitoral muda local de 4.352 seções para o 2º turno; veja como consultar o seu",
@@ -39,7 +39,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "ebola-oitava-provincia-congo",
+        "slug": "ebola-oitava-provincia-congo", "thumb": "img/thumb/ebola.jpg",
         "data": "2026-10-18", "ordem": 3,
         "editoria": "meio-ambiente", "chapeu": "Ebola",
         "titulo": "Epidemia de ebola avança para oitava província do Congo e ultrapassa 4,5 mil mortes",
@@ -69,7 +69,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "romenia-abate-drones-otan-mar-negro",
+        "slug": "romenia-abate-drones-otan-mar-negro", "thumb": "img/thumb/romenia.jpg",
         "data": "2026-10-18", "ordem": 2,
         "editoria": "politica", "chapeu": "Guerra na Ucrânia",
         "titulo": "Romênia abate dois drones em seu espaço aéreo e OTAN marca reunião sobre o Mar Negro",
@@ -124,7 +124,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "mt-prorroga-prazo-vagas-escolas-estaduais-2027",
+        "slug": "mt-prorroga-prazo-vagas-escolas-estaduais-2027", "sem_thumb": True,
         "data": "2026-10-19", "rascunho": True,
         "editoria": "servico", "chapeu": "Matrículas 2027",
         "titulo": "MT prorroga até 23 de outubro prazo para pedir vaga nas escolas estaduais",

@@ -110,6 +110,8 @@ def imagem_lista(n):
     ed = EDITORIAS[n["editoria"]]
     if n.get("sem_thumb"):
         return f'<div class="tipo tipo-{ed["cor"]}"><span>{e(n.get("chapeu") or ed["nome"])}</span></div>'
+    if n.get("thumb"):
+        return f'<img src="/{n["thumb"]}" alt="" loading="lazy" width="960" height="540">'
     if n.get("foto"):
         return f'<img src="/{n["foto"]}" alt="" loading="lazy" width="1200" height="675">'
     if n.get("carrossel"):
