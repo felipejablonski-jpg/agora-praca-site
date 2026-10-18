@@ -5,7 +5,7 @@ import os, sys, html, datetime, shutil
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(RAIZ, "_src"))
-from conteudo import EDITORIAS, NOTICIAS, VIDEOS, EDICOES  # noqa: E402
+from conteudo import EDITORIAS, NOTICIAS, VIDEOS, EDICOES, FRASES  # noqa: E402
 
 SITE = "https://agorapraca.com.br"
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
@@ -30,7 +30,8 @@ def data_curta(s):
     return f"{x.day} {MES_C[x.month-1]} {x.year}"
 
 
-NOTICIAS.sort(key=lambda n: (n["data"], n.get("atualizado", "")), reverse=True)
+NOTICIAS[:] = [n for n in NOTICIAS if not n.get("rascunho")]
+NOTICIAS.sort(key=lambda n: (n["data"], n.get("ordem", 0), n.get("atualizado", "")), reverse=True)
 POR_SLUG = {n["slug"]: n for n in NOTICIAS}
 EDICOES.sort(key=lambda x: x["data"], reverse=True)
 HOJE = max([n.get("atualizado", n["data"]) for n in NOTICIAS] + [x["data"] for x in EDICOES])
@@ -50,7 +51,7 @@ def url_edicao(x):
 def cabeca(titulo, desc, caminho, imagem="/og.png", tipo="website", completo=False):
     t = "Agora Praça" if titulo is None else f"{titulo} | Agora Praça"
     nav = "".join(f'<a href="/{k}/">{e(v["nome"])}</a>' for k, v in EDITORIAS.items())
-    nav += '<a href="/primeira-pagina/">Primeira Página</a><a href="/sobre/">Quem somos</a>'
+    nav += '<a href="/primeira-pagina/">Primeira Página</a><a href="/em-uma-linha/">Em uma linha</a><a href="/sobre/">Quem somos</a>'
     if completo:
         topo = f'''<div class="brand"><a href="/" aria-label="Agora Praça, página inicial">{LOGO}</a><p>A praça é de todo mundo. Do lado do interesse público, com fato checado.</p></div>'''
     else:
@@ -106,13 +107,17 @@ def chapeu(n):
 
 
 def imagem_lista(n):
+    ed = EDITORIAS[n["editoria"]]
+    if n.get("sem_thumb"):
+        return f'<div class="tipo tipo-{ed["cor"]}"><span>{e(n.get("chapeu") or ed["nome"])}</span></div>'
     if n.get("foto"):
         return f'<img src="/{n["foto"]}" alt="" loading="lazy" width="1200" height="675">'
     if n.get("carrossel"):
         return f'<img src="/{n["carrossel"][0]}" alt="" loading="lazy" class="img-vid">'
+    if n.get("card"):
+        return f'<img src="/{n["card"]}" alt="" loading="lazy" class="img-vid">'
     if n.get("video"):
         return f'<img src="/video/{n["video"]}.jpg" alt="" loading="lazy" class="img-vid">'
-    ed = EDITORIAS[n["editoria"]]
     return f'<div class="tipo tipo-{ed["cor"]}"><span>{e(n.get("chapeu") or ed["nome"])}</span></div>'
 
 
@@ -192,6 +197,7 @@ def pagina_noticia(n):
 {pv}
 {paragrafos(n["texto"])}
 {extra}
+{f'<p class="obs">{e(n["credito_extra"])}</p>' if n.get("credito_extra") else ""}
 <section class="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="obs">Viu um erro? Escreva para <a href="mailto:contato@agorapraca.com.br">contato@agorapraca.com.br</a>. Toda correção fica registrada na página de <a href="/sobre/#correcoes">correções</a>.</p></section>
 <div class="share"><a class="btn" href="{e(wa)}" rel="noopener">Mandar no WhatsApp</a><a class="btn btn-l" href="https://www.instagram.com/agorapraca/" rel="noopener">Seguir no Instagram</a></div>
 </div>
@@ -234,9 +240,10 @@ def pagina_edicao(x):
 def pagina_home():
     lead, lados = NOTICIAS[0], NOTICIAS[1:3]
     resto = NOTICIAS[3:]
+    comvid = [n for n in NOTICIAS if n.get("video")][:3]
     vids = "".join(
-        f'<a class="vid" href="{url_noticia(next(n for n in NOTICIAS if n.get("video") == k))}"><img src="/video/{k}.jpg" alt="" loading="lazy"><span>{e(t)}</span></a>'
-        for k, t in VIDEOS.items()
+        f'<a class="vid" href="{url_noticia(n)}"><img src="/video/{n["video"]}.jpg" alt="" loading="lazy"><span>{e(VIDEOS.get(n["video"], n["titulo"]))}</span></a>'
+        for n in comvid
     )
     eds = ""
     for k, v in EDITORIAS.items():
@@ -275,6 +282,16 @@ def pagina_sobre():
     escrever("/sobre/", cabeca("Quem somos", "Manifesto, princípios editoriais, correções e expediente do Agora Praça.", "/sobre/") + corpo + RODAPE)
 
 
+def pagina_frases():
+    itens = ""
+    for f in sorted(FRASES, key=lambda x: x["data"], reverse=True):
+        fontes = " · ".join(f'<a href="{e(u)}" rel="noopener">{e(nm)}</a>' if u else e(nm) for nm, u in f["fontes"])
+        itens += f'''<article class="frase" id="{f["slug"]}"><img src="/{f["img"]}" alt="{e(f["frase"])}" loading="lazy" width="1080" height="1350">
+<div class="frase-txt"><time datetime="{f["data"]}">{data_curta(f["data"])}</time><h2>{e(f["frase"])}</h2><p>{e(f["explica"])}</p><p class="obs">Fontes: {fontes}</p></div></article>'''
+    corpo = f'''<section class="sec"><div class="wrap"><div class="sec-head"><h1 class="h1-sec">Em uma linha</h1><span>Uma frase para guardar, e de onde ela vem</span></div><div class="frases">{itens}</div></div></section>'''
+    escrever("/em-uma-linha/", cabeca("Em uma linha", "Frases curtas sobre seus direitos e o poder público, cada uma com a explicação e a fonte.", "/em-uma-linha/") + corpo + RODAPE)
+
+
 def pagina_404():
     corpo = '''<section class="sec"><div class="wrap estreita"><h1 class="h1-sec">Página não encontrada</h1><p>O endereço pode ter mudado. Volte para a <a href="/">página inicial</a>.</p></div></section>'''
     p = os.path.join(RAIZ, "404.html")
@@ -282,7 +299,7 @@ def pagina_404():
 
 
 def sitemap():
-    urls = ["/", "/sobre/", "/primeira-pagina/"] + [f"/{k}/" for k in EDITORIAS] + [url_noticia(n) for n in NOTICIAS] + [url_edicao(x) for x in EDICOES]
+    urls = ["/", "/sobre/", "/primeira-pagina/", "/em-uma-linha/"] + [f"/{k}/" for k in EDITORIAS] + [url_noticia(n) for n in NOTICIAS] + [url_edicao(x) for x in EDICOES]
     xs = "".join(f"<url><loc>{SITE}{u}</loc></url>" for u in urls)
     open(os.path.join(RAIZ, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{xs}</urlset>\n')
     open(os.path.join(RAIZ, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
@@ -298,6 +315,7 @@ if __name__ == "__main__":
     pagina_home()
     pagina_pp_indice()
     pagina_sobre()
+    pagina_frases()
     pagina_404()
     sitemap()
     shutil.copy(os.path.join(RAIZ, "_src", "estilo.css"), os.path.join(RAIZ, "estilo.css"))

@@ -112,7 +112,7 @@ time { font-size: 13px; color: var(--muted); }
 .item a { text-decoration: none; display: flex; flex-direction: column; gap: 12px; height: 100%; }
 .item .thumb { aspect-ratio: 16 / 9; overflow: hidden; background: var(--ink); }
 .item .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
-.item .thumb .img-vid, .item .thumb .img-card { object-position: 50% 30%; }
+.item .thumb .img-vid, .item .thumb .img-card { object-position: 50% 12%; }
 .item a:hover .thumb img { transform: scale(1.03); }
 .item a:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .item-txt { display: flex; flex-direction: column; gap: 6px; }
@@ -247,3 +247,11 @@ footer .wrap { align-items: flex-start; }
   .hero figcaption { padding-inline: 16px; }
 }
 .item:not(.item-g) .tipo span { font-size: clamp(18px, 4.5vw, 26px); }
+
+/* Em uma linha */
+.frases { display: flex; flex-direction: column; gap: 36px; }
+.frase { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 28px; align-items: start; border-bottom: 1px solid var(--rule-soft); padding-bottom: 32px; }
+.frase img { width: 100%; height: auto; display: block; }
+.frase h2 { margin: 6px 0 12px; font-family: var(--font-display); font-size: clamp(24px, 3vw, 32px); line-height: 1.15; }
+.frase p { margin: 0 0 10px; font-size: 17px; }
+@media (max-width: 640px) { .frase { grid-template-columns: minmax(0, 1fr); } .frase img { max-width: 320px; } }
