@@ -108,6 +108,8 @@ def chapeu(n):
 def imagem_lista(n):
     if n.get("foto"):
         return f'<img src="/{n["foto"]}" alt="" loading="lazy" width="1200" height="675">'
+    if n.get("carrossel"):
+        return f'<img src="/{n["carrossel"][0]}" alt="" loading="lazy" class="img-vid">'
     if n.get("video"):
         return f'<img src="/video/{n["video"]}.jpg" alt="" loading="lazy" class="img-vid">'
     ed = EDITORIAS[n["editoria"]]
@@ -159,6 +161,13 @@ def pagina_noticia(n):
         extra += video_tag(n["video"])
     if n.get("card") and (n.get("foto") or n.get("video")):
         extra += f'<figure class="cardimg"><img src="/{n["card"]}" alt="Card publicado no Instagram com o resumo desta notícia" loading="lazy" width="1080" height="1350"></figure>'
+    if n.get("carrossel"):
+        imgs = "".join(f'<img src="/{c}" alt="Tela {i+1} do carrossel publicado no Instagram" loading="lazy" width="1080" height="1350">' for i, c in enumerate(n["carrossel"]))
+        fig = f'<figure class="carrossel"><div class="car-trilho">{imgs}</div><figcaption>Carrossel publicado no Instagram. Deslize para ver as {len(n["carrossel"])} telas.</figcaption></figure>'
+        if not topo:
+            topo, og = fig, "/" + n["carrossel"][0]
+        else:
+            extra += fig
     pv = ""
     if n.get("para_voce"):
         r, t = n["para_voce"]

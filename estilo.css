@@ -177,6 +177,12 @@ time { font-size: 13px; color: var(--muted); }
 .btn-l:hover { background: var(--ink); color: #fff; }
 .h1-sec { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 4vw, 42px); }
 
+/* Carrossel na matéria */
+.carrossel { margin: 30px 0; }
+.car-trilho { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.car-trilho img { flex: 0 0 82%; max-width: 420px; height: auto; scroll-snap-align: start; display: block; }
+.carrossel figcaption { font-size: 13px; color: var(--muted); padding-top: 8px; }
+
 /* Matéria */
 .estreita { max-width: 760px; }
 .materia .wrap.estreita:first-child { padding-top: 36px; }
@@ -240,3 +246,4 @@ footer .wrap { align-items: flex-start; }
   .media { padding-inline: 0; }
   .hero figcaption { padding-inline: 16px; }
 }
+.item:not(.item-g) .tipo span { font-size: clamp(18px, 4.5vw, 26px); }

@@ -10,6 +10,29 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "mt-prorroga-prazo-vagas-escolas-estaduais-2027",
+        "data": "2026-10-19",
+        "editoria": "servico", "chapeu": "Matrículas 2027",
+        "titulo": "MT prorroga até 23 de outubro prazo para pedir vaga nas escolas estaduais",
+        "linha_fina": "O pedido pode ser feito pela internet ou, nas escolas que não usam o sistema digital, pessoalmente.",
+        "para_voce": ("PARA VOCÊ", "O pedido de vaga para 2027 pode ser feito até sexta-feira, 23 de outubro."),
+        "carrossel": ["img/matricula-2027/1.jpg", "img/matricula-2027/2.jpg", "img/matricula-2027/3.jpg"],
+        "texto": [
+            "A Secretaria de Estado de Educação de Mato Grosso (Seduc-MT) prorrogou até sexta-feira, 23 de outubro de 2026, o prazo para pedir vaga na rede estadual para o ano letivo de 2027. A rede oferece mais de 55 mil vagas no estado, cerca de 13 mil delas em Cuiabá.",
+            "## Quem precisa pedir",
+            "O pedido é para quem ainda não está matriculado na escola estadual escolhida. Isso inclui alunos novos, quem parou de estudar e quem quer trocar de escola dentro da rede estadual.",
+            "## Como fazer o pedido",
+            "Pela internet, no portal Matrícula Web (matricula.seduc.mt.gov.br). Nas escolas que não usam a plataforma digital, o atendimento é presencial. Para dúvidas, a Seduc atende no 0800 065 1717.",
+            "## E depois do pedido",
+            "Pais ou responsáveis confirmam a matrícula entre 18 de dezembro de 2026 e 8 de janeiro de 2027. Entre os documentos que podem ser pedidos estão RG e CPF do aluno e do responsável, certidão de nascimento, comprovante de residência, histórico escolar ou atestado de transferência e cartão de vacinação em dia. A documentação pode ser enviada pelo sistema ou levada à escola, conforme o atendimento de cada unidade.",
+        ],
+        "fontes": [
+            ("Seduc-MT, comunicado de 16/10/2026", "https://www3.seduc.mt.gov.br/w/seduc-estende-at%C3%A9-23-de-outubro-o-per%C3%ADodo-de-solicita%C3%A7%C3%A3o-de-vagas-na-rede-estadual"),
+            ("Só Notícias", "https://www.sonoticias.com.br/educacao/prorrogado-prazo-para-solicitacao-de-vagas-na-rede-estadual-em-mato-grosso/"),
+            ("Portal Matrícula Web", "https://matricula.seduc.mt.gov.br/"),
+        ],
+    },
+    {
         "slug": "enem-inscrito-automatico-escolha-idioma",
         "data": "2026-10-17", "atualizado": "2026-10-18",
         "editoria": "servico", "chapeu": "Enem 2026",
