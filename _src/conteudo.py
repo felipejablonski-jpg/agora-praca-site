@@ -1,0 +1,205 @@
+# Conteúdo do site do Agora Praça.
+# Cada notícia publicada nas redes ganha uma entrada aqui. Depois de editar, rode: python3 _src/build.py
+
+EDITORIAS = {
+    "servico": {"nome": "Serviço", "cor": "red", "desc": "Benefícios, prazos, golpes, concursos e leis novas, explicados sem juridiquês."},
+    "politica": {"nome": "Política", "cor": "red", "desc": "Votações, decisões de governo e uso do dinheiro de todos, em Brasília e em Mato Grosso."},
+    "meio-ambiente": {"nome": "Meio Ambiente", "cor": "orange", "desc": "Queimadas, seca, água, uso da terra, clima, dengue e outras endemias, com base na ciência."},
+}
+
+# data no formato AAAA-MM-DD; a mais recente aparece primeiro.
+NOTICIAS = [
+    {
+        "slug": "enem-inscrito-automatico-escolha-idioma",
+        "data": "2026-10-17", "atualizado": "2026-10-18",
+        "editoria": "servico", "chapeu": "Enem 2026",
+        "titulo": "Inscrito automático no Enem tem até domingo (18) para escolher o idioma",
+        "linha_fina": "Quem termina o ensino médio na rede pública foi inscrito sem precisar pedir. Falta só escolher entre inglês e espanhol.",
+        "foto": "img/enem.jpg", "credito": "Foto: Marcelo Camargo / Agência Brasil",
+        "para_voce": ("PARA VOCÊ", "Termina o ensino médio na rede pública este ano? Escolha inglês ou espanhol até domingo, 18 de outubro. Sem escolha, a prova é de inglês."),
+        "texto": [
+            "Os concluintes do ensino médio da rede pública foram inscritos no Enem 2026 automaticamente, com base nos dados que as redes de ensino enviaram ao MEC. A inscrição está feita, mas uma escolha depende do próprio estudante: a língua estrangeira da prova.",
+            "O prazo para escolher entre inglês e espanhol termina neste domingo, 18 de outubro. Quem não escolher faz a prova de inglês, definida pelo Inep, e não pode trocar depois.",
+            "## Como fazer",
+            "Entre na Página do Participante do Enem (enem.inep.gov.br/participante), faça login com a conta gov.br e escolha o idioma. Aproveite para responder o questionário socioeconômico: sem ele, você não consegue ver o local de prova.",
+            "As provas são nos dias 8 e 15 de novembro. A redação cai no primeiro dia, junto com linguagens e ciências humanas.",
+        ],
+        "video": "enem", "card": "img/card-enem-hoje.jpg",
+        "fontes": [("Inep, via Agência Gov", "https://agenciagov.ebc.com.br/noticias/202610/enem-2026-prazo-para-a-escolha-da-lingua-estrangeira-vai-ate-18-de-outubro")],
+    },
+    {
+        "slug": "debate-band-lula-flavio-segundo-turno",
+        "data": "2026-10-17", "atualizado": "2026-10-18",
+        "editoria": "servico", "chapeu": "Eleições 2026",
+        "titulo": "Debate entre Lula e Flávio na Band é neste domingo (18), às 20h de Brasília",
+        "linha_fina": "É o primeiro debate do 2º turno. Em Mato Grosso, começa às 19h.",
+        "card": "img/card-debate.jpg",
+        "para_voce": ("QUANDO", "Domingo, 18 de outubro, às 20h de Brasília (19h em MT), com duração prevista de duas horas."),
+        "texto": [
+            "A Band e o Estadão fazem neste domingo (18) o primeiro debate do 2º turno entre Lula (PT) e Flávio Bolsonaro (PL). A data foi marcada para uma semana antes da votação, que acontece no domingo, 25 de outubro.",
+            "Segundo a Band, o debate terá dois blocos de confronto direto, com tempo livre para perguntar e responder.",
+            "## Onde assistir",
+            "Na TV Band, no site e no app do Estadão e nas emissoras do pool: TV Cultura, TV Gazeta e Jovem Pan, além do YouTube.",
+        ],
+        "fontes": [
+            ("Band, via Diario de Pernambuco", "https://www.diariodepernambuco.com.br/politica/2026/10/11725992-debate-band-estadao-do-2-turno-entre-lula-e-flavio-bolsonaro-sera-dia-18-de-outubro.html"),
+        ],
+    },
+    {
+        "slug": "pode-levar-cola-para-votar",
+        "data": "2026-10-17",
+        "editoria": "servico", "chapeu": "Eleições 2026",
+        "titulo": "Pode levar cola para votar? Pode, desde que seja em papel",
+        "linha_fina": "O celular continua proibido na cabine. No 2º turno, a cola é curta.",
+        "video": "cola",
+        "para_voce": ("DICA PARA O DIA 25", "Anote o número de presidente e, se o seu estado tiver 2º turno, o de governador."),
+        "texto": [
+            "O TSE permite, e até incentiva, que o eleitor leve uma cola em papel com os números dos candidatos. Ela ajuda a lembrar os números, deixa o voto mais rápido e diminui a fila.",
+            "## O que não pode",
+            "Celular, câmera, filmadora ou qualquer equipamento que fotografe ou grave o voto não entra na cabine. A regra está na Lei das Eleições (Lei nº 9.504/1997) e, para 2026, na Resolução nº 23.759/2026 do TSE. Desligue o celular e deixe onde o mesário indicar.",
+            "## No 2º turno",
+            "A votação é no domingo, 25 de outubro. A cola fica curta: presidente e, nos estados onde houver 2º turno, governador.",
+        ],
+        "fontes": [("TSE", "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/glossario-eleitoral-explica-como-funciona-a-cola-eleitoral")],
+    },
+    {
+        "slug": "tce-30-dias-mt-obras-sem-fethab-2",
+        "data": "2026-10-17",
+        "editoria": "politica", "chapeu": "Mato Grosso",
+        "titulo": "TCE dá 30 dias para MT explicar como pagará obras sem o Fethab 2",
+        "linha_fina": "A contribuição adicional acaba em 31 de dezembro. A arrecadação prevista do fundo cai 37% em 2027.",
+        "foto": "img/fethab.jpg", "credito": "Foto: Tony Ribeiro / TCE-MT",
+        "para_voce": ("O QUE MUDA", "O Fethab paga estradas e obras em Mato Grosso. Com menos dinheiro, o Estado precisa dizer quais obras continuam e como."),
+        "texto": [
+            "O Tribunal de Contas de Mato Grosso deu até 30 dias para a Secretaria de Infraestrutura (Sinfra), a Secretaria de Fazenda (Sefaz) e a MT Par explicarem o impacto do fim do Fethab 2 nas obras do Estado. A decisão foi unânime, com relatoria do conselheiro Guilherme Antonio Maluf.",
+            "O Fethab 2, a contribuição adicional do fundo de transporte e habitação, acaba em 31 de dezembro de 2026, como prevê a lei. O governo anunciou em abril o congelamento da cobrança do Fethab e o fim do adicional.",
+            "## A conta",
+            "A Lei de Diretrizes Orçamentárias de 2027 estima arrecadar cerca de R$ 2,18 bilhões com o fundo. O plano plurianual contava com R$ 3,44 bilhões. A queda é de 36,69%.",
+            "As obras analisadas pelo tribunal somam R$ 13,37 bilhões, e R$ 8,79 bilhões já foram medidos. A Sinfra citou operações de crédito e ajuste no ritmo das obras como saída. Para o relator, essas medidas ainda precisam ser detalhadas.",
+            "O estudo pedido deve trazer alternativas de financiamento e uma ordem de prioridade para as obras. O processo também foi enviado ao governador e ao presidente da Assembleia Legislativa.",
+        ],
+        "fontes": [
+            ("TCE-MT, via Só Notícias", "https://www.sonoticias.com.br/politica/tribunal-de-contas-alerta-para-riscos-no-financiamento-de-obras-em-mato-grosso-com-mudancas-no-fethab/"),
+            ("Olhar Direto", None),
+        ],
+    },
+    {
+        "slug": "senado-aprova-teto-mei-perdao-dividas",
+        "data": "2026-10-17",
+        "editoria": "servico", "chapeu": "MEI",
+        "titulo": "Senado aprova perdão de dívidas e teto maior para MEI; falta a sanção",
+        "linha_fina": "O limite de faturamento sobe para R$ 110 mil em 2027 e R$ 140 mil em 2028. O MEI também poderá ter dois empregados.",
+        "para_voce": ("PARA VOCÊ", "É MEI e tem dívida na Dívida Ativa da União? Se a lei for sancionada, ela pode ser perdoada, desde que você pague em dia as contribuições dos seis meses seguintes."),
+        "texto": [
+            "O Senado aprovou na quinta-feira (15) o projeto de lei complementar 186/2026, por 78 votos a zero. O texto muda as regras do microempreendedor individual e segue para a sanção do presidente. O relator foi o senador Carlos Fávaro (PSD-MT).",
+            "## O teto",
+            "O limite de faturamento do MEI, hoje de R$ 81 mil por ano, sobe para R$ 110 mil em 2027 e para R$ 140 mil a partir de 2028. Quem abrir o MEI no meio do ano tem o limite proporcional aos meses de atividade.",
+            "O MEI também passa a poder contratar até dois empregados, com salário de pelo menos um mínimo ou o piso da categoria.",
+            "## O perdão",
+            "Ficam perdoadas as dívidas de MEI inscritas na Dívida Ativa da União até 13 de outubro de 2026, com juros e multas, parceladas ou não. O governo estima 3,6 milhões de beneficiados.",
+            "Para manter o perdão, o empreendedor precisa pagar em dia as contribuições dos seis meses seguintes à entrada em vigor da lei. O perdão depende de pedido do próprio MEI e da desistência de ações na Justiça sobre essas dívidas. O texto não trata da devolução de valores já pagos.",
+        ],
+        "fontes": [("Agência Senado, via Poder360", "https://www.poder360.com.br/poder-congresso/senado-aprova-aumento-no-teto-do-mei-e-perdao-a-dividas/")],
+    },
+    {
+        "slug": "governo-devolveu-3-5-bi-aposentados-inss",
+        "data": "2026-10-17",
+        "editoria": "servico", "chapeu": "INSS",
+        "titulo": "Governo diz ter devolvido R$ 3,5 bi a aposentados lesados no INSS",
+        "linha_fina": "Mais de 5 milhões de pessoas receberam de volta descontos feitos sem autorização.",
+        "foto": "img/inss.jpg", "credito": "Foto: Rafa Neddermeyer / Agência Brasil",
+        "para_voce": ("PARA VOCÊ", "Só recebeu quem contestou o desconto até 20 de junho. O prazo para novos pedidos acabou."),
+        "texto": [
+            "O governo federal diz ter concluído a devolução do dinheiro descontado sem autorização de aposentados e pensionistas do INSS. Foram mais de R$ 3,5 bilhões para mais de 5 milhões de pessoas.",
+            "\"Não tem ninguém mais para ser ressarcido\", disse o ministro da Previdência Social, Wolney Queiroz, em entrevista ao Poder360 na quinta-feira (15).",
+            "## Quem recebeu",
+            "A devolução dependia de o próprio beneficiário contestar o desconto. O prazo foi ampliado duas vezes e terminou em 20 de junho. O pagamento saiu em parcela única, com correção, sem necessidade de ação na Justiça.",
+        ],
+        "fontes": [("Ministério da Previdência, via Poder360", "https://www.poder360.com.br/poder-economia/nao-tem-ninguem-mais-para-ser-ressarcido-diz-ministro-sobre-fraude-no-inss/")],
+    },
+    {
+        "slug": "amazonia-menor-desmatamento-desde-1988-mt-segundo",
+        "data": "2026-10-17",
+        "editoria": "meio-ambiente", "chapeu": "Desmatamento",
+        "titulo": "Amazônia tem o menor desmatamento desde 1988; MT é o 2º que mais desmata",
+        "linha_fina": "Foram 3.335 km² derrubados, queda de 41,8%. Mato Grosso respondeu por um quarto do total.",
+        "foto": "img/prodes.jpg", "credito": "Foto: Acervo ICMBio",
+        "para_voce": ("POR QUE IMPORTA", "Mato Grosso responde por um quarto de todo o desmatamento da Amazônia."),
+        "texto": [
+            "O desmatamento na Amazônia caiu para 3.335 km², o menor valor desde o início da série histórica, em 1988. A queda foi de 41,8% em relação aos 5.731 km² de 2025. Os dados são do Prodes, sistema do Inpe que mede o corte raso da floresta, divulgados na sexta-feira (16).",
+            "## Mato Grosso",
+            "O Pará lidera, com 1.130 km² (33,9% do total). Mato Grosso vem em segundo, com 849 km², ou 25,5%. Depois aparecem Amazonas (525 km²), Roraima (286 km²) e Acre (252 km²).",
+            "## No Cerrado",
+            "O Cerrado também teve o menor desmatamento da sua série, iniciada em 2001: 5.516,69 km², queda de cerca de 23,7%. Mato Grosso derrubou 454,52 km² do bioma e ficou em sexto lugar, atrás de Maranhão, Tocantins, Piauí, Bahia e Minas Gerais.",
+        ],
+        "fontes": [("Inpe/Prodes, via Poder360", "https://www.poder360.com.br/poder-sustentavel/desmatamento-cai-na-amazonia-e-no-cerrado-em-2026/")],
+    },
+    {
+        "slug": "agentes-saude-endemias-aposentadoria-especial",
+        "data": "2026-10-16",
+        "editoria": "servico", "chapeu": "Previdência",
+        "titulo": "Agentes de saúde e de endemias ganham aposentadoria especial",
+        "linha_fina": "A emenda constitucional foi promulgada pelo Congresso nesta sexta-feira (16).",
+        "foto": "img/agentes.jpg", "credito": "Foto: Prefeitura de Canoas / Divulgação",
+        "para_voce": ("O QUE MUDA", "Agentes se aposentam aos 57 anos (mulheres) e 60 (homens), com 25 anos de trabalho na função."),
+        "texto": [
+            "O Congresso promulgou nesta sexta-feira (16) a Emenda Constitucional 140, que cria a aposentadoria especial para agentes comunitários de saúde e agentes de combate às endemias. As regras também valem para agentes indígenas de saúde e de saneamento.",
+            "## As regras",
+            "A aposentadoria sai aos 57 anos para mulheres e aos 60 para homens, com 25 anos de contribuição e de trabalho efetivo na função. Na regra geral do INSS, a idade mínima é de 62 e 65 anos.",
+            "A emenda vale para agentes no regime geral e nos regimes próprios das prefeituras e dos estados, e prevê regras de transição para quem já está na função. O tempo de mandato sindical e o de readaptação por acidente de trabalho ou doença ocupacional também contam.",
+            "## A conta",
+            "A União vai ajudar estados e prefeituras a pagar os novos benefícios. A Confederação Nacional de Municípios calcula um gasto extra de R$ 4,3 bilhões por ano para as prefeituras.",
+        ],
+        "fontes": [("Agência Brasil, via Diario de Pernambuco", "https://www.diariodepernambuco.com.br/politica/2026/10/11726840-congresso-promulga-emenda-de-aposentadoria-especial-de-agente-de-saude.html")],
+    },
+    {
+        "slug": "fim-da-6x1-duas-folgas-por-semana",
+        "data": "2026-10-16",
+        "editoria": "servico", "chapeu": "Trabalho",
+        "titulo": "Fim da 6x1: duas folgas por semana em 60 dias, sem corte de salário",
+        "linha_fina": "O Congresso promulgou a emenda que cria a escala 5x2 e reduz a jornada para 42 horas, e depois para 40.",
+        "foto": "img/6x1.jpg", "credito": "Foto: TV Senado / Agência Brasil",
+        "para_voce": ("PARA VOCÊ", "Se você trabalha de carteira assinada na 6x1, sua escala vira 5x2 em meados de dezembro."),
+        "texto": [
+            "O Congresso promulgou nesta sexta-feira (16) a Emenda Constitucional 141, que acaba com a escala 6x1. O texto tinha passado no Senado na quarta-feira (14), por 75 votos a 1.",
+            "## O que muda",
+            "Em até 60 dias, todo trabalhador passa a ter duas folgas remuneradas por semana, na escala 5x2. No mesmo prazo, a jornada cai de 44 para 42 horas semanais. Depois, cai para 40 horas, numa transição de até 14 meses. O salário não pode ser reduzido.",
+            "## Fique de olho",
+            "Acordo ou convenção coletiva pode prever outra escala, desde que as folgas sejam compensadas no mesmo mês. Quem tem diploma de ensino superior e ganha a partir de R$ 21.188,87 pode negociar a jornada direto com o empregador, mantida a 5x2.",
+            "Empresas terceirizadas que prestam serviço ao poder público têm 12 meses para se adaptar, a contar do aditivo do contrato.",
+        ],
+        "video": "6x1",
+        "fontes": [("Congresso Nacional, via Movimento Econômico", "https://movimentoeconomico.com.br/trabalho/2026/10/16/congresso-promulga-emenda-do-fim-da-6x1-e-escala-5x2-comeca-em-60-dias/")],
+    },
+]
+
+VIDEOS = {
+    "enem": "Terminando o ensino médio na escola pública? Seu prazo acaba amanhã",
+    "cola": "Pode levar cola para votar? Pode.",
+    "6x1": "A Constituição mudou: 2 folgas por semana",
+}
+
+# Primeira Página: o resumo diário das 7h
+EDICOES = [
+    {
+        "data": "2026-10-18", "pasta": "pp/2026-10-18", "telas": 5,
+        "itens": [
+            ("Debate entre Lula e Flávio na Band é hoje, às 20h de Brasília (19h em MT). São duas horas, com dois blocos de confronto direto.", "debate-band-lula-flavio-segundo-turno"),
+            ("Ipespe: 2,4 pontos separam Flávio (51,2%) e Lula (48,8%) nos votos válidos. A margem de erro é de 2,6 pontos, empate técnico. Foram 1.500 entrevistas, de 13 a 15/10 (registro BR-00223/2026).", None),
+            ("Plantio da soja passa de 50% da área em Mato Grosso: 51,86% até sexta (16), contra 33,28% na semana anterior, segundo o Imea.", None),
+            ("Debate na Globo na sexta (23) depende da confirmação dos dois candidatos até segunda (19). A votação do 2º turno é no domingo, 25.", None),
+        ],
+        "fonte": "Fontes: Band, Ipespe/Abrapel, Imea, Inep, TSE e InvestNews",
+    },
+    {
+        "data": "2026-10-17", "pasta": "pp/2026-10-17", "telas": 6,
+        "itens": [
+            ("TCE dá 30 dias para MT explicar como pagará obras sem o Fethab 2.", "tce-30-dias-mt-obras-sem-fethab-2"),
+            ("Soja cai a US$ 12,61 por bushel em Chicago, o menor preço em sete semanas, com previsão de tempo seco nos Estados Unidos.", None),
+            ("Prefeituras calculam gasto extra de R$ 11 bilhões por ano com o fim da 6x1 (R$ 6,6 bi) e a aposentadoria especial dos agentes de saúde (R$ 4,3 bi), segundo a CNM.", None),
+            ("TSE mantém, por unanimidade, a ordem para a Meta não reduzir o alcance de posts sobre candidatos. A multa é de R$ 500 mil por dia.", None),
+            ("O fim de semana: debate na Band no domingo e último dia para o inscrito automático no Enem escolher o idioma.", "enem-inscrito-automatico-escolha-idioma"),
+        ],
+        "fonte": "Fontes: TCE-MT, Reuters, CNM, TSE, CNN Brasil, Agência Brasil e Inep",
+    },
+]

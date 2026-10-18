@@ -5,248 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Agora Praça</title>
 <meta name="description" content="A praça é de todo mundo. Do lado do interesse público, com fato checado.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
-<style>
-/* Layout: primeira página de jornal digital. Cabeçalho com data e editorias, editorial em card preto como os posts, editorias em cards, princípios, correções e expediente. */
-:root {
-  --ink: #141414;
-  --paper: #FFFFFF;
-  --red: #D2232A;
-  --red-on-dark: #FF3B30;
-  --orange: #D9531E;
-  --muted: #5A5751;
-  --muted-on-dark: #B8B4AC;
-  --rule-soft: #E3E0DA;
-  --font-display: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
-  --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
-  color-scheme: light;
-}
-* { box-sizing: border-box; }
-html, body { margin: 0; }
-img, svg { max-width: 100%; }
-body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.55; }
-a { color: inherit; }
-a:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
-.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-
-/* Cabeçalho de jornal */
-.mast .wrap { padding-block: 18px 0; display: flex; flex-direction: column; }
-.dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft); }
-.dateline strong { color: var(--ink); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-.brand { display: flex; flex-direction: column; align-items: center; gap: 10px; padding-block: 28px 22px; text-align: center; }
-.brand svg { width: min(340px, 78vw); height: auto; display: block; }
-.brand p { margin: 0; font-family: var(--font-display); font-style: italic; font-size: clamp(16px, 2vw, 19px); color: var(--muted); text-wrap: balance; }
-.nav { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 26px; padding-block: 12px; }
-.nav a { text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 0; border-bottom: 2px solid transparent; }
-.nav a:hover { border-bottom-color: var(--red); }
-
-/* Editorial: o card preto dos posts */
-.lead .wrap { padding-block: 40px 16px; }
-.card { background: var(--ink); color: var(--paper); display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
-.card-main { padding: 0 0 40px; display: flex; flex-direction: column; gap: 22px; min-width: 0; }
-.bar { align-self: flex-start; color: #FFFFFF; font-size: 13px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 9px 40px; }
-.bar-red { background: var(--red); }
-.bar-orange { background: var(--orange); }
-.card h1 { margin: 0; padding-inline: 40px; font-family: var(--font-display); font-weight: 700; font-size: clamp(36px, 5.6vw, 64px); line-height: 1.06; letter-spacing: -0.015em; text-wrap: balance; }
-.dek { margin: 0; padding-inline: 40px; font-size: clamp(17px, 2vw, 20px); color: var(--muted-on-dark); max-width: 46ch; }
-.byline { padding-inline: 40px; font-size: 13px; color: var(--muted-on-dark); display: flex; gap: 10px; flex-wrap: wrap; }
-.byline strong { color: var(--paper); font-weight: 700; }
-.card-side { border-left: 1px solid #2E2E2E; padding: 40px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
-.card-side p { margin: 0; color: #E4E1DB; font-size: 16px; }
-.verbete { border-top: 2px solid var(--red-on-dark); padding-top: 14px; display: flex; flex-direction: column; gap: 4px; }
-.verbete b { font-family: var(--font-display); font-size: 24px; color: var(--paper); }
-.verbete b span { font-family: var(--font-body); font-size: 12px; font-weight: 500; color: var(--muted-on-dark); margin-left: 8px; }
-.verbete i { font-style: normal; color: var(--muted-on-dark); font-size: 15px; }
-
-/* Seções */
-.sec .wrap { padding-block: 44px; display: flex; flex-direction: column; gap: 22px; }
-.sec-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; border-bottom: 3px solid var(--ink); padding-bottom: 10px; }
-.sec-head h2 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 3.4vw, 34px); }
-.sec-head span { font-size: 13px; color: var(--muted); }
-
-.eds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.ed { background: var(--ink); color: var(--paper); display: flex; flex-direction: column; gap: 14px; padding-bottom: 22px; min-width: 0; }
-.ed .bar { padding-inline: 22px; }
-.ed h3 { margin: 0; padding-inline: 22px; font-family: var(--font-display); font-size: 25px; line-height: 1.15; text-wrap: balance; }
-.ed p { margin: 0; padding-inline: 22px; color: var(--muted-on-dark); font-size: 15px; }
-.ed .when { margin-top: auto; padding: 14px 22px 0; border-top: 1px solid #2E2E2E; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--paper); }
-
-.princ { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
-.princ li { padding: 16px 0; border-bottom: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-.princ strong { font-family: var(--font-display); font-size: 19px; }
-.princ span { color: var(--muted); font-size: 15px; }
-
-.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
-.corr { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
-.corr .empty { border: 1px dashed var(--muted); padding: 18px 20px; color: var(--muted); font-size: 15px; }
-.corr p { margin: 0; font-size: 15px; color: var(--muted); }
-
-.exp { border: 3px solid var(--ink); padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
-.exp h3 { margin: 0 0 4px; font-size: 13px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
-.exp dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 16px; font-size: 15px; }
-.exp dt { color: var(--muted); }
-.exp dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
-.exp dd a { color: var(--red); font-weight: 600; }
-.exp .note { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
-
-footer .wrap { padding-block: 26px 34px; border-top: 1px solid var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
-footer svg { width: 34px; height: 34px; display: block; }
-
-@media (max-width: 820px) {
-  .card { grid-template-columns: minmax(0, 1fr); }
-  .card-side { border-left: none; border-top: 1px solid #2E2E2E; padding: 28px 24px; }
-  .card h1, .dek, .byline { padding-inline: 24px; }
-  .bar { padding-inline: 24px; }
-  .eds { grid-template-columns: minmax(0, 1fr); }
-  .princ { grid-template-columns: minmax(0, 1fr); }
-  .two { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-}
-</style>
+<link rel="canonical" href="https://agorapraca.com.br/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Agora Praça">
 <meta property="og:title" content="Agora Praça">
 <meta property="og:description" content="A praça é de todo mundo. Do lado do interesse público, com fato checado.">
 <meta property="og:url" content="https://agorapraca.com.br/">
-  <link rel="canonical" href="https://agorapraca.com.br/">
 <meta property="og:image" content="https://agorapraca.com.br/og.png">
 <meta property="og:locale" content="pt_BR">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#141414">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="/estilo.css">
 </head>
 <body>
-<header class="mast">
-  <div class="wrap">
-    <div class="dateline">
-      <strong>Edição zero</strong>
-      <span>Primavera do Leste (MT), sexta-feira, 16 de outubro de 2026</span>
-    </div>
-    <div class="brand">
-      <svg viewBox="0 -8 446 248" role="img" aria-label="Agora Praça">
-        <rect x="40" y="28" width="40" height="9" rx="1.5" fill="#D2232A"></rect>
-        <polygon points="52,37 78,37 106,144 76,144" fill="#D2232A"></polygon>
-        <polygon points="50,37 57,37 9,144 1,144" fill="#D2232A"></polygon>
-        <rect x="20" y="103" width="49" height="6" fill="#D2232A"></rect>
-        <path d="M75 28 C 77 19, 84 12, 92 8" fill="none" stroke="#D2232A" stroke-width="3.5" stroke-linecap="round"></path>
-        <circle cx="98" cy="4" r="7.5" fill="#D2232A"></circle>
-        <text x="112" y="144" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="150" letter-spacing="-3" fill="#141414">gora</text>
-        <text x="416" y="222" text-anchor="end" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="44" letter-spacing="16" fill="#D2232A">PRAÇA</text>
-      </svg>
-      <p>A praça é de todo mundo. Do lado do interesse público, com fato checado.</p>
-    </div>
-    <nav class="nav" aria-label="Seções">
-      <a href="#editorias">Serviço</a>
-      <a href="#editorias">Meio Ambiente</a>
-      <a href="#editorias">Política</a>
-      <a href="#principios">Princípios</a>
-      <a href="#correcoes">Correções</a>
-      <a href="#expediente">Expediente</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="lead">
-    <div class="wrap">
-      <article class="card">
-        <div class="card-main">
-          <span class="bar bar-red">Editorial</span>
-          <h1>É hora de voltar para a praça</h1>
-          <p class="dek">A Agora Praça nasce para devolver o debate público às pessoas, com informação confiável e fácil de entender.</p>
-          <div class="byline"><strong>Da Redação</strong><span>16 de outubro de 2026</span></div>
-        </div>
-        <div class="card-side">
-          <p>A política virou teatro: muito barulho, pouca ideia, e notícia falsa correndo mais rápido que a verdadeira. Aqui, cada fato passa por checagem antes de chegar até você.</p>
-          <p>O nome se lê de dois jeitos. Agora, porque a notícia acontece no presente e afeta a sua vida hoje. Ágora, porque o lugar de discutir a cidade pertence a todos. Na nossa marca, o acento que liga uma palavra à outra é um microfone sobre um palanque.</p>
-          <div class="verbete">
-            <b>ágora <span>substantivo feminino</span></b>
-            <i>Praça pública das cidades gregas antigas, onde os cidadãos se reuniam para discutir os assuntos da cidade.</i>
-          </div>
-          <p>A praça de Atenas deixava muita gente de fora. A nossa abre espaço justamente para quem nunca teve lugar nela.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="sec" id="editorias">
-    <div class="wrap">
-      <div class="sec-head"><h2>Editorias</h2><span>Três publicações fixas por semana</span></div>
-      <div class="eds">
-        <div class="ed">
-          <span class="bar bar-red">Serviço</span>
-          <h3>O que muda na sua vida</h3>
-          <p>Benefícios, prazos, golpes, concursos e leis novas, explicados sem juridiquês.</p>
-          <span class="when">Toda segunda-feira</span>
-        </div>
-        <div class="ed">
-          <span class="bar bar-orange">Meio Ambiente</span>
-          <h3>O Cerrado e a nossa saúde</h3>
-          <p>Queimadas, seca, água, uso da terra, agrotóxico, clima, dengue e outras endemias, com base na ciência.</p>
-          <span class="when">Toda quarta-feira</span>
-        </div>
-        <div class="ed">
-          <span class="bar bar-red">Política</span>
-          <h3>O poder e o dinheiro público</h3>
-          <p>Votações, decisões de governo e uso do dinheiro de todos, em Brasília e em Mato Grosso.</p>
-          <span class="when">Toda sexta-feira</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="principios">
-    <div class="wrap">
-      <div class="sec-head"><h2>Princípios editoriais</h2><span>As regras da casa, à vista de todos</span></div>
-      <ul class="princ">
-        <li><strong>Duas fontes ou documento oficial</strong><span>Nada é publicado sem confirmação, mesmo que outro perfil poste antes.</span></li>
-        <li><strong>Mesma régua para todos</strong><span>Governo, oposição, empresa e aliado são cobrados do mesmo jeito.</span></li>
-        <li><strong>Fato, análise e opinião separados</strong><span>Toda opinião vem rotulada como opinião, em publicação própria.</span></li>
-        <li><strong>Erro corrigido em até 24 horas</strong><span>No mesmo lugar onde saiu, com aviso público. Nada é apagado em silêncio.</span></li>
-        <li><strong>Pauta não se vende</strong><span>Publicidade aparece identificada. Anunciante não lê antes nem escolhe notícia, e político não compra espaço.</span></li>
-        <li><strong>Tecnologia com checagem humana</strong><span>Usamos inteligência artificial para organizar e redigir. Todo fato, número e citação é conferido por uma pessoa, na fonte original.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap two">
-      <div class="corr" id="correcoes">
-        <div class="sec-head"><h2>Correções</h2></div>
-        <p>Toda informação corrigida pela Agora Praça fica registrada aqui, com data e link para a publicação original.</p>
-        <div class="empty">Nenhuma correção publicada até agora.</div>
-      </div>
-      <div id="expediente">
-        <div class="exp">
-          <h3>Expediente</h3>
-          <dl>
-            <dt>Veículo</dt><dd>Agora Praça, jornalismo digital independente</dd>
-            <dt>Editor responsável</dt><dd>Felipe Jablonski</dd>
-            <dt>Sede</dt><dd>Primavera do Leste, Mato Grosso</dd>
-            <dt>Fundação</dt><dd>16 de outubro de 2026</dd>
-            <dt>Contato</dt><dd><a href="mailto:contato@agorapraca.com.br">contato@agorapraca.com.br</a></dd>
-            <dt>Instagram</dt><dd><a href="https://www.instagram.com/agorapraca/" target="_blank" rel="noopener">@agorapraca</a></dd>
-          </dl>
-          <p class="note">Denúncias e sugestões de pauta passam por apuração antes de virar notícia. Quem denuncia nunca é exposto sem autorização.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="mast"><div class="wrap">
+<div class="dateline"><strong>Primavera do Leste (MT)</strong><span>Atualizado em domingo, 18 de outubro de 2026</span></div>
+<div class="brand"><a href="/" aria-label="Agora Praça, página inicial"><svg viewBox="0 -8 446 248" role="img" aria-label="Agora Praça"><rect x="40" y="28" width="40" height="9" rx="1.5" fill="#D2232A"/><polygon points="52,37 78,37 106,144 76,144" fill="#D2232A"/><polygon points="50,37 57,37 9,144 1,144" fill="#D2232A"/><rect x="20" y="103" width="49" height="6" fill="#D2232A"/><path d="M75 28 C 77 19, 84 12, 92 8" fill="none" stroke="#D2232A" stroke-width="3.5" stroke-linecap="round"/><circle cx="98" cy="4" r="7.5" fill="#D2232A"/><text x="112" y="144" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="150" letter-spacing="-3" fill="#141414">gora</text><text x="416" y="222" text-anchor="end" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="44" letter-spacing="16" fill="#D2232A">PRAÇA</text></svg></a><p>A praça é de todo mundo. Do lado do interesse público, com fato checado.</p></div>
+<nav class="nav" aria-label="Seções"><a href="/servico/">Serviço</a><a href="/politica/">Política</a><a href="/meio-ambiente/">Meio Ambiente</a><a href="/primeira-pagina/">Primeira Página</a><a href="/sobre/">Quem somos</a></nav>
+</div></header>
+<main id="conteudo">
+<section class="topo"><div class="wrap topo-g">
+<div class="topo-lead"><article class="item item-g"><a href="/noticias/enem-inscrito-automatico-escolha-idioma/"><div class="thumb"><img src="/img/enem.jpg" alt="" loading="lazy" width="1200" height="675"></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Inscrito automático no Enem tem até domingo (18) para escolher o idioma</h3><p class="fina">Quem termina o ensino médio na rede pública foi inscrito sem precisar pedir. Falta só escolher entre inglês e espanhol.</p><time datetime="2026-10-17">17 out 2026</time></div></a></article></div>
+<div class="topo-lado"><article class="item"><a href="/noticias/debate-band-lula-flavio-segundo-turno/"><div class="thumb"><div class="tipo tipo-red"><span>Eleições 2026</span></div></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Debate entre Lula e Flávio na Band é neste domingo (18), às 20h de Brasília</h3><time datetime="2026-10-17">17 out 2026</time></div></a></article><article class="item"><a href="/noticias/pode-levar-cola-para-votar/"><div class="thumb"><img src="/video/cola.jpg" alt="" loading="lazy" class="img-vid"></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Pode levar cola para votar? Pode, desde que seja em papel</h3><time datetime="2026-10-17">17 out 2026</time></div></a></article></div>
+<div class="topo-pp"><div class="pp"><div class="pp-head"><span class="pp-tit">Primeira Página</span><span class="pp-data">domingo, 18 de outubro de 2026</span></div>
+<ol class="pp-lista"><li><span class="n">1</span><span><a href="/noticias/debate-band-lula-flavio-segundo-turno/">Debate entre Lula e Flávio na Band é hoje, às 20h de Brasília (19h em MT). São duas horas, com dois blocos de confronto direto.</a></span></li><li><span class="n">2</span><span>Ipespe: 2,4 pontos separam Flávio (51,2%) e Lula (48,8%) nos votos válidos. A margem de erro é de 2,6 pontos, empate técnico. Foram 1.500 entrevistas, de 13 a 15/10 (registro BR-00223/2026).</span></li><li><span class="n">3</span><span>Plantio da soja passa de 50% da área em Mato Grosso: 51,86% até sexta (16), contra 33,28% na semana anterior, segundo o Imea.</span></li><li><span class="n">4</span><span>Debate na Globo na sexta (23) depende da confirmação dos dois candidatos até segunda (19). A votação do 2º turno é no domingo, 25.</span></li></ol>
+<a class="pp-mais" href="/primeira-pagina/2026-10-18/">Ver a edição completa →</a></div></div>
+</div></section>
+<section class="sec"><div class="wrap"><div class="sec-head"><h2>Últimas</h2></div><div class="grade"><article class="item"><a href="/noticias/tce-30-dias-mt-obras-sem-fethab-2/"><div class="thumb"><img src="/img/fethab.jpg" alt="" loading="lazy" width="1200" height="675"></div>
+<div class="item-txt"><span class="kicker kicker-red">Política</span><h3>TCE dá 30 dias para MT explicar como pagará obras sem o Fethab 2</h3><time datetime="2026-10-17">17 out 2026</time></div></a></article><article class="item"><a href="/noticias/senado-aprova-teto-mei-perdao-dividas/"><div class="thumb"><div class="tipo tipo-red"><span>MEI</span></div></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Senado aprova perdão de dívidas e teto maior para MEI; falta a sanção</h3><time datetime="2026-10-17">17 out 2026</time></div></a></article><article class="item"><a href="/noticias/governo-devolveu-3-5-bi-aposentados-inss/"><div class="thumb"><img src="/img/inss.jpg" alt="" loading="lazy" width="1200" height="675"></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Governo diz ter devolvido R$ 3,5 bi a aposentados lesados no INSS</h3><time datetime="2026-10-17">17 out 2026</time></div></a></article><article class="item"><a href="/noticias/amazonia-menor-desmatamento-desde-1988-mt-segundo/"><div class="thumb"><img src="/img/prodes.jpg" alt="" loading="lazy" width="1200" height="675"></div>
+<div class="item-txt"><span class="kicker kicker-orange">Meio Ambiente</span><h3>Amazônia tem o menor desmatamento desde 1988; MT é o 2º que mais desmata</h3><time datetime="2026-10-17">17 out 2026</time></div></a></article><article class="item"><a href="/noticias/agentes-saude-endemias-aposentadoria-especial/"><div class="thumb"><img src="/img/agentes.jpg" alt="" loading="lazy" width="1200" height="675"></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Agentes de saúde e de endemias ganham aposentadoria especial</h3><time datetime="2026-10-16">16 out 2026</time></div></a></article><article class="item"><a href="/noticias/fim-da-6x1-duas-folgas-por-semana/"><div class="thumb"><img src="/img/6x1.jpg" alt="" loading="lazy" width="1200" height="675"></div>
+<div class="item-txt"><span class="kicker kicker-red">Serviço</span><h3>Fim da 6x1: duas folgas por semana em 60 dias, sem corte de salário</h3><time datetime="2026-10-16">16 out 2026</time></div></a></article></div></div></section>
+<section class="sec sec-escura"><div class="wrap"><div class="sec-head"><h2>Vídeos</h2><span>Explicado em menos de um minuto</span></div><div class="vids"><a class="vid" href="/noticias/enem-inscrito-automatico-escolha-idioma/"><img src="/video/enem.jpg" alt="" loading="lazy"><span>Terminando o ensino médio na escola pública? Seu prazo acaba amanhã</span></a><a class="vid" href="/noticias/pode-levar-cola-para-votar/"><img src="/video/cola.jpg" alt="" loading="lazy"><span>Pode levar cola para votar? Pode.</span></a><a class="vid" href="/noticias/fim-da-6x1-duas-folgas-por-semana/"><img src="/video/6x1.jpg" alt="" loading="lazy"><span>A Constituição mudou: 2 folgas por semana</span></a></div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-head"><h2>Editorias</h2></div><div class="eds"><div class="edcol"><a href="/servico/" class="bar bar-red">Serviço</a><ul><li><a href="/noticias/enem-inscrito-automatico-escolha-idioma/">Inscrito automático no Enem tem até domingo (18) para escolher o idioma</a></li><li><a href="/noticias/debate-band-lula-flavio-segundo-turno/">Debate entre Lula e Flávio na Band é neste domingo (18), às 20h de Brasília</a></li><li><a href="/noticias/pode-levar-cola-para-votar/">Pode levar cola para votar? Pode, desde que seja em papel</a></li><li><a href="/noticias/senado-aprova-teto-mei-perdao-dividas/">Senado aprova perdão de dívidas e teto maior para MEI; falta a sanção</a></li></ul><a class="mais" href="/servico/">Tudo de Serviço →</a></div><div class="edcol"><a href="/politica/" class="bar bar-red">Política</a><ul><li><a href="/noticias/tce-30-dias-mt-obras-sem-fethab-2/">TCE dá 30 dias para MT explicar como pagará obras sem o Fethab 2</a></li></ul><a class="mais" href="/politica/">Tudo de Política →</a></div><div class="edcol"><a href="/meio-ambiente/" class="bar bar-orange">Meio Ambiente</a><ul><li><a href="/noticias/amazonia-menor-desmatamento-desde-1988-mt-segundo/">Amazônia tem o menor desmatamento desde 1988; MT é o 2º que mais desmata</a></li></ul><a class="mais" href="/meio-ambiente/">Tudo de Meio Ambiente →</a></div></div></div></section>
+<section class="sec"><div class="wrap manifesto"><span class="kicker kicker-red">Quem somos</span><h2>É hora de voltar para a praça</h2><p>O Agora Praça nasce para devolver o debate público às pessoas, com informação confiável e fácil de entender. Cada fato passa por checagem antes de chegar até você.</p><a class="btn" href="/sobre/">Conheça nossos princípios</a></div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <svg viewBox="-47 -28 200 200" aria-hidden="true">
-      <rect x="-47" y="-28" width="200" height="200" fill="#D2232A"></rect>
-      <rect x="40" y="28" width="40" height="9" rx="1.5" fill="#FFFFFF"></rect>
-      <polygon points="52,37 78,37 106,144 76,144" fill="#FFFFFF"></polygon>
-      <polygon points="50,37 57,37 9,144 1,144" fill="#FFFFFF"></polygon>
-      <rect x="20" y="103" width="49" height="6" fill="#FFFFFF"></rect>
-      <path d="M75 28 C 77 19, 84 12, 92 8" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"></path>
-      <circle cx="98" cy="4" r="7.5" fill="#FFFFFF"></circle>
-    </svg>
-    <span>Agora Praça · Redação em Primavera do Leste (MT) · 2026</span>
-  </div>
-</footer>
+<footer><div class="wrap">
+<div class="foot-brand"><svg viewBox="-47 -28 200 200" aria-hidden="true"><rect x="-47" y="-28" width="200" height="200" fill="#D2232A"/><rect x="40" y="28" width="40" height="9" rx="1.5" fill="#FFF"/><polygon points="52,37 78,37 106,144 76,144" fill="#FFF"/><polygon points="50,37 57,37 9,144 1,144" fill="#FFF"/><rect x="20" y="103" width="49" height="6" fill="#FFF"/><path d="M75 28 C 77 19, 84 12, 92 8" fill="none" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/><circle cx="98" cy="4" r="7.5" fill="#FFF"/></svg><div><strong>Agora Praça</strong><span>Jornalismo digital independente. Redação em Primavera do Leste (MT).</span></div></div>
+<nav class="foot-nav" aria-label="Institucional"><a href="/sobre/#principios">Princípios</a><a href="/sobre/#correcoes">Correções</a><a href="/sobre/#expediente">Expediente</a><a href="https://www.instagram.com/agorapraca/" rel="noopener">Instagram @agorapraca</a></nav>
+</div></footer>
 </body>
 </html>
