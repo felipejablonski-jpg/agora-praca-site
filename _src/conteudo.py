@@ -95,7 +95,9 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "missil-inflavel-ataque-nuclear-ato-pro-flavio", "sem_thumb": True,
+        "slug": "missil-inflavel-ataque-nuclear-ato-pro-flavio",
+        "foto": "img/missil.jpg", "foto_retrato": True, "credito": "Foto: reprodução / redes sociais (autoria não identificada)",
+        "alt": "Míssil inflável branco com a inscrição Trump nuke Brazil, carregado por manifestantes na Avenida Paulista",
         "data": "2026-10-18", "ordem": 1,
         "editoria": "politica", "chapeu": "Eleições 2026",
         "titulo": "Imagem de míssil com pedido de ataque nuclear ao Brasil circula durante ato pró-Flávio",
@@ -111,7 +113,7 @@ NOTICIAS = [
             "Referências a Donald Trump já apareceram em outros atos bolsonaristas. Em 7 de setembro de 2026, também na Avenida Paulista, manifestantes exibiram um boneco inflável do presidente americano segurando uma representação do presidente Lula preso, segundo o Poder360. No mesmo ato, cartazes em inglês pediam que Trump acompanhasse as eleições brasileiras, de acordo com o Brasil de Fato.",
             "Ainda não está claro se a peça exibida em 18 de outubro foi uma manifestação literal, uma provocação ou outro tipo de intervenção.",
         ],
-        "credito_extra": "A fotografia do míssil, de autoria não identificada, não é reproduzida nesta página.",
+        "credito_extra": "A fotografia foi reproduzida das redes sociais porque a própria imagem é o assunto da notícia. Se você é o autor, escreva para contato@agorapraca.com.br para receber o crédito ou pedir a retirada.",
         "fontes": [
             ("Metrópoles, 18/10", "https://www.metropoles.com/sao-paulo/ato-flavio-bolsonaro-ataque-nuclear"),
             ("CartaCapital, 18/10", "https://www.cartacapital.com.br/politica/manifestantes-pedem-que-trump-bombardeie-o-brasil-em-ato-de-flavio-bolsonaro/"),

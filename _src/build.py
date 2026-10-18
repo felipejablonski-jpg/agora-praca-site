@@ -151,7 +151,10 @@ def escrever(caminho, conteudo):
 def pagina_noticia(n):
     ed = EDITORIAS[n["editoria"]]
     if n.get("foto"):
-        topo = f'<figure class="hero"><img src="/{n["foto"]}" alt="" width="1200" height="675"><figcaption>{e(n["credito"])}</figcaption></figure>'
+        if n.get("foto_retrato"):
+            topo = f'<figure class="cardimg"><img src="/{n["foto"]}" alt="{e(n.get("alt", ""))}"><figcaption>{e(n["credito"])}</figcaption></figure>'
+        else:
+            topo = f'<figure class="hero"><img src="/{n["foto"]}" alt="" width="1200" height="675"><figcaption>{e(n["credito"])}</figcaption></figure>'
         og = "/" + n["foto"]
     elif n.get("video"):
         topo = video_tag(n["video"])
