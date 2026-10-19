@@ -321,6 +321,16 @@ VIDEOS = {
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
     {
+        "data": "2026-10-19", "pasta": "pp/2026-10-19", "telas": 5,
+        "itens": [
+            ("Debate na Band teve ataques, segurança pública e caso Vorcaro. Os temas foram segurança, crime organizado, maioridade penal, SUS, economia e escala 6x1. As considerações finais foram interrompidas por gritaria entre as comitivas.", None),
+            ("O Aos Fatos checou 49 falas dos dois candidatos durante o debate: 26 de Flávio Bolsonaro e 23 de Lula.", None),
+            ("Bolsa Família começa a pagar hoje com piso de R$ 691, reajuste de 15%. Hoje recebe quem tem o NIS com final 1; o calendário vai até 30 de outubro.", None),
+            ("A semana: termina hoje o prazo da Globo para os candidatos confirmarem o debate de sexta (23). A OTAN se reúne na terça (20). O 2º turno é no domingo, 25.", None),
+        ],
+        "fonte": "Fontes: CNN Brasil, Aos Fatos, MDS, Globo, OTAN e TSE",
+    },
+    {
         "data": "2026-10-18", "pasta": "pp/2026-10-18", "telas": 5,
         "itens": [
             ("Debate entre Lula e Flávio na Band é hoje, às 20h de Brasília (19h em MT). São duas horas, com dois blocos de confronto direto.", "debate-band-lula-flavio-segundo-turno"),
