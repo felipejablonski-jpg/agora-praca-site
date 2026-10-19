@@ -10,6 +10,31 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "fumaca-queimadas-manaus-sem-aula", "thumb": "img/thumb/manaus.jpg",
+        "data": "2026-10-19", "ordem": 5,
+        "editoria": "meio-ambiente", "chapeu": "Queimadas",
+        "titulo": "Fumaça de queimadas mantém Manaus sem aula presencial",
+        "linha_fina": "O ar da capital do Amazonas amanheceu em nível péssimo nesta segunda-feira (19). A fumaça vem de incêndios no interior do estado e em Rondônia, no Pará e em Mato Grosso.",
+        "carrossel": ["img/manaus-fumaca/1.jpg", "img/manaus-fumaca/2.jpg"],
+        "credito_extra": "Foto da capa: Manaus no sábado (17), divulgação.",
+        "para_voce": ("CUIDADOS", "Máscara PFF2 ao sair, mais água e nada de exercício ao ar livre. Atenção a crianças, idosos, grávidas e quem tem doença respiratória."),
+        "texto": [
+            "A Prefeitura de Manaus manteve suspensas as aulas presenciais da rede municipal nesta segunda-feira, 19 de outubro de 2026, por causa da fumaça das queimadas. A decisão foi anunciada no domingo (18), e a suspensão vem sendo prorrogada sem data de retorno, segundo o Metrópoles. A Universidade do Estado do Amazonas (UEA) suspendeu as atividades presenciais em todas as unidades até sexta-feira (23), e a Universidade Federal do Amazonas (Ufam) adotou paralisações pontuais nos dias 19 e 20.",
+            "## Como está o ar",
+            "Às 6h desta segunda, a concentração média de partículas finas (MP2,5) em Manaus foi de 150,5 microgramas por metro cúbico, segundo a Defesa Civil municipal, com base em 14 sensores. A Prefeitura classificou o ar como péssimo. As partículas finas são pequenas o bastante para entrar nos pulmões e chegar à corrente sanguínea.",
+            "Não é o primeiro episódio do mês. Em 9 de outubro, a cidade chegou a registrar picos acima de 300 microgramas por metro cúbico, e na sexta-feira (16) voltou a ter a pior qualidade do ar entre as capitais brasileiras, segundo a Agência Brasil.",
+            "## De onde vem a fumaça",
+            "A fumaça vem de queimadas no interior do Amazonas e também em Rondônia, no Pará e em Mato Grosso. A falta de chuva faz os poluentes ficarem parados sobre a cidade. O governo estadual decretou situação de emergência em cerca de 36 municípios em 10 de outubro, e o Ibama informou ter apagado mais de 300 focos de incêndio no Amazonas desde o início das operações.",
+            "## Como se proteger",
+            "A Defesa Civil recomenda máscara PFF2 ao sair de casa, mais hidratação e evitar exercícios ao ar livre. Crianças, idosos, grávidas e pessoas com doenças respiratórias precisam de cuidado redobrado.",
+        ],
+        "fontes": [
+            ("Metrópoles, aulas suspensas em Manaus (19/10)", "https://www.metropoles.com/brasil/alunos-de-manaus-ficam-mais-um-dia-sem-aulas-devido-a-ma-qualidade-do-ar"),
+            ("Agência Brasil, pior ar entre as capitais (16/10)", "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-10/manaus-e-capital-com-maior-poluicao-atmosferica-do-pais-nesta-sexta"),
+            ("Agência Brasil, níveis graves e orientações da Defesa Civil (9/10)", "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-10/manaus-atinge-niveis-graves-de-poluicao-do-ar-por-fumaca-de-queimadas"),
+        ],
+    },
+    {
         "slug": "eleitor-sem-biometria-pode-votar-segundo-turno", "thumb": "img/thumb/biometria.jpg",
         "data": "2026-10-19", "ordem": 4,
         "editoria": "servico", "chapeu": "Eleições 2026",
