@@ -10,6 +10,31 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "chuvas-espanha-quatro-mortos-500-resgates", "thumb": "img/thumb/espanha.jpg",
+        "data": "2026-10-19", "ordem": 1,
+        "editoria": "meio-ambiente", "chapeu": "Chuvas na Espanha",
+        "titulo": "Chuvas extremas deixam 4 mortos e provocam cerca de 500 resgates no leste da Espanha",
+        "linha_fina": "Em Pego, na província de Alicante, choveu 632 milímetros em 36 horas, segundo a agência de meteorologia espanhola. A região é a mesma em que a chuva de outubro de 2024 matou mais de 220 pessoas.",
+        "video": "espanha",
+        "para_voce": ("POR QUE IMPORTA", "É a mesma região em que a chuva de outubro de 2024 matou mais de 220 pessoas. Os números de agora ainda podem mudar."),
+        "texto": [
+            "Chuvas extremas deixaram quatro mortos e provocaram cerca de 500 resgates no leste da Espanha entre domingo, 18, e segunda-feira, 19 de outubro de 2026. Os números são das autoridades espanholas, compilados pelo jornal elDiario.es na tarde de segunda no horário local (fim da manhã em Brasília), e ainda podem mudar.",
+            "Duas mortes foram em Oliva, na província de Valência: uma mulher de 79 anos encontrada em casa e um homem de 64 anos que teve um ataque cardíaco num camping. Em Sagunto, também em Valência, uma mulher foi arrastada pelo mar no domingo. A quarta morte foi em Cabrera del Mar, perto de Barcelona, fora da região valenciana.",
+            "## Quanto choveu",
+            "Segundo a AEMET, a agência de meteorologia da Espanha, a cidade de Pego, em Alicante, registrou 632 milímetros de chuva em 36 horas, quase 430 deles em apenas 6 horas. Cada milímetro equivale a um litro de água por metro quadrado. Outras áreas de Valência passaram de 300 milímetros.",
+            "A chuva veio de uma dana, sigla em espanhol para depressão isolada em níveis altos: um bolsão de ar frio em altitude que, em contato com o mar Mediterrâneo aquecido, forma tempestades fortes e paradas sobre a mesma área.",
+            "## Retiradas e escolas fechadas",
+            "Só em Oliva, cerca de 2 mil pessoas foram retiradas de sete campings. Oito municípios seguem com moradores orientados a ficar confinados em casa, e mais de 100 mil alunos ficaram sem aula na segunda-feira.",
+            "## A lembrança de 2024",
+            "A região valenciana ainda se recupera da dana de 29 de outubro de 2024, quando a chuva e as enchentes mataram mais de 220 pessoas, a maioria na área metropolitana de Valência. Foi um dos piores desastres naturais da história recente da Espanha.",
+        ],
+        "credito_extra": "Imagens do vídeo: gravações de moradores publicadas em redes sociais e reproduzidas pela 3Cat, a rede pública da Catalunha. O áudio original foi retirado.",
+        "fontes": [
+            ("elDiario.es, cobertura ao vivo (19/10)", "https://www.eldiario.es/sociedad/ultima-hora-temporal-alertas-inundacion-despliegue-ume-clases-suspendidas_133_13595902.html"),
+            ("Infobae, com dados da AEMET (19/10)", "https://www.infobae.com/espana/agencias/2026/10/19/la-dana-deja-430-litros-en-seis-horas-en-pego-alicante-y-mas-de-300-en-zonas-de-valencia/"),
+        ],
+    },
+    {
         "slug": "locais-de-votacao-segundo-turno", "thumb": "img/thumb/locais.jpg",
         "data": "2026-10-18", "ordem": 4,
         "editoria": "servico", "chapeu": "Eleições 2026",
@@ -311,6 +336,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "espanha": "Chuva extrema deixa 4 mortos no leste da Espanha",
     "locais": "Seu local de votação mudou? Veja como conferir",
     "ebola": "O ebola chegou à oitava província do Congo",
     "enem": "Terminando o ensino médio na escola pública? Seu prazo acaba amanhã",
