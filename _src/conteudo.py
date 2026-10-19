@@ -10,6 +10,35 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "sem_thumb": True, "rascunho": True,
+        "data": "2026-10-19", "ordem": 3,
+        "editoria": "servico", "chapeu": "Bolsa Família",
+        "titulo": "Bolsa Família: governo antecipa e paga todas as famílias até quarta-feira (21)",
+        "linha_fina": "O calendário de outubro ia até o dia 30. O Ministério do Desenvolvimento Social atribui a mudança ao El Niño. Com ela, todo o pagamento cai antes do segundo turno, no domingo (25).",
+        "carrossel": ["img/bolsa-familia-antecipa/%d.jpg" % i for i in range(1, 4)],
+        "para_voce": ("PARA VOCÊ", "NIS final 1 recebe na segunda (19), final 2 na terça (20) e finais 3 a 0 na quarta (21)."),
+        "texto": [
+            "O Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS) antecipou o calendário do Bolsa Família de outubro. Todas as famílias beneficiárias vão receber até quarta-feira, 21 de outubro de 2026. Pelo calendário anterior, os pagamentos iam até o dia 30. A mudança foi anunciada nesta segunda-feira (19) e formalizada em portaria do ministério.",
+            "## Quem recebe quando",
+            "Famílias com NIS terminado em 1 recebem nesta segunda-feira (19). Quem tem NIS final 2 recebe na terça-feira (20). Todos os demais, com NIS terminado de 3 a 0, recebem na quarta-feira (21).",
+            "Quem mora em município com situação de emergência ou calamidade pública reconhecida pelo governo federal recebe tudo no primeiro dia do calendário, sem seguir o final do NIS.",
+            "O calendário mais curto também vale para novembro, com pagamentos de 16 a 18, e para dezembro, de 10 a 14, conforme o final do NIS, segundo o calendário divulgado com a mudança.",
+            "## Valores",
+            "Os pagamentos de outubro já incluem o reajuste de 15% anunciado em setembro. O valor mínimo por família passou de R$ 600 para R$ 691, e o benefício médio previsto subiu para R$ 777.",
+            "## A justificativa e o contexto",
+            "O MDS afirma que a antecipação é uma medida preventiva contra os efeitos do El Niño. Segundo o ministério, o governo federal reconheceu 518 situações de emergência ou calamidade em agosto e setembro de 2026, contra 253 no mesmo período de 2025.",
+            "Com a mudança, todos os pagamentos de outubro serão feitos antes do segundo turno da eleição presidencial, no domingo, 25 de outubro. A coincidência de datas não comprova, sozinha, finalidade eleitoral. A Agora vai acompanhar eventuais questionamentos na Justiça Eleitoral.",
+            "## Onde conferir",
+            "O valor e a data aparecem no aplicativo Bolsa Família e no Caixa Tem. A Caixa também atende pelo telefone 111.",
+        ],
+        "fontes": [
+            ("Times Brasil, com nota e portaria do MDS (19/10)", "https://timesbrasil.com.br/eleicoes-2026/governo-antecipa-bolsa-familia-seis-dias-eleicao/"),
+            ("DOL, com UOL: calendário de outubro a dezembro (19/10)", "https://dol.com.br/noticias/brasil/965949/bolsa-familia-veja-o-calendario-de-pagamentos-de-outubro-novembro-e-dezembro"),
+            ("ACidade ON, datas por final do NIS (19/10)", "https://www.acidadeon.com/ribeiraopreto/economia/bolsa-familia-tem-saque-antecipado-nesta-quarta-feira-21-confira-quem-recebe/"),
+            ("O Povo, reajuste: piso de R$ 691 e média de R$ 777 (setembro)", "https://www.opovo.com.br/trends/bolsa-familia-tera-piso-de-r-691-em-outubro-valor-medio-previsto-sobe-para-r-777/"),
+        ],
+    },
+    {
         "slug": "analise-debate-band-flavio-atras-de-lula-marcal", "thumb": "img/thumb/analise-debate.jpg",
         "data": "2026-10-19", "ordem": 2,
         "editoria": "politica", "chapeu": "Análise",
@@ -386,7 +415,7 @@ EDICOES = [
         "itens": [
             ("Debate na Band teve ataques, segurança pública e caso Vorcaro. Os temas foram segurança, crime organizado, maioridade penal, SUS, economia e escala 6x1. As considerações finais foram interrompidas por gritaria entre as comitivas.", None),
             ("O Aos Fatos checou 49 falas dos dois candidatos durante o debate: 26 de Flávio Bolsonaro e 23 de Lula.", None),
-            ("Bolsa Família começa a pagar hoje com piso de R$ 691, reajuste de 15%. Hoje recebe quem tem o NIS com final 1; o calendário vai até 30 de outubro.", None),
+            ("Bolsa Família começa a pagar hoje com piso de R$ 691, reajuste de 15%. Hoje recebe quem tem o NIS com final 1; o calendário vai até 30 de outubro. Atualização às 12h: o governo antecipou o calendário, e todas as famílias recebem até quarta-feira (21).", None),
             ("A semana: termina hoje o prazo da Globo para os candidatos confirmarem o debate de sexta (23). A OTAN se reúne na terça (20). O 2º turno é no domingo, 25.", None),
         ],
         "fonte": "Fontes: CNN Brasil, Aos Fatos, MDS, Globo, OTAN e TSE",
