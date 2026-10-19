@@ -10,7 +10,7 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
-        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "sem_thumb": True, "rascunho": True,
+        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "sem_thumb": True,
         "data": "2026-10-19", "ordem": 3,
         "editoria": "servico", "chapeu": "Bolsa Família",
         "titulo": "Bolsa Família: governo antecipa e paga todas as famílias até quarta-feira (21)",
