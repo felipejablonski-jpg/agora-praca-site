@@ -156,6 +156,7 @@ NOTICIAS = [
         "video": "locais", "card": "img/card-locais-votacao.jpg",
         "para_voce": ("PARA VOCÊ", "Confira seu local de votação no e-Título antes de sair de casa no domingo, 25 de outubro."),
         "texto": [
+            "Atualização em 19 de outubro, às 19h de Brasília: o TSE revisou a lista de seções com endereço alterado. O número caiu de 4.352 seções, divulgado na sexta-feira (17), para 2.033 locais no domingo (18), 554 na manhã de segunda e 444 seções na tarde de segunda-feira (19), o que atinge cerca de 130 mil eleitores em 22 estados. O tribunal diz que os números ainda podem mudar. A orientação continua a mesma: confira seu local de votação antes de sair de casa.",
             "A Justiça Eleitoral mudou o local de votação de 4.352 seções eleitorais para o segundo turno, marcado para domingo, 25 de outubro de 2026. O número representa 0,87% das seções do país, segundo o Tribunal Superior Eleitoral (TSE).",
             "São Paulo tem o maior número de alterações (982 seções), seguido por Minas Gerais (514), Rio de Janeiro (431) e Bahia (312). As decisões são tomadas por cada zona eleitoral, conforme a estrutura disponível em cada cidade.",
             "## Por que os locais mudaram",
@@ -174,6 +175,8 @@ NOTICIAS = [
             ("Poder360, com Agência Brasil (18/10)", "https://www.poder360.com.br/poder-eleicoes-2026/mais-de-4-000-secoes-tiveram-locais-alterados-para-o-2o-turno/"),
             ("TRE-MT, locais mantidos no 2º turno (16/10)", "https://www.tre-mt.jus.br/comunicacao/noticias/2026/Outubro/local-de-votacao-do-1o-turno-sera-o-mesmo-para-2o-turno-das-eleicoes-2026"),
             ("TRE-MT, plebiscitos de 25/10", "https://www.tre-mt.jus.br/comunicacao/noticias/2026/Outubro/entenda-como-serao-realizados-os-dois-plebiscitos-em-mato-grosso"),
+            ("Agência Brasil, 130 mil eleitores em 22 estados (19/10)", "https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/2o-turno-130-mil-eleitores-de-22-estados-votarao-em-local-diferente"),
+            ("Terra, as quatro versões da lista do TSE (19/10)", "https://www.terra.com.br/noticias/eleicoes/tse-ja-mudou-4-vezes-a-lista-de-eleitores-com-locais-de-votacao-alterados-no-2-turno,3645dd030f059736d5ac91fe4c7977c6xsy1fzrx.html"),
         ],
     },
     {
