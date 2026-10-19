@@ -10,6 +10,30 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "eleitor-sem-biometria-pode-votar-segundo-turno", "thumb": "img/thumb/biometria.jpg",
+        "data": "2026-10-19", "ordem": 4,
+        "editoria": "servico", "chapeu": "Eleições 2026",
+        "titulo": "Sem biometria? Você pode votar no 2º turno; veja o que levar",
+        "linha_fina": "Cerca de 1 em cada 9 eleitores não tem a digital cadastrada na Justiça Eleitoral. Basta documento oficial com foto ou o e-Título com foto para votar no domingo, 25 de outubro.",
+        "carrossel": ["img/biometria-2-turno/1.jpg", "img/biometria-2-turno/2.jpg"],
+        "credito_extra": "Foto da capa: Rovena Rosa / Agência Brasil.",
+        "para_voce": ("PARA VOCÊ", "Sem biometria ou com a digital falhando, você vota do mesmo jeito. Leve documento oficial com foto ou o e-Título com foto."),
+        "texto": [
+            "Quem não tem biometria cadastrada na Justiça Eleitoral pode votar normalmente no segundo turno, no domingo, 25 de outubro de 2026. Segundo o Tribunal Superior Eleitoral (TSE), a falta da biometria não impede o voto. Cerca de 11% do eleitorado, ou 1 em cada 9 eleitores, não tem a digital registrada, de acordo com dados do TSE citados pela Agência Brasil. O cadastramento biométrico foi encerrado em 6 de maio.",
+            "## O que levar",
+            "Quem não tem biometria precisa confirmar a identidade na seção com um documento oficial com foto, como a Carteira de Identidade Nacional, o RG ou a carteira de motorista, ou com o aplicativo e-Título, desde que ele mostre a foto do eleitor.",
+            "## Se a digital não for reconhecida",
+            "Quem tem biometria cadastrada, mas não consegue ser identificado pela urna, também vota. Segundo o TSE, a leitura da digital pode ser repetida até quatro vezes. Se a dificuldade continuar, a mesa pede o ano de nascimento do eleitor para conferir com o cadastro. Se os dados baterem, o voto é liberado, e o eleitor assina o caderno de votação ou, se não puder assinar, registra a impressão digital.",
+            "## Depois da eleição",
+            "Nos dois casos, a orientação é procurar a Justiça Eleitoral depois da votação para cadastrar ou atualizar a biometria.",
+            "A votação vai das 8h às 17h no horário de Brasília. Em Mato Grosso, das 7h às 16h.",
+        ],
+        "fontes": [
+            ("Agência Brasil, eleitor sem biometria (18/10)", "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/eleitor-sem-biometria-pode-votar-no-segundo-turno-das-eleicoes"),
+            ("TSE, Manual do Eleitor: biometria", "https://www.tse.jus.br/comunicacao/noticias/2026/Julho/manual-do-eleitor-entenda-como-vai-funcionar-a-biometria-nas-eleicoes-2026"),
+        ],
+    },
+    {
         "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "sem_thumb": True,
         "data": "2026-10-19", "ordem": 3,
         "editoria": "servico", "chapeu": "Bolsa Família",
