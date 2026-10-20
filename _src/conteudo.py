@@ -134,7 +134,7 @@ NOTICIAS = [
             "## O que vem agora",
             "Na terça-feira (20), Lecornu atribuiu a calma da noite aos toques de recolher localizados. Cerca de 2.500 pessoas continuavam detidas para depoimento, e 123 aguardavam julgamento, segundo o ministro da Justiça, Gérald Darmanin. A entidade estudantil UNEF e grupos de coletes amarelos convocaram novos atos para sábado. As grandes centrais sindicais, como a CGT, não aderiram.",
         ],
-        "credito_extra": "Fotos: Kiran Ridley/AFP, Abdul Saboor/Reuters e Reuters.",
+        "credito_extra": "Imagens ilustrativas: fotos de Leo Serrat e John Towner (Unsplash) e vídeos do Pixabay.",
         "fontes": [
             ("Al Jazeera (19/10)", "https://www.aljazeera.com/news/2026/10/19/frances-macron-declines-ministers-resignation-after-violent-protests"),
             ("AFP, via O Tempo (19/10)", "https://www.otempo.com.br/mundo/2026/10/19/franca-decreta-toque-de-recolher-apos-onda-de-saques-e-confrontos"),
