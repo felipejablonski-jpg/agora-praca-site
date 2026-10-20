@@ -69,7 +69,7 @@ NOTICIAS = [
             "\"O calor é o maior assassino das mudanças climáticas\", disse à Reuters o professor James Renwick, da Universidade Victoria de Wellington, na Nova Zelândia. Anthony Leiserowitz, diretor do programa de comunicação sobre mudanças climáticas da Universidade Yale, citou a estimativa de que o calor mata quase meio milhão de pessoas por ano.",
             "A tendência geral é confirmada pela ciência: o IPCC, painel de clima da ONU, já concluiu que os extremos de calor ficaram mais frequentes e intensos na maior parte dos continentes desde os anos 1950, principalmente por causa da ação humana. O que a Reuters traz de novo é a medida do tamanho e da duração desses eventos.",
         ],
-        "credito_extra": "Imagens do vídeo: CNN Brasil, Philippe Lejeanvre/Getty Images e Getty Images/iStock. O áudio original foi retirado.",
+        "credito_extra": "Imagens do vídeo: Pexels.",
         "fontes": [
             ("Reuters, reportagem especial sobre as tempestades de calor (20/10)", "https://www.933thedrive.com/2026/10/20/special-report-giant-heat-storms-are-scorching-the-earth-this-is-the-story-of-the-biggest-one-on-record/"),
             ("Reuters, 7 pontos da investigação (20/10)", "https://www.933thedrive.com/2026/10/20/meet-the-heat-storm-7-takeaways-from-our-investigation-that-gave-supersized-heat-waves-a-new-name/"),
