@@ -255,3 +255,12 @@ footer .wrap { align-items: flex-start; }
 .frase h2 { margin: 6px 0 12px; font-family: var(--font-display); font-size: clamp(24px, 3vw, 32px); line-height: 1.15; }
 .frase p { margin: 0 0 10px; font-size: 17px; }
 @media (max-width: 640px) { .frase { grid-template-columns: minmax(0, 1fr); } .frase img { max-width: 320px; } }
+
+.pp-sec { border-top: 3px solid var(--ink); margin-top: 40px; padding-top: 18px; }
+.pp-sec h2 { margin: 8px 0 14px; }
+.pp-link a { font-weight: 700; color: var(--red); }
+.pp-agenda { list-style: none; padding: 0; margin: 0; }
+.pp-agenda li { display: flex; gap: 16px; padding: 12px 0; border-bottom: 1px solid #DDD7CE; line-height: 1.45; }
+.pp-agenda b { flex: 0 0 74px; font-family: var(--font-display); }
+.pp-insta { margin-top: 44px; border-top: 1px solid #DDD7CE; padding-top: 16px; }
+.pp-insta summary { cursor: pointer; font-weight: 700; font-size: 15px; margin-bottom: 14px; }

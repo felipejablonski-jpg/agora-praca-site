@@ -228,15 +228,39 @@ def bloco_pp(x, curto=False):
 
 def pagina_edicao(x):
     telas = "".join(f'<img src="/{x["pasta"]}/{i:02d}.jpg" alt="Tela {i} da Primeira Página" loading="lazy" width="1080" height="1350">' for i in range(1, x["telas"] + 1))
-    itens = lista_pp(x)
-    corpo = f'''<div class="wrap estreita materia">
+    insta = f'<details class="pp-insta"><summary>Ver como saiu no Instagram</summary><div class="telas">{telas}</div></details>'
+    m = x.get("materia")
+    if m:
+        idx = "".join(f'<li><span class="n">{i+1}</span><span><a href="#s{i+1}">{e(sec["titulo"])}</a></span></li>' for i, sec in enumerate(m["secoes"]))
+        secs = ""
+        for i, sec in enumerate(m["secoes"]):
+            ps = "".join(f"<p>{e(t)}</p>" for t in sec["texto"])
+            mais = f'<p class="pp-link"><a href="{url_noticia(POR_SLUG[sec["slug"]])}">Leia a matéria completa →</a></p>' if sec.get("slug") else ""
+            fts = " · ".join(f'<a href="{e(u)}" rel="noopener">{e(nm)}</a>' for nm, u in sec.get("fontes", []))
+            fts = f'<p class="obs">Fontes: {fts}</p>' if fts else ""
+            secs += f'<section class="pp-sec" id="s{i+1}"><span class="kicker kicker-red">{e(sec["chapeu"])}</span><h2>{e(sec["titulo"])}</h2>{ps}{mais}{fts}</section>'
+        ag = ""
+        if m.get("agenda"):
+            rows = "".join(f'<li><b>{e(d)}</b><span>{e(t)}</span></li>' for d, t in m["agenda"])
+            ag = f'<section class="pp-sec" id="agenda"><span class="kicker kicker-red">Agenda</span><h2>A semana</h2><ul class="pp-agenda">{rows}</ul></section>'
+        corpo = f'''<div class="wrap estreita materia">
+<div class="chap"><span class="kicker kicker-red">Primeira Página</span><span class="sub">Edição das 7h</span></div>
+<h1>O resumo de {data_longa(x["data"])}</h1>
+<p class="linha-fina">{e(m["abertura"])}</p>
+<h2 class="h2-telas">Nesta edição</h2>
+<ol class="pp-lista pp-lista-g">{idx}</ol>
+{secs}{ag}
+{insta}
+</div>'''
+    else:
+        itens = lista_pp(x)
+        corpo = f'''<div class="wrap estreita materia">
 <div class="chap"><span class="kicker kicker-red">Primeira Página</span><span class="sub">Edição das 7h</span></div>
 <h1>O resumo de {data_longa(x["data"])}</h1>
 <p class="linha-fina">Toda manhã, o que você precisa saber para começar o dia, em poucos minutos.</p>
 <ol class="pp-lista pp-lista-g">{itens}</ol>
 <p class="obs">{e(x["fonte"])}</p>
-<h2 class="h2-telas">Como saiu no Instagram</h2>
-<div class="telas">{telas}</div>
+{insta}
 </div>'''
     escrever(url_edicao(x), cabeca(f"Primeira Página de {data_curta(x['data'])}", x["itens"][0][0], url_edicao(x), f"/{x['pasta']}/01.jpg") + corpo + RODAPE)
 

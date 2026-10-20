@@ -602,6 +602,41 @@ VIDEOS = {
 EDICOES = [
     {
         "data": "2026-10-20", "pasta": "pp/2026-10-20", "telas": 5,
+        "materia": {
+            "abertura": "Lula leva ao TSE o pedido para abrir o próprio sigilo e desafia Flávio a fazer o mesmo, as pesquisas mostram Flávio à frente na reta final e a França passa a primeira noite sob toque de recolher. Faltam cinco dias para o 2º turno.",
+            "secoes": [
+                {"chapeu": "Eleições 2026", "titulo": "Lula leva ao TSE pedido para abrir o próprio sigilo e desafia Flávio",
+                 "texto": [
+                    "O presidente Luiz Inácio Lula da Silva (PT) disse que entrega nesta terça-feira (20) ao presidente do Tribunal Superior Eleitoral (TSE) uma autorização para a quebra do sigilo telefônico e bancário dele e da família. O pedido inclui os cinco filhos: Fábio Luís, Lurian, Marcos, Sandro e Luis Claudio.",
+                    "Lula desafiou o adversário, o senador Flávio Bolsonaro (PL), a abrir o sigilo bancário e fiscal dele, das empresas e da família, e pediu que a Justiça investigue e divulgue o resultado. \"A única coisa que eu estou pedindo é que ele tenha a coragem de provar que é honesto\", disse na segunda-feira (19), em Porto Alegre, antes de um ato no centro da cidade. Durante a caminhada, escreveu \"abre o sigilo Flávio\" num cartaz.",
+                    "O desafio retoma uma proposta que Lula fez no debate da Band, no domingo (18), quando questionou o patrimônio declarado por Flávio. Na ocasião, Flávio respondeu que não tem \"absolutamente nada a esconder\" e que suas contas \"estão sempre abertas\", mas não disse se aceitaria a quebra de sigilo. Ele também acusou Lula de movimentar dinheiro fora das próprias contas e ironizou a proposta de quebra de sigilo telefônico, dizendo que o presidente não tem celular.",
+                    "Até a publicação desta edição, não havia confirmação de que o pedido tinha sido protocolado no TSE.",
+                 ],
+                 "fontes": [("Agência Brasil (19/10)", "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-diz-que-vai-entregar-amanha-ao-tse-pedido-de-abertura-de-sigilo"), ("CNN Brasil, resposta de Flávio no debate (18/10)", "https://www.cnnbrasil.com.br/eleicoes/lula-fala-em-abrir-sigilos-flavio-diz-que-nao-tem-nada-a-esconder/")]},
+                {"chapeu": "Pesquisas", "titulo": "Flávio está à frente em 12 de 13 pesquisas, quase todas dentro da margem",
+                 "texto": [
+                    "Das 13 pesquisas de 2º turno registradas no TSE e reunidas pelo Poder360 na manhã desta terça, 12 mostram Flávio Bolsonaro numericamente à frente de Lula nos votos válidos. A única com Lula na frente é a Vox Brasil, com 51% a 49%.",
+                    "Nos números a seguir, o primeiro é de Flávio e o segundo, de Lula. A diferença vai de 0,6 ponto, na BTG/Nexus (50,3% a 49,7%), a 4 pontos, na PoderData e na Gerp (52% a 48%). Datafolha e Indexa marcam 51% a 49%; CNT/MDA, 50,5% a 49,5%; AtlasIntel, 51,1% a 48,9%.",
+                    "Na maioria dos levantamentos, a vantagem fica dentro da margem de erro, que vai de 1 a 2,6 pontos. Quando isso acontece, a pesquisa não permite dizer quem está na frente: o resultado real pode estar em qualquer ponto dessa faixa para cada candidato.",
+                    "Votos válidos são os votos dados a candidatos, sem brancos e nulos. É a mesma conta que define o vencedor no domingo.",
+                 ],
+                 "fontes": [("Poder360, as 13 pesquisas (20/10)", "https://www.poder360.com.br/poder-pesquisas/saiba-como-estao-lula-e-flavio-nas-pesquisas-a-5-dias-da-eleicao/")]},
+                {"chapeu": "Internacional", "titulo": "França passa a noite calma sob toque de recolher; novos protestos estão marcados para sábado", "slug": "franca-toque-de-recolher-paris-protestos-saques",
+                 "texto": [
+                    "A primeira noite com toque de recolher em áreas de Paris, Lille, Lyon e Nice foi calma, segundo o primeiro-ministro Sébastien Lecornu, que atribuiu o resultado às restrições localizadas e disse que elas podem ser prolongadas onde a situação exigir.",
+                    "Cerca de 2.500 pessoas continuavam detidas para depoimento, e 123 aguardavam julgamento, segundo o ministro da Justiça, Gérald Darmanin. No fim de semana, mais de meio milhão de pessoas foram às ruas contra o custo de vida e as condições da educação, e o governo estima cerca de 3 mil lojas danificadas ou saqueadas.",
+                    "A entidade estudantil UNEF e grupos de coletes amarelos convocaram novos protestos para sábado (24). As grandes centrais sindicais, como a CGT, não aderiram.",
+                 ],
+                 "fontes": [("TimesLive, com AFP (20/10)", "https://www.timeslive.co.za/news/world/2026-10-20-france-quiet-under-night-curfew-as-new-weekend-protests-loom/")]},
+            ],
+            "agenda": [
+                ("Ter 20", "Lula entrega ao TSE o pedido de abertura de sigilo. A OTAN se reúne para discutir a segurança no Mar Negro."),
+                ("Qua 21", "Último dia de pagamento do Bolsa Família de outubro, depois que o governo antecipou o calendário."),
+                ("Sex 23", "Debate na TV Globo, depois do Jornal Nacional. Lula e Flávio confirmaram presença e assinaram as regras."),
+                ("Sáb 24", "Novos protestos convocados na França."),
+                ("Dom 25", "2º turno das eleições, das 8h às 17h de Brasília (7h às 16h em Mato Grosso)."),
+            ],
+        },
         "itens": [
             ("Lula leva hoje ao TSE pedido para abrir o próprio sigilo telefônico e bancário e o dos cinco filhos, e desafia Flávio Bolsonaro a abrir o sigilo bancário e fiscal dele, das empresas e da família.", None),
             ("Flávio está à frente em 12 de 13 pesquisas registradas no TSE. A diferença vai de 0,6 a 4 pontos nos votos válidos e, na maioria, fica dentro da margem de erro. Só a Vox Brasil tem Lula à frente, com 51% a 49%.", None),
