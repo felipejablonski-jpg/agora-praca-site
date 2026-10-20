@@ -190,7 +190,6 @@ def pagina_noticia(n):
     if len(rel) < 3:
         rel += [x for x in NOTICIAS if x["slug"] != n["slug"] and x not in rel][: 3 - len(rel)]
     url = SITE + url_noticia(n)
-    wa = "https://wa.me/?text=" + __import__("urllib.parse").parse.quote(f"{n['titulo']} {url}")
     corpo = f'''<article class="materia"><div class="wrap estreita">
 <div class="chap"><a href="/{n["editoria"]}/">{chapeu(n)}</a>{f'<span class="sub">{e(n["chapeu"])}</span>' if n.get("chapeu") else ""}</div>
 <h1>{e(n["titulo"])}</h1>
@@ -204,7 +203,7 @@ def pagina_noticia(n):
 {extra}
 {f'<p class="obs">{e(n["credito_extra"])}</p>' if n.get("credito_extra") else ""}
 <section class="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="obs">Viu um erro? Escreva para <a href="mailto:contato@agorapraca.com.br">contato@agorapraca.com.br</a>. Toda correção fica registrada na página de <a href="/sobre/#correcoes">correções</a>.</p></section>
-<div class="share"><a class="btn" href="{e(wa)}" rel="noopener">Mandar no WhatsApp</a><a class="btn btn-l" href="https://www.instagram.com/agorapraca/" rel="noopener">Seguir no Instagram</a></div>
+<div class="share"><a class="btn" href="https://www.instagram.com/agorapraca/" rel="noopener">Seguir no Instagram</a></div>
 </div>
 </article>
 <section class="sec"><div class="wrap"><div class="sec-head"><h2>Leia também</h2></div><div class="grade">{"".join(item(x) for x in rel)}</div></div></section>
