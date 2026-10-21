@@ -635,7 +635,7 @@ EDICOES = [
                     "O Ministério Público Eleitoral pediu à presidência do Tribunal Superior Eleitoral que tome providências para garantir que a população indígena consiga votar no 2º turno, no domingo (25).",
                     "No 1º turno, lideranças indígenas relataram falta de transporte gratuito até os locais de votação. O MPE também aponta que a falta de mesários que falam línguas indígenas pode ter contribuído para a abstenção. Os problemas foram relatados no Amazonas, em Minas Gerais, em Mato Grosso, em Pernambuco, no Amapá e no Pará.",
                     "O caso mais detalhado é o da Terra Indígena Vale do Javari, no Amazonas, onde 43 aldeias seguem sem transporte garantido. O TRE-AM negou um pedido de transporte fluvial, água e comida, alegando que a solicitação chegou tarde e que faltavam recursos. A abstenção desses eleitores no 1º turno foi de cerca de 30%.",
-                    "A Agora procurou o TRE-MT para saber quais aldeias de Mato Grosso foram afetadas e se haverá transporte no domingo.",
+                    "O pedido não detalha quais aldeias de Mato Grosso foram afetadas.",
                  ],
                  "fontes": [("Agência Brasil, Radioagência Nacional (20/10)", "https://agenciabrasil.ebc.com.br/radioagencia-nacional/justica/audio/2026-10/mpe-pede-ao-tse-acoes-para-garantir-indigenas-no-2o-turno-das-eleicoes")]},
             ],
