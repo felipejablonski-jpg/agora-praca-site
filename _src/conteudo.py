@@ -601,6 +601,52 @@ VIDEOS = {
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
     {
+        "data": "2026-10-21", "pasta": "pp/2026-10-21", "telas": 5,
+        "materia": {
+            "abertura": "Lula pede ao TSE que abra os sigilos dele e da família se Flávio fizer o mesmo, duas novas pesquisas mostram Flávio com 51% dos votos válidos e o Itamaraty acusa Javier Milei de tentar interferir na eleição. Faltam quatro dias para o 2º turno.",
+            "secoes": [
+                {"chapeu": "Eleições 2026", "titulo": "Lula pede ao TSE que abra os sigilos dele e de 6 familiares, se Flávio fizer o mesmo",
+                 "texto": [
+                    "O presidente Luiz Inácio Lula da Silva (PT) enviou ao Tribunal Superior Eleitoral (TSE), na terça-feira (20), um requerimento que autoriza a quebra dos sigilos bancário, fiscal e telefônico dele e da família nos últimos oito anos. O pedido inclui a primeira-dama, Janja, e os cinco filhos: Lurian, Marcos Cláudio, Fábio Luís, Sandro Luís e Luís Claudio.",
+                    "A autorização tem uma condição. Os dados de Lula só devem ser abertos se Flávio Bolsonaro (PL) fizer o mesmo com os dele, os da esposa, Fernanda, os dos pais, Jair e Rogéria Bolsonaro, e os dos irmãos Carlos, Eduardo e Jair Renan. Entram também as empresas em que os candidatos são sócios ou administradores: uma ligada a Lula e cinco ligadas a Flávio, uma delas uma offshore, segundo a Agência Brasil.",
+                    "O requerimento foi encaminhado ao presidente do TSE, ministro Kassio Nunes Marques. Lula pediu que os dados fossem divulgados antes desta quarta-feira (21). Até a publicação desta edição, o tribunal não tinha decidido.",
+                    "Flávio não se manifestou oficialmente. Aliados que integram a campanha disseram ao SBT News que ele não vai aceitar o desafio e classificaram a proposta como uma \"armadilha\" para gerar desgaste na reta final. No debate da Band, no domingo (18), Flávio disse não ter nada a esconder, mas não se comprometeu a abrir os dados.",
+                 ],
+                 "fontes": [("Agência Brasil, o requerimento ao TSE (20/10)", "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/tse-lula-autoriza-quebra-de-sigilo-bancario-se-flavio-fizer-o-mesmo"), ("SBT News, bastidores da campanha de Flávio (20/10)", "https://sbtnews.sbt.com.br/colunas/coluna-do-tulio/flavio-nao-vai-aceitar-desafio-de-lula-para-abrir-sigilos")]},
+                {"chapeu": "Pesquisas", "titulo": "Duas pesquisas mostram Flávio com 51% dos votos válidos e Lula com 49%",
+                 "texto": [
+                    "Duas pesquisas divulgadas na manhã desta quarta mostram Flávio Bolsonaro com 2 pontos de vantagem sobre Lula nos votos válidos, dentro da margem de erro. Nos números a seguir, o primeiro é de Flávio e o segundo, de Lula.",
+                    "Na Meio/Ideia, são 51,1% a 48,9% nos votos válidos e 48% a 46% nos votos totais, com 3,4% de brancos e nulos e 2,6% de indecisos. Foram 1.500 entrevistas entre 15 e 19 de outubro, com margem de erro de 2,5 pontos. O registro no TSE é BR-08251/2026.",
+                    "Na Palver, são 51% a 49% nos votos válidos e 50% a 48% nos totais. Foram 5.000 entrevistas pela internet entre 18 e 20 de outubro, com margem de 2,4 pontos. Em relação à rodada de 13 de outubro, Flávio manteve o número e Lula caiu 1 ponto.",
+                    "A Quaest divulga a nova rodada às 10h de Brasília (9h em Mato Grosso). Foram 2.154 entrevistas presenciais entre 17 e 20 de outubro, registro BR-08535/2026. Na rodada anterior, de 14 de outubro, Flávio tinha 51% dos votos válidos e Lula, 49%.",
+                    "Votos válidos são os votos dados a candidatos, sem brancos e nulos. É a mesma conta que define o vencedor no domingo.",
+                 ],
+                 "fontes": [("Metrópoles, Meio/Ideia (21/10)", "https://www.metropoles.com/brasil/meio-ideia-flavio-tem-511-dos-votos-validos-no-2o-turno-e-lula-489"), ("Times Brasil, Palver (21/10)", "https://timesbrasil.com.br/brasil/decisao-2026-flavio-bolsonaro-tem-50-dos-votos-contra-48-de-lula-no-2o-turno-aponta-pesquisa-palver/"), ("Terra, Quaest às 10h (21/10)", "https://www.terra.com.br/noticias/eleicoes/pesquisas/quaest-divulga-nova-pesquisa-presidencial-nesta-quarta-feira-saiba-o-horario,1e6f3a873f42373d6ad322ca500535763ypq0pul.html")]},
+                {"chapeu": "Internacional", "titulo": "Itamaraty acusa Milei de tentar interferir na eleição brasileira",
+                 "texto": [
+                    "O Ministério das Relações Exteriores divulgou nota na terça-feira (20) contra publicações do presidente da Argentina, Javier Milei, sobre Lula e a eleição brasileira. Nas redes, Milei chamou Lula de \"autoritário\" e \"ladrão\" e escreveu: \"Espero que o último truque sujo da campanha deles não inclua roubar a eleição\".",
+                    "A nota chama as falas de \"nova e inaceitável tentativa de ingerência externa no processo democrático brasileiro\" e defende a urna eletrônica: \"O sistema brasileiro de voto eletrônico é comprovadamente seguro, nunca registrou irregularidades\". O texto termina dizendo que \"a decisão sobre o futuro do Brasil cabe exclusivamente ao povo brasileiro\".",
+                    "A relação entre os dois governos está rebaixada desde agosto, quando o governo Lula decidiu manter o embaixador em Buenos Aires, Julio Bitelli, no Brasil até Milei parar de ofender autoridades brasileiras. A crise começou depois que Milei declarou apoio a Flávio Bolsonaro.",
+                 ],
+                 "fontes": [("Poder360, a nota do Itamaraty (20/10)", "https://www.poder360.com.br/poder-internacional/itamaraty-diz-que-milei-tenta-interferir-em-eleicoes-brasileiras/")]},
+            ],
+            "agenda": [
+                ("Qua 21", "Quaest divulga pesquisa do 2º turno às 10h de Brasília. Último dia de pagamento do Bolsa Família de outubro."),
+                ("Qui 22", "Datafolha divulga pesquisa do 2º turno."),
+                ("Sex 23", "Debate na TV Globo, depois do Jornal Nacional, o último antes da votação."),
+                ("Sáb 24", "Últimas pesquisas antes da votação: Quaest, Datafolha, AtlasIntel e CNT/MDA."),
+                ("Dom 25", "2º turno das eleições, das 8h às 17h de Brasília (7h às 16h em Mato Grosso)."),
+            ],
+        },
+        "itens": [
+            ("Lula pede ao TSE que abra os sigilos bancário, fiscal e telefônico dele, de Janja e dos cinco filhos, se Flávio Bolsonaro fizer o mesmo com os dele e os da família. Aliados de Flávio dizem que ele não vai aceitar.", None),
+            ("Duas pesquisas divulgadas hoje mostram Flávio com 51% dos votos válidos e Lula com 49%: Meio/Ideia (51,1% a 48,9%) e Palver (51% a 49%). Nas duas, empate técnico.", None),
+            ("Itamaraty acusa o presidente argentino, Javier Milei, de tentar interferir na eleição depois que ele chamou Lula de \"ladrão\" e sugeriu fraude.", None),
+            ("A semana: Quaest sai hoje às 10h e Datafolha, amanhã (22). Debate na Globo na sexta (23), últimas pesquisas no sábado (24) e 2º turno no domingo, 25.", None),
+        ],
+        "fonte": "Fontes: Agência Brasil, SBT News, Metrópoles, Times Brasil, Terra, Poder360, MDS, Globo e TSE",
+    },
+    {
         "data": "2026-10-20", "pasta": "pp/2026-10-20", "telas": 5,
         "materia": {
             "abertura": "Lula leva ao TSE o pedido para abrir o próprio sigilo e desafia Flávio a fazer o mesmo, as pesquisas mostram Flávio à frente na reta final e a França passa a primeira noite sob toque de recolher. Faltam cinco dias para o 2º turno.",
