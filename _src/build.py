@@ -135,6 +135,9 @@ def paragrafos(lista):
     for p in lista:
         if p.startswith("## "):
             out.append(f"<h2>{e(p[3:])}</h2>")
+        elif p.startswith("!fig "):
+            src, leg = (p[5:].split("|", 1) + [""])[:2]
+            out.append(f'<figure class="hero"><img src="/{e(src.strip())}" alt="{e(leg.strip())}" loading="lazy"><figcaption>{e(leg.strip())}</figcaption></figure>')
         else:
             out.append(f"<p>{e(p)}</p>")
     return "\n".join(out)
