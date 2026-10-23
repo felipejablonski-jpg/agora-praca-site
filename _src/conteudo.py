@@ -11,7 +11,7 @@ EDITORIAS = {
 NOTICIAS = [
     {
         "slug": "justica-eleitoral-corrige-343-secoes-mudanca-local", "thumb": "img/thumb/secoes343.jpg",
-        "data": "2026-10-21", "ordem": 3,
+        "data": "2026-10-21", "ordem": 3, "atualizado": "2026-10-22",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Justiça Eleitoral corrige de 4.352 para 343 o número de seções com mudança de endereço no 2º turno",
         "linha_fina": "O número divulgado no sábado veio de uma comparação errada com a eleição de 2024. Em Mato Grosso, só um local de votação mudou, em Confresa. Em Primavera do Leste, nada mudou.",
@@ -21,14 +21,14 @@ NOTICIAS = [
             "A Justiça Eleitoral reconheceu nesta quarta-feira (21) que estava errado o número divulgado no sábado (17) sobre as seções eleitorais que mudaram de endereço entre o primeiro e o segundo turno. Eram 4.352, segundo a primeira divulgação. O número corrigido é 343 seções, segundo a Agência Brasil.",
             "\"Esse número de 4.352 seções alteradas é irreal\", disse à Agência Brasil o desembargador Carlos Roberto Silva, presidente do Colégio de Presidentes dos Tribunais Regionais Eleitorais. Segundo ele, o cálculo misturou dados da eleição de 2024 com os de 2026. A assessoria do Tribunal Superior Eleitoral (TSE) atribuiu o problema a falhas dos tribunais regionais ao alimentar o sistema que reúne essas informações.",
             "## A lista mudou várias vezes",
-            "Desde sábado, o número foi revisado várias vezes. Eram 4.352 seções no sábado (17). Na segunda-feira (19), 444 seções, com cerca de 130 mil eleitores. Na terça (20), 441. Nesta quarta (21), 343. A Justiça Eleitoral não informou quantos eleitores votam nas 343 seções.",
+            "Desde sábado, o número foi revisado várias vezes. Eram 4.352 seções no sábado (17). Na segunda-feira (19), 444 seções, com cerca de 130 mil eleitores. Na terça (20), 441. Nesta quarta (21), 343. Na manhã desta quinta (22), o painel de estatísticas do TSE mostrava 326 seções e 98.096 eleitores afetados, segundo levantamento do site Debate Jurídico. A Justiça Eleitoral avisa que a lista ainda pode mudar até domingo.",
             "O presidente do TSE, Kassio Nunes Marques, deu exemplos das diferenças. Em Minas Gerais, o sistema mostrava 38 locais alterados, e o tribunal regional contou 17. No Piauí, eram 18 no sistema e 4 na contagem do tribunal regional. Segundo o ministro, o número de urnas que mudaram de lugar caiu 85% em relação a 2022.",
             "Em comunicado divulgado às 16h05 desta quarta, o TSE afirmou que as mudanças são pontuais e que quem decide é o tribunal regional de cada estado. \"O TSE não solicita, não autoriza, não há nenhum tipo de chancela do TSE. É a realidade local que faz essa mudança\", disse Nunes Marques. Os motivos citados são chuva, problemas na estrutura dos prédios e segurança dos eleitores.",
             "## Local e seção são coisas diferentes",
             "Local de votação é o prédio, como uma escola ou uma universidade. Seção eleitoral é a sala onde ficam a urna, a cabine e a mesa dos mesários. Um mesmo local pode ter várias seções. Parte da confusão dos últimos dias veio de versões da lista que contavam locais e outras que contavam seções.",
             "## Em Mato Grosso",
             "Mato Grosso tem só um local de votação alterado, em Confresa, no nordeste do estado. A escola usada na votação teve o telhado danificado por chuva e vento nos dias 9 e 10 de outubro e foi interditada depois de uma vistoria. Segundo a imprensa regional, os eleitores da Escola Estadual Creuslhi de Souza Ramos vão votar na Escola Municipal Tapiraguaia, na Rua Tapirapé, 211, bairro Vila Nova, a menos de um quilômetro do endereço original.",
-            "Os números de seções transferidas divergem: o comunicado do TSE registra 20 seções em Mato Grosso, e o site RDNews informa que as oito seções do local 1104 foram transferidas. Até esta atualização, a diferença não tinha sido esclarecida.",
+            "Os números de Mato Grosso divergem. O comunicado do TSE registra 20 seções no estado. O painel do TSE, na manhã desta quinta, listava 8 seções em Confresa, 4 em Cuiabá e 8 em Várzea Grande. Segundo o TRE-MT, Várzea Grande aparece nos registros, mas o local de votação é o mesmo do primeiro turno, e nenhum eleitor foi transferido. As 4 seções de Cuiabá não tinham sido explicadas até esta atualização.",
             "O TRE-MT informa que os demais locais de votação do estado continuam os mesmos do primeiro turno. Em Primavera do Leste, não há mudança registrada até esta atualização.",
             "## Como conferir",
             "No aplicativo e-Título, o endereço aparece na tela inicial e na opção \"Onde votar\". Também dá para consultar no Autoatendimento Eleitoral, no site do TSE, ou pelo assistente virtual da Justiça Eleitoral. A votação no domingo (25) vai das 8h às 17h no horário de Brasília, e das 7h às 16h em Mato Grosso.",
@@ -42,6 +42,7 @@ NOTICIAS = [
             ("HNT, as escolas de Confresa (19/10)", "https://www.hnt.com.br/justica/confresa-tem-unico-local-de-votacao-alterado-em-mato-grosso-para-o-segundo-turno/581837"),
             ("RDNews, as seções do local 1104 (19/10)", "https://www.rdnews.com.br/eleicoes-2026/tre-muda-apenas-1-local-de-votacao-em-mt-apos-interdicao-demais-seguem-sem-alteracao/250900"),
             ("VG Notícias, o TRE-MT sobre os dados (21/10)", "https://www.vgnoticias.com.br/eleicoes-2026/tre-mt-desmente-mudanca-em-massa-de-locais-de-votacao-e-esclarece-dados-do-tse/153851"),
+            ("Debate Jurídico, levantamento no painel do TSE (22/10)", "https://debatejuridico.com.br/tse-atualiza-lista-de-secoes-alteradas-e-eleitores-afetados-caem-para-98-mil-consulte-seu-local/"),
         ],
     },
     {
