@@ -10,6 +10,35 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "domingo-de-votacao-calor-alerta-tempestade-mt", "capa": "img/capa/domingo-de-votacao-calor-alerta-tempestade-mt.jpg", "capa_credito": "Chuva chega no fim de tarde sobre área rural. Foto ilustrativa: Pexels",
+        "data": "2026-10-23", "ordem": 1,
+        "editoria": "servico", "chapeu": "Eleições 2026",
+        "titulo": "Domingo de votação deve ter 36°C em Primavera do Leste e alerta de tempestade no sul de MT",
+        "linha_fina": "Cuiabá pode chegar a 39°C. O Inmet prevê rajadas de até 60 km/h em cinco cidades do sul do estado. Votar cedo, levar água e não ter pressa na fila ajudam.",
+        "video": "calor-votacao",
+        "para_voce": ("PARA VOCÊ", "A votação vai das 7h às 16h no horário de Mato Grosso. Quem estiver na fila às 16h ainda vota. O horário mais fresco é o começo da manhã."),
+        "texto": [
+            "O segundo turno, neste domingo (25), deve ser quente em quase todo Mato Grosso. Em Primavera do Leste, a previsão da Climatempo é de mínima de 25°C e máxima de 36°C, com sol entre nuvens e sem chuva prevista. Em Cuiabá, o Instituto Nacional de Meteorologia (Inmet) prevê até 39°C, com umidade do ar entre 40% e 90% ao longo do dia e possibilidade de pancadas isoladas, segundo o Cenário MT.",
+            "No sul do estado, o cenário é outro. O Inmet colocou cinco municípios em alerta amarelo, de perigo potencial, para tempestades no domingo: Alto Araguaia, Alto Taquari, Barão de Melgaço, Itiquira e Poconé. O aviso prevê chuva de até 50 milímetros por dia e rajadas de vento de até 60 km/h. No alerta amarelo, o risco de estragos é considerado baixo, mas há chance de queda de galhos, cortes de energia e alagamentos rápidos.",
+            "## Como fica o fim de semana",
+            "Nesta sexta-feira (23), o Inmet prevê chuva com trovoadas no sul e no sudeste de Mato Grosso e chuvas isoladas no restante do estado. No sábado (24), as temperaturas voltam a subir, com chuvas isoladas no norte e no sul do estado, segundo o boletim do instituto publicado pela Revista Cultivar. Para Primavera do Leste, a Climatempo prevê 35°C nesta sexta e 36°C no sábado, sem chuva.",
+            "No Mato Grosso do Sul, a situação é mais séria: há alerta para tempestades com granizo até domingo e uma frente fria a caminho. As previsões ainda podem mudar até domingo, por isso vale conferir os avisos do Inmet para o município onde você vota.",
+            "## Dicas para votar no calor",
+            "A votação vai das 7h às 16h no horário de Mato Grosso, que corresponde às 8h às 17h de Brasília. Quem chegar antes das 16h e estiver na fila no horário de encerramento ainda pode votar. Os horários mais quentes do dia vão das 10h às 16h, e é justamente aí que a Defesa Civil recomenda evitar o sol. Quem puder deve ir no começo da manhã.",
+            "Leve água para a fila, use roupas leves, boné ou chapéu e protetor solar. Idosos, gestantes e pessoas com deficiência têm prioridade no atendimento. Se sentir tontura, dor de cabeça forte ou enjoo, procure a sombra e avise um mesário.",
+            "## Se chover",
+            "Nas cidades em alerta, a orientação é não se abrigar debaixo de árvores, não encostar em postes ou estruturas metálicas durante raios e evitar atravessar ruas alagadas de carro ou a pé. O guarda-chuva pode ser levado ao local de votação. Na cabine, só não entram celular e outros aparelhos eletrônicos, que ficam com os mesários.",
+        ],
+        "credito_extra": "Fotos do vídeo: Pexels (ilustrativas). Mapa: Agora Praça, com a malha de municípios do IBGE.",
+        "fontes": [
+            ("Cenário MT, a previsão do Inmet para Cuiabá e o alerta no interior (22/10)", "https://cenariomt.com.br/clima/previsao-tempo-mato-grosso-domingo-eleicao-calor-tempestades/"),
+            ("Climatempo, previsão para Primavera do Leste (consulta em 23/10)", "https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/2043/primaveradoleste-mt"),
+            ("Revista Cultivar, boletim do Inmet para sexta e sábado (22/10)", "https://revistacultivar.com.br/noticias/inmet-previsao-do-tempo-para-sexta-feira-23-10-e-sabado-24-10"),
+            ("CompreRural, a frente fria e a chuva no Centro-Oeste (22/10)", "https://www.comprerural.com/tempo-muda-no-fim-de-semana-das-eleicoes-com-risco-de-ciclone-e-chegada-de-frente-fria/"),
+            ("Bloomberg Línea, horário de votação e regra da fila (2º turno)", "https://www.bloomberglinea.com.br/brasil/em-que-dia-e-o-segundo-turno-entre-flavio-bolsonaro-e-lula-veja-horario-e-quem-vota/"),
+        ],
+    },
+    {
         "slug": "justica-eleitoral-corrige-343-secoes-mudanca-local", "capa": "img/capa/justica-eleitoral-corrige-343-secoes-mudanca-local.jpg", "capa_credito": "Urnas na preparação para a eleição em São Paulo. Foto: Paulo Pinto / Agência Brasil", "thumb": "img/thumb/secoes343.jpg",
         "data": "2026-10-21", "ordem": 3, "atualizado": "2026-10-22",
         "editoria": "servico", "chapeu": "Eleições 2026",
@@ -807,6 +836,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "calor-votacao": "Calor e alerta de tempestade no domingo de votação",
     "php": "Falhas no PHP tiram sites de governos do ar",
     "secoes343": "Justiça Eleitoral corrige: são 343 seções",
     "amazonia-carbono": "Amazônia emite mais CO₂ do que absorve",

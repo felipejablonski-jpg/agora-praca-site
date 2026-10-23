@@ -252,6 +252,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "domingo-de-votacao-calor-alerta-tempestade-mt": (
+        lambda: foto("img/fotos/chuva-fim-de-tarde-campo.jpg", foco=(0.5, 0.3)),
+        "Chuva chega no fim de tarde sobre área rural. Foto ilustrativa: Pexels"),
     "justica-eleitoral-corrige-343-secoes-mudanca-local": (
         lambda: foto("img/fotos/urnas-preparacao-sp.jpg", foco=(0.35, 0.5)),
         "Urnas na preparação para a eleição em São Paulo. Foto: Paulo Pinto / Agência Brasil"),
