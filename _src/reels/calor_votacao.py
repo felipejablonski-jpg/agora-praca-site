@@ -79,8 +79,8 @@ def topo(im, fonte_txt, alpha=1.0):
     hw = d.textlength(handle, font=fa)
     xr = W - M - hw
     d.text((xr, 120), handle, font=fa, fill=WHITE)
-    d.rectangle((xr - 50, 113, xr - 14, 157), fill=RED)
-    d.text((xr - 32, 135), "Á", font=fm, fill=WHITE, anchor="mm")
+    mk = marca("logo_mark", 50)
+    im.alpha_composite(mk, (int(xr - mk.width - 12), 110))
     if fonte_txt:
         ff = fonte("sans", 25)
         cam = Image.new("RGBA", im.size, (0, 0, 0, 0))
@@ -112,6 +112,19 @@ def foto_kb(src, t, dur, area_h, foco=(0.5, 0.5), z0=1.0, z1=1.1):
     sombra.putalpha(grad.resize((W, area_h)))
     im.alpha_composite(sombra)
     return im
+
+
+_MARCAS = {}
+
+
+def marca(nome, alt):
+    """Logo oficial (renderizada do SVG da marca) em _src/reels/marca/, redimensionada para a altura pedida."""
+    k = (nome, alt)
+    if k not in _MARCAS:
+        im = Image.open(os.path.join(RAIZ, "_src", "reels", "marca", nome + ".png")).convert("RGBA")
+        im = im.crop(im.getbbox())
+        _MARCAS[k] = im.resize((int(im.width * alt / im.height), alt), Image.LANCZOS)
+    return _MARCAS[k]
 
 
 def fundo():
@@ -300,10 +313,10 @@ def cena6(t, dur):
     camada = Image.new("RGBA", im.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(camada)
     cx, cy = W // 2, 760
-    d.rectangle((cx - 70, cy - 70, cx + 70, cy + 70), fill=RED + (al,))
-    d.text((cx, cy + 6), "Á", font=fonte("serif", 130), fill=WHITE + (al,), anchor="mm")
-    d.text((cx, cy + 160), "Agora Praça", font=fonte("serif", 92), fill=WHITE + (al,), anchor="mm")
-    d.text((cx, cy + 240), "A praça é de todo mundo.", font=fonte("sans", 40), fill=LIGHT + (al,), anchor="mm")
+    lg = marca("logo_full", 380).copy()
+    lg.putalpha(lg.getchannel("A").point(lambda v: v * a))
+    camada.alpha_composite(lg, (cx - lg.width // 2, cy - 250))
+    d.text((cx, cy + 210), "A praça é de todo mundo.", font=fonte("sans", 40), fill=LIGHT + (al,), anchor="mm")
     b = int(255 * ease((t - 0.5) / 0.5))
     fs = fonte("sans", 28)
     d.text((cx, cy + 380), "Fontes: Inmet, Climatempo, Cenário MT e TSE", font=fs, fill=GREY + (b,), anchor="mm")
