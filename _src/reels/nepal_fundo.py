@@ -4,14 +4,14 @@
 Gera video/nepal-fundo.mp4 e video/nepal-fundo.jpg. Usa as funções do Reel calor_votacao.
 Uso: python3 _src/reels/nepal_fundo.py
 """
-import os, sys
+import os, sys, subprocess, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import calor_votacao as R  # noqa: E402
 from calor_votacao import (Image, ImageDraw, W, M, INK, RED, RED2, WHITE, LIGHT, GREY,  # noqa: E402
                            fonte, ease, texto_rico, topo, foto_kb, degradar, fundo, cena6)
 
 R.TAG = "CLIMA · INTERNACIONAL"
-R.FONTES_FIM = "Fontes: AFP, Climate Home News e USGS"
+R.FONTES_FIM = "Fontes: AFP, Climate Home News, USGS e Kathmandu Post"
 
 
 def cena1(t, dur):
@@ -117,7 +117,48 @@ def cena5(t, dur):
     return im
 
 
-CENAS = [(cena1, 3.0), (cena2, 3.2), (cena3, 3.0), (cena4, 3.8), (cena5, 3.2), (cena6, 2.2)]
+_CLIPES = {}
+
+
+def quadro_clipe(nome, t):
+    """Quadro do clipe (em _src/reels/clips/<nome>.mp4) no instante t, extraído uma vez para uma pasta temporária."""
+    if nome not in _CLIPES:
+        pasta = tempfile.mkdtemp()
+        subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(R.RAIZ, "_src", "reels", "clips", nome + ".mp4"),
+                        "-q:v", "2", os.path.join(pasta, "%04d.jpg")], check=True)
+        _CLIPES[nome] = sorted(os.path.join(pasta, f) for f in os.listdir(pasta))
+    fs = _CLIPES[nome]
+    return Image.open(fs[min(len(fs) - 1, int(t * 30))]).convert("RGBA")
+
+
+def cena_porto(t, dur):
+    im = fundo()
+    v = quadro_clipe("gyirong-cctv-2026-08-26", t)
+    im.alpha_composite(v, (0, 250))
+    topo(im, "Imagens: câmera de segurança do porto de Gyirong (reprodução)")
+    a = ease(t / 0.45)
+    y = texto_rico(im, (M, 1040), "26 de agosto: a lama engole o porto de Gyirong, na fronteira com o Nepal", fonte("serif", 76),
+                   W - 2 * M, alpha=a, dy=int(30 * (1 - a)))
+    b = ease((t - 0.8) / 0.45)
+    texto_rico(im, (M, y + 30), "Uma avalanche de gelo e rocha virou enxurrada e desceu cerca de 100 km pelo vale", fonte("sans", 42),
+               W - 2 * M, cor=LIGHT, alpha=b, dy=int(20 * (1 - b)))
+    return im
+
+
+def cena_ponte(t, dur):
+    im = fundo()
+    im.alpha_composite(degradar(quadro_clipe("ponte-soti-gorkha-2026-10", t)), (0, 0))
+    topo(im, "Imagens: reprodução / redes sociais · Fonte: Kathmandu Post")
+    a = ease(t / 0.45)
+    y = texto_rico(im, (M, 930), "Em outubro, *outra enchente* levou a ponte de Soti, em Gorkha", fonte("serif", 88), W - 2 * M,
+                   alpha=a, dy=int(40 * (1 - a)))
+    b = ease((t - 0.8) / 0.45)
+    texto_rico(im, (M, y + 30), "O Nepal foi atingido de novo antes de o dinheiro do fundo chegar", fonte("sans", 44), W - 2 * M,
+               cor=LIGHT, alpha=b, dy=int(30 * (1 - b)))
+    return im
+
+
+CENAS = [(cena1, 3.0), (cena_porto, 4.0), (cena2, 3.2), (cena_ponte, 3.5), (cena4, 3.8), (cena5, 3.2), (cena6, 2.2)]
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "teste":
