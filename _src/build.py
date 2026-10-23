@@ -8,6 +8,9 @@ sys.path.insert(0, os.path.join(RAIZ, "_src"))
 from conteudo import EDITORIAS, NOTICIAS, VIDEOS, EDICOES, FRASES  # noqa: E402
 
 SITE = "https://agorapraca.com.br"
+import hashlib
+# versão do CSS no link: muda sempre que o estilo muda, para nenhum navegador usar o antigo do cache
+CSS_V = hashlib.md5(open(os.path.join(RAIZ, "_src", "estilo.css"), "rb").read()).hexdigest()[:8]
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 MES_C = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
 DIAS = ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado", "domingo"]
@@ -86,7 +89,7 @@ def cabeca(titulo, desc, caminho, imagem="/og.png", tipo="website", completo=Fal
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="/estilo.css">
+<link rel="stylesheet" href="/estilo.css?v={CSS_V}">
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
