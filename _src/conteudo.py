@@ -173,7 +173,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "el-nino-recorde-onu-pacifico-3-8-graus", "capa": "img/thumb/elnino.jpg", "capa_credito": "Mapa: Agora Praça, com dados de satélite NOAA OISST v2.1", "thumb": "img/thumb/elnino.jpg",
+        "slug": "el-nino-recorde-onu-pacifico-3-8-graus", "capa": "img/capa/el-nino-recorde-onu-pacifico-3-8-graus.jpg", "capa_credito": "Ondas em mar aberto. Foto ilustrativa: Pexels", "thumb": "img/thumb/elnino.jpg",
         "data": "2026-10-21", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "ONU prevê El Niño possivelmente recorde, com o Pacífico até 3,8 °C acima da média",
@@ -262,7 +262,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "ondas-de-calor-gigantes-20-vezes-mais-frequentes", "capa": "img/capa/ondas-de-calor-gigantes-20-vezes-mais-frequentes.jpg", "capa_credito": "Arte: Agora Praça, com dados da Reuters", "thumb": "img/thumb/calor.jpg",
+        "slug": "ondas-de-calor-gigantes-20-vezes-mais-frequentes", "capa": "img/capa/ondas-de-calor-gigantes-20-vezes-mais-frequentes.jpg", "capa_credito": "Sol sobre cidade encoberta pela névoa seca. Foto ilustrativa: Pexels", "thumb": "img/thumb/calor.jpg",
         "data": "2026-10-20", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Ondas de calor gigantes ficaram 20 vezes mais frequentes desde os anos 1960",
@@ -414,7 +414,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "capa": "img/capa/bolsa-familia-antecipa-pagamento-quarta-21.jpg", "capa_credito": "Arte: Agora Praça", "sem_thumb": True,
+        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "capa": "img/capa/bolsa-familia-antecipa-pagamento-quarta-21.jpg", "capa_credito": "Notas de real. Foto ilustrativa: Pexels", "sem_thumb": True,
         "data": "2026-10-19", "ordem": 3,
         "editoria": "servico", "chapeu": "Bolsa Família",
         "titulo": "Bolsa Família: governo antecipa e paga todas as famílias até quarta-feira (21)",
@@ -443,7 +443,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "analise-debate-band-flavio-atras-de-lula-marcal", "capa": "img/thumb/analise-debate.jpg", "capa_credito": "Ilustração: Agora Praça", "thumb": "img/thumb/analise-debate.jpg",
+        "slug": "analise-debate-band-flavio-atras-de-lula-marcal", "capa": "img/capa/analise-debate-band-flavio-atras-de-lula-marcal.jpg", "capa_credito": "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)", "thumb": "img/thumb/analise-debate.jpg",
         "data": "2026-10-19", "ordem": 2,
         "editoria": "politica", "chapeu": "Análise",
         "titulo": "Análise: as caretas no debate da Band tinham treino, roteiro e plateia",
@@ -535,7 +535,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "ebola-oitava-provincia-congo", "capa": "img/capa/ebola-oitava-provincia-congo.jpg", "capa_credito": "Mapa: Agora Praça. Dados: governo da RDC", "thumb": "img/thumb/ebola.jpg",
+        "slug": "ebola-oitava-provincia-congo", "capa": "img/capa/ebola-oitava-provincia-congo.jpg", "capa_credito": "Traje de proteção usado por profissionais de saúde. Foto ilustrativa: Pexels", "thumb": "img/thumb/ebola.jpg",
         "data": "2026-10-18", "ordem": 3,
         "editoria": "ciencia", "chapeu": "Ebola",
         "titulo": "Epidemia de ebola avança para oitava província do Congo e ultrapassa 4,5 mil mortes",
@@ -565,7 +565,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "romenia-abate-drones-otan-mar-negro", "capa": "img/capa/romenia-abate-drones-otan-mar-negro.jpg", "capa_credito": "Mapa: Agora Praça. Locais aproximados", "thumb": "img/thumb/romenia.jpg",
+        "slug": "romenia-abate-drones-otan-mar-negro", "capa": "img/capa/romenia-abate-drones-otan-mar-negro.jpg", "capa_credito": "Caça F-16, modelo usado pela Força Aérea da Romênia. Foto ilustrativa: Pexels", "thumb": "img/thumb/romenia.jpg",
         "data": "2026-10-18", "ordem": 2,
         "editoria": "politica", "chapeu": "Guerra na Ucrânia",
         "titulo": "Romênia abate dois drones em seu espaço aéreo e OTAN marca reunião sobre o Mar Negro",
@@ -661,7 +661,7 @@ NOTICIAS = [
         "fontes": [("Inep, via Agência Gov", "https://agenciagov.ebc.com.br/noticias/202610/enem-2026-prazo-para-a-escolha-da-lingua-estrangeira-vai-ate-18-de-outubro")],
     },
     {
-        "slug": "debate-band-lula-flavio-segundo-turno", "capa": "img/capa/debate-band-lula-flavio-segundo-turno.jpg", "capa_credito": "Arte: Agora Praça", "sem_thumb": True,
+        "slug": "debate-band-lula-flavio-segundo-turno", "capa": "img/capa/debate-band-lula-flavio-segundo-turno.jpg", "capa_credito": "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)", "sem_thumb": True,
         "data": "2026-10-17", "atualizado": "2026-10-18",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Debate entre Lula e Flávio na Band é neste domingo (18), às 20h de Brasília",

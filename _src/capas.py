@@ -112,7 +112,27 @@ def foto_retrato(src):
     return fundo
 
 
+def foto_dupla(a, b, caixa_a=None, caixa_b=None):
+    """Duas fotos lado a lado, metade da capa para cada uma."""
+    def metade(src, caixa):
+        im = Image.open(os.path.join(RAIZ, src)).convert("RGB")
+        if caixa:
+            x0, y0, x1, y1 = caixa
+            im = im.crop((int(x0 * im.width), int(y0 * im.height), int(x1 * im.width), int(y1 * im.height)))
+        r = (W // 2) / H
+        if im.width / im.height > r:
+            nw = int(im.height * r); x = (im.width - nw) // 2; im = im.crop((x, 0, x + nw, im.height))
+        else:
+            nh = int(im.width / r); im = im.crop((0, 0, im.width, nh))
+        return im.resize((W // 2, H), Image.LANCZOS)
+    out = Image.new("RGB", (W, H), WHITE)
+    out.paste(metade(a, caixa_a), (0, 0))
+    out.paste(metade(b, caixa_b), (W // 2 + 3, 0))
+    return out
+
+
 # ---------- capas de arte (dados) ----------
+# Regra: arte NÃO é capa. Estas funções ficam para gráficos dentro da matéria.
 
 def arte_troca(txt_chapeu, cor, antes, depois, legenda):
     """Número antigo riscado e número novo em destaque."""
@@ -239,19 +259,15 @@ CAPAS = {
         lambda: foto("img/fotos/fonte-bratislava-verao.jpg", foco=(0.5, 0.6)),
         "Crianças se refrescam em uma fonte no verão. Foto ilustrativa: Pexels"),
     "ondas-de-calor-gigantes-20-vezes-mais-frequentes": (
-        lambda: arte_numero("Ciência · Clima", ORANGE, None, seta=("5", "102"), legenda=
-                            "ondas de calor gigantes por ano, dos anos 1960 até esta década"),
-        "Arte: Agora Praça, com dados da Reuters"),
+        lambda: foto("img/fotos/sol-cidade-laranja.jpg", foco=(0.4, 0.5)),
+        "Sol sobre cidade encoberta pela névoa seca. Foto ilustrativa: Pexels"),
     "bolsa-familia-antecipa-pagamento-quarta-21": (
-        lambda: arte_numero("Serviço · Bolsa Família", RED, "Até 21/10",
-                            "todas as famílias recebem antes do 2º turno, no domingo (25)",
-                            acima="Pagamento de outubro antecipado"),
-        "Arte: Agora Praça"),
+        lambda: foto("img/fotos/notas-real.jpg"),
+        "Notas de real. Foto ilustrativa: Pexels"),
     "debate-band-lula-flavio-segundo-turno": (
-        lambda: arte_numero("Serviço · Eleições 2026", RED, "Domingo, 20h",
-                            "Debate Lula × Flávio na Band. Em Mato Grosso, às 19h",
-                            acima="Primeiro debate do 2º turno"),
-        "Arte: Agora Praça"),
+        lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
+                           (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
+        "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
     "pode-levar-cola-para-votar": (
         lambda: foto("img/fotos/urna-treinamento-tre-sp.jpg", foco=(0.3, 0.5)),
         "Demonstração da urna no TRE-SP. Foto: Paulo Pinto / Agência Brasil"),
@@ -262,14 +278,21 @@ CAPAS = {
         lambda: foto("img/fotos/urnas-lacre-tre-df.jpg", foco=(0.55, 0.5)),
         "Lacração de urnas no TRE-DF. Foto: Joédson Alves / Agência Brasil"),
     "ebola-oitava-provincia-congo": (
-        lambda: foto_conter("img/ebola/1.jpg", (0, 0, 1, 0.548)),
-        "Mapa: Agora Praça. Dados: governo da RDC"),
+        lambda: foto("img/fotos/traje-protecao.jpg", caixa=(0.3, 0, 1, 0.9), foco=(0.5, 0.2)),
+        "Traje de proteção usado por profissionais de saúde. Foto ilustrativa: Pexels"),
     "romenia-abate-drones-otan-mar-negro": (
-        lambda: foto_conter("img/romenia/1.jpg", (0, 0, 1, 0.548)),
-        "Mapa: Agora Praça. Locais aproximados"),
+        lambda: foto("img/fotos/f16-ceu.jpg", foco=(0.45, 0.5)),
+        "Caça F-16, modelo usado pela Força Aérea da Romênia. Foto ilustrativa: Pexels"),
     "amazonia-emite-mais-co2-do-que-absorve-estudo-inpe-nature": (
         lambda: foto("img/amazonia/satelite-fogo-2024-09-08.jpg"),
         "Imagem de satélite: NASA Worldview, 8 de setembro de 2024"),
+    "el-nino-recorde-onu-pacifico-3-8-graus": (
+        lambda: foto("img/fotos/oceano-ondas.jpg"),
+        "Ondas em mar aberto. Foto ilustrativa: Pexels"),
+    "analise-debate-band-flavio-atras-de-lula-marcal": (
+        lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
+                           (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
+        "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
     "missil-inflavel-ataque-nuclear-ato-pro-flavio": (
         lambda: foto_retrato("img/missil.jpg"),
         "Foto: reprodução / redes sociais (autoria não identificada)"),

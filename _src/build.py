@@ -51,6 +51,13 @@ LOGO = '''<svg viewBox="0 -8 446 248" role="img" aria-label="Agora Praça"><rect
 ICONE = '''<svg viewBox="-47 -28 200 200" aria-hidden="true"><rect x="-47" y="-28" width="200" height="200" fill="#D2232A"/><rect x="40" y="28" width="40" height="9" rx="1.5" fill="#FFF"/><polygon points="52,37 78,37 106,144 76,144" fill="#FFF"/><polygon points="50,37 57,37 9,144 1,144" fill="#FFF"/><rect x="20" y="103" width="49" height="6" fill="#FFF"/><path d="M75 28 C 77 19, 84 12, 92 8" fill="none" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/><circle cx="98" cy="4" r="7.5" fill="#FFF"/></svg>'''
 
 
+def img_v(caminho):
+    """Endereço da imagem com a versão do arquivo, para o celular não mostrar a imagem antiga do cache."""
+    a = os.path.join(RAIZ, caminho)
+    v = hashlib.md5(open(a, "rb").read()).hexdigest()[:8] if os.path.exists(a) else "0"
+    return f"/{caminho}?v={v}"
+
+
 def url_noticia(n):
     return f"/noticias/{n['slug']}/"
 
@@ -120,7 +127,7 @@ def chapeu(n):
 def imagem_lista(n):
     ed = EDITORIAS[n["editoria"]]
     if n.get("capa"):
-        return f'<img src="/{n["capa"]}" alt="" loading="lazy" width="1200" height="675">'
+        return f'<img src="{img_v(n["capa"])}" alt="" loading="lazy" width="1200" height="675">'
     if n.get("sem_thumb"):
         return f'<div class="tipo tipo-{ed["cor"]}"><span>{e(n.get("chapeu") or ed["nome"])}</span></div>'
     if n.get("thumb"):
@@ -170,7 +177,7 @@ def pagina_noticia(n):
     ed = EDITORIAS[n["editoria"]]
     topo, og, extra = "", "/og.png", ""
     if n.get("capa"):
-        topo = f'<figure class="hero"><img src="/{n["capa"]}" alt="{e(n.get("alt", ""))}" width="1200" height="675"><figcaption>{e(n.get("capa_credito", ""))}</figcaption></figure>'
+        topo = f'<figure class="hero"><img src="{img_v(n["capa"])}" alt="{e(n.get("alt", ""))}" width="1200" height="675"><figcaption>{e(n.get("capa_credito", ""))}</figcaption></figure>'
         og = "/" + n["capa"]
         if n.get("foto") and n["foto"] != n["capa"] and n.get("foto_retrato"):
             extra += f'<figure class="cardimg"><img src="/{n["foto"]}" alt="{e(n.get("alt", ""))}" loading="lazy"><figcaption>{e(n.get("credito", ""))}</figcaption></figure>'
