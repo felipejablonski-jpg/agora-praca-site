@@ -10,7 +10,7 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
-        "slug": "justica-eleitoral-corrige-343-secoes-mudanca-local", "thumb": "img/thumb/secoes343.jpg",
+        "slug": "justica-eleitoral-corrige-343-secoes-mudanca-local", "capa": "img/capa/justica-eleitoral-corrige-343-secoes-mudanca-local.jpg", "capa_credito": "Arte: Agora Praça", "thumb": "img/thumb/secoes343.jpg",
         "data": "2026-10-21", "ordem": 3, "atualizado": "2026-10-22",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Justiça Eleitoral corrige de 4.352 para 343 o número de seções com mudança de endereço no 2º turno",
@@ -46,7 +46,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "falhas-php-governos-tiram-sites-do-ar", "thumb": "img/thumb/php.jpg",
+        "slug": "falhas-php-governos-tiram-sites-do-ar", "capa": "img/thumb/php.jpg", "capa_credito": "Imagem ilustrativa: Unsplash", "thumb": "img/thumb/php.jpg",
         "data": "2026-10-21", "ordem": 2,
         "editoria": "servico", "chapeu": "Segurança digital",
         "titulo": "Falhas críticas no PHP fazem governos de seis países tirarem sites do ar; no Brasil, Anatel e tribunais restringem acesso",
@@ -99,7 +99,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "calor-europa-50-mil-mortes-2026", "thumb": "img/thumb/calor-europa.jpg",
+        "slug": "calor-europa-50-mil-mortes-2026", "capa": "img/capa/calor-europa-50-mil-mortes-2026.jpg", "capa_credito": "Arte: Agora Praça, com dados do Imperial College London e da LSHTM", "thumb": "img/thumb/calor-europa.jpg",
         "data": "2026-10-22", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Calor extremo pode ter causado 50 mil mortes nas cidades da Europa em 2026, e 65% delas são atribuídas ao aquecimento global",
@@ -136,7 +136,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "amazonia-emite-mais-co2-do-que-absorve-estudo-inpe-nature", "thumb": "img/thumb/amazonia-carbono.jpg",
+        "slug": "amazonia-emite-mais-co2-do-que-absorve-estudo-inpe-nature", "capa": "img/capa/amazonia-emite-mais-co2-do-que-absorve-estudo-inpe-nature.jpg", "capa_credito": "Imagem de satélite: NASA Worldview, 8 de setembro de 2024", "thumb": "img/thumb/amazonia-carbono.jpg",
         "data": "2026-10-22", "ordem": 2,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Amazônia emitiu 1,17 bilhão de toneladas de CO₂ por ano a mais do que absorveu, aponta estudo do Inpe na Nature",
@@ -173,7 +173,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "el-nino-recorde-onu-pacifico-3-8-graus", "thumb": "img/thumb/elnino.jpg",
+        "slug": "el-nino-recorde-onu-pacifico-3-8-graus", "capa": "img/thumb/elnino.jpg", "capa_credito": "Mapa: Agora Praça, com dados de satélite NOAA OISST v2.1", "thumb": "img/thumb/elnino.jpg",
         "data": "2026-10-21", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "ONU prevê El Niño possivelmente recorde, com o Pacífico até 3,8 °C acima da média",
@@ -230,7 +230,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "130-mil-eleitores-outro-endereco-segundo-turno", "thumb": "img/thumb/secoes.jpg",
+        "slug": "130-mil-eleitores-outro-endereco-segundo-turno", "capa": "img/thumb/secoes.jpg", "capa_credito": "Imagem: Justiça Eleitoral", "thumb": "img/thumb/secoes.jpg",
         "data": "2026-10-20", "ordem": 2, "atualizado": "2026-10-21",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Cerca de 130 mil eleitores vão votar em outro endereço no 2º turno",
@@ -262,7 +262,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "ondas-de-calor-gigantes-20-vezes-mais-frequentes", "thumb": "img/thumb/calor.jpg",
+        "slug": "ondas-de-calor-gigantes-20-vezes-mais-frequentes", "capa": "img/capa/ondas-de-calor-gigantes-20-vezes-mais-frequentes.jpg", "capa_credito": "Arte: Agora Praça, com dados da Reuters", "thumb": "img/thumb/calor.jpg",
         "data": "2026-10-20", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Ondas de calor gigantes ficaram 20 vezes mais frequentes desde os anos 1960",
@@ -297,7 +297,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "tse-24-horas-meta-tratamento-igual-lula-flavio", "thumb": "img/thumb/meta.jpg",
+        "slug": "tse-24-horas-meta-tratamento-igual-lula-flavio", "capa": "img/thumb/meta.jpg", "capa_credito": "Foto: arquivo Agência Brasil / Agência Senado", "thumb": "img/thumb/meta.jpg",
         "data": "2026-10-19", "ordem": 7,
         "editoria": "politica", "chapeu": "Eleições 2026",
         "titulo": "TSE dá 24 horas para a Meta comprovar tratamento igual a Lula e Flávio",
@@ -329,7 +329,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "franca-toque-de-recolher-paris-protestos-saques", "thumb": "img/thumb/franca.jpg",
+        "slug": "franca-toque-de-recolher-paris-protestos-saques", "capa": "img/thumb/franca.jpg", "capa_credito": "Foto ilustrativa: Unsplash", "thumb": "img/thumb/franca.jpg",
         "data": "2026-10-19", "ordem": 6,
         "editoria": "politica", "chapeu": "Protestos na França",
         "titulo": "França impõe toque de recolher em áreas de Paris após protestos e saques",
@@ -365,7 +365,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "fumaca-queimadas-manaus-sem-aula", "thumb": "img/thumb/manaus.jpg",
+        "slug": "fumaca-queimadas-manaus-sem-aula", "capa": "img/thumb/manaus.jpg", "capa_credito": "Foto: Manaus no sábado (17), divulgação", "thumb": "img/thumb/manaus.jpg",
         "data": "2026-10-19", "ordem": 5,
         "editoria": "ciencia", "chapeu": "Queimadas",
         "titulo": "Fumaça de queimadas mantém Manaus sem aula presencial",
@@ -390,7 +390,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "eleitor-sem-biometria-pode-votar-segundo-turno", "thumb": "img/thumb/biometria.jpg",
+        "slug": "eleitor-sem-biometria-pode-votar-segundo-turno", "capa": "img/thumb/biometria.jpg", "capa_credito": "Foto: Rovena Rosa / Agência Brasil", "thumb": "img/thumb/biometria.jpg",
         "data": "2026-10-19", "ordem": 4,
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Sem biometria? Você pode votar no 2º turno; veja o que levar",
@@ -414,7 +414,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "sem_thumb": True,
+        "slug": "bolsa-familia-antecipa-pagamento-quarta-21", "capa": "img/capa/bolsa-familia-antecipa-pagamento-quarta-21.jpg", "capa_credito": "Arte: Agora Praça", "sem_thumb": True,
         "data": "2026-10-19", "ordem": 3,
         "editoria": "servico", "chapeu": "Bolsa Família",
         "titulo": "Bolsa Família: governo antecipa e paga todas as famílias até quarta-feira (21)",
@@ -443,7 +443,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "analise-debate-band-flavio-atras-de-lula-marcal", "thumb": "img/thumb/analise-debate.jpg",
+        "slug": "analise-debate-band-flavio-atras-de-lula-marcal", "capa": "img/thumb/analise-debate.jpg", "capa_credito": "Ilustração: Agora Praça", "thumb": "img/thumb/analise-debate.jpg",
         "data": "2026-10-19", "ordem": 2,
         "editoria": "politica", "chapeu": "Análise",
         "titulo": "Análise: as caretas no debate da Band tinham treino, roteiro e plateia",
@@ -478,7 +478,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "chuvas-espanha-quatro-mortos-500-resgates", "thumb": "img/thumb/espanha.jpg",
+        "slug": "chuvas-espanha-quatro-mortos-500-resgates", "capa": "img/thumb/espanha.jpg", "capa_credito": "Imagem: gravação de morador reproduzida pela 3Cat", "thumb": "img/thumb/espanha.jpg",
         "data": "2026-10-19", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Chuvas na Espanha",
         "titulo": "Chuvas extremas deixam 4 mortos e provocam cerca de 500 resgates no leste da Espanha",
@@ -503,7 +503,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "locais-de-votacao-segundo-turno", "thumb": "img/thumb/locais.jpg",
+        "slug": "locais-de-votacao-segundo-turno", "capa": "img/thumb/locais.jpg", "capa_credito": "Mapa: Agora Praça", "thumb": "img/thumb/locais.jpg",
         "data": "2026-10-18", "ordem": 4,
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Justiça Eleitoral muda local de 4.352 seções para o 2º turno; veja como consultar o seu",
@@ -535,7 +535,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "ebola-oitava-provincia-congo", "thumb": "img/thumb/ebola.jpg",
+        "slug": "ebola-oitava-provincia-congo", "capa": "img/capa/ebola-oitava-provincia-congo.jpg", "capa_credito": "Mapa: Agora Praça. Dados: governo da RDC", "thumb": "img/thumb/ebola.jpg",
         "data": "2026-10-18", "ordem": 3,
         "editoria": "ciencia", "chapeu": "Ebola",
         "titulo": "Epidemia de ebola avança para oitava província do Congo e ultrapassa 4,5 mil mortes",
@@ -565,7 +565,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "romenia-abate-drones-otan-mar-negro", "thumb": "img/thumb/romenia.jpg",
+        "slug": "romenia-abate-drones-otan-mar-negro", "capa": "img/capa/romenia-abate-drones-otan-mar-negro.jpg", "capa_credito": "Mapa: Agora Praça. Locais aproximados", "thumb": "img/thumb/romenia.jpg",
         "data": "2026-10-18", "ordem": 2,
         "editoria": "politica", "chapeu": "Guerra na Ucrânia",
         "titulo": "Romênia abate dois drones em seu espaço aéreo e OTAN marca reunião sobre o Mar Negro",
@@ -591,7 +591,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "missil-inflavel-ataque-nuclear-ato-pro-flavio",
+        "slug": "missil-inflavel-ataque-nuclear-ato-pro-flavio", "capa": "img/capa/missil-inflavel-ataque-nuclear-ato-pro-flavio.jpg", "capa_credito": "Foto: reprodução / redes sociais (autoria não identificada)",
         "foto": "img/missil.jpg", "foto_retrato": True, "credito": "Foto: reprodução / redes sociais (autoria não identificada)",
         "alt": "Míssil inflável branco com a inscrição Trump nuke Brazil, carregado por manifestantes na Avenida Paulista",
         "data": "2026-10-18", "ordem": 1,
@@ -643,7 +643,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "enem-inscrito-automatico-escolha-idioma",
+        "slug": "enem-inscrito-automatico-escolha-idioma", "capa": "img/enem.jpg", "capa_credito": "Foto: Marcelo Camargo / Agência Brasil",
         "data": "2026-10-17", "atualizado": "2026-10-18",
         "editoria": "servico", "chapeu": "Enem 2026",
         "titulo": "Inscrito automático no Enem tem até domingo (18) para escolher o idioma",
@@ -661,7 +661,7 @@ NOTICIAS = [
         "fontes": [("Inep, via Agência Gov", "https://agenciagov.ebc.com.br/noticias/202610/enem-2026-prazo-para-a-escolha-da-lingua-estrangeira-vai-ate-18-de-outubro")],
     },
     {
-        "slug": "debate-band-lula-flavio-segundo-turno", "sem_thumb": True,
+        "slug": "debate-band-lula-flavio-segundo-turno", "capa": "img/capa/debate-band-lula-flavio-segundo-turno.jpg", "capa_credito": "Arte: Agora Praça", "sem_thumb": True,
         "data": "2026-10-17", "atualizado": "2026-10-18",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Debate entre Lula e Flávio na Band é neste domingo (18), às 20h de Brasília",
@@ -679,7 +679,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "pode-levar-cola-para-votar",
+        "slug": "pode-levar-cola-para-votar", "capa": "img/capa/pode-levar-cola-para-votar.jpg", "capa_credito": "Arte: Agora Praça",
         "data": "2026-10-17",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Pode levar cola para votar? Pode, desde que seja em papel",
@@ -696,7 +696,7 @@ NOTICIAS = [
         "fontes": [("TSE", "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/glossario-eleitoral-explica-como-funciona-a-cola-eleitoral")],
     },
     {
-        "slug": "tce-30-dias-mt-obras-sem-fethab-2",
+        "slug": "tce-30-dias-mt-obras-sem-fethab-2", "capa": "img/fethab.jpg", "capa_credito": "Foto: Tony Ribeiro / TCE-MT",
         "data": "2026-10-17",
         "editoria": "politica", "chapeu": "Mato Grosso",
         "titulo": "TCE dá 30 dias para MT explicar como pagará obras sem o Fethab 2",
@@ -717,7 +717,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "senado-aprova-teto-mei-perdao-dividas",
+        "slug": "senado-aprova-teto-mei-perdao-dividas", "capa": "img/capa/senado-aprova-teto-mei-perdao-dividas.jpg", "capa_credito": "Arte: Agora Praça",
         "data": "2026-10-17",
         "editoria": "servico", "chapeu": "MEI",
         "titulo": "Senado aprova perdão de dívidas e teto maior para MEI; falta a sanção",
@@ -735,7 +735,7 @@ NOTICIAS = [
         "fontes": [("Agência Senado, via Poder360", "https://www.poder360.com.br/poder-congresso/senado-aprova-aumento-no-teto-do-mei-e-perdao-a-dividas/")],
     },
     {
-        "slug": "governo-devolveu-3-5-bi-aposentados-inss",
+        "slug": "governo-devolveu-3-5-bi-aposentados-inss", "capa": "img/inss.jpg", "capa_credito": "Foto: Rafa Neddermeyer / Agência Brasil",
         "data": "2026-10-17",
         "editoria": "servico", "chapeu": "INSS",
         "titulo": "Governo diz ter devolvido R$ 3,5 bi a aposentados lesados no INSS",
@@ -751,7 +751,7 @@ NOTICIAS = [
         "fontes": [("Ministério da Previdência, via Poder360", "https://www.poder360.com.br/poder-economia/nao-tem-ninguem-mais-para-ser-ressarcido-diz-ministro-sobre-fraude-no-inss/")],
     },
     {
-        "slug": "amazonia-menor-desmatamento-desde-1988-mt-segundo",
+        "slug": "amazonia-menor-desmatamento-desde-1988-mt-segundo", "capa": "img/prodes.jpg", "capa_credito": "Foto: Acervo ICMBio",
         "data": "2026-10-17",
         "editoria": "ciencia", "chapeu": "Desmatamento",
         "titulo": "Amazônia tem o menor desmatamento desde 1988; MT é o 2º que mais desmata",
@@ -768,7 +768,7 @@ NOTICIAS = [
         "fontes": [("Inpe/Prodes, via Poder360", "https://www.poder360.com.br/poder-sustentavel/desmatamento-cai-na-amazonia-e-no-cerrado-em-2026/")],
     },
     {
-        "slug": "agentes-saude-endemias-aposentadoria-especial",
+        "slug": "agentes-saude-endemias-aposentadoria-especial", "capa": "img/agentes.jpg", "capa_credito": "Foto: Prefeitura de Canoas / Divulgação",
         "data": "2026-10-16",
         "editoria": "servico", "chapeu": "Previdência",
         "titulo": "Agentes de saúde e de endemias ganham aposentadoria especial",
@@ -786,7 +786,7 @@ NOTICIAS = [
         "fontes": [("Agência Brasil, via Diario de Pernambuco", "https://www.diariodepernambuco.com.br/politica/2026/10/11726840-congresso-promulga-emenda-de-aposentadoria-especial-de-agente-de-saude.html")],
     },
     {
-        "slug": "fim-da-6x1-duas-folgas-por-semana",
+        "slug": "fim-da-6x1-duas-folgas-por-semana", "capa": "img/6x1.jpg", "capa_credito": "Foto: TV Senado / Agência Brasil",
         "data": "2026-10-16",
         "editoria": "servico", "chapeu": "Trabalho",
         "titulo": "Fim da 6x1: duas folgas por semana em 60 dias, sem corte de salário",

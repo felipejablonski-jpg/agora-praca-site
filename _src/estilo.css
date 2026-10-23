@@ -239,7 +239,7 @@ footer .wrap { align-items: flex-start; }
   .vid span { font-size: 14px; }
   .nav { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; gap: 18px; padding-inline: 2px; scrollbar-width: none; }
   .item:not(.item-g) a { flex-direction: row; gap: 14px; }
-  .item:not(.item-g) .thumb { flex: 0 0 38%; }
+  .item:not(.item-g) .thumb { flex: 0 0 38%; align-self: flex-start; }
   .item:not(.item-g) h3 { font-size: 17px; }
   .telas { grid-template-columns: minmax(0, 1fr); }
   .corpo { font-size: 17px; }

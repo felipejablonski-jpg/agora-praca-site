@@ -33,6 +33,14 @@ def data_curta(s):
 NOTICIAS[:] = [n for n in NOTICIAS if not n.get("rascunho")]
 NOTICIAS.sort(key=lambda n: (n["data"], n.get("ordem", 0), n.get("atualizado", "")), reverse=True)
 POR_SLUG = {n["slug"]: n for n in NOTICIAS}
+
+# Regra: toda matéria tem capa própria do site (16:9), separada da capa do Reel
+# e do card do Instagram. Só em caso raro, "sem_capa": "motivo" dispensa a capa.
+_sem = [n["slug"] for n in NOTICIAS if not n.get("capa") and not n.get("sem_capa")]
+_falta = [n["capa"] for n in NOTICIAS if n.get("capa") and not os.path.exists(os.path.join(RAIZ, n["capa"]))]
+if _sem or _falta:
+    sys.exit("ERRO: matéria sem capa do site: " + ", ".join(_sem) + (" | arquivo de capa não encontrado: " + ", ".join(_falta) if _falta else "")
+             + "\nCrie a capa em _src/capas.py (ou use uma foto 16:9) e preencha \"capa\" e \"capa_credito\".")
 EDICOES.sort(key=lambda x: x["data"], reverse=True)
 HOJE = max([n.get("atualizado", n["data"]) for n in NOTICIAS] + [x["data"] for x in EDICOES])
 
@@ -108,6 +116,8 @@ def chapeu(n):
 
 def imagem_lista(n):
     ed = EDITORIAS[n["editoria"]]
+    if n.get("capa"):
+        return f'<img src="/{n["capa"]}" alt="" loading="lazy" width="1200" height="675">'
     if n.get("sem_thumb"):
         return f'<div class="tipo tipo-{ed["cor"]}"><span>{e(n.get("chapeu") or ed["nome"])}</span></div>'
     if n.get("thumb"):
@@ -155,32 +165,23 @@ def escrever(caminho, conteudo):
 
 def pagina_noticia(n):
     ed = EDITORIAS[n["editoria"]]
-    if n.get("foto"):
-        if n.get("foto_retrato"):
-            topo = f'<figure class="cardimg"><img src="/{n["foto"]}" alt="{e(n.get("alt", ""))}"><figcaption>{e(n["credito"])}</figcaption></figure>'
-        else:
-            topo = f'<figure class="hero"><img src="/{n["foto"]}" alt="" width="1200" height="675"><figcaption>{e(n["credito"])}</figcaption></figure>'
+    topo, og, extra = "", "/og.png", ""
+    if n.get("capa"):
+        topo = f'<figure class="hero"><img src="/{n["capa"]}" alt="{e(n.get("alt", ""))}" width="1200" height="675"><figcaption>{e(n.get("capa_credito", ""))}</figcaption></figure>'
+        og = "/" + n["capa"]
+        if n.get("foto") and n["foto"] != n["capa"] and n.get("foto_retrato"):
+            extra += f'<figure class="cardimg"><img src="/{n["foto"]}" alt="{e(n.get("alt", ""))}" loading="lazy"><figcaption>{e(n.get("credito", ""))}</figcaption></figure>'
+    elif n.get("foto"):
+        topo = f'<figure class="hero"><img src="/{n["foto"]}" alt="" width="1200" height="675"><figcaption>{e(n["credito"])}</figcaption></figure>'
         og = "/" + n["foto"]
-    elif n.get("video"):
-        topo = video_tag(n["video"])
-        og = f"/video/{n['video']}.jpg"
-    elif n.get("card"):
-        topo = f'<figure class="cardimg"><img src="/{n["card"]}" alt="Card publicado no Instagram com o resumo desta notícia" width="1080" height="1350"><figcaption>Card publicado no Instagram em {data_curta(n["data"])}</figcaption></figure>'
-        og = "/" + n["card"]
-    else:
-        topo, og = "", "/og.png"
-    extra = ""
-    if n.get("video") and (n.get("foto")):
+    # O que foi publicado no Instagram entra no corpo da matéria, nunca como capa.
+    if n.get("video"):
         extra += video_tag(n["video"])
-    if n.get("card") and (n.get("foto") or n.get("video")):
-        extra += f'<figure class="cardimg"><img src="/{n["card"]}" alt="Card publicado no Instagram com o resumo desta notícia" loading="lazy" width="1080" height="1350"></figure>'
+    if n.get("card"):
+        extra += f'<figure class="cardimg"><img src="/{n["card"]}" alt="Card publicado no Instagram com o resumo desta notícia" loading="lazy" width="1080" height="1350"><figcaption>Card publicado no Instagram em {data_curta(n["data"])}</figcaption></figure>'
     if n.get("carrossel"):
         imgs = "".join(f'<img src="/{c}" alt="Tela {i+1} do carrossel publicado no Instagram" loading="lazy" width="1080" height="1350">' for i, c in enumerate(n["carrossel"]))
-        fig = f'<figure class="carrossel"><div class="car-trilho">{imgs}</div><figcaption>Carrossel publicado no Instagram. Deslize para ver as {len(n["carrossel"])} telas.</figcaption></figure>'
-        if not topo:
-            topo, og = fig, "/" + n["carrossel"][0]
-        else:
-            extra += fig
+        extra += f'<figure class="carrossel"><div class="car-trilho">{imgs}</div><figcaption>Carrossel publicado no Instagram. Deslize para ver as {len(n["carrossel"])} telas.</figcaption></figure>'
     pv = ""
     if n.get("para_voce"):
         r, t = n["para_voce"]
