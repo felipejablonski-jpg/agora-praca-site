@@ -233,13 +233,11 @@ def foto_conter(src, caixa):
 
 CAPAS = {
     "justica-eleitoral-corrige-343-secoes-mudanca-local": (
-        lambda: arte_troca("Serviço · Eleições 2026", RED, "4.352", "343",
-                           "seções mudam de endereço no 2º turno"),
-        "Arte: Agora Praça"),
+        lambda: foto("img/fotos/urnas-preparacao-sp.jpg", foco=(0.35, 0.5)),
+        "Urnas na preparação para a eleição em São Paulo. Foto: Paulo Pinto / Agência Brasil"),
     "calor-europa-50-mil-mortes-2026": (
-        lambda: arte_barras("Ciência · Clima", ORANGE, ("2022", 29480), ("2026", 50391), "+71%",
-                            "mortes por calor no verão, nas mesmas 854 cidades da Europa"),
-        "Arte: Agora Praça, com dados do Imperial College London e da LSHTM"),
+        lambda: foto("img/fotos/fonte-bratislava-verao.jpg", foco=(0.5, 0.6)),
+        "Crianças se refrescam em uma fonte no verão. Foto ilustrativa: Pexels"),
     "ondas-de-calor-gigantes-20-vezes-mais-frequentes": (
         lambda: arte_numero("Ciência · Clima", ORANGE, None, seta=("5", "102"), legenda=
                             "ondas de calor gigantes por ano, dos anos 1960 até esta década"),
@@ -255,15 +253,14 @@ CAPAS = {
                             acima="Primeiro debate do 2º turno"),
         "Arte: Agora Praça"),
     "pode-levar-cola-para-votar": (
-        lambda: arte_numero("Serviço · Eleições 2026", RED, "Pode.",
-                            "Em papel. O celular continua proibido na cabine",
-                            acima="Pode levar cola para votar?"),
-        "Arte: Agora Praça"),
+        lambda: foto("img/fotos/urna-treinamento-tre-sp.jpg", foco=(0.3, 0.5)),
+        "Demonstração da urna no TRE-SP. Foto: Paulo Pinto / Agência Brasil"),
     "senado-aprova-teto-mei-perdao-dividas": (
-        lambda: arte_numero("Serviço · MEI", RED, "R$ 140 mil",
-                            "em 2028. Em 2027, o limite de faturamento anual vai a R$ 110 mil",
-                            acima="Teto do MEI sobe de R$ 81 mil para"),
-        "Arte: Agora Praça"),
+        lambda: foto("img/fotos/senado-sessao-mei.jpg", foco=(0.4, 0.5)),
+        "Sessão do Senado que votou o projeto do MEI, em 15 de outubro. Foto: Lula Marques / Agência Brasil"),
+    "locais-de-votacao-segundo-turno": (
+        lambda: foto("img/fotos/urnas-lacre-tre-df.jpg", foco=(0.55, 0.5)),
+        "Lacração de urnas no TRE-DF. Foto: Joédson Alves / Agência Brasil"),
     "ebola-oitava-provincia-congo": (
         lambda: foto_conter("img/ebola/1.jpg", (0, 0, 1, 0.548)),
         "Mapa: Agora Praça. Dados: governo da RDC"),

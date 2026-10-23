@@ -10,7 +10,7 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
-        "slug": "justica-eleitoral-corrige-343-secoes-mudanca-local", "capa": "img/capa/justica-eleitoral-corrige-343-secoes-mudanca-local.jpg", "capa_credito": "Arte: Agora Praça", "thumb": "img/thumb/secoes343.jpg",
+        "slug": "justica-eleitoral-corrige-343-secoes-mudanca-local", "capa": "img/capa/justica-eleitoral-corrige-343-secoes-mudanca-local.jpg", "capa_credito": "Urnas na preparação para a eleição em São Paulo. Foto: Paulo Pinto / Agência Brasil", "thumb": "img/thumb/secoes343.jpg",
         "data": "2026-10-21", "ordem": 3, "atualizado": "2026-10-22",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Justiça Eleitoral corrige de 4.352 para 343 o número de seções com mudança de endereço no 2º turno",
@@ -99,7 +99,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "calor-europa-50-mil-mortes-2026", "capa": "img/capa/calor-europa-50-mil-mortes-2026.jpg", "capa_credito": "Arte: Agora Praça, com dados do Imperial College London e da LSHTM", "thumb": "img/thumb/calor-europa.jpg",
+        "slug": "calor-europa-50-mil-mortes-2026", "capa": "img/capa/calor-europa-50-mil-mortes-2026.jpg", "capa_credito": "Crianças se refrescam em uma fonte no verão. Foto ilustrativa: Pexels", "thumb": "img/thumb/calor-europa.jpg",
         "data": "2026-10-22", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Calor extremo pode ter causado 50 mil mortes nas cidades da Europa em 2026, e 65% delas são atribuídas ao aquecimento global",
@@ -503,7 +503,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "locais-de-votacao-segundo-turno", "capa": "img/thumb/locais.jpg", "capa_credito": "Mapa: Agora Praça", "thumb": "img/thumb/locais.jpg",
+        "slug": "locais-de-votacao-segundo-turno", "capa": "img/capa/locais-de-votacao-segundo-turno.jpg", "capa_credito": "Lacração de urnas no TRE-DF. Foto: Joédson Alves / Agência Brasil", "thumb": "img/thumb/locais.jpg",
         "data": "2026-10-18", "ordem": 4,
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Justiça Eleitoral muda local de 4.352 seções para o 2º turno; veja como consultar o seu",
@@ -679,7 +679,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "pode-levar-cola-para-votar", "capa": "img/capa/pode-levar-cola-para-votar.jpg", "capa_credito": "Arte: Agora Praça",
+        "slug": "pode-levar-cola-para-votar", "capa": "img/capa/pode-levar-cola-para-votar.jpg", "capa_credito": "Demonstração da urna no TRE-SP. Foto: Paulo Pinto / Agência Brasil",
         "data": "2026-10-17",
         "editoria": "servico", "chapeu": "Eleições 2026",
         "titulo": "Pode levar cola para votar? Pode, desde que seja em papel",
@@ -717,7 +717,7 @@ NOTICIAS = [
         ],
     },
     {
-        "slug": "senado-aprova-teto-mei-perdao-dividas", "capa": "img/capa/senado-aprova-teto-mei-perdao-dividas.jpg", "capa_credito": "Arte: Agora Praça",
+        "slug": "senado-aprova-teto-mei-perdao-dividas", "capa": "img/capa/senado-aprova-teto-mei-perdao-dividas.jpg", "capa_credito": "Sessão do Senado que votou o projeto do MEI, em 15 de outubro. Foto: Lula Marques / Agência Brasil",
         "data": "2026-10-17",
         "editoria": "servico", "chapeu": "MEI",
         "titulo": "Senado aprova perdão de dívidas e teto maior para MEI; falta a sanção",
