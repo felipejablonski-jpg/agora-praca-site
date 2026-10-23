@@ -4,7 +4,7 @@
 EDITORIAS = {
     "servico": {"nome": "Serviço", "cor": "red", "desc": "Benefícios, prazos, golpes, concursos e leis novas, explicados sem juridiquês."},
     "politica": {"nome": "Política", "cor": "red", "desc": "Votações, decisões de governo e uso do dinheiro de todos, em Brasília e em Mato Grosso."},
-    "meio-ambiente": {"nome": "Meio Ambiente", "cor": "orange", "desc": "Queimadas, seca, água, uso da terra, clima, dengue e outras endemias, com base na ciência."},
+    "ciencia": {"nome": "Ciência", "cor": "orange", "desc": "Meio ambiente, clima, saúde, queimadas, água, dengue e outras endemias, pesquisas e documentários, explicados com base na ciência."},
 }
 
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
@@ -101,7 +101,7 @@ NOTICIAS = [
     {
         "slug": "calor-europa-50-mil-mortes-2026", "thumb": "img/thumb/calor-europa.jpg",
         "data": "2026-10-22", "ordem": 1,
-        "editoria": "meio-ambiente", "chapeu": "Clima",
+        "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Calor extremo pode ter causado 50 mil mortes nas cidades da Europa em 2026, e 65% delas são atribuídas ao aquecimento global",
         "linha_fina": "Estimativa de cientistas do Imperial College London e da LSHTM cobre 854 cidades de 30 países. É o verão mais mortal desde 2000 na série analisada, 71% acima de 2022.",
         "video": "calor-europa",
@@ -138,7 +138,7 @@ NOTICIAS = [
     {
         "slug": "amazonia-emite-mais-co2-do-que-absorve-estudo-inpe-nature", "thumb": "img/thumb/amazonia-carbono.jpg",
         "data": "2026-10-22", "ordem": 2,
-        "editoria": "meio-ambiente", "chapeu": "Clima",
+        "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Amazônia emitiu 1,17 bilhão de toneladas de CO₂ por ano a mais do que absorveu, aponta estudo do Inpe na Nature",
         "linha_fina": "Pesquisa com 15 anos de medições, de 2010 a 2024, aponta as queimadas como principal fonte. Na estação seca, a chuva caiu 20% e a temperatura subiu 1,81 °C desde 1979.",
         "video": "amazonia-carbono",
@@ -175,7 +175,7 @@ NOTICIAS = [
     {
         "slug": "el-nino-recorde-onu-pacifico-3-8-graus", "thumb": "img/thumb/elnino.jpg",
         "data": "2026-10-21", "ordem": 1,
-        "editoria": "meio-ambiente", "chapeu": "Clima",
+        "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "ONU prevê El Niño possivelmente recorde, com o Pacífico até 3,8 °C acima da média",
         "linha_fina": "Dados de satélite mostram o oceano mais quente do que em 1997 e 2015 na mesma data. No Brasil, a previsão é de seca no Norte, cheias no Sul e calor acima da média em Mato Grosso.",
         "video": "elnino",
@@ -264,7 +264,7 @@ NOTICIAS = [
     {
         "slug": "ondas-de-calor-gigantes-20-vezes-mais-frequentes", "thumb": "img/thumb/calor.jpg",
         "data": "2026-10-20", "ordem": 1,
-        "editoria": "meio-ambiente", "chapeu": "Clima",
+        "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Ondas de calor gigantes ficaram 20 vezes mais frequentes desde os anos 1960",
         "linha_fina": "Análise da Reuters com dados de temperatura do mundo todo mostra que as maiores ondas de calor passaram de 5 para 102 por ano. A maior delas durou 367 dias e matou mais de 200 botos no Amazonas.",
         "video": "calor",
@@ -367,7 +367,7 @@ NOTICIAS = [
     {
         "slug": "fumaca-queimadas-manaus-sem-aula", "thumb": "img/thumb/manaus.jpg",
         "data": "2026-10-19", "ordem": 5,
-        "editoria": "meio-ambiente", "chapeu": "Queimadas",
+        "editoria": "ciencia", "chapeu": "Queimadas",
         "titulo": "Fumaça de queimadas mantém Manaus sem aula presencial",
         "linha_fina": "O ar da capital do Amazonas amanheceu em nível péssimo nesta segunda-feira (19). A fumaça vem de incêndios no interior do estado e em Rondônia, no Pará e em Mato Grosso.",
         "carrossel": ["img/manaus-fumaca/1.jpg", "img/manaus-fumaca/2.jpg"],
@@ -480,7 +480,7 @@ NOTICIAS = [
     {
         "slug": "chuvas-espanha-quatro-mortos-500-resgates", "thumb": "img/thumb/espanha.jpg",
         "data": "2026-10-19", "ordem": 1,
-        "editoria": "meio-ambiente", "chapeu": "Chuvas na Espanha",
+        "editoria": "ciencia", "chapeu": "Chuvas na Espanha",
         "titulo": "Chuvas extremas deixam 4 mortos e provocam cerca de 500 resgates no leste da Espanha",
         "linha_fina": "Em Pego, na província de Alicante, choveu 632 milímetros em 36 horas, segundo a agência de meteorologia espanhola. A região é a mesma em que a chuva de outubro de 2024 matou mais de 220 pessoas.",
         "video": "espanha",
@@ -537,7 +537,7 @@ NOTICIAS = [
     {
         "slug": "ebola-oitava-provincia-congo", "thumb": "img/thumb/ebola.jpg",
         "data": "2026-10-18", "ordem": 3,
-        "editoria": "meio-ambiente", "chapeu": "Ebola",
+        "editoria": "ciencia", "chapeu": "Ebola",
         "titulo": "Epidemia de ebola avança para oitava província do Congo e ultrapassa 4,5 mil mortes",
         "linha_fina": "O governo congolês confirma dois casos em Ubangi do Norte, na fronteira com a República Centro-Africana. Não há vacina nem tratamento aprovado contra a espécie do vírus que causa o surto.",
         "carrossel": ["img/ebola/1.jpg", "img/ebola/2.jpg", "img/ebola/3.jpg"], "video": "ebola",
@@ -753,7 +753,7 @@ NOTICIAS = [
     {
         "slug": "amazonia-menor-desmatamento-desde-1988-mt-segundo",
         "data": "2026-10-17",
-        "editoria": "meio-ambiente", "chapeu": "Desmatamento",
+        "editoria": "ciencia", "chapeu": "Desmatamento",
         "titulo": "Amazônia tem o menor desmatamento desde 1988; MT é o 2º que mais desmata",
         "linha_fina": "Foram 3.335 km² derrubados, queda de 41,8%. Mato Grosso respondeu por um quarto do total.",
         "foto": "img/prodes.jpg", "credito": "Foto: Acervo ICMBio",
