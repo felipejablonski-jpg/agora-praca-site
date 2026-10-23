@@ -847,11 +847,11 @@ EDICOES = [
                 {"chapeu": "Eleições", "titulo": "Sigilos: Lula entrega autorizações na quinta; campanha de Flávio envia as suas na madrugada",
                  "texto": [
                     "As duas campanhas tinham combinado entregar ao TSE, até as 23h59 de quinta-feira (22), as autorizações para abrir os sigilos bancário, fiscal e telefônico dos candidatos, de parentes e de empresas ligadas a eles.",
-                    "A campanha de Lula entregou os documentos na noite de quinta e disse ter aceitado as 19 exigências feitas por Flávio, entre elas os gastos com cartão corporativo da Presidência desde 2023 e os registros de entrada nos palácios. Segundo a Revista Fórum, a campanha de Flávio enviou as autorizações dela na madrugada de sexta-feira (23). Não havia confirmação oficial do horário do protocolo nem de que todos os documentos combinados foram entregues.",
+                    "A campanha de Lula entregou os documentos na noite de quinta e disse ter aceitado as 19 exigências feitas por Flávio, entre elas os gastos com cartão corporativo da Presidência desde 2023 e os registros de entrada nos palácios. Segundo o UOL e a Revista Fórum, a campanha de Flávio enviou as autorizações dela na madrugada de sexta-feira (23). Junto, cobrou a divulgação dos gastos com cartão corporativo da Presidência, ponto que, segundo o UOL, não fazia parte do acordo fechado na quinta. Não havia confirmação oficial do horário do protocolo nem de que todos os documentos combinados foram entregues.",
                     "Na quinta, o ministro André Mendonça, relator do caso no TSE, decidiu que os candidatos não precisam de decisão judicial para abrir os próprios sigilos e podem divulgar os dados \"como e quando entenderem pertinentes\". A campanha de Lula recorreu e pede que o tribunal requisite os dados diretamente ao Banco Central, aos bancos, à Receita Federal e às operadoras de telefonia.",
                     "Até a publicação desta edição, nenhum extrato ou declaração tinha sido divulgado.",
                  ],
-                 "fontes": [("O Tempo, decisão de Mendonça (22/10)", "https://www.otempo.com.br/eleicoes/2026/2026/10/22/mendonca-afirma-que-lula-e-flavio-bolsonaro-nao-precisam-de-decisao-judicial-para-abrir-sigilos"), ("CartaCapital, entrega da campanha de Lula (22/10)", "https://www.cartacapital.com.br/justica/campanha-de-lula-entrega-documentos-autorizando-a-abertura-do-sigilo-flavio-nao/"), ("Revista Fórum, envio da campanha de Flávio (23/10)", "https://revistaforum.com.br/politica/lula-entrega-sigilo-tse-flavio-descumpre-acordo/")]},
+                 "fontes": [("O Tempo, decisão de Mendonça (22/10)", "https://www.otempo.com.br/eleicoes/2026/2026/10/22/mendonca-afirma-que-lula-e-flavio-bolsonaro-nao-precisam-de-decisao-judicial-para-abrir-sigilos"), ("CartaCapital, entrega da campanha de Lula (22/10)", "https://www.cartacapital.com.br/justica/campanha-de-lula-entrega-documentos-autorizando-a-abertura-do-sigilo-flavio-nao/"), ("UOL, via TNH1, envio da campanha de Flávio (23/10)", "https://www.tnh1.com.br/noticia/nid/flavio-libera-abertura-de-sigilo-apos-pt-e-cobra-cartao-corporativo-de-lula/"), ("Revista Fórum, envio da campanha de Flávio (23/10)", "https://revistaforum.com.br/politica/lula-entrega-sigilo-tse-flavio-descumpre-acordo/")]},
                 {"chapeu": "Mato Grosso", "titulo": "Calor chega a 43°C em MT hoje; domingo de votação tem alerta de tempestade no sul do estado",
                  "texto": [
                     "A previsão para esta sexta-feira (23) indica máximas de 43°C em Cáceres, 42°C em Cuiabá e Várzea Grande e 38°C em Primavera do Leste, sem chuva na maior parte do estado, segundo levantamento do Cenário MT com dados do OpenWeather.",
@@ -880,7 +880,7 @@ EDICOES = [
             ("Calor chega a 43°C em Cáceres hoje. No domingo, há alerta de tempestade no sul de MT.", None),
             ("Tufão paralisa grande parte de Taiwan e deixa um morto e 94 feridos.", None),
         ],
-        "fonte": "Fontes: Diário do Grande ABC, CNN Brasil, O Tempo, CartaCapital, Revista Fórum, Cenário MT, RDNews, Inmet, Focus Taiwan e Reuters",
+        "fonte": "Fontes: Diário do Grande ABC, CNN Brasil, O Tempo, CartaCapital, UOL, Revista Fórum, Cenário MT, RDNews, Inmet, Focus Taiwan e Reuters",
     },
     {
         "data": "2026-10-21", "pasta": "pp/2026-10-21", "telas": 6,
