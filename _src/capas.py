@@ -252,6 +252,10 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "tse-24-horas-meta-x-investigacao-favorecimento-flavio": (
+        lambda: foto_dupla("img/fotos/predio-tse.jpg", "img/fotos/celular-apps-meta.jpg",
+                           (0.3, 0, 1, 1), (0.15, 0, 0.85, 1)),
+        "Sede do TSE, em Brasília (Marcelo Camargo/Agência Brasil) e aplicativos da Meta no celular (Marcello Casal Jr/Agência Brasil)"),
     "fundo-perdas-danos-reserva-20-milhoes-nepal": (
         lambda: foto_dupla("img/fotos/vale-rio-himalaia.jpg", "img/fotos/nota-dolar-detalhe.jpg",
                            (0, 0.32, 1, 1), (0.45, 0, 1, 1)),

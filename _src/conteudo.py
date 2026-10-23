@@ -10,6 +10,40 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "tse-24-horas-meta-x-investigacao-favorecimento-flavio", "capa": "img/capa/tse-24-horas-meta-x-investigacao-favorecimento-flavio.jpg", "capa_credito": "Sede do TSE, em Brasília (Marcelo Camargo/Agência Brasil), e aplicativos da Meta no celular (Marcello Casal Jr/Agência Brasil)",
+        "data": "2026-10-23", "ordem": 3,
+        "editoria": "politica", "chapeu": "Eleições 2026",
+        "titulo": "TSE dá 24 horas para Meta e X explicarem como tratam conteúdos de Lula e Flávio",
+        "linha_fina": "O corregedor eleitoral abriu investigação a pedido da campanha de Lula, que acusa as plataformas de favorecer Flávio Bolsonaro. O ministro disse que abrir a apuração não comprova as acusações.",
+        "video": "tse-meta-x",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "A Justiça Eleitoral ainda não concluiu que houve favorecimento. Por enquanto, as empresas precisam explicar como funcionam seus sistemas, e Flávio e o vice terão cinco dias para se defender."),
+        "texto": [
+            "O corregedor-geral da Justiça Eleitoral, ministro Ricardo Villas Bôas Cueva, deu 24 horas para a Meta, dona do Facebook, do Instagram e do WhatsApp, e para o X explicarem como distribuem e removem conteúdos políticos. A decisão foi tomada na noite de quinta-feira (22), a três dias do segundo turno, e divulgada nesta sexta-feira (23) pelo Estadão e pela Agência Brasil.",
+            "O pedido veio da coligação Brasil Pronto pra Mais, do presidente Luiz Inácio Lula da Silva (PT), numa ação de investigação judicial eleitoral apresentada na quarta-feira (21). A campanha acusa as plataformas de favorecer conteúdos ligados ao senador Flávio Bolsonaro (PL), alega abuso de poder econômico e uso indevido dos meios de comunicação e pede a cassação da chapa de Flávio e do candidato a vice, Alfredo Gaspar (PL).",
+            "Ao abrir a investigação, Cueva afirmou que a decisão não significa \"reconhecimento da veracidade das alegações, da ilicitude das condutas ou da responsabilidade dos investigados\". Flávio e Gaspar terão cinco dias para apresentar defesa.",
+            "## O que as empresas precisam explicar",
+            "Da Meta, o ministro quer saber como funcionam a distribuição de posts e anúncios políticos, as ferramentas de inteligência artificial, a remoção de publicações, a tradução automática e as buscas por GIFs e hashtags. A campanha de Lula diz que a tradução automática do Instagram e do Facebook mudou o sentido de comentários sobre Flávio, transformando críticas em elogios. A empresa também precisa dizer se as duas campanhas estão sujeitas aos mesmos filtros e limites de entrega desde agosto.",
+            "Do X, o ministro pede os critérios usados pelo Grok, a inteligência artificial da rede, para responder perguntas sobre política. Segundo a campanha de Lula, o Grok dá respostas diferentes para perguntas parecidas sobre os dois candidatos.",
+            "Se as empresas não responderem sem justificativa, a multa é de R$ 500 mil por dia para cada uma.",
+            "## O vídeo derrubado",
+            "A investigação também trata de um vídeo do projeto Revelando, apresentado pelo MC Cabelinho, que criticava Flávio. O vídeo foi removido do Instagram na quinta-feira (22), pouco depois de publicado, com a justificativa de uso de inteligência artificial. O ministro mandou a Meta submeter a remoção a uma revisão humana, se ainda não tiver feito, e informar o resultado.",
+            "Segundo a Agência Brasil, Cueva afirmou que, até agora, não há sinal de que o vídeo tenha recebido \"tratamento diferenciado em razão de sua orientação político-eleitoral\".",
+            "## O que o ministro negou por enquanto",
+            "Cueva negou suspender a tradução automática da Meta, por considerar a medida ampla demais, e rejeitou exigir revisão humana prévia para toda remoção de conteúdo jornalístico ou de opinião. Os pedidos para proibir tratamento privilegiado de perfis e para recompor o alcance da propaganda de Lula ficaram para depois das respostas das empresas.",
+            "## O que dizem as empresas",
+            "Em informações enviadas ao TSE nesta semana, a Meta negou tratar as campanhas de forma diferente e disse cumprir as regras eleitorais. A empresa já tinha reconhecido falhas técnicas na moderação de conteúdos sobre a eleição, mas nega ter favorecido qualquer candidato. O X e a campanha de Flávio não tinham se manifestado até a publicação desta reportagem.",
+            "Na segunda-feira (19), outro ministro do TSE, Marco Aurélio Bellizze, já tinha dado 24 horas para a Meta comprovar que tratava as duas campanhas de forma igual, em outro processo.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça. Fotos: Agência Brasil.",
+        "fontes": [
+            ("Agência Brasil, a decisão e a revisão do vídeo (23/10)", "https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/tse-da-24h-para-meta-e-x-explicarem-distribuicao-de-material-politico"),
+            ("Estadão via Diário do Grande ABC, os pedidos, a multa e a defesa (23/10)", "https://www.dgabc.com.br/Noticia/4354373/tse-da-24h-para-meta-e-x-explicarem-tratamento-das-candidaturas-de-lula-e-flavio-nas-redes"),
+            ("Gazeta do Povo, a ação da coligação e o pedido de cassação (22/10)", "https://www.gazetadopovo.com.br/eleicoes/2026/corregedor-do-tse-manda-meta-e-x-explicarem-em-24h-suposto-favorecimento-a-flavio/"),
+            ("Metrópoles, a decisão (23/10)", "https://www.metropoles.com/brasil/tse-da-24h-para-meta-se-explicar-sobre-tratamentos-dados-a-flavio-e-lula"),
+            ("Correio da Manhã, a resposta anterior da Meta ao TSE (20/10)", "https://www.correiodamanha.com.br/politica/2026/10/328679-meta-reconhece-erros-tecnicos-mas-nega-parcialidade-na-campanha.html"),
+        ],
+    },
+    {
         "slug": "fundo-perdas-danos-reserva-20-milhoes-nepal", "capa": "img/capa/fundo-perdas-danos-reserva-20-milhoes-nepal.jpg", "capa_credito": "Vale de rio no Himalaia e detalhe de nota de dólar. Fotos ilustrativas: Pexels",
         "data": "2026-10-23", "ordem": 2,
         "editoria": "ciencia", "chapeu": "Clima",
@@ -870,6 +904,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "tse-meta-x": "TSE dá 24 horas para Meta e X se explicarem",
     "nepal-fundo": "ONU reserva US$ 20 milhões para o Nepal",
     "calor-votacao": "Calor e alerta de tempestade no domingo de votação",
     "php": "Falhas no PHP tiram sites de governos do ar",
