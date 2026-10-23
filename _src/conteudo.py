@@ -10,6 +10,34 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "cemaden-risco-alto-inundacao-sul-chapeco-200-mm", "capa": "img/capa/cemaden-risco-alto-inundacao-sul-chapeco-200-mm.jpg", "capa_credito": "Estragos de temporal no Rio Grande (RS), em setembro (Prefeitura do Rio Grande/Divulgação), e chuva em rodovia do Meio-Oeste catarinense (Julio Cavalheiro/Secom SC, arquivo)",
+        "data": "2026-10-23", "ordem": 4,
+        "editoria": "servico", "chapeu": "Clima",
+        "titulo": "Cemaden prevê risco alto de inundação no Sul no sábado; Chapecó pode ter até 200 mm de chuva",
+        "linha_fina": "O alerta vale para o Oeste de Santa Catarina, o Norte do Rio Grande do Sul e parte do Paraná. No domingo de votação, a cheia do rio Uruguai continua e há risco de alagamentos em São Paulo.",
+        "video": "chuva-sul",
+        "para_voce": ("PARA VOCÊ", "Não atravesse rua alagada, a pé ou de carro, e fique longe de córregos e rios que sobem rápido. Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros)."),
+        "texto": [
+            "O Centro Nacional de Monitoramento e Alertas de Desastres Naturais (Cemaden) classificou como alta a possibilidade de inundações, enxurradas e transbordamento de córregos neste sábado (24) nas regiões de Chapecó, em Santa Catarina, e de Ijuí e Passo Fundo, no Rio Grande do Sul. No Paraná, o risco também é alto nas regiões de Cascavel, Guarapuava, Ponta Grossa e Curitiba.",
+            "A chuva cai sobre áreas que já acumularam muita água nos últimos dias. Segundo o Cemaden, a cheia deve se propagar pela bacia do rio Uruguai. Para Chapecó, o centro também aponta possibilidade moderada de deslizamentos.",
+            "## Até 200 mm em Chapecó",
+            "A Defesa Civil de Chapecó avisou nesta sexta-feira (23) que a chuva acumulada entre sexta e sábado pode chegar a 200 milímetros, com momentos de mais de 20 milímetros em uma hora. O nível é de atenção na sexta e de alerta elevado no sábado. Os riscos são alagamentos, enxurradas, subida rápida de córregos e rios, deslizamentos e queda de barrancos.",
+            "O Instituto Nacional de Meteorologia (Inmet) emitiu alerta vermelho, o nível mais alto, para Chapecó e o Oeste catarinense, das 6h às 21h de sábado, no horário de Brasília. O alerta vermelho indica chuva acima de 60 milímetros por hora ou de 100 milímetros por dia e ventos acima de 100 km/h, com risco de queda de árvores, cortes de energia e alagamentos.",
+            "## E no domingo de votação",
+            "No domingo (25), dia do segundo turno, o Cemaden ainda prevê possibilidade de inundações nas regiões de Chapecó, Ijuí e Passo Fundo, com a continuidade da cheia no rio Uruguai. No Sudeste, o centro aponta risco de alagamentos e deslizamentos nas regiões de São Paulo e Sorocaba.",
+            "Quem vota nessas regiões deve acompanhar os avisos da Defesa Civil e do Tribunal Regional Eleitoral do seu estado antes de sair de casa. Até a publicação desta reportagem, nenhum tribunal tinha anunciado mudança de local de votação por causa da chuva.",
+            "## Previsão, não desastre",
+            "Os alertas indicam risco, e não estragos que já aconteceram. As previsões podem mudar ao longo do fim de semana. Em Mato Grosso, o alerta amarelo de tempestade do Inmet para domingo vale para cinco municípios do sul do estado.",
+        ],
+        "credito_extra": "Vídeo e mapa: Agora Praça. Fotos: Prefeitura do Rio Grande/Divulgação, Julio Cavalheiro/Secom SC e Fernando Frazão/Agência Brasil, via Agência Brasil.",
+        "fontes": [
+            ("Cemaden, previsão de riscos geo-hidrológicos de 22 a 25/10", "https://www.gov.br/cemaden/pt-br/assuntos/riscos-geo-hidrologicos/previsao-de-riscos-geo-hidrologicos-para-os-dias-22-a-25-10-2026-1"),
+            ("Prefeitura de Chapecó via ClicRDC, o alerta de até 200 mm (23/10)", "https://clicrdc.com.br/tempo/defesa-civil-alerta-para-chuva-de-ate-200-mm-em-chapeco-nesta-sexta-e-sabado/"),
+            ("O Tempo, o alerta vermelho do Inmet para Chapecó (23/10)", "https://www.otempo.com.br/tempo/2026/10/23/chapeco-sc-entra-em-alerta-vermelho-para-100-mm-de-chuva-ventos-de-100-km-h-e-granizo-diz-inmet"),
+            ("Agência Brasil, a frente fria no centro-sul (23/10)", "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-10/frente-fria-leva-tempestades-e-granizo-ao-centro-sul-do-pais"),
+        ],
+    },
+    {
         "slug": "tse-24-horas-meta-x-investigacao-favorecimento-flavio", "capa": "img/capa/tse-24-horas-meta-x-investigacao-favorecimento-flavio.jpg", "capa_credito": "Sede do TSE, em Brasília (Marcelo Camargo/Agência Brasil), e aplicativos da Meta no celular (Marcello Casal Jr/Agência Brasil)",
         "data": "2026-10-23", "ordem": 3,
         "editoria": "politica", "chapeu": "Eleições 2026",
@@ -904,6 +932,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "chuva-sul": "Sul em alerta: até 200 mm de chuva em Chapecó",
     "tse-meta-x": "TSE dá 24 horas para Meta e X se explicarem",
     "nepal-fundo": "ONU reserva US$ 20 milhões para o Nepal",
     "calor-votacao": "Calor e alerta de tempestade no domingo de votação",

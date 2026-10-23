@@ -252,6 +252,10 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "cemaden-risco-alto-inundacao-sul-chapeco-200-mm": (
+        lambda: foto_dupla("img/fotos/temporal-rio-grande-rs.jpg", "img/fotos/chuva-rodovia-meio-oeste-sc.jpg",
+                           (0.1, 0, 0.9, 1), (0.2, 0, 0.9, 1)),
+        "Estragos de temporal no Rio Grande (RS), em setembro (Prefeitura do Rio Grande/Divulgação), e chuva em rodovia do Meio-Oeste catarinense (Julio Cavalheiro/Secom SC, arquivo)"),
     "tse-24-horas-meta-x-investigacao-favorecimento-flavio": (
         lambda: foto_dupla("img/fotos/predio-tse.jpg", "img/fotos/celular-apps-meta.jpg",
                            (0.3, 0, 1, 1), (0.15, 0, 0.85, 1)),
