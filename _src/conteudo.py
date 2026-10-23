@@ -10,6 +10,36 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "fundo-perdas-danos-reserva-20-milhoes-nepal", "capa": "img/capa/fundo-perdas-danos-reserva-20-milhoes-nepal.jpg", "capa_credito": "Vale de rio no Himalaia e detalhe de nota de dólar. Fotos ilustrativas: Pexels",
+        "data": "2026-10-23", "ordem": 2,
+        "editoria": "ciencia", "chapeu": "Clima",
+        "titulo": "Fundo climático da ONU reserva US$ 20 milhões ao Nepal, menos de 0,5% do custo da reconstrução",
+        "linha_fina": "É a primeira vez que o fundo de perdas e danos separa dinheiro para um país. A enchente de agosto deixou mais de 1.400 mortos, e o recurso ainda não foi transferido.",
+        "carrossel": [f"img/nepal-fundo/{k:02d}.jpg" for k in range(1, 7)],
+        "texto": [
+            "O conselho do Fundo para Responder a Perdas e Danos, criado nas negociações do clima da ONU, aprovou nesta quinta-feira (22) a reserva de US$ 20 milhões para a recuperação do Nepal. O país foi atingido em agosto por uma enchente que deixou mais de 1.400 mortos e mais de 5.000 desaparecidos, segundo a agência AFP. Somando US$ 1,6 milhão em custos administrativos, o total separado é de US$ 21,6 milhões.",
+            "É a primeira vez que o fundo reserva dinheiro para um país desde que foi criado, há três anos, segundo a AFP e o site especializado Climate Home News. A decisão foi tomada por unanimidade, numa reunião extraordinária e online do conselho. A copresidente do conselho, Camila Minerva Rodriguez, da República Dominicana, chamou o resultado de \"verdadeiramente histórico\".",
+            "## O que aconteceu no Nepal",
+            "Na manhã de 26 de agosto, um deslizamento de rocha e gelo numa montanha perto da fronteira com a China virou um fluxo de lama e uma enxurrada. Segundo o Serviço Geológico dos Estados Unidos (USGS), a lama percorreu cerca de 100 quilômetros pelo vale dos rios Bhote Koshi e Trishuli. Imagens do satélite europeu Copernicus mostram que o rio, antes estreito, abriu um leito largo coberto de sedimentos, levando povoados, estradas, pontes e usinas hidrelétricas.",
+            "## O dinheiro é pouco perto do estrago",
+            "O governo do Nepal estima em US$ 4,78 bilhões o custo de recuperação e reconstrução. Os US$ 20 milhões reservados cobrem menos de 0,5% disso. É também o valor máximo que o fundo libera por pedido. Segundo a Climate Home News, o fundo tem cerca de US$ 350 milhões disponíveis para distribuir no mundo todo.",
+            "\"Separar milhões não é o mesmo que entregar bilhões\", disse Lien Vandamme, do Centro de Direito Ambiental Internacional (CIEL), à Climate Home News.",
+            "## Ainda não chegou ao Nepal",
+            "O dinheiro está reservado, mas não foi transferido. O governo nepalês precisa apresentar uma proposta de como vai usar o recurso, e ela ainda terá de ser aprovada. Não há prazo definido. A próxima reunião do conselho está marcada para dezembro, nas Filipinas.",
+            "A decisão também abriu uma disputa. Representantes da Alemanha, da Tchéquia e do Japão disseram que o caso é excepcional e não deve virar regra para os próximos desastres. Representantes do Paquistão e do Equador defenderam que a experiência sirva de base para um mecanismo de pagamento mais rápido.",
+            "## Por que esse fundo existe",
+            "Os países em desenvolvimento cobraram esse fundo durante anos. O argumento é que eles emitiram pouco dos gases que aquecem o planeta, mas são os que mais sofrem com secas, enchentes e tempestades. O fundo foi aprovado na conferência do clima da ONU e, segundo a Climate Home News, recebeu até agora cerca de US$ 500 milhões dos países que prometeram contribuir.",
+        ],
+        "credito_extra": "Carrossel: Agora Praça. Fotos ilustrativas: Pexels.",
+        "fontes": [
+            ("Climate Home News, a decisão e as posições dos países (22/10, atualizada em 23/10)", "https://www.climatechangenews.com/2026/10/22/loss-and-damage-fund-agrees-20m-for-nepal-but-rich-nations-warn-it-should-not-set-precedent/"),
+            ("AFP via Arab News, mortos, desaparecidos e custo da reconstrução (22/10)", "https://www.arabnews.com/world/un-climate-disaster-fund-moves-to-provide-20m-aid-for-nepal-3007795"),
+            ("Kathmandu Post, o pedido do Nepal e a reunião extraordinária (17/10)", "https://kathmandupost.com/national/2026/10/17/loss-and-damage-fund-calls-extraordinary-meeting-for-oct-22-to-support-nepal"),
+            ("USGS, o deslizamento e a enchente de 26 de agosto", "https://www.usgs.gov/programs/landslide-hazards/science/2026-nepal-debris-avalanche-and-flash-flood"),
+            ("EU Space, imagem do Copernicus antes e depois (27/8)", "https://eu-space.europa.eu/components/earth-observation-copernicus/image-of-the-day/aftermath-nepal-flash-flood"),
+        ],
+    },
+    {
         "slug": "domingo-de-votacao-calor-alerta-tempestade-mt", "capa": "img/capa/domingo-de-votacao-calor-alerta-tempestade-mt.jpg", "capa_credito": "Chuva chega no fim de tarde sobre área rural. Foto ilustrativa: Pexels",
         "data": "2026-10-23", "ordem": 1,
         "editoria": "servico", "chapeu": "Eleições 2026",

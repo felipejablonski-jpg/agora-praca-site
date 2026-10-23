@@ -252,6 +252,10 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "fundo-perdas-danos-reserva-20-milhoes-nepal": (
+        lambda: foto_dupla("img/fotos/vale-rio-himalaia.jpg", "img/fotos/nota-dolar-detalhe.jpg",
+                           (0, 0.32, 1, 1), (0.45, 0, 1, 1)),
+        "Vale de rio no Himalaia e detalhe de nota de dólar. Fotos ilustrativas: Pexels"),
     "domingo-de-votacao-calor-alerta-tempestade-mt": (
         lambda: foto("img/fotos/chuva-fim-de-tarde-campo.jpg", foco=(0.5, 0.3)),
         "Chuva chega no fim de tarde sobre área rural. Foto ilustrativa: Pexels"),
