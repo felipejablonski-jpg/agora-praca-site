@@ -91,10 +91,14 @@ def topo(im, fonte_txt, alpha=1.0):
         d.text((M, 182), fonte_txt, font=ff, fill=(225, 221, 213))
 
 
-def foto_kb(src, t, dur, area_h, foco=(0.5, 0.5), z0=1.0, z1=1.1):
-    """Foto preenchendo a largura e area_h de altura, com zoom lento; base com degradê para o fundo."""
+def foto_kb(src, t, dur, area_h, foco=(0.5, 0.5), z0=1.0, z1=1.1, w=W, caixa=None, degrade=True):
+    """Foto preenchendo w x area_h, com zoom lento; base com degradê para o fundo (opcional).
+    caixa=(x0, y0, x1, y1) em fração da imagem recorta antes de enquadrar."""
     im = Image.open(os.path.join(RAIZ, src)).convert("RGB")
-    r = W / area_h
+    if caixa:
+        x0, y0, x1, y1 = caixa
+        im = im.crop((int(x0 * im.width), int(y0 * im.height), int(x1 * im.width), int(y1 * im.height)))
+    r = w / area_h
     if im.width / im.height > r:
         nw = int(im.height * r); x = int((im.width - nw) * foco[0]); im = im.crop((x, 0, x + nw, im.height))
     else:
@@ -102,14 +106,19 @@ def foto_kb(src, t, dur, area_h, foco=(0.5, 0.5), z0=1.0, z1=1.1):
     z = z0 + (z1 - z0) * (t / dur)
     cw, ch = im.width / z, im.height / z
     cx, cy = im.width / 2, im.height / 2
-    im = im.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize((W, area_h), Image.LANCZOS)
+    im = im.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize((w, area_h), Image.LANCZOS)
     im = im.convert("RGBA")
+    return degradar(im) if degrade else im
+
+
+def degradar(im):
+    w, area_h = im.size
     grad = Image.new("L", (1, area_h))
     for y in range(area_h):
         p = y / area_h
         grad.putpixel((0, y), int(255 * max(0, min(1, (p - 0.55) / 0.45)) ** 1.4) if p > 0.55 else int(190 * (1 - p / 0.25)) if p < 0.25 else 0)
-    sombra = Image.new("RGBA", (W, area_h), INK + (255,))
-    sombra.putalpha(grad.resize((W, area_h)))
+    sombra = Image.new("RGBA", (w, area_h), INK + (255,))
+    sombra.putalpha(grad.resize((w, area_h)))
     im.alpha_composite(sombra)
     return im
 
@@ -202,8 +211,15 @@ def rotulo(d, xy, txt, sub=None, ancora="l", cor=WHITE, alpha=255):
 
 def cena1(t, dur):
     im = fundo()
-    im.alpha_composite(foto_kb("img/fotos/sol-forte-horizonte.jpg", t, dur, 1060, foco=(0.5, 0.5), z0=1.0, z1=1.12), (0, 0))
-    topo(im, "Foto ilustrativa: Pexels")
+    meia = 520
+    dupla = Image.new("RGBA", (W, 1060), INK + (255,))
+    dupla.alpha_composite(foto_kb("img/fotos/urna-treinamento-tre-sp.jpg", t, dur, meia, caixa=(0.0, 0.25, 1.0, 1.0),
+                                  foco=(0.5, 0.75), z0=1.0, z1=1.08, degrade=False), (0, 0))
+    dupla.alpha_composite(foto_kb("img/fotos/sol-cidade-laranja.jpg", t, dur, 1060 - meia, foco=(0.5, 0.0),
+                                  z0=1.08, z1=1.0, degrade=False), (0, meia))
+    ImageDraw.Draw(dupla).rectangle((0, meia - 3, W, meia + 3), fill=RED)
+    im.alpha_composite(degradar(dupla), (0, 0))
+    topo(im, "Fotos: Paulo Pinto/Agência Brasil e Pexels (ilustrativa)")
     a = ease(t / 0.45)
     y = texto_rico(im, (M, 930), "Domingo de votação vai ser *quente* em Mato Grosso", fonte("serif", 96), W - 2 * M,
                    alpha=a, dy=int(40 * (1 - a)))
@@ -340,7 +356,7 @@ def main(geo):
             t = i / FPS
             im = fn(t, dur).convert("RGB")
             im.save(os.path.join(tmp, f"{k:05d}.png"))
-            if fn is cena2 and i == nf - 1:
+            if fn is cena1 and i == nf - 1:
                 capa = im.copy()
             k += 1
     out = os.path.join(RAIZ, "video", "calor-votacao.mp4")
