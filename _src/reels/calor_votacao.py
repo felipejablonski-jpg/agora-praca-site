@@ -348,7 +348,7 @@ def cena6(t, dur):
 CENAS = [(cena1, 3.0), (cena2, 3.2), (cena3, 3.0), (cena4, 3.6), (cena5, 3.4), (cena6, 2.2)]
 
 
-def render(cenas, nome, cena_capa):
+def render(cenas, nome, cena_capa, t_capa=None):
     """Renderiza as cenas em video/<nome>.mp4 (áudio mudo) e salva a capa (último quadro de cena_capa)."""
     tmp = tempfile.mkdtemp()
     k = 0
@@ -358,7 +358,7 @@ def render(cenas, nome, cena_capa):
         for i in range(nf):
             im = fn(i / FPS, dur).convert("RGB")
             im.save(os.path.join(tmp, f"{k:05d}.png"))
-            if fn is cena_capa and i == nf - 1:
+            if fn is cena_capa and (i == nf - 1 if t_capa is None else i == int(t_capa * FPS)):
                 capa = im.copy()
             k += 1
     out = os.path.join(RAIZ, "video", f"{nome}.mp4")

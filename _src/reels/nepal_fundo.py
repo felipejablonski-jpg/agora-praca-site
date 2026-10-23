@@ -158,7 +158,21 @@ def cena_ponte(t, dur):
     return im
 
 
-CENAS = [(cena1, 3.0), (cena_porto, 4.0), (cena2, 3.2), (cena_ponte, 3.5), (cena4, 3.8), (cena5, 3.2), (cena6, 2.2)]
+def cena_abertura(t, dur):
+    """Abre com a filmagem da enxurrada no porto de Gyirong: é ela que segura quem está rolando o feed."""
+    im = fundo()
+    im.alpha_composite(degradar(quadro_clipe("gyirong-cctv-2026-08-26-alto", t)), (0, 0))
+    topo(im, "Imagens: câmera de segurança do porto de Gyirong (reprodução)")
+    a = ease((t - 0.1) / 0.35)
+    y = texto_rico(im, (M, 960), "ONU reserva *US$\u00a020\u00a0milhões* para o Nepal", fonte("serif", 96), W - 2 * M,
+                   alpha=a, dy=int(40 * (1 - a)))
+    b = ease((t - 0.6) / 0.4)
+    texto_rico(im, (M, y + 30), "Em agosto, a lama engoliu este porto na fronteira do Nepal com a China", fonte("sans", 44),
+               W - 2 * M, cor=LIGHT, alpha=b, dy=int(30 * (1 - b)))
+    return im
+
+
+CENAS = [(cena_abertura, 4.5), (cena2, 3.2), (cena_ponte, 3.5), (cena4, 3.8), (cena5, 3.2), (cena6, 2.2)]
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "teste":
@@ -168,4 +182,4 @@ if __name__ == "__main__":
             o.paste(q, (i * 360, 0))
         o.save(sys.argv[2])
     else:
-        R.render(CENAS, "nepal-fundo", cena1)
+        R.render(CENAS, "nepal-fundo", cena_abertura, t_capa=2.4)
