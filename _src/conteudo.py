@@ -827,6 +827,62 @@ VIDEOS = {
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
     {
+        "data": "2026-10-23", "pasta": "pp/2026-10-23", "telas": 7,
+        "materia": {
+            "abertura": "O último debate antes da votação é hoje à noite na Globo, o Datafolha mostra Lula e Flávio empatados nos votos válidos, as campanhas trocam documentos para abrir os sigilos, Mato Grosso enfrenta calor de até 43°C e um tufão deixa um morto em Taiwan. Faltam dois dias para o 2º turno.",
+            "secoes": [
+                {"chapeu": "Eleições", "titulo": "Último debate antes da votação é hoje na Globo, às 20h20 em Mato Grosso",
+                 "texto": [
+                    "Lula (PT) e Flávio Bolsonaro (PL) fazem nesta sexta-feira (23) o último debate do 2º turno, na TV Globo. A transmissão começa às 21h20 de Brasília, 20h20 em Mato Grosso, a partir dos Estúdios Globo, no Rio de Janeiro, com mediação do jornalista César Tralli.",
+                    "É o segundo encontro dos dois candidatos neste turno. O primeiro foi na Band, no domingo (18), quando começou a disputa sobre a abertura dos sigilos bancário, fiscal e telefônico.",
+                 ],
+                 "fontes": [("Diário do Grande ABC, data e horário do debate", "https://www.dgabc.com.br/Noticia/4353569/ultimo-debate-do-2-turno-reunira-lula-e-flavio-bolsonaro-na-tv-globo-veja-quando-sera")]},
+                {"chapeu": "Pesquisas", "titulo": "Datafolha mostra Lula e Flávio empatados com 50% dos votos válidos",
+                 "texto": [
+                    "A pesquisa Datafolha divulgada na noite de quinta-feira (22) mostra Lula e Flávio Bolsonaro com 50% dos votos válidos cada um. Na rodada anterior, de 15 de outubro, Flávio tinha 51% e Lula, 49%.",
+                    "Foram 2.520 entrevistas entre 20 e 22 de outubro, com margem de erro de 2 pontos para mais ou para menos. A pesquisa foi contratada pela Folha de S.Paulo e pela Globo e está registrada no TSE sob o número BR-09709/2026.",
+                    "Votos válidos são os votos dados a candidatos, sem brancos e nulos. É a mesma conta que define o vencedor no domingo. Com a diferença dentro da margem de erro, a pesquisa não permite dizer quem está na frente.",
+                 ],
+                 "fontes": [("CNN Brasil, Datafolha (22/10)", "https://www.cnnbrasil.com.br/eleicoes/datafolha-flavio-e-lula-empatam-em-50-de-votos-validos-no-2o-turno/")]},
+                {"chapeu": "Eleições", "titulo": "Sigilos: Lula entrega autorizações na quinta; campanha de Flávio envia as suas na madrugada",
+                 "texto": [
+                    "As duas campanhas tinham combinado entregar ao TSE, até as 23h59 de quinta-feira (22), as autorizações para abrir os sigilos bancário, fiscal e telefônico dos candidatos, de parentes e de empresas ligadas a eles.",
+                    "A campanha de Lula entregou os documentos na noite de quinta e disse ter aceitado as 19 exigências feitas por Flávio, entre elas os gastos com cartão corporativo da Presidência desde 2023 e os registros de entrada nos palácios. Segundo a Revista Fórum, a campanha de Flávio enviou as autorizações dela na madrugada de sexta-feira (23). Não havia confirmação oficial do horário do protocolo nem de que todos os documentos combinados foram entregues.",
+                    "Na quinta, o ministro André Mendonça, relator do caso no TSE, decidiu que os candidatos não precisam de decisão judicial para abrir os próprios sigilos e podem divulgar os dados \"como e quando entenderem pertinentes\". A campanha de Lula recorreu e pede que o tribunal requisite os dados diretamente ao Banco Central, aos bancos, à Receita Federal e às operadoras de telefonia.",
+                    "Até a publicação desta edição, nenhum extrato ou declaração tinha sido divulgado.",
+                 ],
+                 "fontes": [("O Tempo, decisão de Mendonça (22/10)", "https://www.otempo.com.br/eleicoes/2026/2026/10/22/mendonca-afirma-que-lula-e-flavio-bolsonaro-nao-precisam-de-decisao-judicial-para-abrir-sigilos"), ("CartaCapital, entrega da campanha de Lula (22/10)", "https://www.cartacapital.com.br/justica/campanha-de-lula-entrega-documentos-autorizando-a-abertura-do-sigilo-flavio-nao/"), ("Revista Fórum, envio da campanha de Flávio (23/10)", "https://revistaforum.com.br/politica/lula-entrega-sigilo-tse-flavio-descumpre-acordo/")]},
+                {"chapeu": "Mato Grosso", "titulo": "Calor chega a 43°C em MT hoje; domingo de votação tem alerta de tempestade no sul do estado",
+                 "texto": [
+                    "A previsão para esta sexta-feira (23) indica máximas de 43°C em Cáceres, 42°C em Cuiabá e Várzea Grande e 38°C em Primavera do Leste, sem chuva na maior parte do estado, segundo levantamento do Cenário MT com dados do OpenWeather.",
+                    "Para o domingo (25), dia da votação, o Inmet emitiu alerta amarelo de tempestade para Alto Araguaia, Alto Taquari, Barão de Melgaço, Itiquira e Poconé, com rajadas de vento de até 60 km/h e até 50 milímetros de chuva no dia. Em Primavera do Leste, a previsão é de tempo nublado.",
+                    "A Defesa Civil orienta beber água ao longo do dia, usar roupas leves e evitar o sol forte entre 10h e 16h. Quem for votar nesse horário deve levar água.",
+                 ],
+                 "fontes": [("Cenário MT, previsão de sexta (23/10)", "https://cenariomt.com.br/clima/mato-grosso-tera-maximas-de-43c-nesta-sexta-feira-23/"), ("RDNews, alerta do Inmet para domingo (22/10)", "https://www.rdnews.com.br/cidades/domingo-de-eleicao-tera-calor-de-ate-39-c-em-cuiaba-e-alerta-de-tempestades-em-mt/251076")]},
+                {"chapeu": "Internacional", "titulo": "Tufão Champi paralisa grande parte de Taiwan e deixa um morto e 94 feridos",
+                 "texto": [
+                    "Grande parte de Taiwan suspendeu aulas, expediente público e o mercado financeiro nesta sexta-feira (23) com a aproximação do tufão Champi. Foram cancelados 931 voos, 262 domésticos e 669 internacionais, e 1.286 pessoas foram retiradas de áreas de risco, a maioria em regiões de montanha.",
+                    "Um homem morreu levado por ondas numa praia do condado de Pingtung, no sul da ilha. Outras 94 pessoas ficaram feridas, a maior parte em acidentes de trânsito, quedas e queda de objetos. As ilhas de Kinmen mantiveram aulas e repartições abertas.",
+                    "O tufão perde força e não deve tocar terra na ilha. A previsão é que passe perto da costa nordeste e siga para o norte, rumo à costa da China e ao sul do Japão, com o maior impacto entre sexta e sábado. Segundo a agência meteorológica de Taiwan, os ventos sustentados chegavam a cerca de 155 km/h, com rajadas de até 191 km/h.",
+                 ],
+                 "fontes": [("Focus Taiwan, balanço oficial (23/10)", "https://focustaiwan.tw/society/202610230005"), ("Reuters, voos e evacuações (22/10)", "https://wkzo.com/2026/10/22/taiwan-shuts-down-ahead-of-weakening-typhoon-champi-hundreds-of-flights-cancelled/")]},
+            ],
+            "agenda": [
+                ("Sex 23", "Último debate do 2º turno, na Globo, às 21h20 de Brasília (20h20 em Mato Grosso)."),
+                ("Sáb 24", "Últimas pesquisas antes da votação."),
+                ("Dom 25", "2º turno das eleições, das 8h às 17h de Brasília (7h às 16h em Mato Grosso)."),
+            ],
+        },
+        "itens": [
+            ("Último debate antes da votação é hoje na Globo, às 21h20 de Brasília, 20h20 em Mato Grosso.", None),
+            ("Datafolha mostra Lula e Flávio empatados com 50% dos votos válidos. Na rodada anterior, Flávio tinha 51%.", None),
+            ("Sigilos: Lula entregou as autorizações na quinta; a campanha de Flávio enviou as suas na madrugada. Nenhum dado foi divulgado ainda.", None),
+            ("Calor chega a 43°C em Cáceres hoje. No domingo, há alerta de tempestade no sul de MT.", None),
+            ("Tufão paralisa grande parte de Taiwan e deixa um morto e 94 feridos.", None),
+        ],
+        "fonte": "Fontes: Diário do Grande ABC, CNN Brasil, O Tempo, CartaCapital, Revista Fórum, Cenário MT, RDNews, Inmet, Focus Taiwan e Reuters",
+    },
+    {
         "data": "2026-10-21", "pasta": "pp/2026-10-21", "telas": 6,
         "materia": {
             "abertura": "Lula sanciona hoje a lei que perdoa dívidas de MEIs e aumenta o teto de faturamento, a queimada segue proibida em Mato Grosso até o fim de novembro, duas pesquisas mostram empate técnico com Flávio numericamente à frente e o Ministério Público Eleitoral pede garantias para o voto indígena. Faltam quatro dias para o 2º turno.",

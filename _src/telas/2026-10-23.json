@@ -1,0 +1,36 @@
+{
+  "data": "2026-10-23", "data_curta": "23/10", "dia_longo": "Sexta-feira, 23 de outubro de 2026",
+  "capa": [
+    "Último debate é hoje na Globo, às 20h20 em MT",
+    "Datafolha: Lula e Flávio empatam com 50% dos válidos",
+    "Sigilos: campanhas entregam autorizações ao TSE",
+    "Calor de até 43°C em MT hoje",
+    "Tufão deixa um morto e 94 feridos em Taiwan"
+  ],
+  "telas": [
+    {"tipo": "texto", "tag": "Eleições", "titulo": "Último debate antes da votação é hoje na Globo, às 20h20 em MT",
+     "topicos": ["Começa às 21h20 de Brasília, 20h20 em Mato Grosso.", "Mediação de César Tralli, nos Estúdios Globo, no Rio.", "É o segundo e último encontro de Lula e Flávio no 2º turno."],
+     "fonte": "Fonte: Diário do Grande ABC"},
+    {"tipo": "numero", "tag": "Pesquisas", "numero": "50 a 50", "tam": 250,
+     "frase": "é o placar de Lula e Flávio nos votos válidos, segundo o Datafolha.",
+     "detalhe": "Na rodada anterior, Flávio tinha 51% e Lula, 49%. Foram 2.520 entrevistas de 20 a 22/10, com margem de 2 pontos.",
+     "fonte": "Fonte: Datafolha, via CNN Brasil"},
+    {"tipo": "texto", "tag": "Eleições", "titulo": "Sigilos: Lula entrega autorizações na quinta; Flávio envia as suas na madrugada", "tam": 62,
+     "topicos": ["O prazo combinado entre as campanhas era 23h59 de quinta.", "Mendonça, do TSE, decidiu que cada candidato pode divulgar os próprios dados quando quiser.", "Até agora, nenhum extrato ou declaração foi divulgado."],
+     "fonte": "Fontes: O Tempo, CartaCapital e Revista Fórum"},
+    {"tipo": "numero", "tag": "Mato Grosso", "numero": "43°C", "tam": 280,
+     "frase": "é a máxima prevista para Cáceres hoje. Em Primavera do Leste, 38°C.",
+     "detalhe": "No domingo, o Inmet alerta para tempestade em Alto Araguaia, Alto Taquari, Barão de Melgaço, Itiquira e Poconé. Leve água para votar.",
+     "fonte": "Fontes: Cenário MT e Inmet"},
+    {"tipo": "texto", "tag": "Internacional", "titulo": "Tufão paralisa grande parte de Taiwan e deixa um morto e 94 feridos", "tam": 64,
+     "topicos": ["931 voos cancelados e 1.286 pessoas retiradas de áreas de risco.", "Um homem foi levado por ondas numa praia no sul da ilha.", "O tufão perde força e não deve tocar terra."],
+     "fonte": "Fontes: Focus Taiwan e Reuters"}
+  ],
+  "agenda_titulo": "Até domingo",
+  "agenda": [
+    ["HOJE", "Sex 23", "Último debate, na Globo, às 20h20 em Mato Grosso."],
+    ["AMANHÃ", "Sáb 24", "Últimas pesquisas antes da votação."],
+    ["DAQUI A 2 DIAS", "Dom 25", "2º turno. Votação das 7h às 16h em Mato Grosso."]
+  ],
+  "agenda_fonte": "Fontes: Globo e TSE"
+}
