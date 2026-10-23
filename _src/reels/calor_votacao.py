@@ -28,9 +28,9 @@ def ease(x):
 
 def quebrar(d, txt, f, maxw):
     linhas, atual = [], ""
-    for p in txt.split():
+    for p in txt.split(" "):
         t = (atual + " " + p).strip()
-        if d.textlength(t.replace("*", ""), font=f) <= maxw:
+        if d.textlength(t.replace("*", "").replace("\u00a0", " "), font=f) <= maxw:
             atual = t
         else:
             linhas.append(atual); atual = p
@@ -50,10 +50,10 @@ def texto_rico(im, xy, txt, f, maxw, cor=WHITE, destaque=RED2, entre=1.12, alpha
     a = int(255 * alpha)
     for linha in quebrar(d, txt, f, maxw):
         x, dentro = x0, False
-        for i, pal in enumerate(linha.split()):
+        for i, pal in enumerate(linha.split(" ")):
             ini, fim = pal.startswith("*"), pal.endswith("*")
             if ini: dentro = True
-            limpa = pal.strip("*") + (" " if i < len(linha.split()) - 1 else "")
+            limpa = pal.strip("*").replace("\u00a0", " ") + (" " if i < len(linha.split(" ")) - 1 else "")
             c = destaque if dentro else cor
             d.text((x, y), limpa, font=f, fill=c + (a,))
             x += d.textlength(limpa, font=f)
@@ -63,10 +63,14 @@ def texto_rico(im, xy, txt, f, maxw, cor=WHITE, destaque=RED2, entre=1.12, alpha
     return y - dy
 
 
+TAG = "SERVIÇO · ELEIÇÕES 2026"
+FONTES_FIM = "Fontes: Inmet, Climatempo, Cenário MT e TSE"
+
+
 def topo(im, fonte_txt, alpha=1.0):
     d = ImageDraw.Draw(im)
     f = fonte("sans-b", 28)
-    tag = "SERVIÇO · ELEIÇÕES 2026"
+    tag = TAG
     tw = d.textlength(tag, font=f) + 2 * 3 * len(tag) // 4
     x = M
     d.rectangle((x, 110, x + tw + 36, 160), fill=RED)
@@ -335,7 +339,7 @@ def cena6(t, dur):
     d.text((cx, cy + 210), "A praça é de todo mundo.", font=fonte("sans", 40), fill=LIGHT + (al,), anchor="mm")
     b = int(255 * ease((t - 0.5) / 0.5))
     fs = fonte("sans", 28)
-    d.text((cx, cy + 380), "Fontes: Inmet, Climatempo, Cenário MT e TSE", font=fs, fill=GREY + (b,), anchor="mm")
+    d.text((cx, cy + 380), FONTES_FIM, font=fs, fill=GREY + (b,), anchor="mm")
     d.text((cx, cy + 424), "Reportagem completa em agorapraca.com.br", font=fs, fill=GREY + (b,), anchor="mm")
     im.alpha_composite(camada)
     return im
@@ -344,29 +348,33 @@ def cena6(t, dur):
 CENAS = [(cena1, 3.0), (cena2, 3.2), (cena3, 3.0), (cena4, 3.6), (cena5, 3.4), (cena6, 2.2)]
 
 
-def main(geo):
-    global MAPA
-    MAPA = Mapa(geo, (M + 20, 440, W - M - 20, 1560))
+def render(cenas, nome, cena_capa):
+    """Renderiza as cenas em video/<nome>.mp4 (áudio mudo) e salva a capa (último quadro de cena_capa)."""
     tmp = tempfile.mkdtemp()
     k = 0
     capa = None
-    for fn, dur in CENAS:
+    for fn, dur in cenas:
         nf = int(round(dur * FPS))
         for i in range(nf):
-            t = i / FPS
-            im = fn(t, dur).convert("RGB")
+            im = fn(i / FPS, dur).convert("RGB")
             im.save(os.path.join(tmp, f"{k:05d}.png"))
-            if fn is cena1 and i == nf - 1:
+            if fn is cena_capa and i == nf - 1:
                 capa = im.copy()
             k += 1
-    out = os.path.join(RAIZ, "video", "calor-votacao.mp4")
+    out = os.path.join(RAIZ, "video", f"{nome}.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-framerate", str(FPS), "-i", os.path.join(tmp, "%05d.png"),
                     "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
                     "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", "-preset", "medium", "-movflags", "+faststart",
                     "-c:a", "aac", "-b:a", "96k", out], check=True)
-    capa.save(os.path.join(RAIZ, "video", "calor-votacao.jpg"), quality=88)
+    capa.save(os.path.join(RAIZ, "video", f"{nome}.jpg"), quality=88)
     shutil.rmtree(tmp)
     print(out, k, "frames")
+
+
+def main(geo):
+    global MAPA
+    MAPA = Mapa(geo, (M + 20, 440, W - M - 20, 1560))
+    render(CENAS, "calor-votacao", cena1)
 
 
 if __name__ == "__main__":

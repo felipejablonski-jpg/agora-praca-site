@@ -15,6 +15,7 @@ NOTICIAS = [
         "editoria": "ciencia", "chapeu": "Clima",
         "titulo": "Fundo climático da ONU reserva US$ 20 milhões ao Nepal, menos de 0,5% do custo da reconstrução",
         "linha_fina": "É a primeira vez que o fundo de perdas e danos separa dinheiro para um país. A enchente de agosto deixou mais de 1.400 mortos, e o recurso ainda não foi transferido.",
+        "video": "nepal-fundo",
         "carrossel": [f"img/nepal-fundo/{k:02d}.jpg" for k in range(1, 7)],
         "texto": [
             "O conselho do Fundo para Responder a Perdas e Danos, criado nas negociações do clima da ONU, aprovou nesta quinta-feira (22) a reserva de US$ 20 milhões para a recuperação do Nepal. O país foi atingido em agosto por uma enchente que deixou mais de 1.400 mortos e mais de 5.000 desaparecidos, segundo a agência AFP. Somando US$ 1,6 milhão em custos administrativos, o total separado é de US$ 21,6 milhões.",
@@ -30,7 +31,7 @@ NOTICIAS = [
             "## Por que esse fundo existe",
             "Os países em desenvolvimento cobraram esse fundo durante anos. O argumento é que eles emitiram pouco dos gases que aquecem o planeta, mas são os que mais sofrem com secas, enchentes e tempestades. O fundo foi aprovado na conferência do clima da ONU e, segundo a Climate Home News, recebeu até agora cerca de US$ 500 milhões dos países que prometeram contribuir.",
         ],
-        "credito_extra": "Carrossel: Agora Praça. Fotos ilustrativas: Pexels.",
+        "credito_extra": "Vídeo e carrossel: Agora Praça. Fotos ilustrativas: Pexels.",
         "fontes": [
             ("Climate Home News, a decisão e as posições dos países (22/10, atualizada em 23/10)", "https://www.climatechangenews.com/2026/10/22/loss-and-damage-fund-agrees-20m-for-nepal-but-rich-nations-warn-it-should-not-set-precedent/"),
             ("AFP via Arab News, mortos, desaparecidos e custo da reconstrução (22/10)", "https://www.arabnews.com/world/un-climate-disaster-fund-moves-to-provide-20m-aid-for-nepal-3007795"),
@@ -866,6 +867,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "nepal-fundo": "ONU reserva US$ 20 milhões para o Nepal",
     "calor-votacao": "Calor e alerta de tempestade no domingo de votação",
     "php": "Falhas no PHP tiram sites de governos do ar",
     "secoes343": "Justiça Eleitoral corrige: são 343 seções",
