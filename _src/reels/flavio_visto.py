@@ -23,8 +23,8 @@ _LISTA_ANTIGA = f'''<div class="a" style="left:80px;right:80px;top:520px">
 </div></div>'''
 
 CENAS = [
-    dict(tipo="foto", arquivo="aviao-aeroporto-ponte.jpg", cor=True, mov="in", batidas=5,
-         html=topo(T, ABR22) + texto("Flávio Bolsonaro fugiu do Brasil",
+    dict(tipo="foto", arquivo="flavio-telefone-agencia-senado.jpg", cor=True, mov="in", batidas=5,
+         html=topo(T, "Foto de arquivo: Beto Barata/Agência Senado") + texto("Flávio Bolsonaro fugiu do Brasil",
                                       "Saiu mesmo proibido pelo STF de deixar o país", top=720, fs=104)),
     dict(tipo="foto", arquivo="passaporte-brasileiro.jpg", cor=True, mov="dir", batidas=4,
          html=topo(T, ABR22) + numero("11h", "Era o prazo para entregar os passaportes à PF",
@@ -32,8 +32,8 @@ CENAS = [
     dict(tipo="foto", arquivo="justica-estatua-stf.jpg", cor=False, mov="in", batidas=4,
          html=topo(T, ABR09) + texto("Investigado no STF por suspeita de lavagem de dinheiro",
                                       "A ordem de Moraes era entregar os passaportes e não sair do país", top=760)),
-    dict(tipo="fixa", batidas=5, html=topo(T, "Departamento de Estado, à CNN Brasil", fundo="preto")
-         + texto("Os EUA vão dar visto a ele e à família", "Ele saiu com a mulher e as filhas, segundo a PF e fontes do governo americano", top=640, fs=96)),
+    dict(tipo="foto", arquivo="aviao-aeroporto-ponte.jpg", cor=True, mov="out", batidas=5, html=topo(T, ABR22 + " · Departamento de Estado, à CNN Brasil")
+         + texto("Os EUA vão dar visto a ele e à família", "Ele saiu com a mulher e as filhas, segundo a PF e fontes do governo americano", top=720, fs=90)),
     dict(tipo="fixa", batidas=4, html=topo(T, "Segundo aliado ouvido pelo UOL", fundo="preto")
          + numero("Quarta", "Flávio deve falar pela primeira vez desde a fuga", "Entrevista coletiva, sem horário divulgado", top=640, fs=200)),
     dict(tipo="fixa", batidas=2, html=assinatura("CNN Brasil, UOL, g1, Gazeta do Povo e Metrópoles")),
