@@ -308,6 +308,9 @@ CAPAS = {
         lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
+    "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais": (
+        lambda: foto("img/fotos/flavio-paulista.jpg", caixa=(0.2, 0, 0.8, 0.8)),
+        "Flávio Bolsonaro em ato na Avenida Paulista, em São Paulo, em 18/10/2026. Foto de arquivo: Rafa Neddermeyer/Agência Brasil"),
     "missil-inflavel-ataque-nuclear-ato-pro-flavio": (
         lambda: foto_retrato("img/missil.jpg"),
         "Foto: reprodução / redes sociais (autoria não identificada)"),
