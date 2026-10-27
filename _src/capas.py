@@ -131,6 +131,27 @@ def foto_dupla(a, b, caixa_a=None, caixa_b=None):
     return out
 
 
+def foto_tripla(a, b, c, caixas=(None, None, None)):
+    """Três fotos lado a lado, um terço da capa para cada uma, separadas por filete branco."""
+    g = 3
+    larg = (W - 2 * g) // 3
+    def terco(src, caixa):
+        im = Image.open(os.path.join(RAIZ, src)).convert("RGB")
+        if caixa:
+            x0, y0, x1, y1 = caixa
+            im = im.crop((int(x0 * im.width), int(y0 * im.height), int(x1 * im.width), int(y1 * im.height)))
+        r = larg / H
+        if im.width / im.height > r:
+            nw = int(im.height * r); x = (im.width - nw) // 2; im = im.crop((x, 0, x + nw, im.height))
+        else:
+            nh = int(im.width / r); y = (im.height - nh) // 2; im = im.crop((0, y, im.width, y + nh))
+        return im.resize((larg, H), Image.LANCZOS)
+    out = Image.new("RGB", (W, H), WHITE)
+    for i, (src, cx) in enumerate(zip((a, b, c), caixas)):
+        out.paste(terco(src, cx), (i * (larg + g), 0))
+    return out
+
+
 # ---------- capas de arte (dados) ----------
 # Regra: arte NÃO é capa. Estas funções ficam para gráficos dentro da matéria.
 
@@ -309,8 +330,10 @@ CAPAS = {
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
     "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais": (
-        lambda: foto("img/fotos/flavio-paulista.jpg", caixa=(0.2, 0, 0.8, 0.8)),
-        "Flávio Bolsonaro em ato na Avenida Paulista, em São Paulo, em 18/10/2026. Foto de arquivo: Rafa Neddermeyer/Agência Brasil"),
+        lambda: foto_tripla("img/fotos/justica-estatua-stf.jpg", "img/fotos/passaporte-brasileiro.jpg",
+                            "img/fotos/aviao-aeroporto-ponte.jpg",
+                            ((0.37, 0, 0.67, 1), (0.5, 0, 0.82, 1), (0.18, 0, 0.5, 1))),
+        "Estátua da Justiça, em frente ao STF (Marcello Casal Jr/Agência Brasil, 2009); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
     "missil-inflavel-ataque-nuclear-ato-pro-flavio": (
         lambda: foto_retrato("img/missil.jpg"),
         "Foto: reprodução / redes sociais (autoria não identificada)"),
