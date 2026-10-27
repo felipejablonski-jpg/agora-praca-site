@@ -330,10 +330,10 @@ CAPAS = {
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
     "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais": (
-        lambda: foto_tripla("img/fotos/justica-estatua-stf.jpg", "img/fotos/passaporte-brasileiro.jpg",
+        lambda: foto_tripla("img/fotos/flavio-telefone-agencia-senado.jpg", "img/fotos/passaporte-brasileiro.jpg",
                             "img/fotos/aviao-aeroporto-ponte.jpg",
-                            ((0.37, 0, 0.67, 1), (0.5, 0, 0.82, 1), (0.18, 0, 0.5, 1))),
-        "Estátua da Justiça, em frente ao STF (Marcello Casal Jr/Agência Brasil, 2009); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
+                            ((0.42, 0, 0.92, 1), (0.5, 0, 0.82, 1), (0.18, 0, 0.5, 1))),
+        "Flávio Bolsonaro (Beto Barata/Agência Senado); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
     "missil-inflavel-ataque-nuclear-ato-pro-flavio": (
         lambda: foto_retrato("img/missil.jpg"),
         "Foto: reprodução / redes sociais (autoria não identificada)"),

@@ -10,7 +10,7 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
-        "slug": "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais", "capa": "img/capa/flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais.jpg", "capa_credito": "Estátua da Justiça, em frente ao STF (Marcello Casal Jr/Agência Brasil, 2009); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo",
+        "slug": "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais", "capa": "img/capa/flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais.jpg", "capa_credito": "Flávio Bolsonaro (Beto Barata/Agência Senado); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo",
         "data": "2026-10-27", "ordem": 1,
         "editoria": "politica", "chapeu": "Eleições 2026",
         "video": "flavio-visto",
@@ -57,7 +57,7 @@ NOTICIAS = [
             "## O que ainda não se sabe",
             "Flávio não falou publicamente desde o vídeo de segunda. A PF e o STF não divulgaram nota oficial sobre a saída, a rota da viagem não foi confirmada e a Argentina nega que ele tenha entrado no país. O Departamento de Estado não disse quando os vistos serão emitidos. O Agora Praça atualiza esta matéria depois da entrevista anunciada por aliados para quarta-feira (28).",
         ],
-        "credito_extra": "Fotos de arquivo: Marcello Casal Jr/Agência Brasil (2009) e Marcelo Camargo/Agência Brasil (2022).",
+        "credito_extra": "Fotos de arquivo: Beto Barata/Agência Senado e Marcelo Camargo/Agência Brasil (2022).",
         "fontes": [
             ("CNN Brasil, Departamento de Estado confirma vistos para Flávio e família (27/10, 18h11)", "https://www.cnnbrasil.com.br/internacional/departamento-de-estado-dos-eua-diz-a-cnn-que-emitira-vistos-para-flavio/"),
             ("CNN Brasil, coluna de Jussara Soares: Flávio chega com mulher e filhas aos EUA (27/10, 17h39)", "https://www.cnnbrasil.com.br/blogs/jussara-soares/politica/flavio-chega-com-mulher-e-filhas-aos-eua/"),
