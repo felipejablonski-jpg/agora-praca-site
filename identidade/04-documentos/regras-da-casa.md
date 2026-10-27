@@ -1,0 +1,178 @@
+# Agora Praça · Regras da casa
+
+16 de outubro de 2026 · Felipe Jablonski
+
+## Missão e princípios
+
+A Agora existe pra devolver o debate público às pessoas: notícia de interesse público, em linguagem simples, com fato checado.
+
+- **Interesse público:** o que afeta a vida coletiva, de qualquer renda, região ou posição política.
+- **Fato checado:** nada sai sem confirmação, mesmo que outro veículo publique antes.
+- **Mesma régua pra todos:** governo, oposição, empresa e aliado são cobrados do mesmo jeito.
+- **Opinião às claras:** quando houver opinião, ela vem rotulada e separada da notícia.
+- **Erro assumido:** errou, corrige em público e rápido.
+
+## Apuração e checagem
+
+Só publica o que tem duas fontes independentes ou um documento oficial.
+
+1. Fonte primária primeiro: diário oficial, processo, nota do órgão, dado público.
+2. Notícia de outro veículo é pista: cita o veículo pelo nome e confirma quando der.
+3. Print solto, áudio de WhatsApp e vídeo sem origem não viram notícia.
+4. Quem é acusado é procurado antes da publicação. Sem resposta, o post registra: "procurado, não respondeu até a publicação".
+5. Confere data e local de todo conteúdo. Notícia velha recirculando é a forma mais comum de desinformação.
+
+Na dúvida, não publica. Furo perdido custa menos que credibilidade perdida.
+
+## Fato, análise e opinião
+
+Três formatos, cada um com seu rótulo. O leitor sempre sabe qual está lendo.
+
+| Formato | O que traz | Como aparece |
+| --- | --- | --- |
+| Notícia | O que aconteceu, com fonte | Card padrão, sem adjetivo |
+| Análise | Contexto e consequências, apoiados em fatos | Chapéu "Análise" |
+| Opinião | Posição de quem escreve | Chapéu "Opinião", assinada |
+
+Legenda de notícia não carrega opinião. Comentário pessoal sobre um fato vai num post separado, rotulado.
+
+## Correção de erros
+
+Erro confirmado é corrigido em até 24 horas, no mesmo lugar onde saiu.
+
+1. A legenda do post original ganha no topo: "Atualização em [data]: [o que mudou]".
+2. Se o erro muda o sentido da notícia, sai também o card de Correção no feed e nos stories.
+3. Post errado nunca é apagado em silêncio. Apagar só por risco jurídico ou à segurança de alguém, e aí a Agora avisa que apagou e por quê.
+4. Quem apontou o erro recebe agradecimento público, se quiser ser citado.
+
+## Linguagem e manchetes
+
+Manchete diz quem fez o quê, com verbo no presente, e só promete o que o texto entrega.
+
+- Sem adjetivo na notícia: "absurdo", "chocante" e "polêmico" ficam de fora.
+- Sem caixa alta, sem emoji e sem "URGENTE", exceto em risco real à vida ou alerta de órgão oficial.
+- Pergunta como manchete só no carrossel "Entenda".
+- Número só quando ajuda, arredondado e explicado: "1 em cada 4 moradores".
+- Palavra técnica é traduzida na mesma frase.
+- Linguagem simples, sem gíria e sem juridiquês.
+
+Força sem sensacionalismo: a indignação vem do fato bem contado. Em vez de "ABSURDO: vereadores aumentam o próprio salário", a Agora escreve "Vereadores aprovam o próprio aumento em votação de 4 minutos". O fato concreto dá ao leitor o que compartilhar, e ninguém pode acusar exagero.
+
+**Voz da Agora:** um jornalista que explica bem, próximo sem ser íntimo.
+
+- Trata o leitor por "você", nunca "tu".
+- "Para" no site, nos cards e nas manchetes. "Pra" só em legenda e vídeo, onde o tom é falado.
+- Frase curta, palavra comum, sem gíria de internet.
+- Coloquial só em slogan e chamada de vídeo. No corpo da notícia, a régua é a do jornalismo.
+
+## Imagens e direitos
+
+Toda imagem tem origem conhecida e crédito visível no próprio card.
+
+| Fonte | Pode usar? | Crédito |
+| --- | --- | --- |
+| Agência Brasil | Sim, libera reprodução com crédito | Foto: Nome / Agência Brasil |
+| Sites de órgãos públicos | Em geral sim; confere a licença no site | Conforme o órgão |
+| Foto própria | Sim | Foto: Agora |
+| Print de manchete de outro veículo | Sim, como citação | Reprodução: nome do veículo |
+| Foto de outro veículo ou agência paga | Não | |
+| Foto de pessoa comum tirada de rede social | Só com autorização | |
+
+Nunca mostra rosto de criança em situação de risco nem de vítima de violência. Música em Reels só da biblioteca liberada da conta.
+
+## Cuidados jurídicos
+
+A Agora publica o que consegue provar, e nada além disso.
+
+| Situação do caso | Palavra certa |
+| --- | --- |
+| Polícia ou MP apura | Investigado |
+| MP apresentou denúncia | Denunciado |
+| Juiz aceitou a denúncia | Réu |
+| Saiu sentença | Condenado |
+| Não cabe mais recurso | Condenado em definitivo |
+
+- "Criminoso", "bandido" e "ladrão" só pra quem foi condenado em definitivo, e mesmo assim de preferência não.
+- Calúnia, difamação e injúria são crimes (Código Penal, arts. 138 a 140). Acusação sem prova é risco de processo.
+- Quem se sentir ofendido tem direito de resposta (Lei 13.188/2015). Pedido que procede é publicado com o mesmo destaque.
+- Adolescente acusado de ato infracional nunca é identificado: nem nome, nem foto, nem apelido (ECA, art. 143).
+- Vítima de violência sexual nunca é identificada.
+- Na dúvida jurídica, consulta advogado antes de publicar.
+
+## Política comercial
+
+Dinheiro pode entrar; pauta não se vende.
+
+**Receitas aceitas**
+
+- Anúncio de comércio e serviço, identificado como "Publicidade" e marcado com a ferramenta "Parceria paga" do Instagram.
+- Patrocínio de conteúdo de serviço (ex.: um mercado patrocina o boletim semanal de vacinas), com o patrocinador nomeado.
+- Apoio de leitores: Pix, financiamento coletivo, assinatura do Instagram.
+- Editais e bolsas de jornalismo.
+
+**Regras**
+
+1. Anunciante não lê antes, não aprova e não sugere notícia.
+2. Notícia ruim sobre anunciante sai igual a qualquer outra.
+3. Post pago nunca usa o card de notícia. Tem formato próprio, com a palavra "Publicidade" visível.
+4. Não aceita dinheiro pra publicar, apagar ou suavizar notícia.
+5. Publicidade de governo só por contrato formal, rotulada, e aquele governo segue sendo cobrado normalmente.
+6. Não anuncia aposta online, promessa de cura nem esquema de dinheiro fácil.
+
+## Política eleitoral
+
+A Agora não vende espaço a político, partido ou candidato, dentro ou fora de eleição.
+
+- A lei eleitoral proíbe propaganda eleitoral paga na internet, exceto o impulsionamento contratado pelo próprio candidato ou partido (Lei 9.504/1997, art. 57-C). Perfil de terceiro que recebe pra postar expõe a multa quem divulga e quem se beneficia.
+- Entrevista com candidato: mesmo espaço e mesmas perguntas-base a todos que aceitarem.
+- Pesquisa eleitoral só com o número de registro na Justiça Eleitoral, o período da coleta, a margem de erro, o nível de confiança, o número de entrevistas, o instituto e quem contratou, tudo na legenda. Quem divulga pesquisa sem registro também pode ser multado. Enquete sobre candidato (inclusive caixinha de votação nos stories) é proibida durante a campanha.
+- A Agora não declara voto. Quem escreve pode ter posição, e opinião segue a regra de rótulo.
+
+## Uso de inteligência artificial
+
+IA ajuda a escrever e organizar; quem responde por cada palavra é a Agora.
+
+- Todo fato, número e citação vindo de IA é conferido na fonte original antes de publicar.
+- Nenhuma fala é inventada ou reconstruída.
+- IA não gera foto realista de pessoa ou acontecimento. Ilustração feita com IA leva a etiqueta "Imagem gerada por IA".
+- Quando a IA tiver papel relevante numa matéria (resumir um documento longo, por exemplo), o post informa.
+
+## Relação com leitores e comentários
+
+Os comentários são a praça: debate aberto, com regras mínimas e iguais pra todos.
+
+- **Ficam:** crítica, discordância e correção, inclusive contra a própria Agora.
+- **Saem:** ataque pessoal, discurso de ódio, ameaça, exposição de dados pessoais, golpe e spam.
+- Quem insiste depois de ter comentário removido é bloqueado.
+- Denúncia de leitor é ponto de partida: passa pela apuração antes de virar post.
+- Quem denuncia nunca é exposto sem autorização. Sigilo de fonte prometido é cumprido sempre (Constituição, art. 5º, XIV).
+- Mensagens são respondidas em até 3 dias.
+
+**Postura nos comentários:** a Agora dá o palco e o microfone. Quem conversa é o público.
+
+- A conta da Agora não debate, não opina e não entra em discussão nos comentários.
+- Responde só quando for informação: pedido de fonte, apontamento de erro ou denúncia. Resposta curta, com link.
+- Todo post leva um comentário fixado com a fonte da notícia.
+- Opinião pessoal de quem faz a Agora fica nos perfis pessoais, nunca na conta do veículo.
+
+## Pauta e editorias
+
+A Agora cobre três editorias e publica no mínimo três posts por semana, em dias fixos.
+
+| Editoria | O que cobre | Cor | Dia fixo |
+| --- | --- | --- | --- |
+| Serviço | Benefícios, prazos, golpes, concursos, leis que mudam a rotina | Vermelho | Segunda |
+| Meio Ambiente | Queimadas, seca, água, agrotóxico, clima, dengue e outras endemias | Laranja | Quarta |
+| Política | Nacional e Mato Grosso: votações, decisões, dinheiro público | Vermelho | Sexta |
+
+Notícia grande fora da grade entra como extra. Economia, Saúde e Cidades viram editorias próprias quando o ritmo estiver firme.
+
+**Antes de cada post, cinco perguntas**
+
+1. Afeta a vida de quem, e de quantas pessoas?
+2. É novo, ou só está circulando de novo?
+3. Dá pra confirmar em fonte primária?
+4. A Agora acrescenta algo (tradução, contexto, conta refeita) ou só repete?
+5. Eu publicaria igual se fosse do outro lado político?
+
+**Revisão mensal de equilíbrio:** uma vez por mês, olhar a grade inteira e conferir se todos os lados do poder foram cobrados com o mesmo rigor. Se não, falta pauta.

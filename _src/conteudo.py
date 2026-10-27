@@ -363,7 +363,8 @@ NOTICIAS = [
         "video": "secoes",
         "para_voce": ("PARA VOCÊ", "Confira seu local no e-Título, na opção \"Onde votar\", mesmo se você votou no 1º turno sem problema."),
         "texto": [
-            "ATUALIZAÇÃO (21/10, 20h de Brasília): nesta quarta-feira (21), a Justiça Eleitoral corrigiu o total para 343 seções com mudança de endereço. Segundo a Agência Brasil, o número de 4.352 resultou de uma comparação errada com dados da eleição de 2024. Leia a matéria sobre a correção em agorapraca.com.br/noticias/justica-eleitoral-corrige-343-secoes-mudanca-local/. Também corrigimos o dia da semana em que o primeiro número foi divulgado: sábado (17).",
+            "CORREÇÃO EM 22/10: esta matéria dizia que o número de 4.352 seções foi divulgado numa sexta-feira. O certo é sábado, 17 de outubro.",
+            "ATUALIZAÇÃO EM 21/10, às 20h de Brasília: nesta quarta-feira (21), a Justiça Eleitoral corrigiu o total para 343 seções com mudança de endereço. Segundo a Agência Brasil, o número de 4.352 resultou de uma comparação errada com dados da eleição de 2024. Leia a matéria sobre a correção em agorapraca.com.br/noticias/justica-eleitoral-corrige-343-secoes-mudanca-local/.",
             "Cerca de 130 mil eleitores de 22 estados vão votar no segundo turno, no domingo (25), em um endereço diferente do primeiro turno. O número é da versão mais recente da lista do Tribunal Superior Eleitoral (TSE), divulgada na tarde de segunda-feira (19), com 444 seções eleitorais transferidas. O tribunal avisa que os ajustes continuam e que os números ainda podem mudar.",
             "## A lista mudou quatro vezes",
             "O número de mudanças caiu a cada revisão. No sábado (17), eram 4.352 seções. No domingo (18), 2.033 locais. Na manhã de segunda, 554 locais. Na tarde de segunda, 444 seções, com cerca de 130 mil eleitores. Em algumas versões o TSE contou seções e em outras, locais de votação, que podem reunir várias seções.",
