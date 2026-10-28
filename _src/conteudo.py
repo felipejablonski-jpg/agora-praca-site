@@ -10,6 +10,50 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "flavio-carta-verdadeiro-presidente-eleito-numeros-tse",
+        "capa": "img/capa/flavio-carta-verdadeiro-presidente-eleito-numeros-tse.jpg",
+        "capa_credito": "Flávio Bolsonaro em ato na Avenida Paulista, em 18/10. Foto: Rafa Neddermeyer/Agência Brasil",
+        "data": "2026-10-28",
+        "ordem": 2,
+        "editoria": "politica",
+        "chapeu": "Eleições 2026",
+        "video": "flavio-carta",
+        "titulo": "Dos EUA, Flávio se declara \"verdadeiro presidente eleito\" em carta; os números do TSE não sustentam a fraude que ele alega",
+        "linha_fina": "Na primeira manifestação desde que deixou o Brasil, o senador agradece a Trump e a Milei, pede a cassação da chapa Lula-Alckmin e diz que vai liderar a oposição de fora do país. Ele não apresenta prova.",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "A carta não muda o resultado. Lula foi declarado reeleito pelo TSE e toma posse em 5 de janeiro. O crescimento dele no segundo turno cabe nos votos que foram para outros candidatos no primeiro turno e no aumento de votos válidos."),
+        "texto": [
+            "O senador Flávio Bolsonaro (PL-RJ) divulgou nesta quarta-feira (28) uma carta em que se declara \"o verdadeiro presidente eleito do Brasil\". É a primeira manifestação dele desde que deixou o país, contra ordem do Supremo Tribunal Federal, e chegou aos Estados Unidos com a mulher e as filhas. O texto foi publicado por Metrópoles, SBT News, Gazeta do Povo e O Antagonista.",
+            "Na carta, Flávio agradece ao presidente argentino Javier Milei e ao presidente americano Donald Trump, diz que houve fraude no segundo turno, pede a cassação da chapa Lula-Alckmin e afirma que vai liderar a oposição a partir dos Estados Unidos. Ele não apresenta prova de fraude.",
+            "## O que ele diz",
+            "\"Dirijo-me ao povo brasileiro e à comunidade internacional como o verdadeiro presidente eleito do Brasil\", começa o texto. Sobre a saída do país, ele escreve: \"Quero deixar claro: não fugi do Brasil, eu saí pelo Brasil\". E sobre os próximos passos: \"Nos próximos dias, vou me dirigir regularmente ao povo brasileiro, e apresentaremos uma estratégia para mobilizar a oposição e o imenso apoio popular que temos, por todos os meios pacíficos e legítimos, para impedir que Lula consolide um regime ditatorial no Brasil\".",
+            "Flávio diz que não existe mandado de prisão contra ele, o que coincide com o que a Folha de S.Paulo informou na quarta. Ele também se dirige ao senador Rogério Marinho (PL-RN), a quem chama de seu candidato à presidência do Senado.",
+            "## Os \"10 milhões de votos\"",
+            "A carta diz que Lula acrescentou \"mais de 10 milhões de votos do primeiro para o segundo turno\" e chama isso de \"impossibilidade matemática\". O número está certo, e a conta fecha. No primeiro turno, Lula teve 53.879.538 votos. No segundo, 64.256.232. A diferença é de 10.376.694 votos. Flávio passou de 56.104.503 para 59.826.041, um ganho de 3.721.538.",
+            "Somados, os dois ganharam 14.098.232 votos entre um turno e outro. Esse total corresponde exatamente aos 9.316.747 votos que os outros dez candidatos tiveram no primeiro turno mais os 4.781.485 votos válidos a mais que o segundo turno registrou. Os números do primeiro turno são do TSE, publicados pela CartaCapital, e os do segundo turno, do próprio TSE.",
+            "## O horário estendido",
+            "Flávio também critica a decisão do STF que estendeu a votação do segundo turno até as 19h. Segundo a CNN Brasil, o PT pediu a prorrogação ao Supremo por volta das 16h20 do domingo (25), e o ministro Cristiano Zanin, sorteado relator, concedeu o pedido por volta das 17h, horário previsto para o fechamento. Como muitas urnas já tinham sido desligadas, o TSE esclareceu que a extensão valia só para as seções ainda abertas. A campanha de Flávio também tinha pedido ao TSE extensão de horário em São Paulo, no Paraná e em Santa Catarina, por causa do tempo.",
+            "Zanin é o \"ex-advogado do Lula\" a que a carta se refere sem dizer o nome. Ele defendeu Lula antes de ir para o STF.",
+            "Dados do TSE compilados pela setup.news e publicados pela CNN Brasil mostram que 34.330 eleitores votaram depois das 17h no segundo turno, sendo 29.001 nos cinco primeiros minutos. Lula venceu por 4.430.191 votos. Mesmo que todos os votos dados depois das 17h tivessem ido para ele, a vantagem continuaria acima de 4,39 milhões. O presidente do TSE, Kassio Nunes Marques, disse que \"não houve nenhuma alteração advinda da decisão judicial\", segundo a CNN Brasil.",
+            "## Como ele entrou nos Estados Unidos",
+            "Segundo registros da alfândega americana obtidos pela coluna de Igor Gadelha, no Metrópoles, Flávio e a família entraram nos EUA na manhã de quarta na categoria DT, de parole, uma autorização temporária de entrada usada em situações humanitárias urgentes, e podem ficar até 27 de outubro de 2027. Na terça, um funcionário do Departamento de Estado tinha dito que o governo emitiria vistos para a família. O tipo exato de documento ainda não foi confirmado oficialmente.",
+            "## O brasão",
+            "O brasão no topo da carta traz a inscrição \"Estados Unidos do Brazil\", nome do país na versão de 1889. O país se chama República Federativa do Brasil desde a Constituição de 1967, e é esse nome que aparece no brasão oficial hoje.",
+            "## O que ainda não se sabe",
+            "O Agora Praça não encontrou, até as 17h de Mato Grosso, manifestação oficial do TSE, do STF ou do Planalto sobre a carta. Aliados anunciaram uma entrevista coletiva de Flávio em Miami na quinta-feira (29). A cobertura completa da saída dele do país está na matéria sobre a fuga, atualizada desde terça.",
+        ],
+        "credito_extra": "Foto de capa: Rafa Neddermeyer/Agência Brasil. Reel com fotos de Rafa Neddermeyer e Joédson Alves, da Agência Brasil.",
+        "fontes": [
+            ("Metrópoles, em carta, Flávio se declara \"verdadeiro presidente eleito do Brasil\" (28/10, 16h46)", "https://www.metropoles.com/mundo/em-carta-flavio-se-declara-verdadeiro-presidente-eleito-do-brasil"),
+            ("SBT News, Flávio diz ser verdadeiro presidente e saúda Trump e Milei (28/10)", "https://sbtnews.sbt.com.br/noticia/politica/flavio-diz-que-e-o-verdadeiro-presidente-em-carta-ao-povo"),
+            ("Gazeta do Povo, nos EUA, Flávio Bolsonaro se declara \"presidente eleito\" (28/10, 16h50)", "https://www.gazetadopovo.com.br/republica/nos-eua-flavio-bolsonaro-se-declara-presidente-eleito/"),
+            ("CartaCapital, TSE encerra apuração do 1º turno (resultado do primeiro turno)", "https://www.cartacapital.com.br/politica/tse-encerra-apuracao-do-1o-turno/"),
+            ("TSE, resultado do segundo turno (26/10)", "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026"),
+            ("CNN Brasil, 34 mil eleitores votaram após as 17h no 2º turno (26/10, 12h10)", "https://www.cnnbrasil.com.br/eleicoes/dados-tse-votacao-apos-prorrogacao/"),
+            ("Metrópoles, coluna de Igor Gadelha, Flávio entrou nos EUA com autorização humanitária de 1 ano (28/10, 12h36)", "https://www.metropoles.com/colunas/igor-gadelha/flavio-entrou-nos-eua-com-autorizacao-humanitaria-de-1-ano-de-permanencia"),
+            ("DGABC, presidente toma posse em 5 de janeiro de 2027", "https://www.dgabc.com.br/Noticia/4354471/presidente-toma-posse-em-5-de-janeiro-de-2027-governadores-no-dia-6"),
+        ],
+    },
+    {
         "slug": "camara-quer-votar-voto-distrital-misto-2034-motta",
         "capa": "img/capa/camara-quer-votar-voto-distrital-misto-2034-motta.jpg",
         "capa_credito": "Hugo Motta fala à imprensa na Câmara depois da reunião com líderes, em 28/10. Reprodução: Câmara dos Deputados",
@@ -89,6 +133,7 @@ NOTICIAS = [
         "para_voce": ("O QUE ACONTECEU", "Flávio deixou o Brasil depois de ser proibido pelo STF de sair. A Argentina confirmou que ele entrou por Misiones e embarcou para o Equador. Os EUA vão dar visto a ele e à família. Ele deve dar entrevista na quinta (29), em Miami."),
         "atualizado": "2026-10-28",
         "texto": [
+            "Atualização de quarta-feira (28), às 18h de Brasília (17h em Mato Grosso): Flávio divulgou uma carta em que se declara \"verdadeiro presidente eleito do Brasil\". O Agora Praça publicou uma matéria própria sobre a carta, com a checagem dos números que ele cita. Segundo registros da alfândega americana obtidos pelo Metrópoles, ele entrou nos EUA na manhã de quarta com uma autorização humanitária temporária (parole), válida até 27 de outubro de 2027. O Departamento de Estado tinha falado em vistos, e o tipo exato de documento ainda não foi confirmado oficialmente.",
             "Atualização de quarta-feira (28), às 14h de Brasília (13h em Mato Grosso): a Direção Nacional de Migrações da Argentina divulgou, às 2h, um comunicado oficial dizendo que Flávio Bolsonaro, a mulher e as duas filhas entraram no país às 22h50 de terça (27), pela ponte Tancredo Neves, em Misiones, e embarcaram às 23h30 em um voo privado com destino declarado a Guayaquil, no Equador. Aliados dizem que ele dará uma entrevista coletiva em Miami na quinta (29), à tarde. Flávio ainda não se manifestou.",
             "## O que mudou na quarta (28)",
             "O comunicado da Migrações, publicado na rede X e reproduzido pelo El Cronista e pelo Ámbito, diz que os quatro entraram com \"documentación hábil de viaje\" e \"sin ningún impedimento legal para el ingreso al país\". O texto cita Flávio Nantes Bolsonaro, Fernanda Antunes Figueira Bolsonaro, Carolina Figueira Bolsonaro e Luiza Figueira Bolsonaro, e informa que o voo foi operado pela Baires Fly S.A. O destino é o declarado no plano de voo. O comunicado não diz o tipo de documento usado nem fala em Estados Unidos.",
@@ -1122,6 +1167,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "flavio-carta": "Flávio diz em carta que é o verdadeiro presidente eleito. Os números do TSE",
     "distrital-motta": "A Câmara quer mudar o jeito de eleger deputado e vereador. Hugo Motta explica",
     "china-brasil-reel": "Trump disse que a eleição pareceu fraudada. A China respondeu assim",
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",

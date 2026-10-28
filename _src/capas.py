@@ -340,6 +340,9 @@ CAPAS = {
     "camara-quer-votar-voto-distrital-misto-2034-motta": (
         lambda: foto("img/fotos/motta-distrital-camara-2026-10-28.jpg", foco=(0.5, 0.2)),
         "Hugo Motta fala à imprensa na Câmara depois da reunião com líderes, em 28/10. Reprodução: Câmara dos Deputados"),
+    "flavio-carta-verdadeiro-presidente-eleito-numeros-tse": (
+        lambda: foto("img/fotos/flavio-paulista.jpg", foco=(0.5, 0.25)),
+        "Flávio Bolsonaro em ato na Avenida Paulista, em 18/10. Foto: Rafa Neddermeyer/Agência Brasil"),
     "china-responde-trump-eleicao-brasil-respeita-escolha-do-povo": (
         lambda: foto("img/fotos/china-guo-jiakun-coletiva-2026-10-27.jpg"),
         "O porta-voz Guo Jiakun na coletiva de 27/10 em Pequim. Reprodução: Ministério das Relações Exteriores da China, via ShanghaiEye"),
