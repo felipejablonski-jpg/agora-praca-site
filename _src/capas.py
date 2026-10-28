@@ -273,6 +273,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "trump-nao-vou-me-envolver-flavio-presidente": (
+        lambda: foto("img/fotos/trump-comicio-usatoday-arquivo.jpg", foco=(0.45, 0.3)),
+        "Donald Trump em comício nos Estados Unidos. Imagem de arquivo, reprodução: USA Today"),
     "cemaden-risco-alto-inundacao-sul-chapeco-200-mm": (
         lambda: foto_dupla("img/fotos/temporal-rio-grande-rs.jpg", "img/fotos/chuva-rodovia-meio-oeste-sc.jpg",
                            (0.1, 0, 0.9, 1), (0.2, 0, 0.9, 1)),

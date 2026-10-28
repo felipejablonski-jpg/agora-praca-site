@@ -10,6 +10,38 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "trump-nao-vou-me-envolver-flavio-presidente",
+        "capa": "img/capa/trump-nao-vou-me-envolver-flavio-presidente.jpg",
+        "capa_credito": "Donald Trump em comício nos Estados Unidos. Imagem de arquivo, reprodução: USA Today",
+        "data": "2026-10-28",
+        "ordem": 3,
+        "editoria": "politica",
+        "chapeu": "Eleições 2026",
+        "video": "trump-flavio",
+        "titulo": "Trump diz que não vai \"se envolver\" depois de Flávio se declarar presidente, mas confirma que os EUA deixaram ele entrar",
+        "linha_fina": "Perguntado nesta quarta (28) sobre a carta de Flávio Bolsonaro, o presidente americano não comentou o texto e voltou a chamar a eleição de \"muito estranha\", sem apresentar prova.",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "O governo americano não apoiou a autoproclamação de Flávio. Lula foi declarado reeleito pelo TSE, a eleição foi reconhecida por outros países e por missões de observação, e a posse é em 5 de janeiro."),
+        "texto": [
+            "O presidente dos Estados Unidos, Donald Trump, disse nesta quarta-feira (28) que não vai \"se envolver\" na situação de Flávio Bolsonaro (PL), que divulgou uma carta se declarando \"o verdadeiro presidente eleito do Brasil\". Trump falou com jornalistas antes de viajar para Ohio, segundo a CNN Brasil.",
+            "\"Mas sei que demos a ele autorização para entrar no país; veremos o que acontece\", disse Trump, segundo a CNN Brasil. \"Mas não vou me envolver. Foi uma eleição muito estranha, isso é certo.\" Segundo o Metrópoles, ele também disse que não faria comentários sobre a carta. Trump não apresentou prova de irregularidade na eleição.",
+            "Na mesma fala, de acordo com a CNN Brasil, ele afirmou que não tomou partido na eleição e que achou que Flávio e a família \"foram tratados de forma muito injusta\".",
+            "## A carta e a troca de palavras",
+            "Na carta, divulgada na tarde de quarta, Flávio agradece a Trump e ao presidente argentino Javier Milei, fala em fraude sem apresentar prova e diz que vai liderar a oposição a partir dos Estados Unidos. Horas depois, publicou uma segunda versão, em que trocou \"presidente eleito\" por \"líder do Brasil\". O Agora Praça conferiu os números citados na carta em outra matéria.",
+            "## O que Trump já tinha dito",
+            "Na segunda-feira (26), Trump disse a jornalistas que a eleição brasileira \"pareceu mais uma eleição fraudada\", também sem prova. No dia seguinte, a chancelaria da China, perguntada sobre a fala, respondeu: \"Respeitamos a escolha independente do povo brasileiro\".",
+            "## O resultado",
+            "O Tribunal Superior Eleitoral declarou Lula (PT) reeleito no domingo (25), com 51,79% dos votos válidos, contra 48,21% de Flávio, uma diferença de 4,4 milhões de votos. Segundo o Metrópoles, a missão da OEA e o Carter Center elogiaram a votação. A posse é em 5 de janeiro.",
+            "## Sobre as imagens",
+            "O Reel usa imagens de arquivo, sem o som original: um comício recente de Trump, publicado pelo USA Today, e um vídeo do canal de Flávio Bolsonaro no YouTube. Nenhuma das duas é da fala desta quarta.",
+        ],
+        "credito_extra": "Imagens de arquivo: USA Today e canal de Flávio Bolsonaro no YouTube (reprodução).",
+        "fontes": [
+            ("CNN Brasil, Trump diz que EUA permitiram entrada de Flávio, mas que não vai se envolver (28/10, 18h32)", "https://www.cnnbrasil.com.br/internacional/trump-diz-que-eua-permitiram-entrada-de-flavio-mas-que-nao-vai-se-envolver/"),
+            ("Metrópoles, Trump diz que não vai \"se envolver\" após Flávio se autodeclarar presidente (28/10, 18h25)", "https://www.metropoles.com/mundo/trump-diz-que-nao-vai-se-envolver-apos-flavio-se-autodeclarar-presidente"),
+            ("TSE, resultado do segundo turno (26/10)", "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026"),
+        ],
+    },
+    {
         "slug": "flavio-carta-verdadeiro-presidente-eleito-numeros-tse",
         "capa": "img/capa/flavio-carta-verdadeiro-presidente-eleito-numeros-tse.jpg",
         "capa_credito": "Flávio Bolsonaro em vídeo publicado nos stories dele. Reprodução: redes sociais de Flávio Bolsonaro",
@@ -1171,6 +1203,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "trump-flavio": "Trump sobre Flávio se dizer presidente: não vou me envolver",
     "flavio-carta": "Flávio diz em carta que é o verdadeiro presidente eleito. Os números do TSE",
     "distrital-motta": "A Câmara quer mudar o jeito de eleger deputado e vereador. Hugo Motta explica",
     "china-brasil-reel": "Trump disse que a eleição pareceu fraudada. A China respondeu assim",
