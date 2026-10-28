@@ -58,3 +58,14 @@ Saíram de uso: card com foto em cima e faixa vermelha embaixo, card claro só c
 
 - Erro nosso vai para a página de Correções do site (agorapraca.com.br/sobre/#correcoes) e ganha nota "Correção em [data]" no topo da matéria.
 - "Atualização" fica para informação nova, quando não houve erro.
+
+## Quadro "Ciência na Praça" (criado em 28/10/2026)
+
+- Vive dentro da editoria Ciência. Chapéu fixo: "Ciência na Praça". Duas por semana para começar.
+- Janela de frescor: estudo publicado ou divulgado nos últimos 14 dias. A data de publicação aparece na matéria.
+- Fonte primária obrigatória: artigo na revista científica (com DOI) ou comunicado da universidade ou instituto. Matéria de jornal que repete outra matéria não vale.
+- Toda matéria diz o tamanho do estudo (quantas pessoas, casos ou amostras), quem fez, onde foi publicado e o que o estudo não permite concluir.
+- Evitar estudo com amostra minúscula, só em camundongos ou sem revisão por pares, a menos que a matéria diga isso logo no começo.
+- Tamanho: matéria de 120 a 180 palavras. Reel de 30 a 40 segundos, com o dado mais forte na abertura.
+- Imagens: pendente de aprovação do Felipe incluir NASA, ESA e imagens de comunicados de universidades ao lado das já liberadas.
+- Primeira Página: uma linha fixa "Ciência da semana", sem slide próprio.
