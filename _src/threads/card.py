@@ -27,27 +27,25 @@ def fontes_css():
 
 
 def html(texto, foto=None, credito=""):
-    texto = re.sub(r"\*(.+?)\*", r'<span style="color:#FF3B30">\1</span>', texto).replace("\n", "<br>")
-    tam = 58 if len(texto) < 140 else 50 if len(texto) < 220 else 44
+    texto = re.sub(r"\*(.+?)\*", r'<span style="color:#D2232A">\1</span>', texto).replace("\n", "<br>")
+    tam = 54 if len(texto) < 140 else 48 if len(texto) < 220 else 42
     if foto:
         tam = min(tam, 46)
     img = ""
     if foto:
         mime = "image/png" if foto.endswith("png") else "image/jpeg"
-        img = (f'<div style="margin-top:34px;border-radius:22px;overflow:hidden;height:520px;background:#222">'
+        img = (f'<div style="margin-top:36px;border-radius:28px;overflow:hidden;height:560px;border:1px solid #e3e3e3">'
                f'<img src="{b64(foto, mime)}" style="width:100%;height:100%;object-fit:cover;object-position:center 30%"></div>'
-               f'<div style="font-size:22px;color:#8d8983;margin-top:12px">{credito}</div>')
+               f'<div style="font-size:22px;color:#8a8a8a;margin-top:12px">{credito}</div>')
     return f'''<html><head><meta charset="utf-8"><style>{fontes_css()}
-*{{box-sizing:border-box;margin:0}} body{{width:1080px;height:1350px;background:#141414;font-family:Archivo;color:#fff;display:flex;align-items:center;justify-content:center}}
-.c{{width:960px;background:#1f1f1f;border:1px solid #2e2e2e;border-radius:34px;padding:52px 56px 44px}}</style></head><body><div class="c">
-<div style="display:flex;align-items:center;gap:22px">
-<img src="{b64(ICONE, 'image/png')}" style="width:96px;height:96px;border-radius:50%">
-<div><div style="font-weight:800;font-size:36px">Agora Praça</div><div style="font-size:30px;color:#8d8983;margin-top:2px">@agorapraca</div></div></div>
-<div style="font-family:'Libre Caslon Text';font-weight:700;font-size:{tam}px;line-height:1.2;margin-top:38px">{texto}</div>
+*{{box-sizing:border-box;margin:0}} body{{width:1080px;height:1350px;background:#fff;font-family:Archivo;color:#141414;display:flex;flex-direction:column;justify-content:center;padding:0 80px}}</style></head><body>
+<div style="display:flex;align-items:center;gap:24px">
+<img src="{b64(ICONE, 'image/png')}" style="width:104px;height:104px;border-radius:50%">
+<div><div style="font-weight:800;font-size:38px">Agora Praça</div><div style="font-size:32px;color:#8a8a8a;margin-top:2px">@agorapraca</div></div></div>
+<div style="font-weight:500;font-size:{tam}px;line-height:1.28;margin-top:40px;letter-spacing:-.005em">{texto}</div>
 {img}
-<div style="display:flex;justify-content:space-between;margin-top:36px;padding-top:26px;border-top:1px solid #2e2e2e;font-size:26px;color:#8d8983">
-<span>agorapraca.com.br</span><span style="color:#FF3B30;font-weight:800;letter-spacing:.08em">MATÉRIA COMPLETA NO SITE</span></div>
-</div></body></html>'''
+<div style="margin-top:34px;font-size:26px;color:#8a8a8a">agorapraca.com.br</div>
+</body></html>'''
 
 
 def gerar(nome, texto, foto=None, credito=""):

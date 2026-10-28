@@ -73,7 +73,7 @@ Saíram de uso: card com foto em cima e faixa vermelha embaixo, card claro só c
 ## Threads (definido em 28/10/2026)
 
 - Toda matéria que vai para o Instagram também vai para o Threads, no mesmo dia. A entrega de cada pauta inclui o card do Threads e a legenda curta.
-- Card no estilo post de rede social, na marca da casa: 1080x1350, fundo escuro, ícone do Agora, "Agora Praça" e "@agorapraca", o fato em Libre Caslon com o trecho principal em vermelho, foto liberada com crédito (opcional) e o rodapé "agorapraca.com.br / Matéria completa no site". Gerador: `python3 _src/threads/card.py <nome> "<texto>" [foto] [crédito]`, com `*trecho*` para o vermelho.
+- Card no estilo tweet, na marca da casa: 1080x1350, fundo branco ocupando tudo (sem moldura ou card dentro do card), ícone do Agora, "Agora Praça" e "@agorapraca", o fato em Archivo preto com o trecho principal em vermelho, foto liberada com crédito (opcional) e "agorapraca.com.br" no pé. Gerador: `python3 _src/threads/card.py <nome> "<texto>" [foto] [crédito]`, com `*trecho*` para o vermelho.
 - Sem selo de verificado e sem imitar a interface do X ou do Threads.
 - Texto do card: o fato em até três frases, com o dado ou a frase que chama atenção. Sem "URGENTE", sem emoji.
 - Legenda do Threads: uma ou duas frases que complementam o card (contexto ou o que falta saber), mais o link da matéria. Até 300 caracteres.
