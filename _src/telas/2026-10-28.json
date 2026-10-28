@@ -1,0 +1,61 @@
+{
+ "data": "2026-10-28",
+ "data_curta": "28/10",
+ "dia_longo": "Quarta-feira, 28 de outubro de 2026",
+ "capa": [
+  "Flávio fugiu do Brasil; EUA vão dar visto à família",
+  "Trump cita o Brasil em comício e fala em manipulação",
+  "Bolsa cai mais 0,51%; dólar fecha a R$ 5,35",
+  "Chuva e alerta de tempestade em Mato Grosso"
+ ],
+ "telas": [
+  {
+   "tipo": "texto",
+   "tag": "Política",
+   "titulo": "Flávio Bolsonaro fugiu do Brasil depois de ser proibido pelo STF de sair",
+   "tam": 62,
+   "topicos": [
+    "Moraes mandou entregar os passaportes até as 11h de terça. Ele não entregou, e a PF os cancelou.",
+    "Os EUA vão emitir vistos para ele e a família. Asilo não está confirmado.",
+    "Aliados falam em entrevista nos EUA, possivelmente hoje, sem horário."
+   ],
+   "fonte": "Fontes: CNN Brasil, Metrópoles e ND Mais"
+  },
+  {
+   "tipo": "texto",
+   "tag": "Internacional",
+   "titulo": "Trump cita o Brasil em comício e diz que o país \"também está fazendo um bom trabalho\" em manipular eleições",
+   "tam": 56,
+   "topicos": [
+    "Foi na terça à tarde, em Corpus Christi, no Texas. Ele não apresentou prova.",
+    "Na segunda, já tinha dito que a eleição \"pareceu fraudada\".",
+    "O TSE declarou Lula reeleito com 51,79% dos votos válidos."
+   ],
+   "fonte": "Fontes: Exame, Brasil de Fato e TSE"
+  },
+  {
+   "tipo": "numero",
+   "tag": "Economia",
+   "numero": "0,51%",
+   "tam": 250,
+   "frase": "foi a queda do Ibovespa ontem, um dia depois de despencar 13,88%.",
+   "detalhe": "Fechou em 175.710 pontos, o menor nível desde agosto. O dólar recuou 1,07%, a R$ 5,349, depois de subir mais de 8% na segunda.",
+   "fonte": "Fontes: SouBrasília e CNN Brasil"
+  },
+  {
+   "tipo": "numero",
+   "tag": "Mato Grosso",
+   "numero": "24°C",
+   "tam": 270,
+   "frase": "é a máxima prevista hoje para Primavera do Leste, com chuva.",
+   "detalhe": "O Inmet tem alerta de tempestade até hoje no Centro-Oeste e outro para sexta (30) em regiões de MT, com até 50 mm de chuva, vento de 60 km/h e possível granizo.",
+   "fonte": "Fontes: Cenário MT e Inmet"
+  }
+ ],
+ "agenda_titulo": "Os próximos dias",
+ "agenda": [
+  ["HOJE", "Qua 28", "Flávio pode dar entrevista nos EUA. Em Cuiabá, trovoadas à tarde e à noite."],
+  ["DAQUI A 2 DIAS", "Sex 30", "Alerta do Inmet para temporais em regiões de MT."]
+ ],
+ "agenda_fonte": "Fontes: Metrópoles e Inmet"
+}

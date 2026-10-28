@@ -1095,6 +1095,74 @@ VIDEOS = {
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
     {
+        "data": "2026-10-28", "pasta": "pp/2026-10-28", "telas": 6,
+        "materia": {
+            "abertura": "Flávio Bolsonaro, que deixou o Brasil proibido pelo STF de sair, pode dar entrevista hoje nos Estados Unidos, segundo aliados. Trump voltou a citar o Brasil num comício e disse, sem prova, que o país também está \"fazendo um bom trabalho\" em manipular eleições. A bolsa caiu mais 0,51% e o dólar fechou a R$ 5,349. Mato Grosso tem alerta de tempestade.",
+            "secoes": [
+                {"chapeu": "Política", "titulo": "Flávio Bolsonaro fugiu do Brasil depois de ser proibido pelo STF de sair; EUA vão dar visto a ele e à família", "slug": "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais",
+                 "texto": [
+                    "O senador Flávio Bolsonaro (PL-RJ) deixou o Brasil na terça-feira (27), depois de o ministro Alexandre de Moraes, do STF, proibi-lo de sair do país e mandar que entregasse os passaportes à Polícia Federal até as 11h. Ele não entregou, e a PF cancelou os passaportes comum e diplomático, segundo a CNN Brasil. Flávio não se manifestou desde o vídeo de segunda-feira (26), em que disse que entregaria os documentos.",
+                    "O Departamento de Estado dos Estados Unidos disse à CNN Brasil que vai emitir vistos para ele e a família e permitir a entrada deles no país. A CNN informa que o visto não equivale a asilo político. Segundo aliados ouvidos pela emissora, o governo americano sinalizou que o asilo é possível, mas não há pedido nem concessão confirmados.",
+                    "Não está claro se ele já chegou. A CNN Brasil publicou às 17h39 de terça (16h39 em Mato Grosso) que Flávio chegou aos EUA com a mulher e as filhas, segundo fontes ligadas ao governo americano. Na cronologia publicada às 4h17 desta quarta (3h17 em Mato Grosso), a emissora cita uma fonte do governo americano que disse à Reuters que ele estava \"a caminho do país\".",
+                    "Aliados dizem que ele deve dar uma entrevista coletiva nos Estados Unidos, possivelmente nesta quarta (28). Segundo o colunista Igor Gadelha, do Metrópoles, o horário, o local e os temas não foram divulgados e dependem de confirmação.",
+                    "Flávio tem cidadania italiana desde 2023, segundo uma resposta do governo da Itália a um deputado italiano em junho de 2025, citada pela CNN Brasil. A emissora informa que Moraes mandou entregar também passaportes estrangeiros. Não há confirmação de que ele tenha usado um passaporte italiano na viagem. A rota segue sem confirmação oficial, e a Argentina nega que ele tenha entrado no país, segundo o g1.",
+                 ],
+                 "fontes": [
+                    ("CNN Brasil, cronologia da saída de Flávio (28/10, 4h17), via Sim Notícias", "https://simnoticias.com.br/cnn-brasil/do-passaporte-ao-asilo-de-trump-a-cronologia-da-fuga-de-flavio-aos-eua/"),
+                    ("CNN Brasil, Departamento de Estado confirma vistos (27/10, 18h11)", "https://www.cnnbrasil.com.br/internacional/departamento-de-estado-dos-eua-diz-a-cnn-que-emitira-vistos-para-flavio/"),
+                    ("CNN Brasil, coluna de Jussara Soares: Flávio chega aos EUA (27/10, 17h39)", "https://www.cnnbrasil.com.br/blogs/jussara-soares/politica/flavio-chega-com-mulher-e-filhas-aos-eua/"),
+                    ("CNN Brasil, Flávio tem cidadania italiana desde 2023 (27/10, 13h47)", "https://www.cnnbrasil.com.br/blogs/jussara-soares/politica/flavio-tem-cidadania-italiana-desde-2023-diz-governo-local/"),
+                    ("ND Mais, Flávio planeja coletiva nos EUA (27/10, 18h48)", "https://ndmais.com.br/politica/apos-deixar-o-brasil-flavio-bolsonaro-planeja-dar-coletiva-de-imprensa-nos-eua-para-explicar-viagem-e-decisao-judicial/"),
+                    ("Correio da Manhã, reportagem do g1 com a resposta da Argentina (27/10)", "https://www.correiodamanha.com.br/politica/2026/10/330309-argentina-nega-entrada-de-flavio-bolsonaro-no-pais-diz-governo-milei.html"),
+                 ]},
+                {"chapeu": "Internacional", "titulo": "Trump cita o Brasil em comício no Texas e diz que o país \"também está fazendo um bom trabalho\" em manipular eleições, sem prova",
+                 "texto": [
+                    "Na tarde de terça-feira (27), num comício em Corpus Christi, no Texas, o presidente americano Donald Trump atacou os democratas e citou o Brasil. Segundo a Exame, ele disse: \"Os democratas são os maiores manipuladores de eleição da história. Mas o Brasil também está fazendo um bom trabalho. Não está?\". Em seguida, afirmou: \"Eu não apoiei nenhum lado, mas eu não gostei, não pareceu muito bom\". A reportagem não registra nenhuma prova apresentada por ele.",
+                    "Foi a segunda vez em dois dias. Na segunda (26), Trump disse a jornalistas que a eleição brasileira \"pareceu mais uma eleição fraudada\", também sem prova, segundo o Brasil de Fato. O Tribunal Superior Eleitoral declarou Lula (PT) reeleito no domingo (25), com 51,79% dos votos válidos, contra 48,21% de Flávio Bolsonaro (PL).",
+                    "O Planalto decidiu não responder à fala de segunda, segundo a Exame. Um integrante do governo disse, sob reserva, que a decisão foi calculada para não escalar o assunto e que o governo só reagiria se os EUA contestassem a vitória de Lula em notas oficiais.",
+                 ],
+                 "fontes": [
+                    ("Exame, Trump diz que o Brasil está fazendo \"bom trabalho\" ao manipular eleições (27/10, 18h22)", "https://exame.com/mundo/trump-diz-que-brasil-esta-fazendo-bom-trabalho-ao-manipular-eleicoes/"),
+                    ("Brasil de Fato, sem provas, Trump diz que eleições no Brasil foram fraudadas (26/10, 17h59)", "https://www.brasildefato.com.br/2026/10/26/sem-provas-trump-repete-narrativa-de-flavio-bolsonaro-e-diz-que-eleicoes-no-brasil-foram-fraudadas/"),
+                    ("Exame, por que Lula decidiu não responder a Trump (27/10, 17h59)", "https://exame.com/brasil/por-que-lula-decidiu-nao-responder-a-trump-apos-acusacao-de-fraude-na-eleicao-brasileira/"),
+                    ("TSE, resultado do segundo turno (26/10)", "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026"),
+                 ]},
+                {"chapeu": "Economia", "titulo": "Ibovespa cai mais 0,51% e fecha no menor nível desde agosto; dólar recua a R$ 5,349",
+                 "texto": [
+                    "O Ibovespa fechou a terça-feira (27) em 175.710,05 pontos, com queda de 0,51%, segundo o SouBrasília. É o menor nível desde agosto. Na segunda (26), a bolsa tinha despencado 13,88%, a maior queda desde 2020, depois da reeleição de Lula, que contrariou apostas de vitória de Flávio Bolsonaro. A Jovem Pan registrou que a Bolsa chegou a parar por circuit breaker no dia.",
+                    "O dólar comercial fechou a R$ 5,349, em queda de 1,07%, um dia depois de subir mais de 8%. Na segunda, a moeda havia fechado a R$ 5,4066, segundo a CNN Brasil. A emissora informa que Citi e BCA rebaixaram a recomendação de ativos brasileiros, citando piora na relação entre risco e retorno.",
+                    "O presidente do Banco Central, Gabriel Galípolo, disse em coletiva que a instituição poderá atuar no câmbio se identificar disfuncionalidades no mercado, segundo o SouBrasília. A fala foi relatada, e não há transcrição.",
+                 ],
+                 "fontes": [
+                    ("SouBrasília, fechamento de 27/10 (20h35)", "https://soubrasilia.com/dolar-fecha-r-5-349-ibovespa-175-mil-pontos-27-outubro-2026/"),
+                    ("CNN Brasil, dólar e juros futuros devolvem parte dos ganhos (27/10)", "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-27-outubro-2026/"),
+                    ("Jovem Pan, Ibovespa fecha em queda após circuit breaker (26/10)", "https://jovempan.com.br/economia/ibovespa-fecha-em-queda-apos-circuit-breaker-com-inesperada-reeleicao-de-lula/"),
+                 ]},
+                {"chapeu": "Mato Grosso", "titulo": "Chuva forte e alerta de tempestade em Mato Grosso; Primavera do Leste tem máxima de 24°C hoje",
+                 "texto": [
+                    "A previsão para esta quarta-feira (28) em Primavera do Leste é de máxima de 24°C, a menor entre as cidades listadas pelo Cenário MT, com dados do OpenWeather. Chapada dos Guimarães também fica em 25°C. Em Cuiabá, a previsão do Inmet é de 25°C a 34°C, com chuva isolada de manhã e pancadas com trovoadas à tarde e à noite.",
+                    "O Inmet mantém alerta amarelo de tempestade até quarta para boa parte do Centro-Oeste, com chuva de 20 a 30 mm por hora e ventos de 40 a 60 km/h, segundo o Muvuca Popular. Mato Grosso está entre os estados com a chuva mais forte, principalmente no nordeste, norte e noroeste.",
+                    "Há novo alerta para sexta-feira (30), o dia todo, em regiões de Mato Grosso, com chuva de até 50 mm no dia, ventos de até 60 km/h e possibilidade de granizo. O Inmet orienta não se abrigar debaixo de árvores, não estacionar perto de torres e outdoors e desligar aparelhos da tomada. Em emergência, ligue para a Defesa Civil, no 199, ou para os Bombeiros, no 193.",
+                 ],
+                 "fontes": [
+                    ("Cenário MT, previsão para quarta (28/10, 4h02)", "https://cenariomt.com.br/clima/chuva-avanca-em-mt-nesta-quarta-feira-28-veja-sua-cidade/"),
+                    ("Muvuca Popular, previsão e alertas do Inmet (27/10, 11h21)", "https://www.muvucapopular.com.br/2026/10/27/mato-grosso-tem-risco-de-tempestades-e-cuiaba-deve-registrar-maxima-de-29c-na-sexta/"),
+                 ]},
+            ],
+            "agenda": [
+                ("Qua 28", "Flávio pode dar entrevista nos EUA, sem horário divulgado. Em Cuiabá, pancadas com trovoadas à tarde e à noite."),
+                ("Sex 30", "Alerta do Inmet para temporais em regiões de Mato Grosso, com possibilidade de granizo."),
+            ],
+        },
+        "itens": [
+            ("Flávio Bolsonaro fugiu do Brasil depois de ser proibido pelo STF de sair. Os EUA vão dar visto a ele e à família, e aliados falam em entrevista hoje. Asilo não está confirmado.", "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais"),
+            ("Trump cita o Brasil em comício no Texas e diz que o país também \"está fazendo um bom trabalho\" em manipular eleições. Ele não apresentou prova.", None),
+            ("Ibovespa cai mais 0,51% e fecha em 175.710 pontos, depois de despencar 13,88% na segunda. O dólar recuou 1,07%, a R$ 5,349.", None),
+            ("Mato Grosso tem alerta de tempestade. Em Primavera do Leste, a máxima prevista para hoje é de 24°C.", None),
+        ],
+        "fonte": "Fontes: CNN Brasil, Metrópoles, ND Mais, g1, Exame, Brasil de Fato, TSE, SouBrasília, Jovem Pan, Cenário MT e Inmet",
+    },
+    {
         "data": "2026-10-23", "pasta": "pp/2026-10-23", "telas": 7,
         "materia": {
             "abertura": "O último debate antes da votação é hoje à noite na Globo, o Datafolha mostra Lula e Flávio empatados nos votos válidos, as campanhas trocam documentos para abrir os sigilos, Mato Grosso enfrenta calor de até 43°C e um tufão deixa um morto em Taiwan. Faltam dois dias para o 2º turno.",
