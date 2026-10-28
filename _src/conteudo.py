@@ -83,6 +83,38 @@ NOTICIAS = [
         ],
     },
     {
+        "slug": "holanda-ate-500-milhoes-fundo-florestas-tropicais", "capa": "img/capa/holanda-ate-500-milhoes-fundo-florestas-tropicais.jpg", "capa_credito": "Rio Tejo corta a floresta amazônica no Acre, entre Cruzeiro do Sul e Marechal Thaumaturgo (Rafa Neddermeyer/Agência Brasil, 13/10/2026)",
+        "data": "2026-10-27", "ordem": 2,
+        "editoria": "ciencia", "chapeu": "Florestas",
+        "titulo": "Holanda promete até US$ 500 milhões para fundo criado pelo Brasil que paga países para manter floresta em pé",
+        "linha_fina": "O dinheiro sai em dez anos e ainda depende de condições e do aval do Parlamento holandês. Com o anúncio, o fundo soma US$ 7,8 bilhões prometidos; a meta é chegar a US$ 10 bilhões até o fim de 2026.",
+        "video": "holanda-florestas",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "É uma promessa, com teto de US$ 500 milhões. O valor final e as condições só devem ser fechados até meados de 2027. A Noruega só libera os cerca de US$ 3 bilhões dela se o fundo chegar a US$ 10 bilhões até dezembro."),
+        "texto": [
+            "O governo da Holanda anunciou na segunda-feira (26) que pretende colocar até US$ 500 milhões no Fundo Florestas Tropicais para Sempre (TFFF, na sigla em inglês), criado pelo Brasil e lançado na COP30, em Belém, em 2025. O valor seria pago ao longo de dez anos. O anúncio foi feito pelo ministro do Comércio Exterior e da Cooperação para o Desenvolvimento, Sjoerd Sjoerdsma, em comunicado do governo e em carta ao Parlamento holandês.",
+            "Segundo a Agência Brasil, o ministro disse que o fundo cria \"um incentivo sólido e previsível para proteger e conservar suas florestas tropicais\", referindo-se aos países que mantêm florestas.",
+            "## Ainda é promessa",
+            "O próprio governo holandês diz que a contribuição é condicional. Segundo o site especializado Carbon Pulse, ela ainda precisa do aval do Parlamento e depende de pontos não fechados: se o valor pode ser contado como ajuda oficial ao desenvolvimento, a solidez da estrutura do fundo, o cronograma de pagamentos e as condições do contrato.",
+            "O governo holandês prevê concluir o processo por volta de meados de 2027, quando o fundo poderá começar a funcionar formalmente. Segundo o Carbon Pulse, o anúncio oficial deve ser feito pelo primeiro-ministro holandês na COP31, em Antália, na Turquia.",
+            "## Como o fundo funciona",
+            "O TFFF funciona como um fundo de investimento. Governos e investidores privados aplicam dinheiro, e o rendimento líquido é usado para pagar os países que mantêm suas florestas tropicais em pé. Segundo a Agência Brasil, quem compra os títulos emitidos pelo fundo recebe juros fixos.",
+            "O pagamento só acontece depois que imagens de satélite confirmam que o desmatamento ficou abaixo de limites definidos antes. O valor indicado pelo governo holandês é de cerca de US$ 4 por hectare de floresta por ano. A proposta prevê que pelo menos 20% do que cada país receber vá para povos indígenas e comunidades tradicionais.",
+            "A meta de longo prazo é chegar a US$ 125 bilhões, dos quais cerca de US$ 100 bilhões viriam do setor privado. O governo holandês estima que o fundo pode ajudar a proteger de 800 milhões a 900 milhões de hectares de floresta tropical, cerca de 200 vezes o território da Holanda. O Banco Mundial participa da montagem do fundo.",
+            "## Quanto falta para a meta de 2026",
+            "Com a Holanda, os compromissos anunciados chegam a US$ 7,8 bilhões, segundo o Carbon Pulse. Também anunciaram contribuições Brasil, Indonésia, Noruega, Alemanha, França, Luxemburgo e Reino Unido. Em setembro, antes da promessa holandesa, a conta estava em cerca de US$ 7,3 bilhões, segundo a Exame.",
+            "A meta para a largada é de US$ 10 bilhões até o fim de 2026. Faltam cerca de US$ 2,2 bilhões. O número importa porque a Noruega, maior contribuinte, prometeu cerca de US$ 3 bilhões em dez anos, mas só libera o dinheiro se o fundo atingir esse patamar.",
+            "Entre as outras promessas, o Brasil anunciou US$ 1 bilhão, e o Reino Unido, 400 milhões de libras, formalizados como empréstimo, segundo a Exame.",
+        ],
+        "credito_extra": "Vídeo e gráfico: Agora Praça. Foto: Rafa Neddermeyer/Agência Brasil.",
+        "fontes": [
+            ("Governo da Holanda, comunicado do Ministério das Relações Exteriores (26/10, em holandês)", "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/26/nederland-investeert-fors-in-bescherming-tropische-bossen"),
+            ("Agência Brasil, Holanda anuncia US$ 500 milhões em fundo florestal criado pelo Brasil (26/10)", "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-10/holanda-anuncia-us500-milhoes-em-fundo-florestal-criado-pelo-brasil"),
+            ("Carbon Pulse, condições da promessa holandesa e total de US$ 7,8 bilhões (em inglês)", "https://carbon-pulse.com/564418/"),
+            ("Reuters via The Business Standard, valor por hectare e papel do Banco Mundial (26/10, em inglês)", "https://www.tbsnews.net/world/netherlands-pledges-500-million-protect-tropical-forests-1583531"),
+            ("Exame, o fundo em setembro e as promessas de Brasil, Noruega e Reino Unido (23/09)", "https://exame.com/esg/na-semana-do-clima-de-ny-fundo-de-florestas-chega-a-3-4-da-meta-e-busca-us-27-bi-ate-dezembro/"),
+        ],
+    },
+    {
         "slug": "cemaden-risco-alto-inundacao-sul-chapeco-200-mm", "capa": "img/capa/cemaden-risco-alto-inundacao-sul-chapeco-200-mm.jpg", "capa_credito": "Estragos de temporal no Rio Grande (RS), em setembro (Prefeitura do Rio Grande/Divulgação), e chuva em rodovia do Meio-Oeste catarinense (Julio Cavalheiro/Secom SC, arquivo)",
         "data": "2026-10-23", "ordem": 4,
         "editoria": "servico", "chapeu": "Clima",
@@ -1006,6 +1038,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",
     "chuva-sul": "Sul em alerta: até 200 mm de chuva em Chapecó",
     "tse-meta-x": "TSE dá 24 horas para Meta e X se explicarem",

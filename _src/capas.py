@@ -329,6 +329,9 @@ CAPAS = {
         lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
+    "holanda-ate-500-milhoes-fundo-florestas-tropicais": (
+        lambda: foto("img/fotos/rio-tejo-acre-floresta.jpg", foco=(0.4, 0.5)),
+        "Rio Tejo corta a floresta amazônica no Acre, entre Cruzeiro do Sul e Marechal Thaumaturgo (Rafa Neddermeyer/Agência Brasil, 13/10/2026)"),
     "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais": (
         lambda: foto_tripla("img/fotos/flavio-telefone-agencia-senado.jpg", "img/fotos/passaporte-brasileiro.jpg",
                             "img/fotos/aviao-aeroporto-ponte.jpg",
