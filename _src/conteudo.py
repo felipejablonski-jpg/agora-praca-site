@@ -10,6 +10,48 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "camara-quer-votar-voto-distrital-misto-2034-motta",
+        "capa": "img/capa/camara-quer-votar-voto-distrital-misto-2034-motta.jpg",
+        "capa_credito": "Hugo Motta fala à imprensa na Câmara depois da reunião com líderes, em 28/10. Reprodução: Câmara dos Deputados",
+        "data": "2026-10-28",
+        "ordem": 1,
+        "editoria": "politica",
+        "chapeu": "Reforma eleitoral",
+        "video": "distrital-motta",
+        "titulo": "Câmara quer votar ainda este ano a mudança no jeito de eleger deputado e vereador, para valer por completo em 2034",
+        "linha_fina": "O presidente da Câmara, Hugo Motta, anunciou nesta quarta (28) uma PEC do voto distrital misto, com eleição de transição em 2030. PT, PL, PSOL e Novo não estavam na reunião e ainda serão procurados.",
+        "para_voce": ("O QUE MUDA PARA VOCÊ", "Hoje você dá um voto para deputado ou vereador. No distrital misto, daria dois: um em um candidato da sua região e outro em um partido. Presidente, governador, prefeito e senador continuam sendo eleitos como hoje. Se a PEC passar, nada muda antes de 2030."),
+        "texto": [
+            "O presidente da Câmara dos Deputados, Hugo Motta (Republicanos-PB), anunciou nesta quarta-feira (28) que quer discutir e votar ainda em 2026 uma proposta de emenda à Constituição (PEC) que muda a forma de eleger deputados federais, estaduais e distritais e vereadores. A ideia é adotar o voto distrital misto a partir da eleição de 2034, com um modelo de transição em 2030. O anúncio foi feito depois de uma reunião, pela manhã, com líderes e presidentes de partidos.",
+            "\"Nós caminharemos para fazer, ainda esse ano, uma discussão e possível votação, na Câmara dos Deputados, sobre a mudança do nosso sistema eleitoral, caminhando para o sistema distrital misto\", disse Motta, em vídeo publicado pela Câmara no Instagram. Segundo ele, o que se decidiu na reunião foi \"buscar a efetivação desse sistema eleitoral no voto distrital misto para o ano de 2034 e, até lá, construirmos uma transição para esse modelo\".",
+            "## Como é hoje",
+            "Deputados e vereadores são eleitos hoje pelo sistema proporcional. Você vota em um candidato ou em um partido, as cadeiras são divididas conforme o total de votos de cada partido ou federação no estado (ou no município, no caso de vereador), e dentro de cada um entram os mais votados.",
+            "## Como seria o distrital misto",
+            "Segundo a própria Câmara, o sistema \"combina dois tipos de voto\": um para escolher diretamente representantes da sua região e outro para escolher representantes indicados pelos partidos, com o voto dado diretamente à legenda. Pelo modelo descrito pelo SBT News e pelo Metrópoles, cada estado seria dividido em distritos. Metade das cadeiras ficaria com o mais votado de cada distrito, e a outra metade seria preenchida por listas que os partidos montam antes da eleição.",
+            "## E a transição de 2030",
+            "Segundo o SBT News, Motta disse que a mudança imediata foi rejeitada pelas bancadas. Para 2030, a proposta discutida é o chamado \"distritão misto\": metade das vagas iria para os candidatos mais votados no estado, sem distritos e sem levar em conta o partido, e a outra metade seria distribuída pelas listas partidárias, conforme os votos de cada legenda. O Congresso em Foco registra que os detalhes do modelo e da transição ainda dependem de negociação. \"Nós vamos fazer a discussão sobre como seria essa transição\", disse Motta, segundo o site.",
+            "## Quem estava e quem ficou de fora",
+            "De acordo com o SBT News, participaram da reunião União Brasil, PP, PSD, Republicanos, MDB, a federação PSDB-Cidadania e Podemos. O Congresso em Foco registrou também a presença do presidente do PSB, João Campos. Não estavam PL e Novo, da oposição, nem a federação PT-PCdoB-PV e o PSOL, da base do governo.",
+            "No vídeo, Motta diz que vai procurar esses partidos: \"Nós buscaremos os demais partidos, leia-se os partidos da Federação do PT, PCdoB, PV, também procuraremos o PSOL e, claro, também os partidos da direita, Partido Liberal e o Partido Novo, para conversar sobre essa decisão tomada aqui\". Segundo o SBT News, ele também vai se reunir com o presidente do Senado, Davi Alcolumbre (União-AP), para combinar a tramitação.",
+            "## O que precisa para aprovar",
+            "Por ser uma mudança na Constituição, a PEC precisa de três quintos dos votos em dois turnos em cada Casa: 308 dos 513 deputados e 49 dos 81 senadores. Mudanças nas regras eleitorais só valem para eleições que acontecem pelo menos um ano depois da aprovação.",
+            "## E Mato Grosso",
+            "Mato Grosso elege 8 deputados federais e 24 deputados estaduais. Com o distrital misto, o estado seria dividido em distritos, mas o desenho deles ainda não foi apresentado. Por isso, ainda não dá para dizer se Primavera do Leste teria um distrito próprio ou se dividiria um com cidades vizinhas. O Agora Praça não encontrou, até a tarde desta quarta, o texto da proposta publicado.",
+            "## Também na reunião",
+            "Motta anunciou um grupo de trabalho para discutir mudanças no código eleitoral sobre propaganda política nas redes sociais. \"É preciso regras claras que garantam paridade e um sistema transparente e isonômico\", disse, segundo o SBT News.",
+            "## O vídeo",
+            "O Reel do Agora Praça usa dois trechos do vídeo publicado pela Câmara dos Deputados no Instagram, com legendas a partir da fala de Motta.",
+        ],
+        "credito_extra": "Vídeo e foto de capa: reprodução, Câmara dos Deputados (Instagram oficial, 28/10).",
+        "fontes": [
+            ("Câmara dos Deputados, post e vídeo no Instagram oficial (28/10)", "https://www.instagram.com/camaradosdeputados/"),
+            ("Congresso em Foco, Hugo Motta anuncia PEC sobre voto distrital misto ainda este ano (28/10, 12h05)", "https://www.congressoemfoco.com.br/noticia/129598/hugo-motta-anuncia-pec-sobre-voto-distrital-misto-ainda-este-ano"),
+            ("Metrópoles, Câmara irá discutir este ano voto distrital misto para 2034, diz Motta (28/10, 15h14)", "https://www.metropoles.com/brasil/camara-ira-discutir-este-ano-voto-distrital-misto-para-2034-diz-motta"),
+            ("SBT News, Motta buscará apoio de PL e PT para mudar sistema eleitoral (28/10, 15h37)", "https://sbtnews.sbt.com.br/noticia/politica/motta-buscara-apoio-de-pl-e-pt-para-mudar-sistema-eleitoral"),
+            ("Constituição Federal, artigos 16 e 60", "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"),
+        ],
+    },
+    {
         "slug": "china-responde-trump-eleicao-brasil-respeita-escolha-do-povo", "capa": "img/capa/china-responde-trump-eleicao-brasil-respeita-escolha-do-povo.jpg", "capa_credito": "O porta-voz Guo Jiakun na coletiva de 27/10 em Pequim. Reprodução: Ministério das Relações Exteriores da China, via ShanghaiEye",
         "data": "2026-10-27", "ordem": 3,
         "editoria": "politica", "chapeu": "Eleições 2026",
@@ -1082,6 +1124,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "distrital-motta": "A Câmara quer mudar o jeito de eleger deputado e vereador. Hugo Motta explica",
     "china-brasil-reel": "Trump disse que a eleição pareceu fraudada. A China respondeu assim",
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",

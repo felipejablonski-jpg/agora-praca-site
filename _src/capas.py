@@ -337,6 +337,9 @@ CAPAS = {
                             "img/fotos/aviao-aeroporto-ponte.jpg",
                             ((0.42, 0, 0.92, 1), (0.5, 0, 0.82, 1), (0.18, 0, 0.5, 1))),
         "Flávio Bolsonaro (Beto Barata/Agência Senado); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
+    "camara-quer-votar-voto-distrital-misto-2034-motta": (
+        lambda: foto("img/fotos/motta-distrital-camara-2026-10-28.jpg", foco=(0.5, 0.2)),
+        "Hugo Motta fala à imprensa na Câmara depois da reunião com líderes, em 28/10. Reprodução: Câmara dos Deputados"),
     "china-responde-trump-eleicao-brasil-respeita-escolha-do-povo": (
         lambda: foto("img/fotos/china-guo-jiakun-coletiva-2026-10-27.jpg"),
         "O porta-voz Guo Jiakun na coletiva de 27/10 em Pequim. Reprodução: Ministério das Relações Exteriores da China, via ShanghaiEye"),
