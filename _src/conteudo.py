@@ -12,7 +12,7 @@ NOTICIAS = [
     {
         "slug": "flavio-carta-verdadeiro-presidente-eleito-numeros-tse",
         "capa": "img/capa/flavio-carta-verdadeiro-presidente-eleito-numeros-tse.jpg",
-        "capa_credito": "Flávio Bolsonaro em ato na Avenida Paulista, em 18/10. Foto: Rafa Neddermeyer/Agência Brasil",
+        "capa_credito": "Flávio Bolsonaro em vídeo publicado nos stories dele. Reprodução: redes sociais de Flávio Bolsonaro",
         "data": "2026-10-28",
         "ordem": 2,
         "editoria": "politica",
@@ -41,7 +41,7 @@ NOTICIAS = [
             "## O que ainda não se sabe",
             "O Agora Praça não encontrou, até as 17h de Mato Grosso, manifestação oficial do TSE, do STF ou do Planalto sobre a carta. Aliados anunciaram uma entrevista coletiva de Flávio em Miami na quinta-feira (29). A cobertura completa da saída dele do país está na matéria sobre a fuga, atualizada desde terça.",
         ],
-        "credito_extra": "Foto de capa: Rafa Neddermeyer/Agência Brasil. Reel com fotos de Rafa Neddermeyer e Joédson Alves, da Agência Brasil.",
+        "credito_extra": "Foto de capa e vídeo do Reel: reprodução, stories de Flávio Bolsonaro. Foto das urnas no Reel: Joédson Alves/Agência Brasil.",
         "fontes": [
             ("Metrópoles, em carta, Flávio se declara \"verdadeiro presidente eleito do Brasil\" (28/10, 16h46)", "https://www.metropoles.com/mundo/em-carta-flavio-se-declara-verdadeiro-presidente-eleito-do-brasil"),
             ("SBT News, Flávio diz ser verdadeiro presidente e saúda Trump e Milei (28/10)", "https://sbtnews.sbt.com.br/noticia/politica/flavio-diz-que-e-o-verdadeiro-presidente-em-carta-ao-povo"),

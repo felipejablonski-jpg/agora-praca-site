@@ -14,9 +14,9 @@ T = tarja("politica", "eleições 2026")
 MIDIA = os.path.join(RAIZ, "img", "fotos")
 
 CENAS = [
-    dict(tipo="foto", arquivo="flavio-paulista.jpg", cor=True, mov="in", batidas=5,
-         html=topo(T, "Foto de arquivo: Rafa Neddermeyer/Agência Brasil") + texto("Dos EUA, Flávio diz em carta que é o “verdadeiro presidente eleito”",
-                                      "Ele fala em fraude e não apresenta nenhuma prova", top=700, fs=96)),
+    dict(tipo="video", arquivo="../../_src/reels/clips/flavio-stories-2026-10-28.mp4", cor=True, inicio=6.0, batidas=5,
+         html=topo(T, "Vídeo: reprodução, stories de Flávio Bolsonaro") + texto("Dos EUA, Flávio diz em carta que é o “verdadeiro presidente eleito”",
+                                      "Ele fala em fraude e não apresenta nenhuma prova", top=1010, fs=92)),
     dict(tipo="fixa", batidas=4, html=topo(T, "Tribunal Superior Eleitoral", fundo="preto")
          + numero("+10,4 mi", "Quanto Lula cresceu do primeiro para o segundo turno", "Flávio chama isso de “impossibilidade matemática”", top=620, fs=200)),
     dict(tipo="fixa", batidas=5, html=topo(T, "Tribunal Superior Eleitoral", fundo="preto")
