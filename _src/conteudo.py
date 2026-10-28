@@ -18,10 +18,11 @@ NOTICIAS = [
         "editoria": "politica",
         "chapeu": "Eleições 2026",
         "video": "flavio-carta",
-        "titulo": "Dos EUA, Flávio se declara \"verdadeiro presidente eleito\" em carta; os números do TSE não sustentam a fraude que ele alega",
-        "linha_fina": "Na primeira manifestação desde que deixou o Brasil, o senador agradece a Trump e a Milei, pede a cassação da chapa Lula-Alckmin e diz que vai liderar a oposição de fora do país. Ele não apresenta prova.",
+        "titulo": "Dos EUA, Flávio se declara \"verdadeiro presidente eleito\" em carta e horas depois troca por \"líder do Brasil\"; os números do TSE não sustentam a fraude que ele alega",
+        "linha_fina": "Na primeira manifestação desde que deixou o Brasil, o senador agradece a Trump e a Milei, pede a cassação da chapa Lula-Alckmin e diz que vai liderar a oposição de fora do país. Numa segunda versão, trocou \"presidente eleito\" por \"líder do Brasil\" e manteve a acusação de fraude, sem prova.",
         "para_voce": ("O QUE ISSO SIGNIFICA", "A carta não muda o resultado. Lula foi declarado reeleito pelo TSE e toma posse em 5 de janeiro. O crescimento dele no segundo turno cabe nos votos que foram para outros candidatos no primeiro turno e no aumento de votos válidos."),
         "texto": [
+            "Atualização de quarta-feira (28), às 19h de Brasília (18h em Mato Grosso): horas depois de divulgar a carta, Flávio publicou uma segunda versão do texto. Segundo o BPMoney, o Jornal da Paraíba e o Diário do Centro do Mundo, ele trocou as expressões \"verdadeiro presidente eleito\" e \"presidente eleito\" por \"líder do Brasil\" e \"líder\". As reportagens não apontam outras mudanças: a acusação de fraude, sem prova, e o pedido de cassação da chapa Lula-Alckmin continuam. Flávio não explicou a troca. O restante desta matéria descreve a primeira versão, a que foi publicada pela imprensa às 16h46.",
             "O senador Flávio Bolsonaro (PL-RJ) divulgou nesta quarta-feira (28) uma carta em que se declara \"o verdadeiro presidente eleito do Brasil\". É a primeira manifestação dele desde que deixou o país, contra ordem do Supremo Tribunal Federal, e chegou aos Estados Unidos com a mulher e as filhas. O texto foi publicado por Metrópoles, SBT News, Gazeta do Povo e O Antagonista.",
             "Na carta, Flávio agradece ao presidente argentino Javier Milei e ao presidente americano Donald Trump, diz que houve fraude no segundo turno, pede a cassação da chapa Lula-Alckmin e afirma que vai liderar a oposição a partir dos Estados Unidos. Ele não apresenta prova de fraude.",
             "## O que ele diz",
@@ -43,6 +44,9 @@ NOTICIAS = [
         ],
         "credito_extra": "Foto de capa e vídeo do Reel: reprodução, stories de Flávio Bolsonaro. Foto das urnas no Reel: Joédson Alves/Agência Brasil.",
         "fontes": [
+            ("BPMoney, Flávio apaga 'presidente eleito' de carta e agora se diz 'líder do Brasil' (28/10, 18h24)", "https://bpmoney.com.br/politica/flavio-bolsonaro-apaga-presidente-eleito-carta-lider-do-brasil/"),
+            ("Jornal da Paraíba, Flávio apaga carta em que se dizia presidente eleito (28/10, 18h32)", "https://jornaldaparaiba.com.br/politica/conversa-politica/flavio-bolsonaro-apaga-carta-golpista-em-dizia-presidente-eleito-do-brasil"),
+            ("Diário do Centro do Mundo, Flávio muda texto para 'líder' (28/10)", "https://diariodocentrodomundo.com.br/flavio-bolsonaro-presidente-eleito-lider-carta"),
             ("Metrópoles, em carta, Flávio se declara \"verdadeiro presidente eleito do Brasil\" (28/10, 16h46)", "https://www.metropoles.com/mundo/em-carta-flavio-se-declara-verdadeiro-presidente-eleito-do-brasil"),
             ("SBT News, Flávio diz ser verdadeiro presidente e saúda Trump e Milei (28/10)", "https://sbtnews.sbt.com.br/noticia/politica/flavio-diz-que-e-o-verdadeiro-presidente-em-carta-ao-povo"),
             ("Gazeta do Povo, nos EUA, Flávio Bolsonaro se declara \"presidente eleito\" (28/10, 16h50)", "https://www.gazetadopovo.com.br/republica/nos-eua-flavio-bolsonaro-se-declara-presidente-eleito/"),

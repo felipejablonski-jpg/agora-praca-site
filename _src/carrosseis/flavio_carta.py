@@ -62,11 +62,12 @@ TELAS = [
     + pagina("flavio-carta-p3.png", 560, 150, 760, 7)
     + pagina("flavio-carta-p2.png", 400, 135, 760, 2)
     + pagina("flavio-carta-p1.png", 200, 150, 780, -4)
-    + f'''<div class="a" style="left:0;right:0;bottom:0;height:640px;background:linear-gradient(to top,{K} 0,{K} 430px,rgba(20,20,20,0) 640px)"></div>
-<div class="a" style="left:60px;right:60px;top:860px">
+    + f'''<div class="a" style="left:0;right:0;bottom:0;height:820px;background:linear-gradient(to top,{K} 0,{K} 580px,rgba(20,20,20,0) 820px)"></div>
+<div class="a" style="left:60px;right:60px;top:790px">
 <div style="font-weight:800;font-size:26px;letter-spacing:.14em;color:{RD}">A CARTA DE FLÁVIO</div>
 <div class="serif" style="font-size:62px;line-height:1.1;margin-top:18px">Dos EUA, Flávio se declarou “o verdadeiro presidente eleito do Brasil”</div>
-<div style="font-size:32px;color:{G};margin-top:24px">As três páginas e o que os números dizem &nbsp;→</div></div>''' + num(1),
+<div style="font-size:32px;line-height:1.3;color:#fff;margin-top:22px;border-left:6px solid {RD};padding-left:18px">Horas depois, trocou “presidente eleito” por “líder do Brasil” e manteve a acusação de fraude</div>
+<div style="font-size:30px;color:{G};margin-top:22px">A primeira versão e o que os números dizem &nbsp;→</div></div>''' + num(1),
     # 2. página 1
     cabeca("A CARTA · PÁGINA 1 DE 3")
     + pagina("flavio-carta-p1.png", 50, 130, 1100, -2, [(760, 352, 1112, 386), (66, 391, 140, 425), (222, 716, 1112, 750)])
