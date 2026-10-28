@@ -10,6 +10,36 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "china-responde-trump-eleicao-brasil-respeita-escolha-do-povo", "capa": "img/capa/china-responde-trump-eleicao-brasil-respeita-escolha-do-povo.jpg", "capa_credito": "O porta-voz Guo Jiakun na coletiva de 27/10 em Pequim. Reprodução: Ministério das Relações Exteriores da China, via ShanghaiEye",
+        "data": "2026-10-27", "ordem": 3,
+        "editoria": "politica", "chapeu": "Eleições 2026",
+        "video": "china-brasil-reel",
+        "titulo": "Trump diz sem prova que a eleição do Brasil pareceu fraudada, e a China responde: \"Respeitamos a escolha independente do povo brasileiro\"",
+        "linha_fina": "Perguntado por uma repórter da AFP nesta terça (27), o porta-voz da chancelaria chinesa respondeu com uma frase só. O Planalto decidiu não reagir à fala do presidente americano.",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "A China, maior parceira comercial do Brasil, tratou o resultado como decisão dos brasileiros. Trump não apresentou prova de fraude, e o TSE declarou Lula reeleito com 51,79% dos votos válidos."),
+        "texto": [
+            "A chancelaria da China respondeu nesta terça-feira (27) à declaração do presidente dos Estados Unidos, Donald Trump, de que a eleição brasileira pareceu fraudada. Na entrevista coletiva diária do Ministério das Relações Exteriores, em Pequim, uma repórter da agência AFP perguntou se o ministério tinha algum comentário sobre o que Trump disse. O porta-voz Guo Jiakun respondeu: \"Respeitamos a escolha independente do povo brasileiro\". A frase está na transcrição oficial publicada pelo ministério e foi traduzida pelo Agora Praça.",
+            "Foi a resposta inteira. A pergunta sobre o Brasil foi a quinta das seis feitas na coletiva, e o porta-voz não acrescentou mais nada.",
+            "## O que Trump disse",
+            "Na segunda-feira (26), Trump falou com jornalistas antes de deixar Washington para um comício da campanha das eleições de meio de mandato nos EUA. Segundo o Brasil de Fato, ele disse: \"Eu não tomei partido, mas, francamente, pareceu mais uma eleição fraudada… parecia tão corrupta, tão terrível\". Ele não apresentou nenhuma prova.",
+            "Na mesma fala, Trump disse gostar de Lula. \"Me dou muito bem com ele. Só acho que a situação ficou com uma péssima aparência\", afirmou, segundo o Brasil de Fato. O Metrópoles informa que, até segunda, o governo americano não tinha parabenizado Lula nem reconhecido formalmente o resultado.",
+            "## A reação do governo brasileiro",
+            "O Planalto decidiu não responder a Trump. Segundo a Exame, um integrante do governo disse, sob reserva, que a decisão foi calculada para evitar que a questão escalasse, e que o governo só reagiria se os Estados Unidos questionassem a vitória de Lula em notas oficiais.",
+            "## O resultado da eleição",
+            "O Tribunal Superior Eleitoral declarou Lula (PT) reeleito no domingo (25), com 64.256.232 votos, ou 51,79% dos votos válidos. Flávio Bolsonaro (PL) teve 59.826.041 votos, ou 48,21%.",
+            "## O vídeo",
+            "O Agora Praça legendou em português o trecho da coletiva com a pergunta e a resposta, a partir da transcrição oficial do ministério chinês. As imagens foram gravadas na sala de imprensa do ministério e divulgadas pela ShanghaiEye, canal de notícias de Xangai.",
+        ],
+        "credito_extra": "Vídeo e foto de capa: reprodução, Ministério das Relações Exteriores da China, via ShanghaiEye.",
+        "fontes": [
+            ("Ministério das Relações Exteriores da China, transcrição da coletiva de Guo Jiakun (27/10, em inglês)", "https://www.fmprc.gov.cn/mfa_eng/xw/fyrbt/202610/t20261027_12047821.html"),
+            ("Brasil de Fato, sem provas, Trump diz que eleições no Brasil foram fraudadas (26/10, 17h59)", "https://www.brasildefato.com.br/2026/10/26/sem-provas-trump-repete-narrativa-de-flavio-bolsonaro-e-diz-que-eleicoes-no-brasil-foram-fraudadas/"),
+            ("Metrópoles, Trump diz que eleição no Brasil pareceu fraudada (26/10, 16h46)", "https://www.metropoles.com/mundo/trump-diz-que-eleicao-no-brasil-pareceu-fraudada"),
+            ("Exame, por que Lula decidiu não responder a Trump (27/10, 17h59)", "https://exame.com/brasil/por-que-lula-decidiu-nao-responder-a-trump-apos-acusacao-de-fraude-na-eleicao-brasileira/"),
+            ("TSE, resultado do segundo turno (26/10)", "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026"),
+        ],
+    },
+    {
         "slug": "flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais", "capa": "img/capa/flavio-bolsonaro-prazo-passaportes-vence-pf-apura-saida-do-pais.jpg", "capa_credito": "Flávio Bolsonaro (Beto Barata/Agência Senado); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo",
         "data": "2026-10-27", "ordem": 1,
         "editoria": "politica", "chapeu": "Eleições 2026",
@@ -1038,6 +1068,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "china-brasil-reel": "Trump disse que a eleição pareceu fraudada. A China respondeu assim",
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",
     "chuva-sul": "Sul em alerta: até 200 mm de chuva em Chapecó",

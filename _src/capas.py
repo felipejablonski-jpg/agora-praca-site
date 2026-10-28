@@ -337,6 +337,9 @@ CAPAS = {
                             "img/fotos/aviao-aeroporto-ponte.jpg",
                             ((0.42, 0, 0.92, 1), (0.5, 0, 0.82, 1), (0.18, 0, 0.5, 1))),
         "Flávio Bolsonaro (Beto Barata/Agência Senado); passaporte brasileiro e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
+    "china-responde-trump-eleicao-brasil-respeita-escolha-do-povo": (
+        lambda: foto("img/fotos/china-guo-jiakun-coletiva-2026-10-27.jpg"),
+        "O porta-voz Guo Jiakun na coletiva de 27/10 em Pequim. Reprodução: Ministério das Relações Exteriores da China, via ShanghaiEye"),
     "missil-inflavel-ataque-nuclear-ato-pro-flavio": (
         lambda: foto_retrato("img/missil.jpg"),
         "Foto: reprodução / redes sociais (autoria não identificada)"),
