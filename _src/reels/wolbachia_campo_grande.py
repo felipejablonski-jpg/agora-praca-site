@@ -61,25 +61,47 @@ function draw(t){{
   document.getElementById('nt').style.opacity=e((t-3.6)/0.4);
 }}</script>'''
 
+CRED_LAB = "Foto: Flávio Carvalho/WMP Brasil/Fiocruz (divulgação)"
+
+# Ilustração: a bactéria se espalha pela população de mosquitos (valor final real: 86,4% em 2024).
+import random
+random.seed(7)
+ORDEM = list(range(120)); random.shuffle(ORDEM)
+PTS = "".join(f'<div id="p{k}" style="position:absolute;left:{(k % 12) * 72}px;top:{(k // 12) * 72}px;width:50px;height:50px;border-radius:50%;background:#3a3a3a"></div>' for k in range(120))
+SPREAD = f'''<div class="a" style="left:80px;right:80px;top:470px">
+<div class="serif" style="font-size:72px;line-height:1.08">Ela passa da mãe para os filhotes</div>
+<div style="position:relative;width:940px;height:720px;margin-top:60px">{PTS}</div>
+<div style="display:flex;align-items:baseline;margin-top:30px"><span id="n" class="serif" style="font-size:120px;color:{RD};line-height:1">0</span><span class="serif" style="font-size:70px;color:{RD}">%</span>
+<span style="font-size:36px;color:{G};margin-left:24px;line-height:1.25">dos mosquitos testados em 2024 tinham a bactéria</span></div>
+<div style="font-size:26px;color:#8d8983;margin-top:22px">Ilustração: Agora Praça. Cada bolinha representa 1 em 120 mosquitos</div>
+</div>
+<script>{EASE}
+var ORD={ORDEM};
+function draw(t){{
+  var a=e((t-0.3)/3.6), m=Math.round(120*0.864*a);
+  for(var k=0;k<120;k++){{ document.getElementById('p'+ORD[k]).style.background = k<m ? '{RD}' : '#3a3a3a'; }}
+  document.getElementById('n').textContent=(86.4*a).toFixed(1).replace('.',',');
+}}</script>'''
+
 CENAS = [
     dict(tipo="foto", arquivo=FOTO, cor=True, mov="in", batidas=5,
          html=topo(T, CRED) + numero("100", "milhões de mosquitos foram soltos de propósito em Campo Grande",
                                      "Mais de 100 milhões, de dezembro de 2020 a dezembro de 2023", top=640, unidade="")),
-    dict(tipo="foto", arquivo=FOTO, cor=True, mov="esq", batidas=5,
-         html=topo(T, CRED) + texto("Eles carregam uma bactéria que atrapalha o vírus da dengue",
-                                    "A Wolbachia passa da mãe para os filhotes e vai se espalhando. O mosquito com ela transmite menos o vírus",
-                                    top=700, fs=76)),
-    dict(tipo="fixa", batidas=4,
-         html=topo(T, FONTE, fundo="preto") + texto("Seis áreas da cidade, uma de cada vez",
-                                                      "Cerca de 880 mil moradores em 73 bairros. Estudantes de 17 escolas e agentes de saúde ajudaram em projetos-piloto",
-                                                      top=780, fs=96)),
+    dict(tipo="foto", arquivo="wolbachia-lab-triagem-placa-wmp-fiocruz.jpg", cor=True, mov="dir", batidas=4,
+         html=topo(T, CRED_LAB) + texto("Eles carregam uma bactéria que atrapalha o vírus da dengue",
+                                        "A Wolbachia faz o mosquito transmitir menos o vírus", top=720, fs=76)),
+    dict(tipo="anim", batidas=6, html=topo(T, FONTE, fundo="preto") + SPREAD),
+    dict(tipo="foto", arquivo="wolbachia-lab-mosquitos-tela-wmp-fiocruz.jpg", cor=True, mov="in", batidas=5,
+         html=topo(T, CRED_LAB) + texto("Criados em laboratório e soltos de carro",
+                                        "Em tubos com 100 a 150 mosquitos, em seis áreas da cidade, uma de cada vez. Cerca de 880 mil moradores, 73 bairros",
+                                        top=720, fs=80)),
     dict(tipo="anim", batidas=7, html=topo(T, FONTE, fundo="preto") + GRAF1),
     dict(tipo="anim", batidas=8, html=topo(T, FONTE, fundo="preto") + GRAF2),
-    dict(tipo="fixa", batidas=7,
-         html=topo(T, FONTE, fundo="preto") + texto("O que o estudo mostra e o que deixa em aberto",
-                                                      "Onde a bactéria ficou instável, a queda foi de 9,2%, dentro da margem de erro. O estudo observou a cidade, sem sortear grupos. A pandemia pode ter afetado os registros de 2020 e 2021",
-                                                      top=700, fs=84)),
-    dict(tipo="fixa", batidas=2, html=assinatura("The Lancet Regional Health (Americas) (Batista et al., 2026), Fiocruz e CDC")),
+    dict(tipo="foto", arquivo="wolbachia-lab-microscopio-wmp-fiocruz.jpg", cor=True, mov="esq", batidas=7,
+         html=topo(T, CRED_LAB) + texto("O que o estudo deixa em aberto",
+                                        "Onde a bactéria ficou instável, a queda foi de 9,2%, dentro da margem de erro. O estudo observou a cidade, sem sortear grupos. A pandemia pode ter afetado os registros de 2020 e 2021",
+                                        top=700, fs=84)),
+    dict(tipo="fixa", batidas=2, html=assinatura("The Lancet Regional Health (Americas), Batista et al., 2026, Fiocruz e CDC")),
 ]
 
 if __name__ == "__main__":

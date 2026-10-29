@@ -30,7 +30,7 @@ NOTICIAS = [
             "Nos bairros em que a bactéria ainda estava sendo liberada ou ficou instável, a queda foi de 9,2%, dentro da margem de erro (de menos 2,3% a 19,4%). O estudo é observacional: acompanhou a cidade antes e depois, sem sortear áreas com e sem mosquitos.",
             "Os autores citam como limites a falha de registro de casos e a pandemia, que pode ter afetado as notificações de 2020 e 2021. Eles dizem que ainda falta avaliar a durabilidade da bactéria na população de mosquitos, o custo em relação aos métodos tradicionais e o efeito sobre chikungunya e zika.",
         ],
-        "credito_extra": "Vídeo e gráficos: Agora Praça. Foto: James Gathany/CDC, 2006 (domínio público).",
+        "credito_extra": "Vídeo e gráficos: Agora Praça. Fotos: James Gathany/CDC, 2006 (domínio público), e Flávio Carvalho/WMP Brasil/Fiocruz (divulgação, via Agência Brasil).",
         "fontes": [
             ("The Lancet Regional Health (Americas), Batista et al., impacto da soltura de mosquitos com Wolbachia na dengue em Campo Grande (2026;54:101327)", "https://doi.org/10.1016/j.lana.2025.101327"),
             ("Fiotec/Fiocruz, estudo mostra redução de casos de dengue em Campo Grande com Wolbachia (10/12/2025)", "https://www.fiotec.fiocruz.br/en/news/study-shows-wolbachia-led-to-reduction-in-dengue-cases-in-campo-grande"),
