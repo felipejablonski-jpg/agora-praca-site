@@ -1276,6 +1276,61 @@ VIDEOS = {
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
     {
+        "data": "2026-10-29", "pasta": "pp/2026-10-29", "telas": 6,
+        "materia": {
+            "abertura": "O governo federal vai reforçar a investigação de 45 casos de violência política registrados no fim de semana da eleição, com dez mortes. Na Espanha, a colisão de dois trens de alta velocidade matou pelo menos 68 pessoas. A bolsa caiu pela terceira vez seguida e acumula perda de 16,6% na semana. Em Israel, o partido de Netanyahu lidera a apuração, mas o bloco dele não tem maioria.",
+            "secoes": [
+                {"chapeu": "Política", "titulo": "Governo vai reforçar a investigação de 45 casos de violência política no fim de semana da eleição, com dez mortes",
+                 "texto": [
+                    "O governo federal anunciou nesta quarta-feira (28) que vai reforçar a apuração de 45 casos de violência política registrados entre o sábado (24) e a noite de domingo (25), quando saiu o resultado do segundo turno. São 47 vítimas, entre elas dez mortas, segundo a Agência Brasil. O balanço foi apresentado pelo ministro da Secretaria-Geral da Presidência, Guilherme Boulos, e por integrantes do Ministério da Justiça.",
+                    "A lista do governo inclui sete vítimas de atropelamentos intencionais, 14 de agressões físicas, cinco de disparos de arma de fogo, cinco de violência contra povos indígenas e seis de abuso de autoridade e violência policial. Paraná, São Paulo, Mato Grosso do Sul, Minas Gerais e Santa Catarina lideram o número de ocorrências.",
+                    "Segundo o ministro, as vítimas eram apoiadores de Lula e os autores, apoiadores de Flávio Bolsonaro. Em parte dos casos, a motivação não está comprovada: a morte de um engenheiro em Santos, por exemplo, é tratada pela Polícia Civil como latrocínio, segundo a Agência Brasil. As medidas incluem inquéritos da Polícia Federal, envio de denúncias à Procuradoria-Geral da República e acionamento das corregedorias estaduais quando houver policiais envolvidos.",
+                 ],
+                 "fontes": [
+                    ("Agência Brasil, governo reforçará investigações de violência política no segundo turno (28/10, 17h34)", "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/governo-reforcara-investigacoes-de-violencia-politica-no-segundo-turno"),
+                    ("Secretaria-Geral da Presidência, governo anuncia apuração rigorosa de casos de violência política (28/10)", "https://www.gov.br/secretariageral/pt-br/noticias/2026/outubro/governo-do-brasil-anuncia-apuracao-rigorosa-de-casos-de-violencia-politica"),
+                 ]},
+                {"chapeu": "Internacional", "titulo": "Colisão de dois trens de alta velocidade mata pelo menos 68 pessoas na Espanha",
+                 "texto": [
+                    "Dois trens de alta velocidade bateram na manhã de quarta-feira (28) entre Los Yébenes e Urda, na província de Toledo, na linha que liga Madri à Andaluzia. Pelo menos 68 pessoas morreram, segundo a porta-voz do governo regional de Castilla-La Mancha, Esther Padilla, citada pela CNN Brasil.",
+                    "Segundo a Adif, gestora da infraestrutura, foi uma colisão traseira: um trem da Renfe atingiu um da Iryo, que estava parado ou em baixa velocidade. Um dos trens levava 146 passageiros e um bebê, e o outro, 397. A causa não foi informada, e o tráfego na linha foi suspenso. O Metrópoles registrou, na manhã de quarta, 179 feridos, segundo o governo regional.",
+                 ],
+                 "fontes": [
+                    ("CNN Brasil, colisão de trem na Espanha deixa pelo menos 68 mortos (28/10, atualizada às 13h31)", "https://www.cnnbrasil.com.br/internacional/colisao-de-trem-na-espanha-deixa-pelo-menos-68-mortos-diz-governo/"),
+                    ("Metrópoles, colisão entre dois trens de alta velocidade na Espanha (28/10, 7h41)", "https://www.metropoles.com/mundo/colisao-entre-dois-trens-de-alta-velocidade-na-espanha-deixa-mortos"),
+                 ]},
+                {"chapeu": "Economia", "titulo": "Bolsa cai 2,68% e acumula perda de 16,6% na semana; dólar fecha a R$ 5,34",
+                 "texto": [
+                    "O Ibovespa caiu 2,68% nesta quarta-feira (28) e fechou em 171.006,10 pontos, o menor nível desde 20 de agosto. Foi o terceiro pregão seguido de queda desde o segundo turno, e a perda acumulada na semana chega a 16,6%, segundo a Agência Brasil. A agência atribui o movimento às incertezas sobre a política fiscal do governo.",
+                    "O dólar comercial fechou em leve baixa, de 0,19%, a R$ 5,34, mas acumula alta de 6,95% na semana. Dados da B3 citados pela agência mostram que investidores estrangeiros retiraram R$ 2,846 bilhões da bolsa na segunda (26). Nos Estados Unidos, o Federal Reserve manteve os juros entre 3,75% e 4% ao ano.",
+                 ],
+                 "fontes": [
+                    ("Agência Brasil, Ibovespa cai 2,68%, e dólar fecha em leve baixa a R$ 5,34 (28/10, 19h28)", "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/ibovespa-cai-268-e-dolar-fecha-em-leve-baixa-r-534"),
+                 ]},
+                {"chapeu": "Internacional", "titulo": "Partido de Netanyahu lidera a apuração em Israel, mas o bloco dele fica sem maioria",
+                 "texto": [
+                    "Com 85,6% dos votos apurados na eleição de terça-feira (27), o bloco do primeiro-ministro Benjamin Netanyahu, formado pela direita e por partidos religiosos, tem 53 das 120 cadeiras do Parlamento, segundo projeção da Comissão Eleitoral Central de Israel publicada pelo Brasil de Fato. São necessárias 61 para a maioria. A oposição, liderada por Gadi Eisenkot, tem 48.",
+                    "Os partidos árabes somam 19 cadeiras projetadas, um recorde, e o comparecimento foi de 77,7%, o maior em mais de duas décadas. O resultado oficial deve sair até 4 de novembro. Depois, o presidente Isaac Herzog consulta os partidos e indica quem tenta formar o governo. Se ninguém conseguir maioria, pode haver nova eleição.",
+                 ],
+                 "fontes": [
+                    ("Brasil de Fato, Netanyahu lidera apuração em Israel, mas não obtém maioria (28/10, 18h39)", "https://www.brasildefato.com.br/2026/10/28/netanyahu-lidera-apuracao-em-israel-mas-nao-obtem-maioria-e-bancada-palestina-bate-recorde-com-19-cadeiras/"),
+                 ]},
+            ],
+            "agenda": [
+                ("Qui 29", "Flávio Bolsonaro deve dar entrevista em Miami, segundo aliados, sem horário divulgado. Em Cuiabá, pancadas de chuva e trovoadas desde a madrugada, com máxima de 30°C."),
+                ("Sex 30", "Alerta do Inmet para temporais em regiões de Mato Grosso, com possibilidade de granizo."),
+                ("Qua 4", "Prazo para Israel divulgar o resultado oficial da eleição."),
+            ],
+        },
+        "itens": [
+            ("O governo vai reforçar a investigação de 45 casos de violência política no fim de semana da eleição. São 47 vítimas, dez delas mortas.", None),
+            ("A colisão de dois trens de alta velocidade na província de Toledo, na Espanha, matou pelo menos 68 pessoas.", None),
+            ("A bolsa caiu 2,68% e acumula perda de 16,6% na semana. O dólar fechou a R$ 5,34.", None),
+            ("Em Israel, o bloco de Netanyahu lidera com 53 cadeiras, mas precisa de 61 para a maioria.", None),
+        ],
+        "fonte": "Fontes: Agência Brasil, Secretaria-Geral da Presidência, CNN Brasil, Metrópoles, Brasil de Fato, Correio Braziliense, Climatempo e Inmet",
+    },
+    {
         "data": "2026-10-28", "pasta": "pp/2026-10-28", "telas": 6,
         "materia": {
             "abertura": "Flávio Bolsonaro, que deixou o Brasil proibido pelo STF de sair, pode dar entrevista hoje nos Estados Unidos, segundo aliados. Trump voltou a citar o Brasil num comício e disse, sem prova, que o país também está \"fazendo um bom trabalho\" em manipular eleições. A bolsa caiu mais 0,51% e o dólar fechou a R$ 5,349. Mato Grosso tem alerta de tempestade.",

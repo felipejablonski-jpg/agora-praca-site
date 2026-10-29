@@ -1,0 +1,62 @@
+{
+ "data": "2026-10-29",
+ "data_curta": "29/10",
+ "dia_longo": "Quinta-feira, 29 de outubro de 2026",
+ "capa": [
+  "Governo vai investigar 45 casos de violência política",
+  "Colisão de trens mata pelo menos 68 na Espanha",
+  "Bolsa perde 16,6% na semana",
+  "Netanyahu lidera em Israel, mas sem maioria"
+ ],
+ "telas": [
+  {
+   "tipo": "texto",
+   "tag": "Política",
+   "titulo": "Governo vai investigar 45 casos de violência política no fim de semana da eleição, com 10 mortes",
+   "tam": 58,
+   "topicos": [
+    "São 47 vítimas, de sábado (24) à noite de domingo (25). PF abre inquéritos, e casos vão à PGR.",
+    "Segundo o governo, as vítimas apoiavam Lula. Em parte dos casos, a motivação política não está comprovada.",
+    "Paraná, São Paulo, Mato Grosso do Sul, Minas e Santa Catarina lideram."
+   ],
+   "fonte": "Fontes: Agência Brasil e Secretaria-Geral da Presidência"
+  },
+  {
+   "tipo": "numero",
+   "tag": "Internacional",
+   "numero": "68",
+   "tam": 300,
+   "frase": "pessoas morreram, pelo menos, na colisão de dois trens de alta velocidade na Espanha, ontem de manhã.",
+   "detalhe": "Foi na província de Toledo, na linha Madri-Andaluzia. Um trem da Renfe bateu na traseira de um da Iryo, segundo a gestora da linha. A causa não foi informada.",
+   "fonte": "Fontes: CNN Brasil, com o governo de Castilla-La Mancha, e Metrópoles"
+  },
+  {
+   "tipo": "numero",
+   "tag": "Economia",
+   "numero": "16,6%",
+   "tam": 250,
+   "frase": "é quanto a bolsa perdeu na semana, depois da terceira queda seguida ontem.",
+   "detalhe": "O Ibovespa caiu 2,68% e fechou em 171.006 pontos, o menor nível desde 20 de agosto. O dólar recuou 0,19%, a R$ 5,34, mas sobe 6,95% na semana.",
+   "fonte": "Fonte: Agência Brasil"
+  },
+  {
+   "tipo": "texto",
+   "tag": "Internacional",
+   "titulo": "Partido de Netanyahu lidera a apuração em Israel, mas o bloco dele fica sem maioria",
+   "tam": 60,
+   "topicos": [
+    "Com 85,6% apurado, o bloco tem 53 das 120 cadeiras. Precisa de 61.",
+    "Os partidos árabes chegam a 19 cadeiras, recorde. O comparecimento foi o maior em mais de 20 anos.",
+    "O resultado oficial sai até 4 de novembro. Se ninguém formar maioria, pode haver nova eleição."
+   ],
+   "fonte": "Fonte: Brasil de Fato, com a Comissão Eleitoral Central de Israel"
+  }
+ ],
+ "agenda_titulo": "Os próximos dias",
+ "agenda": [
+  ["HOJE", "Qui 29", "Flávio deve dar entrevista em Miami, segundo aliados, sem horário. Em Cuiabá, chuva e trovoadas, máxima de 30°C."],
+  ["AMANHÃ", "Sex 30", "Alerta do Inmet para temporais em regiões de MT, com possibilidade de granizo."],
+  ["ATÉ 4/11", "Qua 4", "Israel divulga o resultado oficial da eleição."]
+ ],
+ "agenda_fonte": "Fontes: Correio Braziliense, Climatempo, Inmet e Brasil de Fato"
+}
