@@ -21,12 +21,12 @@ A = "/mnt/user-data/attachments/31be2719-c7d8-5b33-91a5-c035937f37a4"
 TMP = "/tmp/_doc_flavio"
 MAPA = os.path.join(AQUI, "mapa-rota.json")
 FPS = 30
-TOTAL = 86.5
-ASS = 84.0  # início da assinatura
+TOTAL = 85.0
+ASS = 82.5  # início da assinatura
 
 # trechos de vídeo: nome -> (arquivo, início, duração, filtro até 1080x1920)
 VIDEOS = {
-    "stories": (os.path.join(RAIZ, "_src/reels/clips/flavio-stories-2026-10-28.mp4"), 6.0, 2.3, "scale=-2:1920,crop=1080:1920"),
+    "stories": (os.path.join(RAIZ, "_src/reels/clips/flavio-stories-2026-10-28.mp4"), 6.0, 3.7, "scale=-2:1920,crop=1080:1920"),
     "stories2": (os.path.join(RAIZ, "_src/reels/clips/flavio-stories-2026-10-28.mp4"), 9.0, 7.6, "scale=-2:1920,crop=1080:1920"),
     "flavio": (f"{A}/f56fa19c-ScreenRecording_10-28-2026_18-31-42_1.mov", 2.0, 6.6, "crop=518:922:1072:19,scale=1080:1920"),
     "trump1": (f"{A}/383f6751-ScreenRecording_10-28-2026_18-30-24_1.mov", 1.0, 4.1, "crop=658:1170:842:0,scale=1080:1920"),
@@ -39,26 +39,28 @@ ABR22 = "Foto de arquivo: Marcelo Camargo/Agência Brasil, 2022"
 # ---------- cenas ----------
 # bg: ("foto", arquivo, escala0, escala1, foco_x, foco_y, escurecer, pb) | ("video", nome, escurecer) | ("preto",) | ("bandeira",)
 CENAS = [
-    dict(t0=0.0, t1=2.4, dia=0, bg=("foto", "passaporte-brasileiro.jpg", 1.12, 1.26, .5, .5, .5, False), cred=ABR22),
-    dict(t0=2.4, t1=4.7, dia=3, bg=("video", "stories", .35), cred="Vídeo: stories de Flávio Bolsonaro, 28/10 (reprodução)"),
-    dict(t0=4.7, t1=7.0, dia=-1, bg=("preto",), cred=""),
-    dict(t0=7.0, t1=13.0, dia=0, bg=("foto", "urnas-preparacao-sp.jpg", 1.05, 1.2, .4, .5, .6, False), cred="Foto: Paulo Pinto/Agência Brasil"),
-    dict(t0=13.0, t1=18.0, dia=0, bg=("foto", "justica-estatua-stf.jpg", 1.2, 1.05, .5, .35, .55, True), cred="Foto de arquivo: Marcello Casal Jr/Agência Brasil, 2009"),
-    dict(t0=18.0, t1=24.5, dia=1, bg=("video", "flavio", .35), cred="Imagem de arquivo: canal de Flávio no YouTube (reprodução). A fala é do vídeo de segunda"),
-    dict(t0=24.5, t1=28.5, dia=1, bg=("video", "trump1", .35), cred="Imagem de arquivo: USA Today, no YouTube (reprodução)"),
-    dict(t0=28.5, t1=31.5, dia=1, bg=("foto", "notas-real.jpg", 1.1, 1.25, .5, .5, .72, False), cred="Foto ilustrativa: Pexels · Gráfico: Agora Praça"),
-    dict(t0=31.5, t1=35.0, dia=2, bg=("foto", "flavio-senado-lula-marques-abr-2025.jpg", 1.05, 1.18, .72, .4, .45, False), cred="Foto de arquivo: Lula Marques/Agência Brasil, 2025"),
-    dict(t0=35.0, t1=40.0, dia=2, bg=("foto", "flavio-telefone-agencia-senado.jpg", 1.15, 1.02, .62, .4, .5, True), cred="Foto de arquivo: Beto Barata/Agência Senado"),
-    dict(t0=40.0, t1=53.0, dia=2, bg=("preto",), cred="Mapa: Agora Praça · Migrações (Argentina) e Folha de S.Paulo · horários de Brasília"),
-    dict(t0=53.0, t1=57.0, dia=3, bg=("foto", "aviao-aeroporto-ponte.jpg", 1.08, 1.22, .3, .5, .55, False), cred=ABR22),
-    dict(t0=57.0, t1=64.5, dia=3, bg=("video", "stories2", .72), cred="Vídeo: stories de Flávio Bolsonaro, 28/10 (reprodução) · carta: reprodução"),
-    dict(t0=64.5, t1=69.0, dia=3, bg=("foto", "urna-treinamento-tre-sp.jpg", 1.05, 1.16, .3, .5, .74, False), cred="Foto: Paulo Pinto/Agência Brasil · dados do TSE"),
-    dict(t0=69.0, t1=72.5, dia=3, bg=("video", "trump2", .35), cred="Imagem de arquivo: USA Today, no YouTube (reprodução)"),
-    dict(t0=72.5, t1=76.0, dia=3, bg=("video", "bregman", .35), cred="Arquivo de 14/10, sobre outro tema: canal do PTS no YouTube (reprodução)"),
-    dict(t0=76.0, t1=84.0, dia=4, bg=("bandeira",), cred="Ilustração: Agora Praça"),
-    dict(t0=84.0, t1=86.5, dia=-2, bg=("preto",), cred=""),
+    dict(t0=0.0, t1=3.6, dia=-1, bg=("video", "stories", .3), cred="Vídeo: stories de Flávio Bolsonaro, 28/10 (reprodução)"),
+    dict(t0=3.6, t1=6.0, dia=-1, bg=("foto", "flavio-senado-lula-marques-abr-2025.jpg", 1.0, 1.08, .72, .4, .8, False), cred="Foto de arquivo: Lula Marques/Agência Brasil, 2025"),
+    dict(t0=6.0, t1=11.0, dia=0, bg=("foto", "urnas-preparacao-sp.jpg", 1.05, 1.2, .4, .5, .6, False), cred="Foto: Paulo Pinto/Agência Brasil"),
+    dict(t0=11.0, t1=16.0, dia=0, bg=("foto", "justica-estatua-stf.jpg", 1.2, 1.05, .5, .35, .55, True), cred="Foto de arquivo: Marcello Casal Jr/Agência Brasil, 2009"),
+    dict(t0=16.0, t1=22.5, dia=1, bg=("video", "flavio", .35), cred="Imagem de arquivo: canal de Flávio no YouTube (reprodução). A fala é do vídeo de segunda"),
+    dict(t0=22.5, t1=26.5, dia=1, bg=("video", "trump1", .35), cred="Imagem de arquivo: USA Today, no YouTube (reprodução)"),
+    dict(t0=26.5, t1=30.0, dia=2, bg=("foto", "flavio-senado-lula-marques-abr-2025.jpg", 1.05, 1.18, .72, .4, .45, False), cred="Foto de arquivo: Lula Marques/Agência Brasil, 2025"),
+    dict(t0=30.0, t1=35.0, dia=2, bg=("foto", "flavio-telefone-agencia-senado.jpg", 1.15, 1.02, .62, .4, .5, True), cred="Foto de arquivo: Beto Barata/Agência Senado"),
+    dict(t0=35.0, t1=48.0, dia=2, bg=("preto",), cred="Mapa: Agora Praça · Migrações (Argentina) e Folha de S.Paulo · horários de Brasília"),
+    dict(t0=48.0, t1=52.0, dia=3, bg=("foto", "aviao-aeroporto-ponte.jpg", 1.08, 1.22, .3, .5, .55, False), cred=ABR22),
+    dict(t0=52.0, t1=59.5, dia=3, bg=("video", "stories2", .72), cred="Vídeo: stories de Flávio Bolsonaro, 28/10 (reprodução) · carta: reprodução"),
+    dict(t0=59.5, t1=64.0, dia=3, bg=("foto", "urna-treinamento-tre-sp.jpg", 1.05, 1.16, .3, .5, .74, False), cred="Foto: Paulo Pinto/Agência Brasil · dados do TSE"),
+    dict(t0=64.0, t1=67.5, dia=3, bg=("foto", "urnas-lacre-tre-df.jpg", 1.05, 1.18, .5, .5, .72, False), cred="Foto: Joédson Alves/Agência Brasil · dados do TSE, via CNN Brasil"),
+    dict(t0=67.5, t1=71.0, dia=3, bg=("video", "trump2", .35), cred="Imagem de arquivo: USA Today, no YouTube (reprodução)"),
+    dict(t0=71.0, t1=74.5, dia=3, bg=("video", "bregman", .35), cred="Arquivo de 14/10, sobre outro tema: canal do PTS no YouTube (reprodução)"),
+    dict(t0=74.5, t1=82.5, dia=4, bg=("bandeira",), cred="Ilustração: Agora Praça"),
+    dict(t0=82.5, t1=85.0, dia=-2, bg=("preto",), cred=""),
 ]
 CORTES = [c["t0"] for c in CENAS[1:]]
+MAPA_T0 = 35.0
+QUEDAS = [37.2, 46.0, 56.6]  # carimbos das versões que caíram
+TROCA = 55.4  # "verdadeiro presidente eleito" vira "líder"
 
 # ---------- elementos de texto: (início, fim, html, tipo) ----------
 V = '<span style="color:#FF3B30">{}</span>'
@@ -82,71 +84,69 @@ def carimbo(txt, top=820, rot=-9, fs=86, sub=""):
 
 
 ITENS = [
-    # gancho
-    (0.15, 2.4, baixo("Proibido pela Justiça de sair do país", "DOMINGO, 25", fs=76, top=1210), "up"),
-    (0.6, 2.4, carimbo("PROIBIDO DE<br>SAIR DO PAÍS", top=640), "stamp"),
-    (2.5, 4.7, baixo("Em Miami, se dizendo presidente do Brasil", "QUARTA, 28", fs=76, top=1210), "up"),
-    (4.8, 7.0, '<div style="position:absolute;left:80px;right:80px;top:640px"><div class="serif" style="font-size:150px;line-height:1">4 dias,</div>'
-     f'<div class="serif" style="font-size:150px;line-height:1;color:{RD}">3 versões</div>'
-     '<div class="sub" style="font-size:44px;margin-top:40px">Como Flávio Bolsonaro saiu do Brasil proibido pela Justiça e foi parar nos EUA</div></div>', "up"),
+    # gancho: o personagem e o arco inteiro numa frase
+    (0.15, 3.6, baixo("Domingo, Flávio Bolsonaro perdeu a eleição.", fs=70, top=1050), "up"),
+    (1.5, 3.6, baixo("Quarta, já estava em Miami " + V.format("se dizendo presidente."), fs=70, top=1340), "up"),
+    (3.7, 6.0, '<div style="position:absolute;left:80px;right:80px;top:700px"><div class="serif sh" style="font-size:150px;line-height:1">4 dias,</div>'
+     f'<div class="serif sh" style="font-size:150px;line-height:1;color:{RD}">3 versões</div>'
+     '<div class="sub sh" style="font-size:44px;margin-top:40px">Como ele saiu do Brasil proibido pela Justiça, dia a dia</div></div>', "up"),
     # domingo
-    (7.1, 10.2, cab("DOMINGO, 25", "O TSE declara Lula reeleito"), "up"),
-    (7.3, 10.2, '<div id="barras" class="g"></div>', "fade"),
-    (10.2, 13.0, cab("DOMINGO, 25", "A votação foi estendida até as 19h pelo STF"), "up"),
-    (10.4, 13.0, '<div style="position:absolute;left:80px;right:110px;top:1060px"><div class="serif sh" style="font-size:220px;line-height:.9;color:#FF3B30"><span id="c34">0</span> mil</div>'
-     '<div class="serif sh" style="font-size:56px;line-height:1.12;margin-top:24px">votos depois das 17h</div>'
-     '<div class="sub sh">Lula venceu por 4,4 milhões. Os votos a mais não mudam o resultado</div></div>', "up"),
-    (13.1, 18.0, cab("DOMINGO, 25, À NOITE", "Moraes proíbe Flávio de deixar o país", fs=78), "up"),
-    (13.6, 18.0, '<div class="papel" id="papel"><div class="p-t">STF · DECISÃO DE ALEXANDRE DE MORAES</div>'
+    (6.1, 11.0, cab("DOMINGO, 25", "O TSE declara Lula reeleito"), "up"),
+    (6.3, 11.0, '<div id="barras" class="g"></div>', "fade"),
+    (11.1, 16.0, cab("DOMINGO, 25, À NOITE", "Moraes proíbe Flávio de deixar o país", fs=78), "up"),
+    (11.6, 16.0, '<div class="papel" id="papel"><div class="p-t">STF · DECISÃO DE ALEXANDRE DE MORAES</div>'
      '<div class="p-l">Entregar os passaportes comum e diplomático à Polícia Federal</div>'
      '<div class="p-l">Não deixar o país</div><div class="p-l">Investigação sobre suspeita de lavagem de dinheiro</div></div>', "left"),
-    (15.4, 18.0, carimbo("24 H", top=1380, rot=-12, fs=150, sub="PRAZO PARA OS PASSAPORTES"), "stamp"),
+    (13.4, 16.0, carimbo("24 H", top=1380, rot=-12, fs=150, sub="PRAZO PARA OS PASSAPORTES"), "stamp"),
     # segunda
-    (18.1, 24.5, cab("SEGUNDA, 26", "Flávio grava um vídeo", fs=70), "up"),
-    (18.6, 21.6, baixo("“Fui intimado a entregar os meus passaportes e também estou proibido de deixar o país”", "FLÁVIO BOLSONARO, EM VÍDEO", fs=56), "up"),
-    (21.6, 24.5, baixo("No mesmo vídeo, diz que " + V.format("nunca pensou em deixar o Brasil"), "GUARDE ESTA FRASE", fs=62), "up"),
-    (24.6, 28.5, cab("SEGUNDA, 26", "Trump fala do Brasil", fs=70), "up"),
-    (24.9, 28.5, baixo("A eleição “pareceu mais uma eleição fraudada”", "DONALD TRUMP, A JORNALISTAS", fs=62), "up"),
-    (26.2, 28.5, carimbo("SEM PROVA", top=780, rot=8, fs=110), "stamp"),
-    (28.6, 31.5, cab("SEGUNDA, 26", "A bolsa despenca", fs=74), "up"),
-    (28.8, 31.5, '<div id="queda" class="g"></div>', "fade"),
+    (16.1, 22.5, cab("SEGUNDA, 26", "Flávio grava um vídeo", fs=70), "up"),
+    (16.6, 19.6, baixo("“Fui intimado a entregar os meus passaportes e também estou proibido de deixar o país”", "FLÁVIO BOLSONARO, EM VÍDEO", fs=56), "up"),
+    (19.6, 22.5, baixo("No mesmo vídeo, diz que " + V.format("nunca pensou em deixar o Brasil"), "GUARDE ESTA FRASE", fs=62), "up"),
+    (22.6, 26.5, cab("SEGUNDA, 26", "Trump fala da eleição brasileira", fs=70), "up"),
+    (22.9, 26.5, baixo("A eleição “pareceu mais uma eleição fraudada”", "DONALD TRUMP, A JORNALISTAS", fs=62), "up"),
+    (24.2, 26.5, carimbo("SEM PROVA", top=780, rot=8, fs=110), "stamp"),
     # terça
-    (31.6, 35.0, cab("TERÇA, 27", "Vence o prazo", fs=80), "up"),
-    (31.8, 35.0, '<div id="relogio" class="g"></div>', "fade"),
-    (33.0, 35.0, baixo("11h: os passaportes não são entregues à Polícia Federal", fs=60, top=1290), "up"),
-    (35.1, 40.0, cab("TERÇA, 27", "O que se dizia durante o dia", fs=70), "up"),
-    (35.6, 40.0, '<div class="aspas" style="top:700px"><div class="rot">ROGÉRIO MARINHO, ALIADO, DE MANHÃ</div><div class="serif" style="font-size:96px;margin-top:10px">“Não saiu”</div></div>', "left"),
-    (37.3, 40.0, '<div class="aspas" style="top:1060px"><div class="rot">GOVERNO DA ARGENTINA, AO G1</div><div class="serif" style="font-size:60px;margin-top:10px;line-height:1.12">“Não há registro de entrada de Flávio no país”</div></div>', "left"),
-    (40.0, 53.0, '<div id="mapa" class="g"></div>', "fade"),
-    (40.1, 53.0, cab("TERÇA, 27, À NOITE", "A rota", fs=74), "up"),
-    (42.2, 44.6, carimbo("VERSÃO 1<br>CAIU", top=820, rot=-8, fs=96, sub="ELE TINHA DITO QUE NUNCA PENSOU EM SAIR"), "stamp"),
-    (51.0, 53.0, carimbo("VERSÃO 2<br>CAIU", top=980, rot=7, fs=96, sub="DE MADRUGADA, A ARGENTINA CONFIRMA A ENTRADA"), "stamp"),
+    (26.6, 30.0, cab("TERÇA, 27", "Vence o prazo", fs=80), "up"),
+    (26.8, 30.0, '<div id="relogio" class="g"></div>', "fade"),
+    (28.0, 30.0, baixo("11h: os passaportes não são entregues à Polícia Federal", fs=60, top=1290), "up"),
+    (30.1, 35.0, cab("TERÇA, 27", "O que se dizia durante o dia", fs=70), "up"),
+    (30.6, 35.0, '<div class="aspas" style="top:700px"><div class="rot">ROGÉRIO MARINHO, ALIADO, DE MANHÃ</div><div class="serif" style="font-size:96px;margin-top:10px">“Não saiu”</div></div>', "left"),
+    (32.3, 35.0, '<div class="aspas" style="top:1060px"><div class="rot">GOVERNO DA ARGENTINA, AO G1</div><div class="serif" style="font-size:60px;margin-top:10px;line-height:1.12">“Não há registro de entrada de Flávio no país”</div></div>', "left"),
+    (35.0, 48.0, '<div id="mapa" class="g"></div>', "fade"),
+    (35.1, 48.0, cab("TERÇA, 27, À NOITE", "A rota", fs=74), "up"),
+    (37.2, 39.6, carimbo("VERSÃO 1<br>CAIU", top=820, rot=-8, fs=96, sub="ELE TINHA DITO QUE NUNCA PENSOU EM SAIR"), "stamp"),
+    (46.0, 48.0, carimbo("VERSÃO 2<br>CAIU", top=980, rot=7, fs=96, sub="DE MADRUGADA, A ARGENTINA CONFIRMA A ENTRADA"), "stamp"),
     # quarta
-    (53.1, 57.0, cab("QUARTA, 28", "Entra nos EUA com uma autorização temporária", fs=70), "up"),
-    (53.6, 57.0, '<div class="visto" id="visto"><div style="font-size:30px;letter-spacing:.2em">ENTRADA NOS EUA · 28/10/2026</div>'
+    (48.1, 52.0, cab("QUARTA, 28", "Entra nos EUA com uma autorização temporária", fs=70), "up"),
+    (48.6, 52.0, '<div class="visto" id="visto"><div style="font-size:30px;letter-spacing:.2em">ENTRADA NOS EUA · 28/10/2026</div>'
      '<div class="serif" style="font-size:84px;margin:14px 0 6px">PAROLE</div><div style="font-size:34px">autorização humanitária temporária</div>'
      '<div style="font-size:44px;font-weight:800;margin-top:18px">VÁLIDA ATÉ 27/10/2027</div></div>', "stamp2"),
-    (54.4, 57.0, baixo("Segundo registros da alfândega americana obtidos pelo Metrópoles", fs=46, top=1430), "up"),
-    (57.1, 64.5, cab("QUARTA, 28, À TARDE", "Ele divulga uma carta", fs=70), "up"),
-    (57.3, 64.5, '<div id="carta" class="g"></div>', "fade"),
-    (57.8, 64.5, '<div style="position:absolute;left:80px;right:110px;top:1270px"><div class="serif sh" style="font-size:66px;line-height:1.12">'
+    (49.4, 52.0, baixo("Segundo registros da alfândega americana obtidos pelo Metrópoles", fs=46, top=1430), "up"),
+    (52.1, 59.5, cab("QUARTA, 28, À TARDE", "Ele divulga uma carta", fs=70), "up"),
+    (52.3, 59.5, '<div id="carta" class="g"></div>', "fade"),
+    (52.8, 59.5, '<div style="position:absolute;left:80px;right:110px;top:1270px"><div class="serif sh" style="font-size:66px;line-height:1.12">'
      'Se declara “o <span id="troca"><span id="velho" style="color:#FF3B30">verdadeiro presidente eleito</span></span> do Brasil”</div>'
      '<div class="sub sh" id="depois" style="opacity:0">Horas depois, troca por “líder do Brasil”. A acusação de fraude, sem prova, continua</div></div>', "up"),
-    (61.6, 64.5, carimbo("VERSÃO 3<br>CAIU", top=520, rot=-7, fs=96), "stamp"),
-    (64.6, 69.0, cab("QUARTA, 28", "Os “10 milhões de votos” que a carta chama de impossíveis", fs=64), "up"),
-    (64.8, 69.0, '<div id="soma" class="g"></div>', "fade"),
-    (67.4, 69.0, carimbo("A CONTA FECHA", top=1530, rot=-5, fs=74), "stamp"),
-    (69.1, 72.5, cab("QUARTA, 28", "Trump é perguntado sobre Flávio", fs=70), "up"),
-    (69.3, 72.5, baixo("“Não vou me envolver”", "DONALD TRUMP", "“Mas sei que demos a ele autorização para entrar no país”", fs=80), "up"),
-    (72.6, 76.0, cab("QUARTA, 28", "Na Argentina, a oposição cobra Milei", fs=70), "up"),
-    (72.8, 76.0, baixo("Deputados falam em “absoluta cumplicidade” do governo na passagem de Flávio", "", "É acusação deles, sem prova divulgada", fs=56), "up"),
+    (56.6, 59.5, carimbo("VERSÃO 3<br>CAIU", top=520, rot=-7, fs=96), "stamp"),
+    (59.6, 64.0, cab("A CARTA DIZ", "Que os 10 milhões de votos que Lula ganhou no 2º turno são uma “impossibilidade matemática”", fs=58), "up"),
+    (59.8, 64.0, '<div id="soma" class="g"></div>', "fade"),
+    (62.4, 64.0, carimbo("A CONTA FECHA", top=1530, rot=-5, fs=74), "stamp"),
+    (64.1, 67.5, cab("A CARTA TAMBÉM", "Ataca a decisão do STF que estendeu a votação até as 19h", fs=62), "up"),
+    (64.3, 67.5, '<div style="position:absolute;left:80px;right:110px;top:1000px"><div class="serif sh" style="font-size:220px;line-height:.9;color:#FF3B30"><span id="c34">0</span> mil</div>'
+     '<div class="serif sh" style="font-size:56px;line-height:1.12;margin-top:24px">votos depois das 17h, segundo o TSE</div>'
+     '<div class="sub sh">Lula venceu por 4,4 milhões</div></div>', "up"),
+    (65.8, 67.5, carimbo("NÃO MUDA", top=1530, rot=6, fs=80), "stamp"),
+    (67.6, 71.0, cab("QUARTA, 28", "Trump é perguntado sobre Flávio", fs=70), "up"),
+    (67.8, 71.0, baixo("“Não vou me envolver”", "DONALD TRUMP", "“Mas sei que demos a ele autorização para entrar no país”", fs=80), "up"),
+    (71.1, 74.5, cab("QUARTA, 28", "Na Argentina, a oposição cobra Milei", fs=70), "up"),
+    (71.3, 74.5, baixo("Deputados falam em “absoluta cumplicidade” do governo na passagem de Flávio", "", "É acusação deles, sem prova divulgada", fs=56), "up"),
     # quinta
-    (76.1, 84.0, cab("QUINTA, 29", "O que ainda não se sabe", fs=88), "up"),
-    (77.0, 84.0, '<div class="perg" style="top:700px"><span>1</span>Ele vai pedir asilo?</div>', "left"),
-    (78.3, 84.0, '<div class="perg" style="top:860px"><span>2</span>Quem pagou o voo?</div>', "left"),
-    (79.6, 84.0, '<div class="perg" style="top:1020px"><span>3</span>O governo argentino ajudou?</div>', "left"),
-    (81.2, 84.0, baixo("Uma certeza: Lula toma posse em " + V.format("5 de janeiro"), "", "Aliados anunciam uma entrevista de Flávio em Miami", fs=64, top=1260), "up"),
-    (84.0, 86.5, f'<div style="position:absolute;inset:0;background:{K}"></div><div style="position:absolute;left:0;right:0;top:660px;display:flex;flex-direction:column;align-items:center">{SELO.format(w=170)}'
+    (74.6, 82.5, cab("QUINTA, 29", "O que ainda não se sabe", fs=88), "up"),
+    (75.5, 82.5, '<div class="perg" style="top:700px"><span>1</span>Ele vai pedir asilo?</div>', "left"),
+    (76.8, 82.5, '<div class="perg" style="top:860px"><span>2</span>Quem pagou o voo?</div>', "left"),
+    (78.1, 82.5, '<div class="perg" style="top:1020px"><span>3</span>O governo argentino ajudou?</div>', "left"),
+    (79.7, 82.5, baixo("Uma certeza: Lula toma posse em " + V.format("5 de janeiro"), "", "Aliados anunciam uma entrevista de Flávio em Miami", fs=64, top=1260), "up"),
+    (82.5, 85.0, f'<div style="position:absolute;inset:0;background:{K}"></div><div style="position:absolute;left:0;right:0;top:660px;display:flex;flex-direction:column;align-items:center">{SELO.format(w=170)}'
      '<div class="serif" style="font-size:96px;margin-top:44px">Agora Praça</div><div style="font-size:40px;color:#C9C5BD;margin-top:18px">A praça é de todo mundo.</div>'
      '<div style="font-size:26px;color:#8d8983;margin-top:70px;text-align:center;line-height:1.5;padding:0 90px">Fontes: TSE, CNN Brasil, Metrópoles, Folha de S.Paulo, g1, Exame,<br>Migrações (Argentina), Ámbito e Infobae<br>Reportagens completas em agorapraca.com.br</div></div>', "fade"),
 ]
@@ -201,7 +201,7 @@ function desenhaLinha(dia,t){
   linha.innerHTML=h;
 }
 // versões que caíram
-const QUEDAS=[42.2,51.0,61.6];
+const QUEDAS=__QUEDAS__;
 function contador(t){const n=QUEDAS.filter(q=>t>=q).length; return n;}
 // fundo
 let bgAtual='';
@@ -323,10 +323,10 @@ function anima(n,t){ const {a,b,tipo,d}=n;
   const c=d.querySelector('#c34'); if(c) c.textContent=Math.round(34*ease((i-0.2)/1.2));
   const z=d.querySelector('#queda'); if(z) z.innerHTML=queda(i);
   const r=d.querySelector('#relogio'); if(r) r.innerHTML=relogio(i);
-  const m=d.querySelector('#mapa'); if(m) m.innerHTML=mapa(t-40.0);
+  const m=d.querySelector('#mapa'); if(m) m.innerHTML=mapa(t-__MAPA_T0__);
   const k=d.querySelector('#carta'); if(k) k.innerHTML=carta(i);
   const s=d.querySelector('#soma'); if(s) s.innerHTML=soma(i);
-  const v=d.querySelector('#velho'); if(v){ const tt=t-60.4;
+  const v=d.querySelector('#velho'); if(v){ const tt=t-__TROCA__;
     if(tt>0){ const p=ease(tt/0.5); v.style.textDecoration='line-through'; v.style.textDecorationThickness='7px'; v.style.textDecorationColor='#fff'; v.style.opacity=lerp(1,.55,p);
       let nv=document.getElementById('novo'); if(!nv){nv=document.createElement('span');nv.id='novo';nv.style.color='#FF3B30';nv.textContent=' líder';v.after(nv);} nv.style.opacity=p;
       d.querySelector('#depois').style.opacity=ease((tt-0.4)/0.5);} }
@@ -338,7 +338,7 @@ window.draw=async function(t){
   hud.style.opacity = t>=ASS?0:1;
   desenhaLinha(c.dia,t); cred.textContent=c.cred;
   const n=contador(t);
-  document.getElementById('cont').innerHTML = (n>0&&t<76.0)? `VERSÕES QUE CAÍRAM: ${n} DE 3` : '';
+  document.getElementById('cont').innerHTML = (n>0&&t<74.5)? `VERSÕES QUE CAÍRAM: ${n} DE 3` : '';
   nodes.forEach(x=>anima(x,t));
   if(pr) await pr;
   const imgs=[...document.images].filter(i=>!i.complete); await Promise.all(imgs.map(i=>i.decode().catch(()=>{})));
@@ -367,7 +367,7 @@ def main():
     html = (HTML.replace("__CSS__", CSS).replace("__CENAS__", json.dumps(CENAS)).replace("__ITENS__", json.dumps(ITENS))
             .replace("__MAPA__", json.dumps(mapa)).replace("__FPS__", str(FPS)).replace("__ASS__", str(ASS))
             .replace("__SELO__", SELO.format(w=38)).replace("__FOTOS__", "file://" + FOTOS).replace("__MIDIA__", "file://" + MIDIA)
-            .replace("__TMP__", "file://" + TMP))
+            .replace("__TMP__", "file://" + TMP).replace("__QUEDAS__", json.dumps(QUEDAS)).replace("__MAPA_T0__", str(MAPA_T0)).replace("__TROCA__", str(TROCA)))
     pag = os.path.join(TMP, "doc.html")
     open(pag, "w", encoding="utf-8").write(html)
     with sync_playwright() as p:
@@ -394,7 +394,7 @@ def main():
     run(f"python3 {MOLDES}/trilha.py {TMP}/trilha.wav {TOTAL:.3f} '{json.dumps(CORTES)}'")
     saida = os.path.join(RAIZ, "video", "doc-flavio-4-dias.mp4")
     run(f'ffmpeg -v error -y -i {mudo} -i {TMP}/trilha.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -af "volume=-3dB,loudnorm=I=-18:TP=-1.5" -t {TOTAL:.2f} -movflags +faststart {saida}')
-    run(f"ffmpeg -v error -y -ss 5.6 -i {saida} -frames:v 1 -q:v 3 {saida.replace('.mp4', '.jpg')}")
+    run(f"ffmpeg -v error -y -ss 2.4 -i {saida} -frames:v 1 -q:v 3 {saida.replace('.mp4', '.jpg')}")
     print("ok:", saida)
 
 
