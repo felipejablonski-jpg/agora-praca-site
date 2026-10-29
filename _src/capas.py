@@ -335,6 +335,9 @@ CAPAS = {
         lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
+    "eua-elegem-congresso-terca-democratas-precisam-4-cadeiras-senado": (
+        lambda: foto("img/fotos/ossoff-comicio-threads-2026-10.jpg", foco=(0.6, 0.4)),
+        "Jon Ossoff em comício na Geórgia. Reprodução: perfil de Jon Ossoff no Threads"),
     "wolbachia-campo-grande-dengue-cai-63-estudo-lancet": (
         lambda: foto("img/fotos/aedes-aegypti-cdc-gathany-2006.jpg", foco=(0.5, 0.45)),
         "Aedes aegypti (James Gathany/CDC, 2006, domínio público)"),

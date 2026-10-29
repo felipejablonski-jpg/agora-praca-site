@@ -10,6 +10,35 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "eua-elegem-congresso-terca-democratas-precisam-4-cadeiras-senado", "capa": "img/capa/eua-elegem-congresso-terca-democratas-precisam-4-cadeiras-senado.jpg", "capa_credito": "Jon Ossoff em comício na Geórgia. Reprodução: perfil de Jon Ossoff no Threads",
+        "data": "2026-10-29", "ordem": 2,
+        "editoria": "politica", "chapeu": "Eleições nos EUA",
+        "titulo": "EUA elegem o Congresso na terça (3); democratas precisam de mais 4 cadeiras para tirar o Senado dos republicanos",
+        "linha_fina": "Estão em disputa a Câmara inteira, 35 das 100 cadeiras do Senado e 36 governos estaduais. Na Geórgia, o democrata Jon Ossoff lidera a pesquisa contra o republicano Mike Collins, aliado de Trump.",
+        "video": "midterms-ossoff",
+        "para_voce": ("QUANDO SAI O RESULTADO", "As primeiras urnas fecham às 20h de Brasília (19h em Mato Grosso) de terça (3). Os números da noite são parciais: a contagem pode levar dias, porque votos pelo correio podem ser contados depois. Na Geórgia, se ninguém passar de 50%, há segundo turno em 1º de dezembro."),
+        "texto": [
+            "Os Estados Unidos votam na terça-feira (3) nas eleições de meio de mandato. Estão em disputa as 435 cadeiras da Câmara dos Representantes, 35 das 100 cadeiras do Senado e os governos de 36 estados, segundo a Al Jazeera e a RTP.",
+            "## A conta no Congresso",
+            "No Senado, os republicanos têm 53 cadeiras. Os democratas têm 45, mais 2 independentes que votam com eles. Para ficar com a maioria, os democratas precisam de um ganho líquido de 4 cadeiras. Num empate de 50 a 50, o vice-presidente JD Vance desempata a favor dos republicanos. Das 35 cadeiras em disputa, os republicanos defendem 22, e os democratas, 13.",
+            "Na Câmara, os republicanos têm 218 cadeiras, o mínimo para a maioria, contra 214 dos democratas. Há ainda um deputado independente alinhado aos republicanos e duas vagas abertas, segundo a Al Jazeera.",
+            "Se os democratas ganharem uma das Casas, passam a controlar a pauta dela e podem abrir investigações sobre o governo, segundo a RTP. Trump fica no cargo até o começo de 2029.",
+            "## A disputa na Geórgia",
+            "Uma das disputas mais apertadas para o Senado é a da Geórgia. O senador democrata Jon Ossoff tenta a reeleição contra o deputado republicano Mike Collins, aliado de Trump.",
+            "Pesquisa da Escola de Assuntos Públicos e Internacionais da Universidade da Geórgia para o jornal Atlanta Journal-Constitution, feita por telefone de 7 a 15 de outubro com 1.000 prováveis eleitores, mostra Ossoff com cerca de 48% e Collins com 40%. A margem de erro é de 3,1 pontos, e 12% estão indecisos.",
+            "Na noite de quarta-feira (28), Ossoff publicou no Threads um vídeo de comício com a frase: “Em seis dias, Geórgia, vamos repreender o presidente vigarista Donald Trump com tanta clareza e força que nenhum presidente ousará tais abusos de novo por séculos”. Ele usou a palavra “crook”. Ossoff não apresentou no post as acusações a que se refere.",
+            "Num debate na TV em outubro, Collins chamou Ossoff de “radical” e disse que ele é um herdeiro “que nunca teve um emprego na vida”, segundo a emissora Atlanta News First. No mesmo debate, Ossoff chamou Collins de “fantoche de Trump”.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça, com imagens do perfil de Jon Ossoff no Threads (reprodução, sem o som original).",
+        "fontes": [
+            ("Al Jazeera, as eleições de 2026 nos EUA em mapas e gráficos (26/10, em inglês)", "https://www.aljazeera.com/news/2026/10/26/us-midterm-elections-2026-in-maps-and-charts"),
+            ("RTP, poder de Trump e dos republicanos em jogo com as eleições de 3 de novembro", "https://www.rtp.pt/noticias/mundo/poder-de-trump-e-dos-republicanos-em-jogo-com-midterms-de-3-de-novembro_n1774623"),
+            ("Atlanta Journal-Constitution, pesquisa da Universidade da Geórgia: Ossoff lidera contra Collins (21/10, em inglês)", "https://www.ajc.com/politics/2026/10/ajc-poll-ossoff-leads-collins-in-georgias-us-senate-race/"),
+            ("Atlanta News First, Ossoff e Collins se enfrentam em debate (9/10, em inglês)", "https://www.atlantanewsfirst.com/2026/10/09/ossoff-collins-clash-over-trump-economy-iran-war-georgia-senate-debate/"),
+            ("Jon Ossoff, perfil no Threads", "https://www.threads.net/@jonossoff"),
+        ],
+    },
+    {
         "slug": "wolbachia-campo-grande-dengue-cai-63-estudo-lancet", "capa": "img/capa/wolbachia-campo-grande-dengue-cai-63-estudo-lancet.jpg", "capa_credito": "Aedes aegypti (James Gathany/CDC, 2006, domínio público)",
         "data": "2026-10-29", "ordem": 1,
         "editoria": "ciencia", "chapeu": "Dengue",
@@ -1278,6 +1307,7 @@ VIDEOS = {
     "china-brasil-reel": "Trump disse que a eleição pareceu fraudada. A China respondeu assim",
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
     "wolbachia-campo-grande": "Mosquitos com Wolbachia reduzem a dengue em Campo Grande",
+    "midterms-ossoff": "O que está em jogo na eleição de terça nos EUA",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",
     "flavio-miami": "A Argentina confirma que Flávio Bolsonaro entrou no país",
     "chuva-sul": "Sul em alerta: até 200 mm de chuva em Chapecó",
