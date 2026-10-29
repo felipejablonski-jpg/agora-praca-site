@@ -12,7 +12,7 @@ NOTICIAS = [
     {
         "slug": "oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro",
         "capa": "img/capa/oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro.jpg",
-        "capa_credito": "Flávio Bolsonaro (Beto Barata/Agência Senado) e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo",
+        "capa_credito": "Senador Flávio Bolsonaro. Foto de arquivo: Lula Marques/Agência Brasil, 2025",
         "data": "2026-10-28",
         "ordem": 4,
         "editoria": "politica",
@@ -39,7 +39,7 @@ NOTICIAS = [
             "## Sobre as imagens",
             "O Reel usa imagem de arquivo, sem o som original: a deputada Myriam Bregman, uma das signatárias da declaração, em sessão de comissão da Câmara argentina em 14 de outubro, sobre outro tema, publicada no canal do partido dela, o PTS, no YouTube.",
         ],
-        "credito_extra": "Fotos de arquivo: Beto Barata/Agência Senado e Marcelo Camargo/Agência Brasil (2022). Vídeo de arquivo: canal do PTS no YouTube, 14/10 (reprodução).",
+        "credito_extra": "Foto de arquivo: Lula Marques/Agência Brasil (2025). Vídeo de arquivo: canal do PTS no YouTube, 14/10 (reprodução).",
         "fontes": [
             ("Ámbito, diputados de la oposición exigen al Gobierno explicaciones por la fuga de Flávio Bolsonaro (28/10)", "https://ambito.com/politica/diputados-la-oposicion-exigen-al-gobierno-explicaciones-la-fuga-flavio-bolsonaro-n6339118"),
             ("La Capital, la oposición a pleno exige al gobierno que explique su complicidad (28/10)", "https://www.lacapital.com.ar/politica/diputados-la-oposicion-pleno-exige-al-gobierno-que-explique-su-complicidad-la-fuga-bolsonaro-n10289286.html"),

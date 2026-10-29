@@ -274,9 +274,8 @@ def foto_conter(src, caixa):
 
 CAPAS = {
     "oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro": (
-        lambda: foto_dupla("img/fotos/flavio-telefone-agencia-senado.jpg", "img/fotos/aviao-aeroporto-ponte.jpg",
-                           (0.42, 0, 0.92, 1), (0.18, 0, 0.6, 1)),
-        "Flávio Bolsonaro (Beto Barata/Agência Senado) e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
+        lambda: foto("img/fotos/flavio-senado-lula-marques-abr-2025.jpg", foco=(0.75, 0.4)),
+        "Senador Flávio Bolsonaro. Foto de arquivo: Lula Marques/Agência Brasil, 2025"),
     "trump-nao-vou-me-envolver-flavio-presidente": (
         lambda: foto("img/fotos/trump-comicio-usatoday-arquivo.jpg", foco=(0.45, 0.3)),
         "Donald Trump em comício nos Estados Unidos. Imagem de arquivo, reprodução: USA Today"),
