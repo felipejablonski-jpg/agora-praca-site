@@ -273,6 +273,10 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro": (
+        lambda: foto_dupla("img/fotos/flavio-telefone-agencia-senado.jpg", "img/fotos/aviao-aeroporto-ponte.jpg",
+                           (0.42, 0, 0.92, 1), (0.18, 0, 0.6, 1)),
+        "Flávio Bolsonaro (Beto Barata/Agência Senado) e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo"),
     "trump-nao-vou-me-envolver-flavio-presidente": (
         lambda: foto("img/fotos/trump-comicio-usatoday-arquivo.jpg", foco=(0.45, 0.3)),
         "Donald Trump em comício nos Estados Unidos. Imagem de arquivo, reprodução: USA Today"),

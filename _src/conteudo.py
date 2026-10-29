@@ -10,6 +10,47 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro",
+        "capa": "img/capa/oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro.jpg",
+        "capa_credito": "Flávio Bolsonaro (Beto Barata/Agência Senado) e avião em aeroporto (Marcelo Camargo/Agência Brasil, 2022). Fotos de arquivo",
+        "data": "2026-10-28",
+        "ordem": 4,
+        "editoria": "politica",
+        "chapeu": "Eleições 2026",
+        "video": "oposicao-argentina-milei",
+        "titulo": "Deputados da oposição argentina cobram Milei por explicações sobre a passagem de Flávio Bolsonaro pelo país",
+        "linha_fina": "Em declaração conjunta nesta quarta (28), parlamentares de vários blocos falam em \"absoluta cumplicidade\" do governo e querem três ministros na Câmara. A cumplicidade é acusação deles, sem prova divulgada. O governo argentino não respondeu.",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "A Argentina confirmou que Flávio entrou e embarcou por lá, sem impedimento legal do lado argentino. A oposição do país quer saber se o Estado ajudou. Por enquanto há perguntas e acusações, e nenhuma confirmação de ajuda."),
+        "texto": [
+            "Deputados da oposição argentina pediram nesta quarta-feira (28) que o governo de Javier Milei explique a passagem de Flávio Bolsonaro (PL-RJ) pelo país. Em declaração conjunta, eles falam em \"absoluta complicidad\" do governo na saída do senador do Brasil rumo aos Estados Unidos e exigem que três ministros compareçam à Câmara. A acusação é dos parlamentares, e as reportagens consultadas não trazem prova de ajuda do governo. Nenhuma registra resposta do Executivo argentino à declaração.",
+            "## O que os deputados pedem",
+            "O texto foi divulgado por Germán Martínez, presidente do bloco Unión por la Patria, com Myriam Bregman (Frente de Izquierda), Esteban Paulón e Mariela Coletta (Provincias Unidas), Nicolás Massot (Encuentro Federal), Ernesto Ali (Primero San Luis) e Marcela Pagano (Coherencia), entre outros, segundo Ámbito e La Capital. Eles fazem três exigências:",
+            "1) Que o Poder Executivo responda com urgência aos pedidos de informes apresentados por parlamentares. 2) Que o chefe de Gabinete, Diego Santilli, a ministra da Segurança, Alejandra Monteoliva, e o chanceler, Pablo Quirno, compareçam à Câmara dos Deputados, com base no artigo 71 da Constituição argentina, que permite convocar ministros para prestar explicações. 3) Que o governo reconheça formalmente a vitória de Lula e restabeleça as relações diplomáticas \"al más alto nivel\".",
+            "Outros parlamentares apresentaram pedidos próprios. Segundo a Infobae, Pablo Juliano (Provincias Unidas) propôs interpelar Quirno e quer saber, entre outros pontos, quem contratou e pagou o voo. Maximiliano Ferraro (Coalición Cívica) disse que vai pedir explicações a Quirno e a Monteoliva sobre a participação de órgãos do Estado, e Agustín Rossi (peronista) vai defender a interpelação de Santilli.",
+            "## O que a Argentina já confirmou",
+            "A Direção Nacional de Migrações, órgão argentino, informou em comunicado que Flávio, a mulher e as duas filhas entraram na Argentina às 22h50 de terça (27), pela ponte Tancredo Neves, em Misiones, \"sin ningún impedimento legal para el ingreso al país\". Às 23h30, embarcaram em um voo privado da empresa Baires Fly S.A., com destino declarado a Guayaquil, no Equador, segundo o plano de voo. Reportagens de El Comercio e da Folha de S.Paulo informam que depois o voo seguiu para Miami. O Agora Praça publicou os detalhes na matéria sobre a saída dele do país.",
+            "A Migrações é ligada ao Ministério da Segurança Nacional, comandado por Monteoliva, segundo o g1. Na terça de manhã, o órgão tinha dito ao g1 que não havia registro de entrada de Flávio, e o porta-voz de Milei também negou à Bloomberg que ele tivesse entrado. A versão mudou na madrugada de quarta.",
+            "## O que é acusação e o que não está confirmado",
+            "Nenhuma reportagem consultada apresenta prova de que o governo argentino tenha ajudado Flávio a sair do Brasil. A imprensa argentina cita uma escolta da Polícia de Segurança Aeroportuária (PSA) e a presença do assessor presidencial Santiago Caputo em Puerto Iguazú, informações que, segundo o Ámbito, circularam sem confirmação oficial. Os deputados querem justamente que o governo esclareça esses pontos. O Agora Praça não encontrou manifestação do governo, de Caputo ou da PSA sobre elas.",
+            "## Lula e a posição de Milei",
+            "A declaração cobra o reconhecimento da vitória de Lula. Na terça (27), o porta-voz do governo argentino, Adrián Ravier, disse que a Chancelaria não vai emitir comunicado sobre o resultado e que o governo \"tomou nota\", segundo a Exame. Ele justificou dizendo que Lula não cumprimentou Milei pessoalmente em 2023. A Exame informa que a Argentina é o único país sul-americano que ainda não parabenizou Lula.",
+            "## O que vem agora",
+            "As reportagens consultadas não informam data para os ministros comparecerem nem se o governo vai atender ao pedido. Aliados de Flávio anunciaram uma entrevista coletiva dele em Miami na quinta (29). A matéria será atualizada com a resposta do governo argentino, se houver.",
+            "## Sobre as imagens",
+            "O Reel usa imagem de arquivo, sem o som original: a deputada Myriam Bregman, uma das signatárias da declaração, em sessão de comissão da Câmara argentina em 14 de outubro, sobre outro tema, publicada no canal do partido dela, o PTS, no YouTube.",
+        ],
+        "credito_extra": "Fotos de arquivo: Beto Barata/Agência Senado e Marcelo Camargo/Agência Brasil (2022). Vídeo de arquivo: canal do PTS no YouTube, 14/10 (reprodução).",
+        "fontes": [
+            ("Ámbito, diputados de la oposición exigen al Gobierno explicaciones por la fuga de Flávio Bolsonaro (28/10)", "https://ambito.com/politica/diputados-la-oposicion-exigen-al-gobierno-explicaciones-la-fuga-flavio-bolsonaro-n6339118"),
+            ("La Capital, la oposición a pleno exige al gobierno que explique su complicidad (28/10)", "https://www.lacapital.com.ar/politica/diputados-la-oposicion-pleno-exige-al-gobierno-que-explique-su-complicidad-la-fuga-bolsonaro-n10289286.html"),
+            ("Infobae, la oposición argentina pide al Gobierno de Milei explicaciones (28/10)", "https://www.infobae.com/america/agencias/2026/10/28/la-oposicion-argentina-pide-al-gobierno-de-milei-explicaciones-por-la-fuga-de-bolsonaro/"),
+            ("Infobae, Migraciones confirmó que Flávio Bolsonaro viajó con su familia hacia Ecuador (28/10)", "https://www.infobae.com/politica/2026/10/28/migraciones-confirmo-que-flavio-bolsonaro-viajo-con-su-familia-desde-argentina-hacia-ecuador-sin-ningun-impedimento-legal/"),
+            ("iProfesional, rol del Gobierno en la fuga de Bolsonaro agita al Congreso (28/10)", "https://iprofesional.com/politica/467715-rol-del-gobierno-en-la-fuga-de-bolsonaro-agita-al-congreso-reclaman-a-quirno-y-santilli"),
+            ("El Comercio, Flavio Bolsonaro viajó a Guayaquil antes de continuar hacia Miami (28/10)", "https://www.elcomercio.com/actualidad/mundo/flavio-bolsonaro-viajo-a-guayaquil-antes-continuar-trayecto-hacia-miami/"),
+            ("Exame, governo Milei diz que \"tomou nota\" da vitória de Lula (27/10)", "https://exame.com/mundo/governo-milei-diz-que-tomou-nota-da-vitoria-de-lula-mas-nao-comentara-resultado-eleitoral/"),
+        ],
+    },
+    {
         "slug": "trump-nao-vou-me-envolver-flavio-presidente",
         "capa": "img/capa/trump-nao-vou-me-envolver-flavio-presidente.jpg",
         "capa_credito": "Donald Trump em comício nos Estados Unidos. Imagem de arquivo, reprodução: USA Today",
@@ -1203,6 +1244,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "oposicao-argentina-milei": "Oposição argentina cobra Milei por explicações sobre a passagem de Flávio Bolsonaro",
     "trump-flavio": "Trump sobre Flávio se dizer presidente: não vou me envolver",
     "flavio-carta": "Flávio diz em carta que é o verdadeiro presidente eleito. Os números do TSE",
     "distrital-motta": "A Câmara quer mudar o jeito de eleger deputado e vereador. Hugo Motta explica",
