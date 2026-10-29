@@ -47,7 +47,8 @@ CENAS = [
     dict(t0=22.5, t1=26.5, dia=1, bg=("video", "trump1", .35), cred="Imagem de arquivo: USA Today, no YouTube (reprodução)"),
     dict(t0=26.5, t1=30.0, dia=2, bg=("foto", "flavio-senado-lula-marques-abr-2025.jpg", 1.05, 1.18, .72, .4, .45, False), cred="Foto de arquivo: Lula Marques/Agência Brasil, 2025"),
     dict(t0=30.0, t1=35.0, dia=2, bg=("foto", "flavio-telefone-agencia-senado.jpg", 1.15, 1.02, .62, .4, .5, True), cred="Foto de arquivo: Beto Barata/Agência Senado"),
-    dict(t0=35.0, t1=48.0, dia=2, bg=("preto",), cred="Mapa: Agora Praça · Migrações (Argentina) e Folha de S.Paulo · horários de Brasília"),
+    dict(t0=35.0, t1=42.0, dia=2, bg=("preto",), cred="Mapa: Agora Praça · Migrações (Argentina) e Folha de S.Paulo · horários de Brasília"),
+    dict(t0=42.0, t1=48.0, dia=3, bg=("preto",), cred="Mapa: Agora Praça · Migrações (Argentina) e Folha de S.Paulo · horários de Brasília"),
     dict(t0=48.0, t1=52.0, dia=3, bg=("foto", "aviao-aeroporto-ponte.jpg", 1.08, 1.22, .3, .5, .55, False), cred=ABR22),
     dict(t0=52.0, t1=59.5, dia=3, bg=("video", "stories2", .72), cred="Vídeo: stories de Flávio Bolsonaro, 28/10 (reprodução) · carta: reprodução"),
     dict(t0=59.5, t1=64.0, dia=3, bg=("foto", "urna-treinamento-tre-sp.jpg", 1.05, 1.16, .3, .5, .74, False), cred="Foto: Paulo Pinto/Agência Brasil · dados do TSE"),
@@ -57,7 +58,7 @@ CENAS = [
     dict(t0=74.5, t1=82.5, dia=4, bg=("bandeira",), cred="Ilustração: Agora Praça"),
     dict(t0=82.5, t1=85.0, dia=-2, bg=("preto",), cred=""),
 ]
-CORTES = [c["t0"] for c in CENAS[1:]]
+CORTES = [c["t0"] for c in CENAS[1:] if c["t0"] != 42.0]  # a rota é uma cena só para a trilha
 MAPA_T0 = 35.0
 QUEDAS = [37.2, 46.0, 56.6]  # carimbos das versões que caíram
 TROCA = 55.4  # "verdadeiro presidente eleito" vira "líder"
@@ -113,7 +114,8 @@ ITENS = [
     (30.6, 35.0, '<div class="aspas" style="top:700px"><div class="rot">ROGÉRIO MARINHO, ALIADO, DE MANHÃ</div><div class="serif" style="font-size:96px;margin-top:10px">“Não saiu”</div></div>', "left"),
     (32.3, 35.0, '<div class="aspas" style="top:1060px"><div class="rot">GOVERNO DA ARGENTINA, AO G1</div><div class="serif" style="font-size:60px;margin-top:10px;line-height:1.12">“Não há registro de entrada de Flávio no país”</div></div>', "left"),
     (35.0, 48.0, '<div id="mapa" class="g"></div>', "fade"),
-    (35.1, 48.0, cab("TERÇA, 27, À NOITE", "A rota", fs=74), "up"),
+    (35.1, 42.0, cab("TERÇA, 27, À NOITE", "A rota", fs=74), "up"),
+    (42.0, 48.0, cab("QUARTA, 28", "A rota", fs=74), "fade"),
     (37.2, 39.6, carimbo("VERSÃO 1<br>CAIU", top=820, rot=-8, fs=96, sub="ELE TINHA DITO QUE NUNCA PENSOU EM SAIR"), "stamp"),
     (46.0, 48.0, carimbo("VERSÃO 2<br>CAIU", top=980, rot=7, fs=96, sub="DE MADRUGADA, A ARGENTINA CONFIRMA A ENTRADA"), "stamp"),
     # quarta
@@ -294,7 +296,7 @@ function mapa(lt){ // lt: tempo desde 40.0
   s+=leg(1.0, caixa('22h50','Entra na Argentina pela ponte Tancredo Neves, em Misiones'), 1080-A[0]-40, A[1]+50, 'r', 3.4);
   s+=leg(3.4, caixa('23h30','Decola de Puerto Iguazú num voo privado, com destino declarado ao Equador'), 380, A[1]+50, 'l', 7.6);
   s+=leg(7.6, caixa('Escala','Guayaquil, no Equador, já na quarta (28)'), B[0]+40, B[1]-20, 'l', 10.6);
-  s+=leg(10.6, caixa('10h23','Pousa em Miami, segundo a Folha'), C[0]+40, C[1]-10, 'l');
+  s+=leg(10.6, caixa('10h23','Pousa em Miami na quarta, segundo a Folha'), C[0]+40, C[1]-10, 'l');
   return s;
 }
 function carta(lt){ const p=ease(lt/0.9);
