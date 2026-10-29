@@ -335,6 +335,9 @@ CAPAS = {
         lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
+    "wolbachia-campo-grande-dengue-cai-63-estudo-lancet": (
+        lambda: foto("img/fotos/aedes-aegypti-cdc-gathany-2006.jpg", foco=(0.5, 0.45)),
+        "Aedes aegypti (James Gathany/CDC, 2006, domínio público)"),
     "holanda-ate-500-milhoes-fundo-florestas-tropicais": (
         lambda: foto("img/fotos/rio-tejo-acre-floresta.jpg", foco=(0.4, 0.5)),
         "Rio Tejo corta a floresta amazônica no Acre, entre Cruzeiro do Sul e Marechal Thaumaturgo (Rafa Neddermeyer/Agência Brasil, 13/10/2026)"),

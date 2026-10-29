@@ -10,6 +10,33 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "wolbachia-campo-grande-dengue-cai-63-estudo-lancet", "capa": "img/capa/wolbachia-campo-grande-dengue-cai-63-estudo-lancet.jpg", "capa_credito": "Aedes aegypti (James Gathany/CDC, 2006, domínio público)",
+        "data": "2026-10-29", "ordem": 1,
+        "editoria": "ciencia", "chapeu": "Dengue",
+        "titulo": "Em Campo Grande, onde mosquitos com a bactéria Wolbachia se firmaram, a dengue caiu 63%, mostra estudo",
+        "linha_fina": "A cidade soltou mais de 100 milhões de mosquitos com a bactéria entre 2020 e 2023. A queda vale para os bairros em que ela ficou estável. Onde a bactéria não se firmou, a diferença ficou dentro da margem de erro.",
+        "video": "wolbachia-campo-grande",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "É o primeiro estudo desse tipo no Centro-Oeste, segundo os autores. O resultado vale para onde a bactéria se firmou. Segundo eles, o método complementa o controle de criadouros e a vacinação, sem substituí-los."),
+        "texto": [
+            "Pesquisadores da Universidade Federal de Mato Grosso do Sul, da Fiocruz, da Secretaria Municipal de Saúde e de universidades como Yale e Johns Hopkins avaliaram o que aconteceu com a dengue em Campo Grande (MS) depois da soltura de mais de 100 milhões de mosquitos Aedes aegypti com a bactéria Wolbachia. O estudo foi publicado em 2 de dezembro de 2025 na revista The Lancet Regional Health (Americas).",
+            "## Como o método funciona",
+            "A Wolbachia é uma bactéria que vive dentro de muitos insetos, mas não do Aedes aegypti. Colocada no mosquito, ela passa da mãe para os filhotes e vai se espalhando na população. O mosquito com a bactéria transmite menos o vírus da dengue.",
+            "As solturas aconteceram de dezembro de 2020 a dezembro de 2023, em seis áreas da cidade, uma de cada vez, que somam cerca de 880 mil moradores. Em 2024, em média, 86,4% dos mosquitos testados tinham a bactéria, e 89% das áreas monitoradas passaram de 60%.",
+            "## O que o estudo encontrou",
+            "Nos bairros em que pelo menos 60% dos mosquitos passaram a ter a bactéria de forma estável, a dengue caiu 63,2% (intervalo de confiança de 95%: 51,9% a 71,9%), em comparação com os mesmos bairros antes das solturas. O cálculo considera 73 bairros, mês a mês de 2008 a setembro de 2024, e ajusta pela época do ano.",
+            "Quanto maior a parcela de mosquitos com a bactéria, maior a queda: 37% com 40% a 60%, 49% com 60% a 80% e 57% com 80% a 100%, em comparação com bairros e meses em que no máximo 20% dos mosquitos tinham a bactéria. Com 20% a 40%, a diferença não foi estatisticamente significativa.",
+            "Os totais da cidade inteira variaram muito: mediana de 4.794 casos notificados por ano entre 2008 e 2020, 8.045 em 2022, 11.406 em 2023 e 605 de janeiro a setembro de 2024. Os 63,2% vêm da comparação bairro a bairro, mês a mês.",
+            "## O que o estudo deixa em aberto",
+            "Nos bairros em que a bactéria ainda estava sendo liberada ou ficou instável, a queda foi de 9,2%, dentro da margem de erro (de menos 2,3% a 19,4%). O estudo é observacional: acompanhou a cidade antes e depois, sem sortear áreas com e sem mosquitos.",
+            "Os autores citam como limites a falha de registro de casos e a pandemia, que pode ter afetado as notificações de 2020 e 2021. Eles dizem que ainda falta avaliar a durabilidade da bactéria na população de mosquitos, o custo em relação aos métodos tradicionais e o efeito sobre chikungunya e zika.",
+        ],
+        "credito_extra": "Vídeo e gráficos: Agora Praça. Foto: James Gathany/CDC, 2006 (domínio público).",
+        "fontes": [
+            ("The Lancet Regional Health (Americas), Batista et al., impacto da soltura de mosquitos com Wolbachia na dengue em Campo Grande (2026;54:101327)", "https://doi.org/10.1016/j.lana.2025.101327"),
+            ("Fiotec/Fiocruz, estudo mostra redução de casos de dengue em Campo Grande com Wolbachia (10/12/2025)", "https://www.fiotec.fiocruz.br/en/news/study-shows-wolbachia-led-to-reduction-in-dengue-cases-in-campo-grande"),
+        ],
+    },
+    {
         "slug": "oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro",
         "capa": "img/capa/oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro.jpg",
         "capa_credito": "Senador Flávio Bolsonaro. Foto de arquivo: Lula Marques/Agência Brasil, 2025",
@@ -1250,6 +1277,7 @@ VIDEOS = {
     "distrital-motta": "A Câmara quer mudar o jeito de eleger deputado e vereador. Hugo Motta explica",
     "china-brasil-reel": "Trump disse que a eleição pareceu fraudada. A China respondeu assim",
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
+    "wolbachia-campo-grande": "Mosquitos com Wolbachia reduzem a dengue em Campo Grande",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",
     "flavio-miami": "A Argentina confirma que Flávio Bolsonaro entrou no país",
     "chuva-sul": "Sul em alerta: até 200 mm de chuva em Chapecó",
