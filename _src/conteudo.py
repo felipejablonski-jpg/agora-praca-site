@@ -16,7 +16,7 @@ NOTICIAS = [
         "titulo": "EUA elegem o Congresso na terça (3); democratas precisam de mais 4 cadeiras para tirar o Senado dos republicanos",
         "linha_fina": "Estão em disputa a Câmara inteira, 35 das 100 cadeiras do Senado e 36 governos estaduais. Na Geórgia, o democrata Jon Ossoff lidera a pesquisa contra o republicano Mike Collins, aliado de Trump.",
         "video": "ossoff-crook",
-        "para_voce": ("QUANDO SAI O RESULTADO", "As primeiras urnas fecham às 20h de Brasília (19h em Mato Grosso) de terça (3). Os números da noite são parciais: a contagem pode levar dias, porque votos pelo correio podem ser contados depois. Na Geórgia, se ninguém passar de 50%, há segundo turno em 1º de dezembro."),
+        "para_voce": ("QUANDO SAI O RESULTADO", "As primeiras urnas fecham às 20h de Brasília de terça (3). Os números da noite são parciais: a contagem pode levar dias, porque votos pelo correio podem ser contados depois. Na Geórgia, se ninguém passar de 50%, há segundo turno em 1º de dezembro."),
         "texto": [
             "Os Estados Unidos votam na terça-feira (3) nas eleições de meio de mandato. Estão em disputa as 435 cadeiras da Câmara dos Representantes, 35 das 100 cadeiras do Senado e os governos de 36 estados, segundo a Al Jazeera e a RTP.",
             "## A conta no Congresso",

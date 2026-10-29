@@ -48,7 +48,7 @@ Saíram de uso: card com foto em cima e faixa vermelha embaixo, card claro só c
 ## Texto
 
 - Manchete diz quem e quanto.
-- Horário de Brasília primeiro, Mato Grosso entre parênteses.
+- Só o horário de Brasília, sem o de Mato Grosso entre parênteses (decidido em 29/10/2026: o público é nacional, o foco é Brasil e internacional, e Mato Grosso deixa de ser foco editorial). Matérias antigas ficam como estão.
 - Toda legenda: o fato, o contexto, a ressalva quando houver, fontes, "Atualizado em" com a data e o fecho "Acompanhe o Agora Praça para entender os fatos por trás das manchetes."
 - Roteiro de narração para teleprompter: só o texto, em parágrafos, com MAIÚSCULAS nas palavras de ênfase e "/" nas pausas.
 - Em semana de eleição, mesma régua para os dois candidatos, só fatos.

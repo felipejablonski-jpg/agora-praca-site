@@ -59,7 +59,7 @@ CAMADAS = [
     (bloco_baixo("Collins chama Ossoff de “radical” e diz que ele “nunca teve um emprego na vida”", "NUM DEBATE NA TV, EM OUTUBRO",
                  "São ataques de campanha, dos dois lados"), c[3] + 0.8, c[4]),
     (bloco_topo("A apuração pode levar " + V.format("dias"), 70), c[4], c[5]),
-    (bloco_baixo("As primeiras urnas fecham às 20h de Brasília (19h em MT) de terça (3)", "QUANDO SAI O RESULTADO",
+    (bloco_baixo("As primeiras urnas fecham às 20h de Brasília de terça (3)", "QUANDO SAI O RESULTADO",
                  "Voto pelo correio pode ser contado depois"), c[4] + 0.6, c[5]),
 ]
 
