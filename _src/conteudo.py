@@ -26,7 +26,7 @@ NOTICIAS = [
             "A taxa de informalidade ficou em 37,5% dos ocupados, o que equivale a 38,8 milhões de trabalhadores. No trimestre anterior, era de 37,4%, e, um ano antes, de 37,8%.",
             "O rendimento médio real de todos os trabalhos, já descontada a inflação, ficou em R$ 3.790: estável em relação ao trimestre anterior e 3,6% acima do mesmo período de 2025. A massa de rendimento, a soma do que todos os trabalhadores recebem, chegou a R$ 387,5 bilhões, a maior da série.",
         ],
-        "credito_extra": "Vídeo: Agora Praça. Fotos de arquivo: Fernando Frazão, Tânia Rêgo e Marcelo Camargo/Agência Brasil.",
+        "credito_extra": "Vídeo: Agora Praça, com vídeos ilustrativos do Pexels e foto de arquivo de Marcelo Camargo/Agência Brasil. Foto da capa: Fernando Frazão/Agência Brasil.",
         "fontes": [
             ("Agência Brasil, desemprego em 5,2% no 3º trimestre é o menor para o período desde 2012 (30/10, 9h50)", "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/desemprego-em-52-no-3deg-trimestre-e-o-menor-para-o-periodo-desde-2012"),
         ],
