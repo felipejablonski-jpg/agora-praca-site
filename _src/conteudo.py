@@ -10,6 +10,31 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "voo-flavio-pago-intermediario-eua-150-mil-jason-miller", "capa": "img/capa/voo-flavio-pago-intermediario-eua-150-mil-jason-miller.jpg", "capa_credito": "Senador Flávio Bolsonaro. Foto de arquivo: Beto Barata/Agência Senado",
+        "data": "2026-10-30", "ordem": 3,
+        "editoria": "politica", "chapeu": "Eleições 2026",
+        "titulo": "Voo de Flávio foi pago por intermediário nos EUA, diz chefe da empresa aérea; jornais americanos apontam estrategista de Trump na organização",
+        "linha_fina": "O chefe da Baires Fly diz que recebeu US$ 150 mil de um banco americano e não revela o nome de quem pagou. New York Times e Wall Street Journal dizem que Jason Miller, aliado de Trump, ajudou a organizar o jato.",
+        "para_voce": ("O QUE AINDA NÃO SE SABE", "Quem é o intermediário, de onde saiu o dinheiro e se Jason Miller pagou o voo. Nenhuma reportagem afirma que ele pagou. Miller e a Casa Branca não comentaram."),
+        "texto": [
+            "O voo particular que levou o senador Flávio Bolsonaro (PL-RJ) e a família da Argentina aos Estados Unidos foi contratado e pago por um intermediário que mora nos EUA. A afirmação é de Luis Grande, chefe da empresa argentina de táxi aéreo Baires Fly, em entrevista à AFP publicada nesta sexta-feira (30).",
+            "\"Fui contratado por um broker que conheço há dez anos, que mora nos Estados Unidos\", disse Grande. Segundo ele, o intermediário transferiu US$ 150 mil da conta da empresa dele num banco americano para um banco argentino. Grande se recusou a dizer o nome do intermediário. Afirmou que ele tem passaportes dos EUA e da Argentina e que não sabe para quem ele trabalhava. O jornal argentino Perfil publicou um valor de US$ 140 mil.",
+            "## O que dizem os jornais americanos",
+            "O New York Times publicou na quinta-feira (29) que Jason Miller, estrategista político de Donald Trump, ajudou a organizar o avião, segundo o Terra. O Wall Street Journal informou que Miller coordenou o voo junto com Eduardo Bolsonaro, irmão de Flávio, que mora nos Estados Unidos, e com Santiago Caputo, assessor político do presidente argentino, Javier Milei.",
+            "Nenhuma das reportagens afirma que Miller pagou o voo, e não há confirmação de que o intermediário citado por Grande seja ligado a ele. Segundo a AFP, a Casa Branca não comentou. Não há registro de resposta de Miller até a publicação desta matéria.",
+            "## A rota",
+            "Flávio entrou na Argentina na noite de terça-feira (27) e embarcou em Puerto Iguazú num voo particular, com escala em Guayaquil, no Equador, antes de seguir para Miami, onde chegou na quarta-feira (28). Ele tinha sido proibido pelo STF de deixar o país e tinha até as 11h de terça para entregar os passaportes à Polícia Federal. Em comunicado, Flávio disse que não fugiu e que vai liderar a oposição a partir dos Estados Unidos.",
+        ],
+        "credito_extra": "Foto de arquivo: Beto Barata/Agência Senado.",
+        "fontes": [
+            ("AFP via Insider Paper, voo de fuga de Bolsonaro foi pago por banco dos EUA, diz empresa aérea (30/10, em inglês)", "https://insiderpaper.com/bolsonaros-getaway-plane-paid-for-from-us-bank-airline/"),
+            ("Terra, quem é Jason Miller, apontado pelo New York Times como responsável pelo jato de Flávio (29/10)", "https://www.terra.com.br/noticias/eleicoes/quem-e-jason-miller-estrategista-de-trump-apontado-como-responsavel-por-jato-de-flavio-bolsonaro,7cace47a1773d1279d76a6c100910fectgip7hr0.html"),
+            ("ThePrint, com o Wall Street Journal, Jason Miller ajudou a fretar o jato de Flávio (30/10, em inglês)", "https://theprint.in/diplomacy/ex-india-lobbyist-jason-miller-a-trump-loyalist-aided-flavio-bolsonaros-private-jet-escape-to-us/3086081/"),
+            ("Perfil, voo de Flávio custou US$ 140 mil e foi pago por um broker privado (30/10, em espanhol)", "https://perfil.com/politica/el-vuelo-de-flavio-bolsonaro-desde-la-argentina-a-ee.uu.-costo-us140-mil-y-lo-pago-un-broker-privado-aqbTv6C4fHSv"),
+            ("Newsweek, comunicado de Flávio ao chegar aos EUA (em inglês)", "https://newsweek.com/flavio-bolsonaro-us-election-defeat-trump-12625868"),
+        ],
+    },
+    {
         "slug": "alcolumbre-diz-ter-48-votos-reeleicao-senado-apoios-declarados-33", "capa": "img/capa/alcolumbre-diz-ter-48-votos-reeleicao-senado-apoios-declarados-33.jpg", "capa_credito": "Plenário do Senado em sessão de 15 de outubro. Foto: Lula Marques / Agência Brasil",
         "data": "2026-10-30", "ordem": 2,
         "editoria": "politica", "chapeu": "Congresso",

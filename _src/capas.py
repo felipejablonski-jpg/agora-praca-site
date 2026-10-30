@@ -335,6 +335,9 @@ CAPAS = {
         lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
+    "voo-flavio-pago-intermediario-eua-150-mil-jason-miller": (
+        lambda: foto("img/fotos/flavio-telefone-agencia-senado.jpg", foco=(0.6, 0.4)),
+        "Senador Flávio Bolsonaro. Foto de arquivo: Beto Barata/Agência Senado"),
     "eua-elegem-congresso-terca-democratas-precisam-4-cadeiras-senado": (
         lambda: foto("img/fotos/ossoff-comicio-threads-2026-10.jpg", foco=(0.6, 0.4)),
         "Jon Ossoff em comício na Geórgia. Reprodução: perfil de Jon Ossoff no Threads"),
