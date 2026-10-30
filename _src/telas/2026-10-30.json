@@ -1,0 +1,65 @@
+{
+ "data": "2026-10-30",
+ "data_curta": "30/10",
+ "dia_longo": "Sexta-feira, 30 de outubro de 2026",
+ "capa": [
+  "Trump chama eleição do Brasil de “vergonha”",
+  "Celular vai exigir reconhecimento facial",
+  "Lagarde deixa o Banco Central Europeu",
+  "Petrobras acha petróleo pela 3ª vez no Amapá"
+ ],
+ "telas": [
+  {
+   "tipo": "texto",
+   "tag": "Política",
+   "titulo": "Trump chama a eleição do Brasil de “vergonha”; coordenador da campanha de Flávio admite não ter prova de fraude",
+   "tam": 54,
+   "topicos": [
+    "Trump falou ontem, antes de embarcar no Air Force One. Disse que não tomou partido e que vai conversar com Lula.",
+    "Ele citou a queda da bolsa e não apresentou prova. O TSE atestou o resultado.",
+    "Rogério Marinho (PL-RN), na quarta: “O PL não pode fazer essa afirmação, porque não há provas nesse sentido”."
+   ],
+   "fonte": "Fontes: AFP e Agência Brasil"
+  },
+  {
+   "tipo": "texto",
+   "tag": "Serviço",
+   "titulo": "Linha de celular vai exigir reconhecimento facial a partir de 2027, decide a Anatel",
+   "tam": 60,
+   "topicos": [
+    "Novas linhas pré-pagas: até 30 de setembro de 2027. Pós-pagas, portabilidade e troca de chip: até 31 de dezembro de 2027.",
+    "Linhas antigas sem cadastro têm até janeiro de 2029. Depois, podem ser suspensas e canceladas.",
+    "A validação será por selfie com prova de vida, nas lojas, sites e aplicativos das operadoras."
+   ],
+   "fonte": "Fonte: Agência Brasil, com a Anatel"
+  },
+  {
+   "tipo": "texto",
+   "tag": "Internacional",
+   "titulo": "Christine Lagarde renuncia à presidência do Banco Central Europeu",
+   "tam": 62,
+   "topicos": [
+    "Ela sai em 7 de fevereiro, antes da eleição presidencial da França, em que Marine Le Pen lidera as pesquisas.",
+    "Disse que não será candidata, mas que vai defender os valores pró-europeus no país.",
+    "O BCE enfrenta inflação pressionada pelo petróleo, com a guerra no Irã."
+   ],
+   "fonte": "Fonte: Agência Brasil, com Reuters"
+  },
+  {
+   "tipo": "numero",
+   "tag": "Economia",
+   "numero": "3ª",
+   "tam": 300,
+   "frase": "descoberta de petróleo no mesmo poço da Foz do Amazonas, anunciou a Petrobras ontem.",
+   "detalhe": "O poço Morpho fica em águas ultraprofundas na costa do Amapá, com 2.886 metros de lâmina d'água. A estatal não divulgou o volume encontrado. O dólar subiu 0,76%, a R$ 5,39, e a bolsa caiu pela quarta vez seguida.",
+   "fonte": "Fonte: Agência Brasil, com a Petrobras"
+  }
+ ],
+ "agenda_titulo": "Os próximos dias",
+ "agenda": [
+  ["HOJE", "Sex 30", "Termina o prazo para pequenas empresas escolherem como pagar IBS e CBS no Simples. Chanceleres do G20 se reúnem em Atlanta, nos EUA, até sábado."],
+  ["SEGUNDA", "Seg 2", "Feriado nacional de Finados."],
+  ["TERÇA", "Ter 3", "Eleição nos EUA para o Congresso. As primeiras urnas fecham às 20h de Brasília."]
+ ],
+ "agenda_fonte": "Fontes: Agência Brasil, Brasil de Fato e Al Jazeera"
+}

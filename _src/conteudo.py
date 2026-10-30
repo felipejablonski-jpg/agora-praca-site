@@ -1335,6 +1335,62 @@ VIDEOS = {
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
     {
+        "data": "2026-10-30", "pasta": "pp/2026-10-30", "telas": 6,
+        "materia": {
+            "abertura": "Trump voltou a atacar a eleição brasileira e a chamou de \"vergonha\", sem prova; um dia antes, o coordenador da campanha de Flávio Bolsonaro admitiu que não há prova de fraude. A Anatel vai exigir reconhecimento facial para linhas de celular a partir de 2027. Christine Lagarde renunciou à presidência do Banco Central Europeu. A Petrobras anunciou a terceira descoberta de petróleo num mesmo poço na Foz do Amazonas.",
+            "secoes": [
+                {"chapeu": "Política", "titulo": "Trump chama a eleição do Brasil de \"vergonha\"; coordenador da campanha de Flávio admite não ter prova de fraude",
+                 "texto": [
+                    "O presidente dos Estados Unidos, Donald Trump, disse nesta quinta-feira (29), a jornalistas, antes de embarcar no Air Force One, que a eleição no Brasil \"foi uma vergonha\". Afirmou que não tomou partido, a pedido do \"atual presidente\", e que vai conversar com Lula. Citou a queda da bolsa brasileira e não apresentou prova de fraude, segundo a AFP. O TSE atestou o resultado, com Lula reeleito com 51,79% dos votos válidos.",
+                    "É a terceira declaração de Trump sobre a eleição em quatro dias: na segunda (26), disse que ela \"pareceu fraudada\"; na quarta (28), que foi \"muito estranha\" e que não vai se envolver. Segundo diplomatas brasileiros ouvidos pelo Brasil de Fato, não há telefonema marcado entre os dois presidentes.",
+                    "Na quarta-feira (28), o senador Rogério Marinho (PL-RN), coordenador da campanha de Flávio Bolsonaro, foi questionado sobre a acusação de fraude feita por Flávio na carta divulgada dos Estados Unidos. \"O PL não pode fazer essa afirmação, nem eu posso fazer essa afirmação, porque não há provas nesse sentido\", disse, segundo a Agência Brasil.",
+                 ],
+                 "fontes": [
+                    ("AFP via Yahoo News, Trump endurece o tom sobre a eleição no Brasil (29/10, em inglês)", "https://www.yahoo.com/news/politics/articles/trump-hardens-stance-brazil-election-160010425.html"),
+                    ("Brasil de Fato, Trump diz que Lula pediu que ele não interviesse na eleição (29/10, 15h47)", "https://www.brasildefato.com.br/2026/10/29/trump-revela-que-lula-pediu-que-ele-nao-tomasse-partido-na-eleicao-e-diz-que-vai-conversar-com-presidente/"),
+                    ("Agência Brasil, coordenador de campanha do PL admite não ter prova de fraude eleitoral (28/10, 20h08)", "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/coordenador-de-campanha-do-pl-admite-nao-ter-prova-de-fraude-eleitoral"),
+                 ]},
+                {"chapeu": "Serviço", "titulo": "Linha de celular vai exigir reconhecimento facial a partir de 2027, decide a Anatel",
+                 "texto": [
+                    "A Agência Nacional de Telecomunicações (Anatel) aprovou a obrigatoriedade de validação biométrica para contratar e manter linhas de celular. A identificação será por reconhecimento facial com prova de vida, comparado com bases de dados públicas ou privadas, e deve estar disponível nas lojas, nos sites e nos aplicativos das operadoras. O objetivo é coibir fraudes, segundo a Agência Brasil.",
+                    "A implantação é gradual. Para novas linhas pré-pagas, o prazo é 30 de setembro de 2027. Para novas linhas pós-pagas, portabilidade, troca de chip e mudanças cadastrais, 31 de dezembro de 2027. Quem já tem linha e ainda não foi cadastrado tem até janeiro de 2029; depois disso, as linhas não regularizadas podem ser suspensas e canceladas. Se a biometria não for possível, a norma exige um procedimento alternativo de identificação.",
+                 ],
+                 "fontes": [
+                    ("Agência Brasil, biometria facial será obrigatória para usuários de telefonia móvel (29/10, 11h28)", "https://agenciabrasil.ebc.com.br/geral/noticia/2026-10/biometria-facial-sera-obrigatoria-para-usuarios-de-telefonia-movel"),
+                 ]},
+                {"chapeu": "Internacional", "titulo": "Christine Lagarde renuncia à presidência do Banco Central Europeu",
+                 "texto": [
+                    "A presidente do Banco Central Europeu (BCE), Christine Lagarde, renunciou nesta quinta-feira (29). Ela deixa o cargo em 7 de fevereiro, o que dá aos líderes da União Europeia tempo para escolher o sucessor antes da eleição presidencial da França, em que a candidata de extrema direita Marine Le Pen lidera as pesquisas, segundo a Agência Brasil, com informações da Reuters.",
+                    "Lagarde, de 70 anos, disse que não será candidata à Presidência da França, mas que vai defender os valores pró-europeus no país. O deputado alemão Markus Ferber, do Parlamento Europeu, disse que a saída antecipada envia \"o sinal errado\". O presidente do Conselho Europeu, António Costa, afirmou que a escolha do sucessor começa imediatamente. O BCE enfrenta pressão sobre a inflação causada pela alta do petróleo com a guerra no Irã.",
+                 ],
+                 "fontes": [
+                    ("Agência Brasil, Christine Lagarde renuncia à presidência do Banco Central Europeu (29/10, 10h52)", "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-10/christine-lagarde-renuncia-presidencia-do-banco-central-europeu"),
+                 ]},
+                {"chapeu": "Economia", "titulo": "Petrobras anuncia a terceira descoberta de petróleo num mesmo poço na Foz do Amazonas",
+                 "texto": [
+                    "A Petrobras anunciou nesta quinta-feira (29) a terceira descoberta de petróleo no poço Morpho, no bloco FZA-M-59, em águas ultraprofundas na costa do Amapá, na Foz do Amazonas, com 2.886 metros de lâmina d'água. A estatal não divulgou o volume encontrado. A perfuração terminou, e a sonda segue para a Bacia Potiguar, no Rio Grande do Norte, segundo a Agência Brasil.",
+                    "No mercado, o dólar subiu 0,76% e fechou a R$ 5,387. O Ibovespa caiu 1,06%, a 169.186 pontos, a quarta queda seguida. A Agência Brasil atribui o movimento a dados da economia dos Estados Unidos e às incertezas sobre a política fiscal e a equipe econômica do próximo mandato de Lula. A dívida bruta do setor público chegou a 82,9% do PIB em setembro, segundo o Banco Central.",
+                 ],
+                 "fontes": [
+                    ("Agência Brasil, Petrobras anuncia 3ª descoberta de petróleo em poço na Foz do Amazonas (29/10, 20h08)", "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/petrobras-anuncia-3a-descoberta-de-petroleo-em-poco-na-foz-do-amazonas"),
+                    ("Agência Brasil, dólar sobe 0,76% e fecha a R$ 5,39 em dia de cautela (29/10, 19h39)", "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/dolar-sobe-076-e-fecha-r-539-em-dia-de-cautela"),
+                 ]},
+            ],
+            "agenda": [
+                ("Sex 30", "Termina o prazo para micro e pequenas empresas escolherem se pagam IBS e CBS pelo regime regular no Simples. Chanceleres do G20 se reúnem em Atlanta, nos EUA, até sábado, com o ministro Mauro Vieira."),
+                ("Seg 2", "Feriado nacional de Finados."),
+                ("Ter 3", "Eleição nos Estados Unidos para o Congresso. As primeiras urnas fecham às 20h de Brasília."),
+            ],
+        },
+        "itens": [
+            ("Trump chamou a eleição do Brasil de \"vergonha\", sem prova. O coordenador da campanha de Flávio admitiu que não há prova de fraude.", None),
+            ("A Anatel vai exigir reconhecimento facial para linhas de celular a partir de 2027.", None),
+            ("Christine Lagarde renunciou à presidência do Banco Central Europeu e sai em 7 de fevereiro.", None),
+            ("A Petrobras anunciou a terceira descoberta de petróleo no mesmo poço na Foz do Amazonas. O dólar fechou a R$ 5,39.", None),
+        ],
+        "fonte": "Fontes: AFP, Agência Brasil, Brasil de Fato e Al Jazeera",
+    },
+    {
         "data": "2026-10-29", "pasta": "pp/2026-10-29", "telas": 6,
         "materia": {
             "abertura": "O governo federal vai reforçar a investigação de 45 casos de violência política registrados no fim de semana da eleição, com dez mortes. Na Espanha, a colisão de dois trens de alta velocidade matou pelo menos 68 pessoas. A bolsa caiu pela terceira vez seguida e acumula perda de 16,6% na semana. Em Israel, o partido de Netanyahu lidera a apuração, mas o bloco dele não tem maioria.",
