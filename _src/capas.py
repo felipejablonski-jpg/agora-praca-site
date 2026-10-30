@@ -335,6 +335,9 @@ CAPAS = {
         lambda: foto_dupla("img/fotos/lula-ceilandia.jpg", "img/fotos/flavio-paulista.jpg",
                            (0.15, 0.25, 0.75, 1), (0.25, 0, 0.75, 0.75)),
         "Lula em ato na Ceilândia (DF), em 9/10 (Bruno Peres/Agência Brasil), e Flávio em ato na Avenida Paulista, em 18/10 (Rafa Neddermeyer/Agência Brasil)"),
+    "desemprego-52-terceiro-trimestre-recorde-ocupados-pnad": (
+        lambda: foto("img/fotos/multidao-rua-fernando-frazao-abr.jpg", foco=(0.4, 0.4)),
+        "Pedestres em rua de comércio. Foto de arquivo: Fernando Frazão/Agência Brasil"),
     "voo-flavio-pago-intermediario-eua-150-mil-jason-miller": (
         lambda: foto("img/fotos/flavio-telefone-agencia-senado.jpg", foco=(0.6, 0.4)),
         "Senador Flávio Bolsonaro. Foto de arquivo: Beto Barata/Agência Senado"),

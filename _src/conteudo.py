@@ -10,6 +10,28 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "desemprego-52-terceiro-trimestre-recorde-ocupados-pnad", "capa": "img/capa/desemprego-52-terceiro-trimestre-recorde-ocupados-pnad.jpg", "capa_credito": "Pedestres em rua de comércio. Foto de arquivo: Fernando Frazão/Agência Brasil",
+        "data": "2026-10-30", "ordem": 4,
+        "editoria": "servico", "chapeu": "Emprego",
+        "titulo": "Desemprego cai para 5,2%, o menor para um terceiro trimestre desde 2012, e o país tem recorde de 103,6 milhões de pessoas trabalhando",
+        "linha_fina": "Os dados são da Pnad Contínua, do IBGE, de julho a setembro. A informalidade segue em 37,5%, e o rendimento médio ficou em R$ 3.790.",
+        "video": "desemprego-52",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "Há mais gente trabalhando do que em qualquer trimestre desde 2012, quando a pesquisa começou. Quase quatro em cada dez trabalham sem carteira assinada ou sem CNPJ, e o rendimento médio não subiu em relação ao trimestre anterior."),
+        "texto": [
+            "A taxa de desemprego no Brasil ficou em 5,2% no terceiro trimestre de 2026, de julho a setembro, a menor para esse período desde 2012, quando começa a série da Pesquisa Nacional por Amostra de Domicílios (Pnad) Contínua. Os dados foram divulgados nesta sexta-feira (30) pelo Instituto Brasileiro de Geografia e Estatística (IBGE). A taxa era de 5,4% no segundo trimestre e de 5,6% no terceiro trimestre de 2025, segundo a Agência Brasil.",
+            "São 5,6 milhões de pessoas procurando trabalho, 234 mil a menos que no trimestre anterior e 417 mil a menos que um ano antes.",
+            "## Recorde de pessoas trabalhando",
+            "A população ocupada chegou a 103,6 milhões de pessoas, a maior da série histórica, com 581 mil a mais no trimestre e 1,2 milhão a mais em um ano. O nível de ocupação, que mede a parcela de pessoas trabalhando entre as que estão em idade de trabalhar, também foi recorde: 59%.",
+            "## Informalidade e renda",
+            "A taxa de informalidade ficou em 37,5% dos ocupados, o que equivale a 38,8 milhões de trabalhadores. No trimestre anterior, era de 37,4%, e, um ano antes, de 37,8%.",
+            "O rendimento médio real de todos os trabalhos, já descontada a inflação, ficou em R$ 3.790: estável em relação ao trimestre anterior e 3,6% acima do mesmo período de 2025. A massa de rendimento, a soma do que todos os trabalhadores recebem, chegou a R$ 387,5 bilhões, a maior da série.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça. Fotos de arquivo: Fernando Frazão, Tânia Rêgo e Marcelo Camargo/Agência Brasil.",
+        "fontes": [
+            ("Agência Brasil, desemprego em 5,2% no 3º trimestre é o menor para o período desde 2012 (30/10, 9h50)", "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/desemprego-em-52-no-3deg-trimestre-e-o-menor-para-o-periodo-desde-2012"),
+        ],
+    },
+    {
         "slug": "voo-flavio-pago-intermediario-eua-150-mil-jason-miller", "capa": "img/capa/voo-flavio-pago-intermediario-eua-150-mil-jason-miller.jpg", "capa_credito": "Senador Flávio Bolsonaro. Foto de arquivo: Beto Barata/Agência Senado",
         "data": "2026-10-30", "ordem": 3,
         "editoria": "politica", "chapeu": "Eleições 2026",
@@ -1388,6 +1410,7 @@ VIDEOS = {
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
     "wolbachia-campo-grande": "Mosquitos com Wolbachia reduzem a dengue em Campo Grande",
     "midterms-ossoff": "O que está em jogo na eleição de terça nos EUA",
+    "desemprego-52": "Desemprego cai para 5,2% e país tem recorde de pessoas trabalhando",
     "ossoff-crook": "A seis dias da eleição, senador democrata chama Trump de vigarista",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",
     "flavio-miami": "A Argentina confirma que Flávio Bolsonaro entrou no país",
