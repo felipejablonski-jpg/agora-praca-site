@@ -358,6 +358,12 @@ CAPAS = {
     "china-responde-trump-eleicao-brasil-respeita-escolha-do-povo": (
         lambda: foto("img/fotos/china-guo-jiakun-coletiva-2026-10-27.jpg"),
         "O porta-voz Guo Jiakun na coletiva de 27/10 em Pequim. Reprodução: Ministério das Relações Exteriores da China, via ShanghaiEye"),
+    "alcolumbre-diz-ter-48-votos-reeleicao-senado-apoios-declarados-33": (
+        lambda: foto("img/fotos/senado-sessao-mei.jpg", foco=(0.4, 0.5)),
+        "Plenário do Senado em sessão de 15 de outubro. Foto: Lula Marques / Agência Brasil"),
+    "justica-do-trabalho-da-24-horas-meta-tirar-posts-demissao-por-voto": (
+        lambda: foto("img/fotos/celular-apps-meta.jpg", foco=(0.5, 0.5)),
+        "Aplicativos da Meta no celular. Foto: Marcello Casal Jr / Agência Brasil"),
     "missil-inflavel-ataque-nuclear-ato-pro-flavio": (
         lambda: foto_retrato("img/missil.jpg"),
         "Foto: reprodução / redes sociais (autoria não identificada)"),
