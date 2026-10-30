@@ -40,7 +40,7 @@ def assinatura(fontes):
     return f'''<div class="a" style="inset:0;background:{K}"></div><div class="a" style="left:0;right:0;top:700px;display:flex;flex-direction:column;align-items:center">{SELO.format(w=170)}
 <div class="serif" style="font-size:96px;margin-top:44px">Agora Praça</div>
 <div style="font-size:40px;color:{G};margin-top:18px">A praça é de todo mundo.</div>
-<div style="font-size:26px;color:#8d8983;margin-top:70px;text-align:center;line-height:1.5">Fontes: {fontes}<br>Reportagem completa em agorapraca.com.br</div></div>'''
+<div style="font-size:26px;color:#8d8983;margin-top:70px;text-align:center;line-height:1.5;max-width:880px;padding:0 20px">Fontes: {fontes}<br>Reportagem completa em agorapraca.com.br</div></div>'''
 
 def _run(c): subprocess.run(c, shell=True, check=True)
 
@@ -67,7 +67,7 @@ def montar(cenas, saida, midia, tmp=None):
         if c["tipo"] == "anim":
             _run(f'ffmpeg -v error -y -framerate 30 -i {tmp}/fr{i}/%04d.png -vf format=yuv420p -t {dur} -c:v libx264 -crf 18 -r 30 {out}')
         elif c["tipo"] == "fixa":
-            _run(f'ffmpeg -v error -y -loop 1 -framerate 30 -i {ov} -vf "scale=2160:-2,zoompan=z=\'1.0+0.03*on/{n}\':x=\'iw/2-(iw/zoom/2)\':y=\'ih/2-(ih/zoom/2)\':d={n}:s=1080x1920:fps=30,fade=in:st=0:d=0.2,format=yuv420p" -t {dur} -c:v libx264 -crf 18 -r 30 {out}')
+            _run(f'ffmpeg -v error -y -loop 1 -framerate 30 -i {ov} -vf "scale=1080:1920,fade=in:st=0:d=0.2,format=yuv420p" -t {dur} -c:v libx264 -crf 18 -r 30 {out}')
         elif c["tipo"] == "video":
             vf = f"fps=30,crop='ih*{AR:.4f}':ih,scale=1080:{BAND},{grade},pad=1080:1920:0:0:color=0x141414,setsar=1"
             _run(f'ffmpeg -v error -y -ss {c.get("inicio", 0)} -i {midia}/{c["arquivo"]} -loop 1 -framerate 30 -i {ov} -filter_complex "[0:v]{vf}[bg];[1:v]format=rgba,fade=in:st=0:d=0.2:alpha=1[o];[bg][o]overlay=0:0,format=yuv420p" -t {dur} -an -c:v libx264 -crf 18 -r 30 {out}')
