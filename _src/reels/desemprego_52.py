@@ -11,7 +11,7 @@ from agora import *  # noqa: E402,F401
 T = tarja("servico", "emprego")
 FOTOS = os.path.join(RAIZ, "img", "fotos")
 MIDIA = "/tmp/_midia_desemprego"  # fotos da casa + vídeos ilustrativos do Pexels, baixados na hora
-PEXELS = {"multidao.mp4": "855564/855564-hd_1920_1080_24fps", "desfocada.mp4": "852107/852107-hd_1920_1080_30fps",
+PEXELS = {"desfocada.mp4": "852107/852107-hd_1920_1080_30fps",
           "aerea.mp4": "2088290/2088290-hd_1920_1080_30fps"}
 PX = "Vídeo ilustrativo: Pexels · Fonte: IBGE"
 
@@ -30,11 +30,11 @@ TR = "Foto de arquivo: Tânia Rêgo/Agência Brasil · Fonte: IBGE"
 MC = "Foto de arquivo: Marcelo Camargo/Agência Brasil · Fonte: IBGE"
 
 CENAS = [
-    dict(tipo="video", arquivo="multidao.mp4", inicio=2, batidas=5,
+    dict(tipo="video", arquivo="desfocada.mp4", inicio=4, batidas=5,
          html=topo(T, PX) + numero("103,6", "milhões de pessoas trabalhando no Brasil, o maior número da série do IBGE",
                                    "De julho a setembro de 2026. A série começa em 2012", top=640)),
-    dict(tipo="video", arquivo="desfocada.mp4", inicio=4, batidas=5,
-         html=topo(T, PX) + numero("5,2%", "de desemprego, o menor para um terceiro trimestre desde 2012",
+    dict(tipo="foto", arquivo="multidao-calcadao-tania-rego-abr.jpg", cor=True, mov="esq", batidas=5,
+         html=topo(T, TR) + numero("5,2%", "de desemprego, o menor para um terceiro trimestre desde 2012",
                                    "Eram 5,6% um ano antes. Ainda são 5,6 milhões de pessoas procurando trabalho", top=640)),
     dict(tipo="foto", arquivo="carteira-trabalho-digital-marcelo-camargo-abr.jpg", cor=True, mov="dir", batidas=5,
          html=topo(T, MC) + numero("37,5%", "de quem trabalha está na informalidade",
@@ -42,7 +42,7 @@ CENAS = [
     dict(tipo="video", arquivo="aerea.mp4", inicio=5, batidas=5,
          html=topo(T, PX) + numero("R$ 3.790", "é o rendimento médio de quem trabalha",
                                    "Estável no trimestre e 3,6% acima de um ano antes, já descontada a inflação", top=640, fs=190)),
-    dict(tipo="fixa", batidas=2, html=assinatura("IBGE, Pnad Contínua, via Agência Brasil. Vídeos ilustrativos: Pexels")),
+    dict(tipo="fixa", batidas=2, html=assinatura("IBGE, Pnad Contínua, via Agência Brasil. Vídeos ilustrativos: Pexels. Fotos: Agência Brasil")),
 ]
 
 if __name__ == "__main__":
