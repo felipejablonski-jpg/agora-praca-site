@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Reel: jovem de 18 anos esfaqueada no pescoço em Umarizal (RN); polícia investiga motivação política (31/10/2026).
 
-Sem fotos da vítima (arquivo pessoal de pessoa privada): vídeos ilustrativos do Pexels.
+Fotos da vítima: reprodução do arquivo pessoal publicado pela imprensa, recortadas do print enviado pelo editor
+(ficam só em /tmp/_midia_clara/clara1.jpg e clara2.jpg, fora do repositório). Vídeos ilustrativos do Pexels.
 Uso: python3 _src/reels/umarizal_clara.py -> video/umarizal-clara.mp4 e .jpg
 """
 import os, sys, subprocess
@@ -15,6 +16,7 @@ PEXELS = {"sirene.mp4": "7714430/7714430-hd_1920_1080_30fps", "viatura.mp4": "77
           "hospital.mp4": "5203510/5203510-hd_1920_1080_30fps"}
 PX = "Vídeo ilustrativo: Pexels"
 FT = "Fontes: Correio, O Antagonista e O Globo"
+FOTO = "Foto: reprodução/arquivo pessoal"
 
 
 def preparar():
@@ -26,22 +28,22 @@ def preparar():
 
 
 CENAS = [
-    dict(tipo="video", arquivo="sirene.mp4", inicio=1, batidas=5,
-         html=topo(T, PX) + texto("Jovem de 18 anos é esfaqueada no pescoço no Rio Grande do Norte",
+    dict(tipo="foto", arquivo="clara1.jpg", cor=True, mov="in", batidas=5,
+         html=topo(T, FOTO) + texto("Jovem de 18 anos é esfaqueada no pescoço no Rio Grande do Norte",
                                   "A polícia investiga se o ataque teve motivação política", top=700, fs=80)),
     dict(tipo="video", arquivo="viatura.mp4", inicio=1, batidas=5,
          html=topo(T, PX) + texto("O suspeito é o namorado dela, também de 18 anos",
                                   "Ele foi preso em flagrante na madrugada de 26 de outubro, em Umarizal (RN), e ficou em silêncio", top=700, fs=80)),
-    dict(tipo="fixa", batidas=6,
-         html=topo(T, FT, fundo="preto") + texto("Segundo a advogada da vítima, o ataque veio depois que Clara comemorou a vitória de Lula",
-                                                  "A motivação política ainda não está confirmada. A defesa dele não se manifestou", top=640, fs=78)),
+    dict(tipo="foto", arquivo="clara2.jpg", cor=True, mov="dir", batidas=6,
+         html=topo(T, FOTO) + texto("Segundo a advogada da vítima, o ataque veio depois que Clara comemorou a vitória de Lula",
+                                                  "A motivação política ainda não está confirmada. A defesa dele não se manifestou", top=700, fs=74)),
     dict(tipo="video", arquivo="hospital.mp4", inicio=0, batidas=4,
          html=topo(T, PX) + texto("Clara passou por cirurgia na traqueia e saiu da UTI na sexta (30)",
                                   "Ela ainda não consegue falar", top=700, fs=80)),
     dict(tipo="fixa", batidas=5,
          html=topo(T, "Serviço", fundo="preto") + texto("Violência contra a mulher tem canal de denúncia",
                                                          "Ligue 180, a Central de Atendimento à Mulher, gratuita e 24 horas. Em emergência, ligue 190", top=640, fs=88)),
-    dict(tipo="fixa", batidas=2, html=assinatura("Correio, O Antagonista e O Globo. Vídeos ilustrativos: Pexels")),
+    dict(tipo="fixa", batidas=2, html=assinatura("Correio, O Antagonista e O Globo. Fotos: reprodução/arquivo pessoal. Vídeos ilustrativos: Pexels")),
 ]
 
 if __name__ == "__main__":

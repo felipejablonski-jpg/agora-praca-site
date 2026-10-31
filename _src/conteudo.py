@@ -25,7 +25,7 @@ NOTICIAS = [
             "## Estado de saúde",
             "Clara passou por cirurgia para tentar recuperar a traqueia, deixou a UTI na sexta-feira (30) e está na enfermaria. Ela ainda não consegue falar e vai precisar de outros procedimentos.",
         ],
-        "credito_extra": "Vídeo: Agora Praça, com vídeos ilustrativos do Pexels. O Agora Praça não publica fotos da vítima.",
+        "credito_extra": "Vídeo: Agora Praça, com fotos de reprodução do arquivo pessoal da vítima e vídeos ilustrativos do Pexels.",
         "fontes": [
             ("Correio, namorado é suspeito de cortar garganta de jovem de 18 anos após ela comemorar reeleição de Lula", "https://www.correio24horas.com.br/brasil/namorado-e-suspeito-de-cortar-garganta-de-jovem-de-18-anos-apos-ela-comemorar-reeleicao-de-lula-1026"),
             ("O Antagonista, jovem é esfaqueada no pescoço no RN; polícia apura motivação política", "https://oantagonista.com.br/brasil/jovem-e-esfaqueada-no-pescoco-no-rn-policia-apura-motivacao-politica/"),
