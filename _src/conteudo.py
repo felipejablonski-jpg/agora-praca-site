@@ -10,6 +10,28 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "jovem-esfaqueada-umarizal-rn-policia-investiga-motivacao-politica", "capa": "img/capa/jovem-esfaqueada-umarizal-rn-policia-investiga-motivacao-politica.jpg", "capa_credito": "Sirene de viatura. Imagem ilustrativa: Pexels",
+        "data": "2026-10-31", "ordem": 1,
+        "editoria": "politica", "chapeu": "Violência",
+        "titulo": "Jovem de 18 anos é esfaqueada no pescoço no RN; polícia investiga se o ataque teve motivação política",
+        "linha_fina": "O suspeito é o namorado dela, também de 18 anos, preso em flagrante em Umarizal. Segundo a advogada da vítima, a agressão ocorreu depois que ela comemorou a vitória de Lula. A motivação não está confirmada.",
+        "video": "umarizal-clara",
+        "para_voce": ("SERVIÇO", "Violência contra a mulher pode ser denunciada no Ligue 180, a Central de Atendimento à Mulher, gratuita e 24 horas. Em emergência, ligue 190."),
+        "texto": [
+            "Clara Thaís Silva Maia, de 18 anos, foi esfaqueada no pescoço na madrugada da segunda-feira (26), em Umarizal, no Rio Grande do Norte. O suspeito é o namorado dela, Eduardo Ronald Ferreira, também de 18 anos, que foi preso em flagrante. Segundo o Correio, a Polícia Civil pediu a conversão da prisão em preventiva e investiga se o ataque teve motivação política.",
+            "Segundo a advogada da vítima, Helena Belmont, a agressão aconteceu durante uma discussão, depois que Clara comemorou a vitória de Lula, e o suspeito estava \"transtornado\" com a derrota de Flávio Bolsonaro. A advogada afirma que ele mesmo ligou para a polícia por volta das 2h. A motivação política não está confirmada pela polícia.",
+            "A mãe de Clara, Monária Maia, disse que a família apoia Lula e que o namorado frequentava atos a favor de Flávio Bolsonaro, mas que nunca o viu agressivo ao falar de política. Os dois namoravam havia cerca de seis meses. A família pretende acionar a Lei Maria da Penha.",
+            "Eduardo ficou em silêncio no depoimento, e a defesa dele não foi localizada pelos veículos que publicaram o caso.",
+            "## Estado de saúde",
+            "Clara passou por cirurgia para tentar recuperar a traqueia, deixou a UTI na sexta-feira (30) e está na enfermaria. Ela ainda não consegue falar e vai precisar de outros procedimentos.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça, com vídeos ilustrativos do Pexels. O Agora Praça não publica fotos da vítima.",
+        "fontes": [
+            ("Correio, namorado é suspeito de cortar garganta de jovem de 18 anos após ela comemorar reeleição de Lula", "https://www.correio24horas.com.br/brasil/namorado-e-suspeito-de-cortar-garganta-de-jovem-de-18-anos-apos-ela-comemorar-reeleicao-de-lula-1026"),
+            ("O Antagonista, jovem é esfaqueada no pescoço no RN; polícia apura motivação política", "https://oantagonista.com.br/brasil/jovem-e-esfaqueada-no-pescoco-no-rn-policia-apura-motivacao-politica/"),
+        ],
+    },
+    {
         "slug": "desemprego-52-terceiro-trimestre-recorde-ocupados-pnad", "capa": "img/capa/desemprego-52-terceiro-trimestre-recorde-ocupados-pnad.jpg", "capa_credito": "Pedestres em rua de comércio. Foto de arquivo: Fernando Frazão/Agência Brasil",
         "data": "2026-10-30", "ordem": 4,
         "editoria": "servico", "chapeu": "Emprego",
@@ -1410,6 +1432,7 @@ VIDEOS = {
     "holanda-florestas": "Holanda promete até US$ 500 milhões para florestas tropicais",
     "wolbachia-campo-grande": "Mosquitos com Wolbachia reduzem a dengue em Campo Grande",
     "midterms-ossoff": "O que está em jogo na eleição de terça nos EUA",
+    "umarizal-clara": "Jovem é esfaqueada no RN; polícia investiga motivação política",
     "desemprego-52": "Desemprego cai para 5,2% e país tem recorde de pessoas trabalhando",
     "ossoff-crook": "A seis dias da eleição, senador democrata chama Trump de vigarista",
     "flavio-visto": "EUA vão dar visto a Flávio Bolsonaro e à família",
