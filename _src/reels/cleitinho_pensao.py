@@ -17,7 +17,7 @@ VIDEO = "/tmp/cleitinho.mov"  # cópia de ScreenRecording_10-31-2026_09-25-36_1.
 TMP = "/tmp/_reel_cleitinho"
 T = "POLÍTICA · SENADO"
 CRED = "Vídeo: TV Senado (reprodução), discurso de abril de 2026"
-MANCHETE = 'Senador de direita quer cortar pensão de filhas de militares: <span style="color:#FF3B30">“R$ 6 bilhões em 2025”</span>'
+MANCHETE = '<span style="color:#FF3B30">Fala de abril volta a circular:</span> senador de direita quer cortar pensão de filhas de militares'
 QUEM = "Cleitinho, senador (Republicanos-MG)"
 PY = 560  # topo do painel de vídeo
 
