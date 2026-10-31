@@ -10,6 +10,34 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "franca-protestos-halloween-terceiro-sabado-422-detidos", "capa": "img/capa/franca-protestos-halloween-terceiro-sabado-422-detidos.jpg", "capa_credito": "Manifestação em Paris neste sábado (31). Reprodução: Luc Auffret/X",
+        "data": "2026-10-31", "ordem": 2,
+        "editoria": "politica", "chapeu": "Protestos na França",
+        "titulo": "França vai às ruas pelo terceiro sábado seguido, agora no Halloween; 422 pessoas são detidas",
+        "linha_fina": "O governo contou 320 mil manifestantes no país, e os organizadores falam em quase meio milhão. Houve gás lacrimogêneo em Paris e Lyon, e um gendarme foi atingido por um coquetel molotov.",
+        "video": "franca-halloween",
+        "para_voce": ("O QUE AINDA NÃO SE SABE", "O balanço final do dia. Os números desta matéria vão até as 16h de Brasília, e o governo francês teme confusão durante a noite de Halloween."),
+        "texto": [
+            "A França teve neste sábado (31) o terceiro fim de semana seguido de protestos contra o custo de vida e as condições das escolas. Segundo o Ministério do Interior, 320 mil pessoas foram às ruas no país, 70 mil delas em Paris. A coalizão de organizações estudantis e sindicatos que convocou os atos fala em quase meio milhão, 200 mil na capital. No sábado anterior, o governo tinha contado 410 mil manifestantes, e os organizadores, 800 mil.",
+            "Até pouco antes das 20h em Paris, 16h em Brasília, 422 pessoas tinham sido detidas, segundo o ministro do Interior, Laurent Nuñez. Ele afirmou que os cortejos \"transcorreram bem\", apesar da \"violência inaudita\" de grupos que atacaram a polícia, e falou em \"um dia complicado\". Segundo Nuñez, um gendarme foi atingido por um coquetel molotov em Paris no fim da tarde. O estado dele não foi informado.",
+            "## Como foi o dia",
+            "As marchas foram em boa parte pacíficas, segundo a AFP. Em Paris, o cortejo principal foi transferido para a borda leste da cidade, entre a Porte de Bagnolet e a Porte de Charenton, depois de uma disputa judicial de última hora. Parte dos manifestantes foi fantasiada, com roupas de Homem-Aranha e Frankenstein, e cartazes como \"Fantasiado de cidadão revoltado para o Halloween\".",
+            "No fim dos cortejos, houve confronto em Paris, Lyon, Marselha e outras cidades. A polícia usou gás lacrimogêneo, e na periferia de Paris grupos mascarados arrancaram pedras do calçamento para jogar nos policiais, segundo a AFP.",
+            "## O esquema de segurança",
+            "O governo mobilizou 70 mil policiais e gendarmes, o mesmo número do sábado anterior. As marchas foram autorizadas só em áreas afastadas do centro das cidades, e menores desacompanhados têm toque de recolher a partir das 21h no horário local, 17h em Brasília, no entorno da Champs-Élysées. Nuñez disse que o Halloween não seria aceito como pretexto para esconder o rosto em público e alertou para um risco \"muito alto\" de desordem durante a noite, depois de detectar nas redes chamados para reuniões que convocavam uma \"revolução\".",
+            "## Por que a França protesta",
+            "O movimento começou em setembro, com estudantes do ensino médio que reclamam de escolas abandonadas, falta de professores e de um sistema de entrada na universidade visto como injusto com os mais pobres. Depois, sindicatos e os coletes amarelos aderiram, e a pauta passou a incluir o custo de vida e o preço dos combustíveis. Em 17 de outubro, os atos terminaram em saques e em alguns dos piores tumultos que o país viu em anos, o que levou a toques de recolher em várias cidades. O primeiro-ministro, Sébastien Lecornu, se reuniu nesta semana com entidades estudantis e estuda medidas para aliviar o custo de vida.",
+            "Também houve protestos neste sábado na Alemanha, onde a polícia de Colônia usou canhão de água, e a polícia de Barcelona, na Espanha, está em alerta máximo.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça, com vídeos publicados no X por Olivier Jorba, Luc Auffret, L'insoumission, Galaxies_Home, TV YÉ e GuesH. Foto da capa: reprodução de vídeo de Luc Auffret/X.",
+        "fontes": [
+            ("franceinfo, ao vivo: balanço de Laurent Nuñez, 422 detidos (31/10, em francês)", "https://www.franceinfo.fr/economie/greve/direct-mobilisation-du-31-octobre-suivez-cette-troisieme-journee-de-manifestations-pour-laquelle-le-gouvernement-prevoit-un-dispositif-de-securite-exceptionnel_8260562.html"),
+            ("Al Jazeera, tensão e confrontos com centenas de milhares nas ruas da França (31/10, em inglês)", "https://www.aljazeera.com/news/2026/10/31/tension-and-clashes-as-hundreds-of-thousands-protest-again-in-france"),
+            ("CBS News com AFP, polícia francesa entra em confronto com manifestantes (31/10, em inglês)", "https://www.cbsnews.com/news/france-protests-paris-police-clash-demonstrators-halloween/"),
+            ("MesInfos, balanço das manifestações de 31 de outubro (em francês)", "https://mesinfos.fr/mobilisation-acte-iii-quel-est-le-bilan-des-manifestations-de-31-octobre-342364.html"),
+        ],
+    },
+    {
         "slug": "jovem-esfaqueada-umarizal-rn-policia-investiga-motivacao-politica", "capa": "img/capa/jovem-esfaqueada-umarizal-rn-policia-investiga-motivacao-politica.jpg", "capa_credito": "Sirene de viatura. Imagem ilustrativa: Pexels",
         "data": "2026-10-31", "ordem": 1,
         "editoria": "politica", "chapeu": "Violência",
@@ -1424,6 +1452,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "franca-halloween": "França vai às ruas pelo terceiro sábado seguido, agora no Halloween",
     "oposicao-argentina-milei": "Oposição argentina cobra Milei por explicações sobre a passagem de Flávio Bolsonaro",
     "trump-flavio": "Trump sobre Flávio se dizer presidente: não vou me envolver",
     "flavio-carta": "Flávio diz em carta que é o verdadeiro presidente eleito. Os números do TSE",
