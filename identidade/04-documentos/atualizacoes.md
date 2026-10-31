@@ -78,3 +78,11 @@ Saíram de uso: card com foto em cima e faixa vermelha embaixo, card claro só c
 - Texto do card: o fato em até três frases, com o dado ou a frase que chama atenção. Sem "URGENTE", sem emoji.
 - Legenda do Threads: uma ou duas frases que complementam o card (contexto ou o que falta saber), mais o link da matéria. Até 300 caracteres.
 - Respostas a posts de terceiros, quando o Agora entra para corrigir: tom de conversa, com escrita de jornal. Começa com "A gente apurou", diz o fato com o número e a fonte, sem rótulo de checagem e sem ironia.
+
+## Card "Circula nas redes" (criado em 31/10/2026)
+
+- Para desmentir ou confirmar o que está circulando. Gerador: `python3 _src/threads/checagem.py <nome> "<o que circula>" <SELO> "<o que é verdade>" "<fontes>"`.
+- O card precisa funcionar sozinho como imagem, sem depender do link: o boato com as palavras de quem espalha, o selo, os fatos em uma ou duas frases e as fontes dentro da imagem.
+- Selos: FALSO, ENGANOSO, FALTA CONTEXTO e VERDADEIRO. O desmentido tem mais destaque que o boato.
+- Só sai depois de conferido na fonte primária, item por item.
+- Mesma régua para os dois lados: boato sobre governo ou oposição recebe o mesmo tratamento.
