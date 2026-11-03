@@ -90,5 +90,5 @@ Saíram de uso: card com foto em cima e faixa vermelha embaixo, card claro só c
 ## Gráficos nos Reels (definido em 3/11/2026)
 
 - Gráfico nunca fica em tela chapada: sempre com imagem ou vídeo no fundo, escurecido para a leitura.
-- Quando a pauta pede "linha subindo", é uma linha só, subindo devagar na vertical ao longo do vídeo, com a temperatura (ou o número) subindo junto, enquanto os textos e as informações passam por cima e o vídeo corre no fundo.
+- O formato de cada gráfico se decide caso a caso, conforme a pauta.
 - Tarja e crédito do topo alinhados pela mesma borda esquerda; crédito longo quebra em duas linhas e nunca é cortado na margem direita (corrigido em `_src/reels/calor_votacao.py`, função `topo`).
