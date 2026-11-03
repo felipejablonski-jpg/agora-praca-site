@@ -1,0 +1,21 @@
+name: buscar-video
+on:
+  push:
+    branches: [tmp-oceano-audio]
+    paths: [.github/workflows/buscar-video.yml]
+permissions:
+  contents: write
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p tmp
+          curl -sSfL -o tmp/oceano-recorde.mp4 "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bp2QQf9qQksfsk6RTXT3xjeGbu/93ba90b2-128e-4156-85b5-a7ca4c050757.mp4"
+          ls -la tmp
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -f tmp/oceano-recorde.mp4
+          git commit -m "tmp: vídeo final"
+          git push
