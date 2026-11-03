@@ -35,6 +35,21 @@ def data_curta(s):
 
 NOTICIAS[:] = [n for n in NOTICIAS if not n.get("rascunho")]
 NOTICIAS.sort(key=lambda n: (n["data"], n.get("ordem", 0), n.get("atualizado", "")), reverse=True)
+
+# Vídeo no site é opcional: o que importa é a matéria. O Cloudflare Pages recusa arquivo acima de 25 MB,
+# e um único arquivo grande trava o deploy do site inteiro.
+LIMITE_MB = 25
+for _p, _ds, _fs in os.walk(RAIZ):
+    if "/.git" in _p:
+        continue
+    for _f in _fs:
+        _c = os.path.join(_p, _f)
+        if os.path.getsize(_c) > LIMITE_MB * 1024 * 1024:
+            sys.exit(f"ERRO: {os.path.relpath(_c, RAIZ)} passa de {LIMITE_MB} MB e trava o deploy. Reduza ou apague o arquivo.")
+for _n in NOTICIAS:
+    if _n.get("video") and not os.path.exists(os.path.join(RAIZ, "video", _n["video"] + ".mp4")):
+        print(f"aviso: vídeo {_n['video']}.mp4 não está no site; a matéria {_n.get('slug')} sai sem vídeo")
+        _n.pop("video")
 POR_SLUG = {n["slug"]: n for n in NOTICIAS}
 
 # Regra: toda matéria tem capa própria do site (16:9), separada da capa do Reel
