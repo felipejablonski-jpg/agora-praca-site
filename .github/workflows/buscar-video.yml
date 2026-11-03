@@ -11,11 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p tmp
-          curl -sSfL -o tmp/oceano-recorde.mp4 "https://d2ol7oe51mr4n9.cloudfront.net/user_3Bp2QQf9qQksfsk6RTXT3xjeGbu/93ba90b2-128e-4156-85b5-a7ca4c050757.mp4"
+          git rm -q --cached tmp/oceano-recorde.mp4 || true
+          rm -rf tmp && mkdir -p tmp
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+          b=https://anytospeech.com/uploads
+          curl -sSfL -o tmp/v1.mp3 $b/1793737770976-590f9538.mp3
+          curl -sSfL -o tmp/v2.mp3 $b/1793737775893-6d9e4290.mp3
+          curl -sSfL -o tmp/v3.mp3 $b/1793737781897-326005bf.mp3
+          curl -sSfL -o tmp/v4.mp3 $b/1793735053353-6a06e424.mp3
+          curl -sSfL -o tmp/v5.mp3 $b/1793735058576-4191e436.mp3
+          curl -sSfL -o tmp/v6.mp3 $b/1793737787879-0df8b1a0.mp3
+          curl -sSfL -A "$UA" -o tmp/sst.json https://climatereanalyzer.org/clim/sst_daily/json_2clim/oisst2.1_world2_sst_day.json
+          curl -sSfL -A "$UA" -o tmp/nino.json https://climatereanalyzer.org/clim/sst_daily/json_2clim/oisst2.1_nino3.4_sst_day.json
           ls -la tmp
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add -f tmp/oceano-recorde.mp4
-          git commit -m "tmp: vídeo final"
+          git add -f tmp
+          git commit -qm "tmp: narração v3 e dados"
           git push
