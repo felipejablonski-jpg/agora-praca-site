@@ -10,6 +10,39 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "flamengo-stf-bets-430-milhoes-willeman-audiencia", "capa": "img/capa/flamengo-stf-bets-430-milhoes-willeman-audiencia.jpg", "capa_credito": "Flávio Willeman, vice-presidente do Flamengo, na audiência pública do STF nesta terça (3). Reprodução: TV Justiça",
+        "data": "2026-11-03", "ordem": 2,
+        "editoria": "politica", "chapeu": "Bets",
+        "titulo": "No STF, Flamengo diz que pode perder R$ 430 milhões por ano com o fim das bets",
+        "linha_fina": "O vice-presidente do clube, Flávio Willeman, abriu a fala dos clubes na audiência pública convocada pelo ministro Luiz Fux nesta terça-feira (3). Ele disse que mais de 1.200 empregados podem ser afetados. A audiência só ouve as partes e não tem decisão.",
+        "video": "flamengo-stf-bets",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "Nada muda por enquanto. A medida provisória que proibiu as bets continua valendo, e a audiência serve para o STF ouvir as partes antes de julgar as ações. A MP precisa ser votada pelo Congresso até 23 de novembro, prazo que pode ser prorrogado por mais 60 dias."),
+        "texto": [
+            "O Flamengo foi o primeiro clube a falar na audiência pública que o Supremo Tribunal Federal (STF) realiza nesta terça-feira (3) sobre a proibição das apostas on-line, as bets. Quem discursou foi o vice-presidente Flávio de Araújo Willeman, segundo o Metrópoles. Ele disse que o fim dos contratos com casas de apostas pode tirar do clube cerca de R$ 430 milhões em receitas por ano.",
+            "## O que o Flamengo disse",
+            "Na fala, transmitida pela TV Justiça, Willeman afirmou que o clube \"contraiu obrigações financeiras com atletas e com empregados\" com base nos contratos com as bets. Segundo ele, o Flamengo confiou que o Brasil, \"após amplo debate no Congresso Nacional\", tinha regulado as apostas e que a atividade teria continuidade.",
+            "\"O Flamengo possui mais de 1.200 empregados que poderão ser comprometidos com a queda de aproximadamente R$ 430 milhões de receitas anuais com o futebol e com esportes olímpicos\", disse. Ele também afirmou que o clube é o segundo maior fornecedor de atletas olímpicos.",
+            "Na petição enviada ao STF em setembro, o Flamengo estimou perdas de R$ 400 milhões a R$ 430 milhões em 2027, segundo o Poder360. O patrocínio máster do clube é da Betano, com contrato de R$ 268,5 milhões por temporada até o fim de 2028.",
+            "## Como é a audiência",
+            "A audiência foi convocada pelo ministro Luiz Fux, relator das ações que questionam a Medida Provisória 1.394/2026, entre elas a apresentada pela Associação Nacional de Jogos e Loterias (ANJL). Estão na lista clubes de futebol, a Advocacia-Geral da União (AGU), a Procuradoria-Geral da República, ministérios do governo federal e entidades do setor de apostas. A AGU pediu ao STF que mantenha a proibição por inteiro.",
+            "A audiência é consultiva: serve para o ministro ouvir as partes e não termina com decisão. Os outros clubes falam à tarde.",
+            "## A medida provisória",
+            "A MP 1.394/2026 foi publicada em 25 de setembro e proibiu as apostas de quota fixa no país. As plataformas tiveram de parar de operar a partir de 6 de outubro. O governo diz que a proibição é uma questão de saúde pública. Para continuar valendo, a MP precisa ser aprovada pelo Congresso até 23 de novembro, prazo que pode ser prorrogado por mais 60 dias.",
+            "## O que dizem os supermercados",
+            "Nas redes, posts comparam a fala do Flamengo com dados de consumo de alimentos. A Associação Brasileira de Supermercados (Abras) informou que as vendas nos supermercados cresceram 6,5% na semana de 5 a 11 de outubro e 6,3% na semana seguinte, em comparação com o mesmo período de 2025. As maiores altas foram no Sul e no grupo formado por Minas Gerais, Espírito Santo e interior do Rio de Janeiro, de 10,6% na primeira semana. Na Grande Rio de Janeiro, a alta foi de 4% e depois de 6%.",
+            "A Abras relaciona o aumento ao fim das bets, mas os números divulgados não mostram, sozinhos, que a proibição causou a alta. Renda, preços e promoções também influenciam as vendas.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça, com imagens e áudio da transmissão da TV Justiça (reprodução).",
+        "fontes": [
+            ("Metrópoles, Flamengo no STF: proibição de bets compromete Olimpíadas e 1,2 mil empregos (3/11)", "https://www.metropoles.com/colunas/manoela-alcantara/flamengo-no-stf-proibicao-de-bets-compromete-olimpiadas-e-12-mil-empregos"),
+            ("Metrópoles, veja quais clubes de futebol participam de audiência no STF (3/11)", "https://www.metropoles.com/brasil/fim-das-bets-veja-quais-clubes-de-futebol-participam-de-audiencia-no-stf"),
+            ("Poder360, saiba como será a audiência pública das bets no STF", "https://www.poder360.com.br/poder-justica/saiba-como-sera-a-audiencia-publica-das-bets-no-stf/"),
+            ("Poder360, Flamengo se junta a bets em ação no STF contra a proibição", "https://www.poder360.com.br/poder-sportsmkt/flamengo-se-junta-a-bets-no-stf-em-acao-contra-a-proibicao/"),
+            ("iGaming Business, Luiz Fux marca audiência pública no STF sobre bets para 3 de novembro", "https://igamingbusiness.com/br/?p=399986"),
+            ("Band, proibição de bets faz consumo em supermercados crescer até 6,5%, diz Abras (28/10)", "https://www.band.com.br/economia/proibicao-de-bets-faz-consumo-em-supermercados-crescer-ate-65-no-pais-diz-abras"),
+        ],
+    },
+    {
         "slug": "dia-do-juizo-13-novembro-2026-conta-1960-populacao", "capa": "img/capa/dia-do-juizo-13-novembro-2026-conta-1960-populacao.jpg", "capa_credito": "A Terra à noite, vista por satélite. Imagem: NASA, domínio público",
         "data": "2026-11-03", "ordem": 1,
         "editoria": "ciencia", "chapeu": "População",
@@ -1483,6 +1516,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "flamengo-stf-bets": "No STF, Flamengo diz que pode perder R$ 430 milhões por ano com o fim das bets",
     "fim-do-mundo-1960": "O fim do mundo marcado para 13 de novembro: a conta de 1960 que não se confirmou",
     "franca-halloween": "França vai às ruas pelo terceiro sábado seguido, agora no Halloween",
     "oposicao-argentina-milei": "Oposição argentina cobra Milei por explicações sobre a passagem de Flávio Bolsonaro",
