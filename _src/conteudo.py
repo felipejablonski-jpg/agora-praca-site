@@ -854,7 +854,7 @@ NOTICIAS = [
         "titulo": "ONU prevê El Niño possivelmente recorde, com o Pacífico até 3,8 °C acima da média",
         "linha_fina": "Dados de satélite mostram o oceano mais quente do que em 1997 e 2015 na mesma data. No Brasil, a previsão é de seca no Norte, cheias no Sul e calor acima da média em Mato Grosso.",
         "video": "elnino",
-        "para_voce": ("ATENÇÃO", "Os 3,8 °C medem a água de uma faixa do Oceano Pacífico. A temperatura do planeta não vai subir 3,8 °C, e a previsão não diz que Primavera do Leste ou qualquer cidade terá seca ou enchente."),
+        "para_voce": ("ATENÇÃO", "Os 3,8 °C medem a água de uma faixa do Oceano Pacífico. A temperatura do planeta não vai subir 3,8 °C, e a previsão fala de tendências por região, sem dizer que uma cidade específica terá seca ou enchente."),
         "texto": [
             "A Organização Meteorológica Mundial (OMM), agência da ONU para o clima, publicou nesta quarta-feira (21) uma previsão que coloca o El Niño atual perto do topo da história. Segundo a atualização sazonal da OMM, a temperatura da superfície do mar na região chamada Niño 3.4, no meio do Pacífico, deve ficar em média cerca de 3,8 °C acima do normal entre novembro de 2026 e janeiro de 2027, com o pico por volta de dezembro.",
             "\"O El Niño atual pode ter uma força sem precedentes, literalmente fora dos gráficos de monitoramento\", disse a secretária-geral da OMM, Celeste Saulo. Segundo ela, episódios anteriores com águas cerca de 3 °C mais quentes já causaram impactos muito grandes no mundo todo, e o atual vai além desse limite, \"fora dos nossos registros\".",
