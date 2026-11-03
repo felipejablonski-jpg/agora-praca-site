@@ -86,13 +86,22 @@ def topo(im, fonte_txt, alpha=1.0):
     mk = marca("logo_mark", 50)
     im.alpha_composite(mk, (int(xr - mk.width - 12), 110))
     if fonte_txt:
+        # crédito alinhado à borda esquerda da tarja, quebrando linha para nunca passar da margem direita
         ff = fonte("sans", 25)
+        pad = 12
+        linhas = quebrar(d, fonte_txt, ff, W - 2 * M - 2 * pad)
         cam = Image.new("RGBA", im.size, (0, 0, 0, 0))
         dc = ImageDraw.Draw(cam)
-        dc.rectangle((M - 10, 176, M + d.textlength(fonte_txt, font=ff) + 10, 214), fill=(20, 20, 20, 170))
+        y = 176
+        for ln in linhas:
+            dc.rectangle((M, y, M + d.textlength(ln, font=ff) + 2 * pad, y + 38), fill=(20, 20, 20, 170))
+            y += 38
         im.alpha_composite(cam)
         d = ImageDraw.Draw(im)
-        d.text((M, 182), fonte_txt, font=ff, fill=(225, 221, 213))
+        y = 182
+        for ln in linhas:
+            d.text((M + pad - ff.getbbox(ln)[0], y), ln, font=ff, fill=(225, 221, 213))
+            y += 38
 
 
 def foto_kb(src, t, dur, area_h, foco=(0.5, 0.5), z0=1.0, z1=1.1, w=W, caixa=None, degrade=True):
