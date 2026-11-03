@@ -12,7 +12,7 @@ NOTICIAS = [
     {
         "slug": "oceano-recorde-el-nino-supera-1997-2015-calor-como-se-proteger", "capa": "img/capa/oceano-recorde-el-nino-supera-1997-2015-calor-como-se-proteger.jpg", "capa_credito": "Sol forte sobre cidade no horizonte. Foto ilustrativa: Pexels",
         "data": "2026-11-03", "ordem": 3,
-        "editoria": "ciencia", "chapeu": "Clima",
+        "editoria": "ciencia", "chapeu": "Clima", "video": "oceano-recorde",
         "titulo": "Oceano bate recorde de calor há 152 dias seguidos, e El Niño já passa de 1997 e 2015; veja como se proteger",
         "linha_fina": "Desde 3 de junho, a temperatura do mar no planeta bate o recorde para a data todos os dias, segundo dados da NOAA. O El Niño deve ter o pico em dezembro, e o efeito no ar vem depois: 2027 tem grande chance de ser o ano mais quente já registrado.",
         "para_voce": ("O QUE FAZER", "Beba água mesmo sem sede, evite o sol das 10h às 16h e fique de olho em idosos e em quem mora sozinho. Tontura, náusea, dor de cabeça, fraqueza, cãibras ou suor excessivo no calor são sinais de alerta: procure a unidade de saúde mais próxima."),
@@ -36,7 +36,7 @@ NOTICIAS = [
             "Os sinais de alerta são suor excessivo, fraqueza, tontura, náusea, dor de cabeça, cãibras e diarreia. Nesses casos, leve a pessoa para um lugar fresco e procure a unidade de saúde mais próxima.",
             "Leia também no Agora Praça: \"ONU prevê El Niño possivelmente recorde, com o Pacífico até 3,8 °C acima da média\", de 21 de outubro.",
         ],
-        "credito_extra": "Gráfico: Agora Praça, com dados de satélite NOAA OISST v2.1 (o dado de 2026 é preliminar).",
+        "credito_extra": "Gráficos e vídeo: Agora Praça, com dados de satélite NOAA OISST v2.1 via Climate Reanalyzer (o dado de 2026 é preliminar) e vídeos ilustrativos do Pexels. Narração com voz sintética.",
         "fontes": [
             ("Climate Reanalyzer (Universidade do Maine), temperatura diária da superfície do mar, NOAA OISST v2.1", "https://climatereanalyzer.org/clim/sst_daily/"),
             ("Copernicus, boletim de setembro de 2026 (temperatura do mar recorde para o mês)", "https://climate.copernicus.eu/global-temperatures-remain-over-15degc-above-pre-industrial-levels-during-second-warmest-september"),
@@ -1557,6 +1557,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "oceano-recorde": "Oceano bate recorde de calor há 152 dias seguidos, e El Niño já passa de 1997 e 2015",
     "flamengo-stf-bets": "No STF, Flamengo diz que pode perder R$ 430 milhões por ano com o fim das bets",
     "fim-do-mundo-1960": "O fim do mundo marcado para 13 de novembro: a conta de 1960 que não se confirmou",
     "franca-halloween": "França vai às ruas pelo terceiro sábado seguido, agora no Halloween",
