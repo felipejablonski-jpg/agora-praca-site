@@ -273,6 +273,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "oceano-recorde-el-nino-supera-1997-2015-calor-como-se-proteger": (
+        lambda: foto("img/fotos/sol-forte-horizonte.jpg", foco=(0.2, 0.5)),
+        "Sol forte sobre cidade no horizonte. Foto ilustrativa: Pexels"),
     "oposicao-argentina-cobra-milei-passagem-flavio-bolsonaro": (
         lambda: foto("img/fotos/flavio-senado-lula-marques-abr-2025.jpg", foco=(0.75, 0.4)),
         "Senador Flávio Bolsonaro. Foto de arquivo: Lula Marques/Agência Brasil, 2025"),
