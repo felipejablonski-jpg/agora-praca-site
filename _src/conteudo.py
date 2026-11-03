@@ -10,6 +10,37 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "dia-do-juizo-13-novembro-2026-conta-1960-populacao", "capa": "img/capa/dia-do-juizo-13-novembro-2026-conta-1960-populacao.jpg", "capa_credito": "A Terra à noite, vista por satélite. Imagem: NASA, domínio público",
+        "data": "2026-11-03", "ordem": 1,
+        "editoria": "ciencia", "chapeu": "População",
+        "titulo": "O \"Dia do Juízo\" de 13 de novembro de 2026: de onde vem a conta de 1960 e por que ela falhou",
+        "linha_fina": "Um artigo da revista Science projetou que a população mundial chegaria ao infinito nesta sexta-feira, 13. A conta supunha que o ritmo de crescimento nunca mudaria. Somos cerca de 8,2 bilhões, e a ONU projeta um pico de 10,3 bilhões nos anos 2080.",
+        "video": "fim-do-mundo-1960",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "Não há evidência científica de que algo aconteça em 13 de novembro. Se alguém mandar uma previsão de fim do mundo com data marcada, procure o autor, a revista e os dados atuais antes de compartilhar."),
+        "texto": [
+            "Uma conta publicada em 1960 apontou a sexta-feira, 13 de novembro de 2026, como o dia em que a população humana chegaria ao infinito. A previsão voltou a circular nas redes nas últimas semanas, muitas vezes sem autor e sem revista. O artigo existe, foi publicado na revista Science, e o cálculo não se confirmou.",
+            "## De onde vem a data",
+            "Em 4 de novembro de 1960, a Science publicou o artigo \"Doomsday: Friday, 13 November, A.D. 2026\", algo como \"Dia do Juízo: sexta-feira, 13 de novembro de 2026\". A assinatura é do físico austríaco-americano Heinz von Foerster e de dois colegas da Universidade de Illinois, Patricia Mora e Lawrence Amiot. Algumas postagens atribuem o trabalho a Harvard, o que está errado.",
+            "Os autores ajustaram estimativas históricas da população mundial a uma curva matemática. Nessa curva, o tempo necessário para a população dobrar ficava cada vez menor. Se a tendência seguisse sem freio, esse tempo chegaria a zero e o número de pessoas tenderia ao infinito. A conta apontava para novembro de 2026, com margem de alguns anos.",
+            "A data exata tem um toque de humor: 13 de novembro é o aniversário de von Foerster, que nasceu em 1911, em Viena, e em 2026 cai numa sexta-feira.",
+            "## Por que não aconteceu",
+            "O modelo projeta o passado para o futuro e supõe que o ritmo de crescimento nunca muda. Ele mudou. Hoje a taxa de natalidade no mundo é pouco menos da metade da registrada em 1960.",
+            "Pela lógica da conta, a população poderia passar de 25 bilhões por volta de 2020. O mundo tem cerca de 8,2 bilhões de pessoas. Segundo o relatório World Population Prospects 2024, da ONU, a população deve chegar a cerca de 10,3 bilhões em meados da década de 2080 e depois recuar para cerca de 10,2 bilhões em 2100. Um quarto da humanidade já vive em países cuja população chegou ao pico, como China, Japão, Alemanha e Rússia.",
+            "O demógrafo Joel Cohen, da Universidade Rockefeller, disse à Science neste mês que não acredita que von Foerster tentasse prever o futuro a sério.",
+            "## O que a data virou",
+            "O Complexity Science Hub, em Viena, marcou para 12 e 13 de novembro de 2026 uma conferência sobre o sentido e o contrassenso das previsões de fim do mundo, com base no artigo de von Foerster.",
+            "## Como checar um boato desses",
+            "Procure o autor, a instituição e a revista: postagens que citam só uma \"pesquisa americana\" ou \"um estudo de Harvard\" não dão nada para verificar. Veja se o texto original traz uma previsão ou uma extrapolação matemática. Compare com dados atuais: as projeções da ONU mostram a população se aproximando de um teto, e nenhuma indica explosão.",
+        ],
+        "credito_extra": "Vídeo e gráficos: Agora Praça, com narração em voz sintética. Imagens: NASA (domínio público) e Fernando Frazão/Agência Brasil (foto de arquivo).",
+        "fontes": [
+            ("Science, von Foerster, Mora e Amiot, \"Doomsday: Friday, 13 November, A.D. 2026\" (4/11/1960, em inglês)", "https://doi.org/10.1126/science.132.3436.1291"),
+            ("ONU News, população mundial atingirá 10,3 bilhões em meados da década de 2080 (World Population Prospects 2024)", "https://news.un.org/pt/story/2024/07/1834411"),
+            ("The Conversation, via ScienceDaily, cientistas previram o fim do mundo para 13 de novembro de 2026 (16/10/2026, em inglês)", "https://sciencedaily.com/releases/2026/10/261016070639.htm"),
+            ("Complexity Science Hub, conferência de 12 e 13 de novembro de 2026 (em inglês)", "https://csh.ac.at/events/doomsday-conference-on-the-sense-and-nonsense-of-end-of-the-world-predictions/"),
+        ],
+    },
+    {
         "slug": "franca-protestos-halloween-terceiro-sabado-422-detidos", "capa": "img/capa/franca-protestos-halloween-terceiro-sabado-422-detidos.jpg", "capa_credito": "Manifestação em Paris neste sábado (31). Reprodução: Luc Auffret/X",
         "data": "2026-10-31", "ordem": 2,
         "editoria": "politica", "chapeu": "Protestos na França",
@@ -1452,6 +1483,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "fim-do-mundo-1960": "O fim do mundo marcado para 13 de novembro: a conta de 1960 que não se confirmou",
     "franca-halloween": "França vai às ruas pelo terceiro sábado seguido, agora no Halloween",
     "oposicao-argentina-milei": "Oposição argentina cobra Milei por explicações sobre a passagem de Flávio Bolsonaro",
     "trump-flavio": "Trump sobre Flávio se dizer presidente: não vou me envolver",
