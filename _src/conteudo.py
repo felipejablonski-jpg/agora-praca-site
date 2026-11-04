@@ -10,6 +10,32 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "trump-salao-de-baile-casa-branca-dia-seguinte-midterms", "capa": "img/capa/trump-salao-de-baile-casa-branca-dia-seguinte-midterms.jpg", "capa_credito": "Donald Trump discursa na Casa Branca nesta quarta (4). Reprodução: transmissão da Fox News",
+        "data": "2026-11-04", "ordem": 1,
+        "editoria": "politica", "chapeu": "EUA",
+        "titulo": "Um dia depois da vitória democrata no Congresso, Trump fala do salão de baile da Casa Branca",
+        "linha_fina": "O salão foi um dos símbolos da campanha democrata contra os republicanos nas eleições de terça (3). Num discurso nesta quarta (4), Trump disse que o teto terá mais de 15 metros e citou o jantar para o rei Charles.",
+        "video": "trump-salao-casa-branca",
+        "para_voce": ("O QUE ISSO SIGNIFICA", "Com maioria nas duas Casas do Congresso a partir de janeiro, os democratas podem barrar projetos e pedidos de verba do governo, inclusive o dinheiro público de segurança ligado à obra."),
+        "texto": [
+            "Um dia depois das eleições de meio de mandato nos Estados Unidos, o presidente Donald Trump falou sobre o salão de baile que está construindo na Casa Branca. Segundo a TV Brasil, os democratas conquistaram maioria no Senado e na Câmara dos Representantes, um resultado associado ao descontentamento com a economia, o custo de vida e a guerra com o Irã.",
+            "## O que Trump disse",
+            "Num discurso na Casa Branca nesta quarta-feira (4), transmitido ao vivo pela Fox News, Trump afirmou que o teto do salão terá mais de 50 pés, cerca de 15 metros, \"como um prédio de cinco andares\", e disse duvidar que exista no país outro salão com essa altura.",
+            "Ele contou que, na visita do rei Charles, o governo quis receber cerca de 350 convidados, mas o espaço atual comporta cerca de 98 pessoas. No trecho de cerca de 30 segundos transmitido, Trump não mencionou o resultado da eleição.",
+            "## Por que o salão virou tema de campanha",
+            "O salão fica na área da antiga Ala Leste e é estimado em US$ 400 milhões, segundo o Washington Times. Trump diz que a obra é paga por doadores privados e a chama de \"presente\" para o país. O governo, porém, pediu ao Congresso US$ 1 bilhão em verbas federais de segurança ligadas em parte à construção.",
+            "Durante a campanha, os democratas usaram a obra como símbolo. O líder democrata no Senado, Chuck Schumer, chamou os parlamentares do partido do presidente de \"republicanos do salão de baile\", e pesquisas citadas pela Associated Press mostravam eleitores contrários ao projeto.",
+            "Os novos congressistas tomam posse em janeiro de 2027.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça, com imagens e áudio da transmissão da Fox News (reprodução). Tradução: Agora Praça.",
+        "fontes": [
+            ("TV Brasil, Repórter Brasil Tarde de 4 de novembro de 2026", "https://tvbrasil.ebc.com.br/reporter-brasil-tarde/2026/11/reporter-brasil-tarde-de-4-de-novembro-de-2026-assista-na-integra"),
+            ("Washington Times, o salão de US$ 400 milhões e os projetos de Trump na Casa Branca (22/5, em inglês)", "https://m.washingtontimes.com/news/2026/may/22/trumps-400m-ballroom-gilded-white-house-projects-explained-pays-whos/"),
+            ("Washington Times, salão vira tema de campanha antes das midterms (22/5, em inglês)", "https://www.washingtontimes.com/news/2026/may/22/ballroom-backlash-trumps-gilded-projects-become-flashpoint-ahead/"),
+            ("Associated Press, via Denver Gazette, democratas usam o salão contra os republicanos (17/5, em inglês)", "https://www.denvergazette.com/?p=552892"),
+        ],
+    },
+    {
         "slug": "oceano-recorde-el-nino-supera-1997-2015-calor-como-se-proteger", "capa": "img/capa/oceano-recorde-el-nino-supera-1997-2015-calor-como-se-proteger.jpg", "capa_credito": "Sol forte sobre cidade no horizonte. Foto ilustrativa: Pexels",
         "data": "2026-11-03", "ordem": 3,
         "editoria": "ciencia", "chapeu": "Clima", "video": "oceano-recorde",
@@ -1557,6 +1583,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "trump-salao-casa-branca": "Um dia depois da vitória democrata, Trump fala do salão de baile da Casa Branca",
     "oceano-recorde": "Oceano bate recorde de calor há 152 dias seguidos, e El Niño já passa de 1997 e 2015",
     "flamengo-stf-bets": "No STF, Flamengo diz que pode perder R$ 430 milhões por ano com o fim das bets",
     "fim-do-mundo-1960": "O fim do mundo marcado para 13 de novembro: a conta de 1960 que não se confirmou",
