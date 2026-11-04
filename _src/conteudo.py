@@ -10,6 +10,32 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "tornado-chapeco-126-kmh-aeroporto-destruido", "capa": "img/capa/tornado-chapeco-126-kmh-aeroporto-destruido.jpg", "capa_credito": "Estruturas arrancadas pelo vento perto do aeroporto de Chapecó nesta quarta (4). Reprodução: @dechapeco",
+        "data": "2026-11-04", "ordem": 2,
+        "editoria": "ciencia", "chapeu": "Clima",
+        "titulo": "Tornado com ventos de até 126 km/h atinge Chapecó (SC) e destrói parte do aeroporto",
+        "linha_fina": "A Defesa Civil de Santa Catarina confirmou o tornado na manhã desta quarta-feira (4). A prefeitura contou quase 2,5 mil ocorrências e decretou situação de emergência. Xanxerê, na mesma região, também teve tornado.",
+        "para_voce": ("SE VOCÊ ESTÁ NA REGIÃO", "Em caso de emergência, ligue para a Defesa Civil (199) ou para o Corpo de Bombeiros (193). A Defesa Civil mantém alerta para novos temporais no Extremo Oeste, no Oeste e em parte do Meio-Oeste catarinense."),
+        "texto": [
+            "Um tornado atingiu Chapecó, no Oeste de Santa Catarina, na manhã desta quarta-feira (4). A Defesa Civil do estado confirmou o fenômeno depois de analisar imagens de radar, que mostraram sinais de rotação dos ventos e de detritos levantados pela tempestade, segundo o ac24horas.",
+            "Uma estação do Instituto Nacional de Meteorologia (Inmet) registrou rajadas de até 126 km/h. A estação da Defesa Civil no município marcou 93 km/h, segundo a SCC10.",
+            "## O aeroporto",
+            "O Aeroporto Serafim Enoss Bertaso foi um dos lugares mais atingidos. O vento destelhou os hangares e parte do saguão principal, arrancou estruturas metálicas e quebrou vidraças do terminal. A concessionária Voe Xap suspendeu as operações, e o aeroporto deve ficar fechado até sexta-feira (6), segundo o prefeito, de acordo com o ND Mais.",
+            "## A cidade",
+            "A prefeitura contabilizou 2.478 ocorrências ligadas ao temporal, entre destelhamentos, árvores derrubadas, danos à rede elétrica e ruas bloqueadas. O município decretou situação de emergência por 180 dias, nas áreas urbana e rural. As aulas da rede municipal foram suspensas à tarde, e o governo do estado suspendeu as aulas da rede pública nesta quarta e nesta quinta-feira (5).",
+            "## A região",
+            "Em Xanxerê, também no Oeste, o radar também identificou um tornado, e mais de 200 residências foram atingidas, segundo o ND Mais. Ao todo, 15 cidades catarinenses registraram estragos com os dois tornados.",
+        ],
+        "credito_extra": "Reel no Instagram do Agora Praça, com vídeo de drone do perfil @dechapeco (reprodução).",
+        "fontes": [
+            ("ND Mais, tornado com ventos de 126,4 km/h deixa mais de 2 mil registros e situação de emergência em Chapecó (4/11)", "https://ndmais.com.br/tempo/tornado-com-ventos-de-1264-km-h-deixa-mais-de-2-mil-registros-de-destruicao-e-provoca-situacao-de-emergencia-em-chapeco/"),
+            ("ND Mais, dois tornados deixam rastro de destruição em 15 cidades de SC (4/11)", "https://ndmais.com.br/tempo/dois-tornados-deixam-rastro-de-destruicao-em-15-cidades-de-sc/"),
+            ("SCC10, Defesa Civil e meteorologista confirmam tornado em Chapecó (4/11)", "https://scc10.com.br/cotidiano/tornado-em-chapeco-meteorologista-confirma-supercelula-que-deixou-rastro-de-destruicao-em-sc/"),
+            ("CNN Brasil, tempestade e tornado causam estragos em Santa Catarina (4/11)", "https://www.cnnbrasil.com.br/nacional/sul/sc/tempestade-e-tornado-causam-estragos-em-santa-catarina-nesta-quarta-feira/"),
+            ("ac24horas, tornado com ventos de até 126 km/h provoca destruição e fecha aeroporto (4/11)", "https://ac24horas.com/2026/11/04/video-tornado-com-ventos-de-ate-126-km-h-provoca-destruicao-em-santa-catarina-e-fecha-aeroporto/"),
+        ],
+    },
+    {
         "slug": "trump-salao-de-baile-casa-branca-dia-seguinte-midterms", "capa": "img/capa/trump-salao-de-baile-casa-branca-dia-seguinte-midterms.jpg", "capa_credito": "Donald Trump discursa na Casa Branca nesta quarta (4). Reprodução: transmissão da Fox News",
         "data": "2026-11-04", "ordem": 1,
         "editoria": "politica", "chapeu": "EUA",
