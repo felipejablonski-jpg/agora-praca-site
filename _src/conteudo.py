@@ -14,7 +14,7 @@ NOTICIAS = [
         "data": "2026-11-04", "ordem": 1,
         "editoria": "politica", "chapeu": "EUA",
         "titulo": "Um dia depois da vitória democrata no Congresso, Trump fala do salão de baile da Casa Branca",
-        "linha_fina": "O salão foi um dos símbolos da campanha democrata contra os republicanos nas eleições de terça (3). Num discurso nesta quarta (4), Trump disse que o teto terá mais de 15 metros e citou o jantar para o rei Charles.",
+        "linha_fina": "Na campanha para as eleições de terça (3), os democratas usaram o salão para atacar os republicanos, como exemplo de gasto de luxo enquanto o custo de vida subia. Num discurso nesta quarta (4), Trump disse que o teto terá mais de 15 metros e citou o jantar para o rei Charles.",
         "video": "trump-salao-casa-branca",
         "para_voce": ("O QUE ISSO SIGNIFICA", "Com maioria nas duas Casas do Congresso a partir de janeiro, os democratas podem barrar projetos e pedidos de verba do governo, inclusive o dinheiro público de segurança ligado à obra."),
         "texto": [
@@ -24,7 +24,7 @@ NOTICIAS = [
             "Ele contou que, na visita do rei Charles, o governo quis receber cerca de 350 convidados, mas o espaço atual comporta cerca de 98 pessoas. No trecho de cerca de 30 segundos transmitido, Trump não mencionou o resultado da eleição.",
             "## Por que o salão virou tema de campanha",
             "O salão fica na área da antiga Ala Leste e é estimado em US$ 400 milhões, segundo o Washington Times. Trump diz que a obra é paga por doadores privados e a chama de \"presente\" para o país. O governo, porém, pediu ao Congresso US$ 1 bilhão em verbas federais de segurança ligadas em parte à construção.",
-            "Durante a campanha, os democratas usaram a obra como símbolo. O líder democrata no Senado, Chuck Schumer, chamou os parlamentares do partido do presidente de \"republicanos do salão de baile\", e pesquisas citadas pela Associated Press mostravam eleitores contrários ao projeto.",
+            "Durante a campanha, os democratas, partido de oposição a Trump, usaram a obra para atacar os republicanos, retratando o partido do presidente como distante das dificuldades dos eleitores com o custo de vida. O líder democrata no Senado, Chuck Schumer, chamou os parlamentares do partido do presidente de \"republicanos do salão de baile\", e pesquisas citadas pela Associated Press mostravam eleitores contrários ao projeto.",
             "Os novos congressistas tomam posse em janeiro de 2027.",
         ],
         "credito_extra": "Vídeo: Agora Praça, com imagens e áudio da transmissão da Fox News (reprodução). Tradução: Agora Praça.",
