@@ -10,6 +10,33 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "santiago-pena-renuncia-presidencia-paraguai-ueno-bank", "capa": "img/capa/santiago-pena-renuncia-presidencia-paraguai-ueno-bank.jpg", "capa_credito": "Santiago Peña no vídeo em que anunciou a renúncia, nesta quinta (5). Reprodução: redes sociais de Santiago Peña",
+        "data": "2026-11-05", "ordem": 1,
+        "editoria": "politica", "chapeu": "Paraguai",
+        "titulo": "Santiago Peña renuncia à Presidência do Paraguai em meio à crise do banco Ueno",
+        "linha_fina": "O anúncio veio num vídeo nas redes sociais, enquanto a Câmara dos Deputados discutia abrir um processo de impeachment contra ele. O banco digital, ligado a antigos sócios de Peña, sofreu intervenção do Banco Central nesta semana.",
+        "video": "pena-renuncia",
+        "para_voce": ("O QUE ACONTECE AGORA", "A renúncia precisa ser analisada pelo Congresso em sessão conjunta. Pela Constituição paraguaia, quem assume é o vice-presidente, Pedro Alliana. Segundo o jornal La Nación, o novo presidente pode tomar posse já nesta sexta-feira (6)."),
+        "texto": [
+            "O presidente do Paraguai, Santiago Peña, anunciou nesta quinta-feira (5) que vai renunciar ao cargo. O anúncio foi feito num vídeo publicado nas redes sociais dele, enquanto a Câmara dos Deputados discutia abrir um juicio político, o processo de impeachment paraguaio, contra o presidente.",
+            "\"Tomei a decisão de apresentar minha renúncia à Presidência da República. Faço isso pensando na estabilidade do nosso país, na paz social e na necessidade de preservar nossas instituições democráticas\", disse Peña, que estava no cargo desde agosto de 2023.",
+            "No vídeo, ele também pediu desculpas \"se em algum momento\" falhou e disse que a prioridade é a tranquilidade dos paraguaios \"que confiaram suas economias\" ao sistema financeiro. Peña pediu que o Fundo de Garantia de Depósitos devolva o dinheiro dos clientes.",
+            "## O caso Ueno",
+            "O Ueno Bank é um banco digital de Assunção ligado a antigos sócios comerciais de Peña. Nesta semana, o Banco Central do Paraguai interveio na instituição por problemas de solvência e suspendeu os serviços e o acesso dos correntistas ao dinheiro. Segundo o jornal chileno Emol, o banco recebeu recursos milionários de entidades públicas durante o governo Peña, e o pedido de impeachment trata de suposto conflito de interesses.",
+            "O processo foi proposto pela oposição, mas nesta quinta o Partido Colorado, do próprio Peña, também passou a apoiar a acusação.",
+            "## Quem assume",
+            "Pela Constituição, o vice-presidente Pedro Alliana assume a Presidência. O presidente do Congresso deve convocar uma sessão conjunta para tratar da renúncia, segundo o La Nación.",
+        ],
+        "credito_extra": "Vídeo: Agora Praça, com imagens e áudio do pronunciamento publicado nas redes sociais de Santiago Peña. Tradução: Agora Praça.",
+        "fontes": [
+            ("La Nación (Paraguai), Peña renuncia à Presidência (5/11, em espanhol)", "https://www.lanacion.com.py/politica/2026/11/05/pena-renuncia-a-la-presidencia/"),
+            ("Emol, Santiago Peña renuncia em meio à crise do caso Ueno Bank (5/11, em espanhol)", "https://www.emol.com/noticias/Internacional/2026/11/05/1216223/santiago-pena-renuncia-presidente-paraguay.html"),
+            ("BioBioChile, Peña renuncia em meio à crise por Ueno Bank (5/11, em espanhol)", "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/11/05/santiago-pena-renuncia-a-la-presidencia-de-paraguay-en-medio-de-crisis-por-ueno-bank.shtml"),
+            ("Excélsior, com Reuters, Peña renuncia após crise financeira (5/11, em espanhol)", "https://www.excelsior.com.mx/internacional/renuncia-santiago-pena-presidente-paraguay-crisis-financiera"),
+            ("TV Brasil, Repórter Brasil Tarde de 4/11: intervenção no Ueno Bank", "https://tvbrasil.ebc.com.br/reporter-brasil-tarde/2026/11/reporter-brasil-tarde-de-4-de-novembro-de-2026-assista-na-integra"),
+        ],
+    },
+    {
         "slug": "tornado-chapeco-126-kmh-aeroporto-destruido", "capa": "img/capa/tornado-chapeco-126-kmh-aeroporto-destruido.jpg", "capa_credito": "Estruturas arrancadas pelo vento perto do aeroporto de Chapecó nesta quarta (4). Reprodução: @dechapeco",
         "data": "2026-11-04", "ordem": 2,
         "editoria": "ciencia", "chapeu": "Clima",
@@ -1609,6 +1636,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "pena-renuncia": "Santiago Peña renuncia à Presidência do Paraguai em meio à crise do banco Ueno",
     "trump-salao-casa-branca": "Um dia depois da vitória democrata, Trump fala do salão de baile da Casa Branca",
     "oceano-recorde": "Oceano bate recorde de calor há 152 dias seguidos, e El Niño já passa de 1997 e 2015",
     "flamengo-stf-bets": "No STF, Flamengo diz que pode perder R$ 430 milhões por ano com o fim das bets",
