@@ -1,0 +1,65 @@
+{
+ "data": "2026-11-06",
+ "data_curta": "06/11",
+ "dia_longo": "Sexta-feira, 6 de novembro de 2026",
+ "capa": [
+  "Senado do Paraguai julga Peña hoje",
+  "Copom segura a Selic em 13,75%",
+  "Tornados deixam dois mortos em SC",
+  "Lula anuncia Ministério da Segurança"
+ ],
+ "telas": [
+  {
+   "tipo": "texto",
+   "tag": "Internacional",
+   "titulo": "Congresso não aceita a renúncia de Peña, e o Senado do Paraguai começa a julgá-lo hoje",
+   "tam": 56,
+   "topicos": [
+    "Peña renunciou na quinta (5), após a quebra do Ueno Bank. A renúncia precisa ser aceita pelo Congresso, e isso não aconteceu.",
+    "A Câmara aprovou o impeachment por unanimidade. Para destituí-lo, são necessários 30 dos 45 senadores.",
+    "Enquanto isso, Peña segue presidente. O vice, Pedro Alliana, escapou de processo e assume se ele sair."
+   ],
+   "fonte": "Fontes: Infobae, El Once e En Perspectiva"
+  },
+  {
+   "tipo": "numero",
+   "tag": "Economia",
+   "numero": "13,75%",
+   "tam": 230,
+   "frase": "é a Selic mantida pelo Copom na quarta (4), por unanimidade, depois de cinco cortes seguidos.",
+   "detalhe": "O Banco Central citou a inflação acelerando e acima do teto da meta. Das 105 instituições ouvidas antes da decisão, 72 esperavam a pausa. A próxima reunião termina em 9 de dezembro.",
+   "fonte": "Fontes: Poder360 e Rankia"
+  },
+  {
+   "tipo": "texto",
+   "tag": "Clima",
+   "titulo": "Tornados em Chapecó e Xanxerê deixam dois mortos e estragos em mais de 100 cidades de Santa Catarina",
+   "tam": 54,
+   "topicos": [
+    "A Defesa Civil confirmou os dois tornados na quarta (4). Em Chapecó, o Inmet registrou rajada de 126 km/h.",
+    "Morreram um frentista de 20 anos em Rio Negrinho e uma moradora de Xanxerê, atingida por um cabo de alta tensão.",
+    "O aeroporto de Chapecó segue fechado. Há alerta de novos temporais de hoje até sábado."
+   ],
+   "fonte": "Fontes: Folhapress, Metrópoles e Defesa Civil de SC"
+  },
+  {
+   "tipo": "texto",
+   "tag": "Política",
+   "titulo": "Lula diz que vai criar o Ministério da Segurança Pública por medida provisória",
+   "tam": 60,
+   "topicos": [
+    "O anúncio foi na quinta (5), dois dias depois de o Senado aprovar a PEC da Segurança Pública.",
+    "A MP vale assim que é assinada, por 60 dias, prorrogáveis por mais 60. Para virar lei, precisa passar pela Câmara e pelo Senado.",
+    "Lula disse que a discussão sobre a estrutura e o dinheiro da pasta começa hoje."
+   ],
+   "fonte": "Fontes: Agência Brasil e Revista Oeste"
+  }
+ ],
+ "agenda_titulo": "Os próximos dias",
+ "agenda": [
+  ["HOJE", "Sex 6", "O Senado do Paraguai abre o julgamento de Peña. Governo discute o novo Ministério da Segurança Pública."],
+  ["DOMINGO", "Dom 8", "Primeiro dia do Enem: linguagens, ciências humanas e redação, das 13h30 às 19h (Brasília)."],
+  ["DOMINGO", "Dom 15", "Segundo dia do Enem: ciências da natureza e matemática, das 13h30 às 18h30."]
+ ],
+ "agenda_fonte": "Fontes: Infobae, Portal AZ e Inep"
+}

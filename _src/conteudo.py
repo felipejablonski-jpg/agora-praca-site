@@ -1678,6 +1678,79 @@ VIDEOS = {
 
 # Primeira Página: o resumo diário das 7h
 EDICOES = [
+{
+ "data": "2026-11-06",
+ "pasta": "pp/2026-11-06",
+ "telas": 6,
+ "materia": {
+  "abertura": "O Congresso do Paraguai não aceitou a renúncia de Santiago Peña, e o Senado começa hoje a julgar o impeachment dele. O Copom interrompeu a sequência de cortes e manteve a Selic em 13,75%. Dois tornados deixaram dois mortos em Santa Catarina. Lula anunciou que vai criar o Ministério da Segurança Pública por medida provisória.",
+  "secoes": [
+   {
+    "chapeu": "Internacional",
+    "titulo": "Congresso não aceita a renúncia de Peña, e o Senado do Paraguai começa a julgá-lo hoje",
+    "texto": [
+     "O presidente do Paraguai, Santiago Peña, anunciou a renúncia na quinta-feira (5), em meio à crise provocada pela quebra do Ueno Bank. Pela Constituição paraguaia, cabe ao Congresso aceitar ou rejeitar a renúncia do presidente, e isso não aconteceu. Por isso, Peña continua formalmente no cargo.",
+     "Logo depois do anúncio, a Câmara aprovou por unanimidade a abertura do impeachment e rejeitou, por 48 votos a 30, abrir um processo contra o vice-presidente, Pedro Alliana. O caso foi ao Senado, que retoma o julgamento nesta sexta-feira (6). Para destituir Peña, são necessários 30 dos 45 senadores.",
+     "A diferença entre renúncia e destituição pesa para o futuro de Peña: segundo a imprensa paraguaia e argentina, a renúncia permitiria que ele virasse senador vitalício, o que a oposição quer impedir. Se ele deixar o cargo, Alliana assume e completa o mandato, que termina em agosto de 2028."
+    ],
+    "fontes": [
+     ["Infobae, quem governa o Paraguai após a renúncia fracassada de Peña (06/11, em espanhol)", "https://www.infobae.com/america/america-latina/2026/11/06/quien-gobierna-paraguay-tras-la-fallida-renuncia-de-santiago-pena/"],
+     ["El Once, quem governa o Paraguai enquanto o Senado avança com o julgamento (06/11, em espanhol)", "https://www.elonce.com/internacionales/quien-gobierna-paraguay-mientras-el-senado-avanza-con-el-juicio-politico-a-santiago-pena.htm"],
+     ["En Perspectiva, notícias de sexta-feira, 6 de novembro (em espanhol)", "https://enperspectiva.uy/en-perspectiva-programa/noticias-del-viernes-6-de-noviembre-de-2026/"]
+    ]
+   },
+   {
+    "chapeu": "Economia",
+    "titulo": "Copom interrompe os cortes e mantém a Selic em 13,75%",
+    "texto": [
+     "O Comitê de Política Monetária do Banco Central manteve a taxa básica de juros em 13,75% ao ano na quarta-feira (4), por unanimidade. Foi a primeira pausa depois de cinco cortes seguidos de 0,25 ponto, iniciados em março, quando a Selic saiu de 15%.",
+     "No comunicado, o comitê disse que a inflação e os núcleos aceleraram e estão acima do teto da meta, e que as expectativas se afastaram do alvo. Num levantamento com 105 instituições divulgado antes da decisão, 72 esperavam a manutenção. A próxima reunião termina em 9 de dezembro, a última do ano."
+    ],
+    "fontes": [
+     ["Poder360, Copom mantém Selic em 13,75% e confirma aposta do mercado (04/11)", "https://www.poder360.com.br/poder-economia/copom-mantem-selic-em-1375-e-confirma-aposta-do-mercado/"],
+     ["Rankia, próxima reunião do Copom e calendário (atualizado em novembro)", "https://rankia.com.br/proxima-reuniao-copom/"]
+    ]
+   },
+   {
+    "chapeu": "Clima",
+    "titulo": "Tornados em Chapecó e Xanxerê deixam dois mortos e estragos em mais de 100 cidades de Santa Catarina",
+    "texto": [
+     "A Defesa Civil de Santa Catarina confirmou dois tornados no oeste do estado na quarta-feira (4), em Chapecó e Xanxerê, cidades a menos de 50 km uma da outra. Em Chapecó, o Inmet registrou rajada de 126 km/h, e o tornado atingiu o aeroporto, que segue fechado sem previsão de reabertura.",
+     "Duas pessoas morreram nos temporais: um frentista de 20 anos em Rio Negrinho, no norte do estado, quando o teto de um posto desabou, e uma moradora de Xanxerê, atingida por um cabo de alta tensão que caiu na rua. Mais de 100 municípios tiveram estragos, e pelo menos 20 decretaram situação de emergência. A Defesa Civil alerta para novos temporais entre sexta (6) e sábado (7)."
+    ],
+    "fontes": [
+     ["O Tempo, com Folhapress, tornados deixam dois mortos e 20 cidades em emergência (05/11)", "https://www.otempo.com.br/brasil/2026/11/5/tornados-em-santa-catarina-deixam-dois-mortos-e-colocam-20-cidades-em-emergencia"],
+     ["Metrópoles, tornados afetam 106 municípios em SC (05/11)", "https://www.metropoles.com/brasil/tornados-e-ventos-de-126-km-h-afetam-106-municipios-e-deixam-2-mortos-em-sc"]
+    ]
+   },
+   {
+    "chapeu": "Política",
+    "titulo": "Lula diz que vai criar o Ministério da Segurança Pública por medida provisória",
+    "texto": [
+     "O presidente Luiz Inácio Lula da Silva anunciou na quinta-feira (5) que vai enviar uma medida provisória para criar o Ministério da Segurança Pública. O anúncio veio dois dias depois de o Senado aprovar a PEC da Segurança Pública, condição que ele vinha impondo desde o começo do ano.",
+     "A medida provisória tem força de lei assim que é assinada e vale por 60 dias, prorrogáveis por mais 60. Para o ministério se tornar permanente, a Câmara e o Senado precisam aprová-la. Lula disse que a discussão sobre a estrutura e o orçamento da pasta começa nesta sexta-feira (6)."
+    ],
+    "fontes": [
+     ["Revista Oeste, Lula anuncia criação do Ministério da Segurança Pública por MP (06/11)", "https://revistaoeste.com/politica/lula-anuncia-criacao-do-ministerio-da-seguranca-publica-por-medida-provisoria/"],
+     ["Portal AZ, Lula anuncia MP para criar Ministério da Segurança Pública (06/11)", "https://ww1.portalaz.com.br/noticia/politica/99612/lula-anuncia-mp-para-criar-ministerio-da-seguranca-publica/"]
+    ]
+   }
+  ],
+  "agenda": [
+   ("Sex 6", "O Senado do Paraguai retoma o julgamento do impeachment de Santiago Peña. O governo começa a discutir o novo Ministério da Segurança Pública."),
+   ("Dom 8", "Primeiro dia do Enem: linguagens, ciências humanas e redação, das 13h30 às 19h, horário de Brasília."),
+   ("Dom 15", "Segundo dia do Enem: ciências da natureza e matemática, das 13h30 às 18h30.")
+  ]
+ },
+ "itens": [
+  ("O Congresso do Paraguai não aceitou a renúncia de Peña, e o Senado começa hoje a julgar o impeachment.", "santiago-pena-renuncia-presidencia-paraguai-ueno-bank"),
+  ("O Copom interrompeu os cortes e manteve a Selic em 13,75%.", None),
+  ("Dois tornados no oeste de Santa Catarina deixaram dois mortos; o aeroporto de Chapecó segue fechado.", "tornado-chapeco-126-kmh-aeroporto-destruido"),
+  ("Lula vai criar o Ministério da Segurança Pública por medida provisória.", None),
+  ("Ciência da semana: mosquitos com Wolbachia derrubaram a dengue em Campo Grande, segundo estudo na Lancet.", "wolbachia-campo-grande-dengue-cai-63-estudo-lancet")
+ ],
+ "fonte": "Fontes: Infobae, El Once, Poder360, Folhapress, Metrópoles, Revista Oeste e Portal AZ"
+},
     {
         "data": "2026-10-30", "pasta": "pp/2026-10-30", "telas": 6,
         "materia": {
