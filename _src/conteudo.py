@@ -10,6 +10,44 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "super-el-nino-abre-cop31-bolivia-emergencia-seca", "capa": "img/capa/super-el-nino-abre-cop31-bolivia-emergencia-seca.jpg", "capa_credito": "Sessão de abertura da COP31, em Antália, na Turquia, na segunda-feira (9). Foto: COP30/Divulgação",
+        "data": "2026-11-10", "ordem": 1,
+        "editoria": "ciencia", "chapeu": "Clima", "video": "cop31-bolivia",
+        "titulo": "Super El Niño abre a COP31 com a Bolívia em emergência: seca já matou 75 mil cabeças de gado",
+        "linha_fina": "A conferência do clima da ONU começou na segunda-feira (9) em Antália, na Turquia, com quase 200 países. O chefe de clima da ONU cobrou dinheiro para adaptação, e pouca gente espera grandes acordos.",
+        "para_voce": ("O QUE ACOMPANHAR", "A Cúpula de Líderes acontece na quarta (11) e na quinta-feira (12), com a presença do presidente Lula. As negociações vão até 20 de novembro, e o ponto mais difícil é o dinheiro para os países que já sofrem com secas, enchentes e calor."),
+        "texto": [
+            "A COP31, a conferência do clima da ONU, começou na segunda-feira (9) em Antália, no sul da Turquia, com delegações de quase 200 países. As negociações vão até 20 de novembro e acontecem sob um El Niño que a própria ONU chama de super El Niño.",
+            "O efeito já aparece na vizinhança do Brasil. Na Bolívia, a seca matou mais de 75 mil cabeças de gado entre 1º de junho e 29 de outubro, segundo o Ministério da Defesa do país. O presidente Rodrigo Paz declarou emergência nacional em 31 de outubro, por meio do Decreto Supremo 5759.",
+            "## A seca na Bolívia",
+            "Pelo balanço do governo boliviano, a seca atingiu 114.048 famílias em 63 municípios de seis dos nove departamentos do país. Mais de 167 mil hectares de lavoura foram danificados, e mais de 60 mil são considerados perdidos.",
+            "O decreto libera recursos e equipes de resgate para as áreas mais atingidas e prevê cooperação internacional. Ele cobre os riscos ligados ao El Niño em 2026 e 2027, que incluem seca, inundações, geadas, granizo e incêndios florestais.",
+            "## O que a ONU cobrou na abertura",
+            "O secretário de clima da ONU, Simon Stiell, pediu que os governos troquem declarações genéricas por soluções práticas. Ele cobrou avanço em três frentes: dinheiro para adaptação, expansão das energias renováveis e corte das emissões de metano. Entre as prioridades está cumprir o acordo do ano passado, que prevê triplicar os recursos para adaptação.",
+            "A Turquia preside a conferência, com o ministro do Meio Ambiente, Murat Kurum. A Austrália conduz as negociações, com o ministro Chris Bowen. Na abertura, Kurum disse que as decisões precisam chegar à infraestrutura das cidades, à terra do agricultor e à conta de luz das famílias.",
+            "## O calor que vem do oceano",
+            "A conferência começou junto com um relatório da Organização Meteorológica Mundial (OMM) que coloca 2026 entre os quatro anos mais quentes já registrados. O El Niño libera na atmosfera o calor acumulado no oceano Pacífico, e a previsão é de temperaturas elevadas até 2027.",
+            "!fig img/elnino/mapa-pacifico-2026.jpg|Temperatura da superfície do mar em 18 de outubro de 2026, comparada com a média. A faixa mais quente no Pacífico equatorial é a marca do El Niño. Dados: NOAA. Mapa: Agora Praça.",
+            "## O nó é o dinheiro",
+            "O financiamento climático é o ponto mais difícil da negociação. No domingo (8), as delegações discutiram até tarde se o tema entraria na agenda, segundo a agência AFP. Os países em desenvolvimento pedem acesso mais rápido a recursos para se adaptar e se proteger de desastres.",
+            "A expectativa de grandes avanços é baixa. De acordo com a AFP, a reunião deve se limitar a transformar em ações os compromissos assumidos em edições anteriores. A presidência turca defende uma agenda de metas voluntárias, entre elas elevar a participação da eletricidade no consumo global de energia de 23% para 35% até 2035.",
+            "## O Brasil em Antália",
+            "O presidente Luiz Inácio Lula da Silva participa da Cúpula de Líderes, na quarta (11) e na quinta-feira (12). É o primeiro evento internacional dele depois da reeleição. A COP anterior, a COP30, foi em Belém, em novembro de 2025.",
+            "Leia também no Agora Praça: \"Oceano bate recorde de calor há 152 dias seguidos, e El Niño já passa de 1997 e 2015\", de 3 de novembro.",
+        ],
+        "credito_extra": "Vídeo e mapa: Agora Praça, com dados da NOAA, foto de Valter Campanato/Agência Brasil e vídeos ilustrativos do Pexels. Narração com voz sintética.",
+        "fontes": [
+            ("ONU News, COP31 abre em Antália (9/11, em inglês)", "https://news.un.org/en/story/2026/11/1168763"),
+            ("ONU News, o que está em jogo na COP31 (6/11)", "https://news.un.org/pt/story/2026/11/1854856"),
+            ("AFP, via TVT News, COP31 começa com países sob pressão (9/11)", "https://tvtnews.com.br/cop31-comeca-pressao-para-enfrentar-crise-climatica/"),
+            ("BH 24 Horas, COP-31 abre negociações com alerta sobre super El Niño (9/11)", "https://bh24horas.com.br/noticias/internacional/cop-31-abre-negociacoes-com-pressao-por-recursos-climaticos-e-alerta-sobre-super-el-nino/"),
+            ("3News, relatório da OMM e abertura da COP31 (9/11, em inglês)", "https://3news.com/world/cop31-antalya-super-el-nino-africa-climate-finance"),
+            ("Vatican News, Bolívia declara emergência nacional pelo El Niño (em espanhol)", "https://www.vaticannews.va/es/mundo/news/2026-11/bolivia-declara-emergencia-nacional-por-el-nino.html"),
+            ("HBA Noticias, balanço do Ministério da Defesa da Bolívia (em espanhol)", "https://hbanoticias.pe/bolivia-declara-emergencia-nacional-por-el-nino-mas-de-114-mil-familias-afectadas-por-la-sequia/"),
+            ("AFP, via La Nación (Costa Rica), Bolívia decreta estado de emergência (31/10, em espanhol)", "https://www.nacion.com/el-mundo/gobierno-de-bolivia-declara-estado-de-emergencia/GXZAHOZI6RECNNKFTSXSRFYVIQ/story/"),
+        ],
+    },
+    {
         "slug": "santiago-pena-renuncia-presidencia-paraguai-ueno-bank", "capa": "img/capa/santiago-pena-renuncia-presidencia-paraguai-ueno-bank.jpg", "capa_credito": "Santiago Peña no vídeo em que anunciou a renúncia, nesta quinta (5). Reprodução: redes sociais de Santiago Peña",
         "data": "2026-11-05", "ordem": 1,
         "editoria": "politica", "chapeu": "Paraguai",
@@ -1636,6 +1674,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "cop31-bolivia": "Super El Niño abre a COP31 com a Bolívia em emergência",
     "pena-renuncia": "Santiago Peña renuncia à Presidência do Paraguai em meio à crise do banco Ueno",
     "trump-salao-casa-branca": "Um dia depois da vitória democrata, Trump fala do salão de baile da Casa Branca",
     "oceano-recorde": "Oceano bate recorde de calor há 152 dias seguidos, e El Niño já passa de 1997 e 2015",

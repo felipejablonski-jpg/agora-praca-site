@@ -273,6 +273,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "super-el-nino-abre-cop31-bolivia-emergencia-seca": (
+        lambda: foto("img/fotos/cop31-abertura-correa-do-lago-divulgacao-2026-11-09.jpg", foco=(0.15, 0.5)),
+        "Sessão de abertura da COP31, em Antália, na Turquia, na segunda-feira (9). Foto: COP30/Divulgação"),
     "oceano-recorde-el-nino-supera-1997-2015-calor-como-se-proteger": (
         lambda: foto("img/fotos/sol-forte-horizonte.jpg", foco=(0.2, 0.5)),
         "Sol forte sobre cidade no horizonte. Foto ilustrativa: Pexels"),
