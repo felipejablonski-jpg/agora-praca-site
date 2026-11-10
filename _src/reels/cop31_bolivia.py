@@ -50,8 +50,75 @@ def base_foto(src, t, dur, credito, foco=(0.5, 0.5), alt=1120, z=(1.0, 1.1), cai
     return im, Image.new("RGBA", im.size, (0, 0, 0, 0))
 
 
+# ---------- mapa da abertura: Bolívia ao lado do Brasil, departamentos com seca ----------
+import json, math  # noqa: E402
+GEO = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "geo", "bolivia-vizinhos.json"), encoding="utf-8"))
+SECA = ["Oruro", "La Paz", "Potosí", "Cochabamba", "Chuquisaca", "Santa Cruz"]  # balanço do Ministério da Defesa
+LON0, LAT0, ESC, CX, CY = -61.0, -16.6, 38.0, W / 2, 590
+KLON = math.cos(math.radians(LAT0))
+_MAPA = {}
+
+
+def xy(lon, lat, k=2):
+    return ((CX + (lon - LON0) * ESC * KLON) * k, (CY - (lat - LAT0) * ESC) * k)
+
+
+def poligonos(g):
+    return [g["coordinates"]] if g["type"] == "Polygon" else g["coordinates"]
+
+
+def camada(geoms, fill=None, linha=None, larg=2):
+    im = Image.new("RGBA", (W * 2, 1300 * 2), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    for g in geoms:
+        for pol in poligonos(g):
+            pts = [xy(*p) for p in pol[0]]
+            if fill:
+                d.polygon(pts, fill=fill)
+            if linha:
+                d.line(pts + [pts[0]], fill=linha, width=larg * 2, joint="curve")
+    return im.resize((W, 1300), Image.LANCZOS)
+
+
+def mapa(t):
+    if not _MAPA:
+        P, D = GEO["paises"], GEO["deptos"]
+        viz = [P[n] for n in ("Peru", "Chile", "Argentina", "Paraguay")]
+        _MAPA["viz"] = camada(viz, fill=(0, 0, 0, 70), linha=(255, 255, 255, 90))
+        _MAPA["br"] = camada([P["Brazil"]], fill=(255, 255, 255, 46), linha=(255, 255, 255, 170), larg=2)
+        _MAPA["bo"] = camada([P["Bolivia"]], fill=(20, 20, 20, 190))
+        _MAPA["dep"] = camada(list(D.values()), linha=(255, 255, 255, 120))
+        _MAPA["borda"] = camada([P["Bolivia"]], linha=(255, 255, 255, 255), larg=4)
+        for n in SECA:
+            _MAPA[n] = camada([D[n]], fill=RED2 + (235,), linha=(255, 255, 255, 170))
+    cam = Image.new("RGBA", (W, 1300), INK + (175,))
+
+    def poe(im, a):
+        if a <= 0:
+            return
+        if a < 1:
+            im = im.copy(); im.putalpha(im.getchannel("A").point(lambda v: int(v * a)))
+        cam.alpha_composite(im)
+    g = entra(t, 0.0, 0.5)
+    poe(_MAPA["viz"], g); poe(_MAPA["br"], g); poe(_MAPA["bo"], g)
+    for i, n in enumerate(SECA):
+        poe(_MAPA[n], entra(t, 1.0 + 0.3 * i, 0.3))
+    poe(_MAPA["dep"], g); poe(_MAPA["borda"], g)
+    fl = fonte("sans-b", 40)
+    x, y = xy(-64.6, -13.6, 1); escreve(cam, x, y, "BOLÍVIA", fl, WHITE, g, "meio")
+    x, y = xy(-54.5, -11.5, 1); escreve(cam, x, y, "BRASIL", fonte("sans-b", 54), WHITE, g, "meio")
+    return cam
+
+
 def s1(t, d):
-    im, cam = base_video(0, t, "Vídeos ilustrativos: Pexels · Fonte: governo da Bolívia")
+    im = V.fundo_cena(0, t)
+    im.alpha_composite(mapa(t), (0, 0))
+    cam = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    sombra(cam, 860, 1200, 0.95)
+    ImageDraw.Draw(cam).rectangle((0, 1200, W, H), fill=INK + (235,))
+    im.alpha_composite(cam)
+    topo(im, "Mapa: Agora Praça · Fonte: governo da Bolívia · Vídeo ilustrativo ao fundo: Pexels")
+    cam = Image.new("RGBA", im.size, (0, 0, 0, 0))
     n = int(round(75 * ease(t / 1.2)))
     escreve(cam, M, 880, f"{n} mil", fonte("serif", 300), RED2)
     escreve(cam, M, 1250, "CABEÇAS DE GADO MORTAS", fonte("sans-b", 58), WHITE)
@@ -60,7 +127,7 @@ def s1(t, d):
     y = bloco(cam, M, 1440, "País vizinho do Brasil decreta *emergência nacional*", fonte("serif", 78), alpha=a,
               dy=int(24 * (1 - a)))
     b = entra(t, 6.9)
-    bloco(cam, M, y + 30, "Decreto de 31 de outubro, por causa do El Niño", fonte("sans", 40), LIGHT, alpha=b)
+    bloco(cam, M, y + 30, "Seca em 6 dos 9 departamentos · Decreto de 31 de outubro", fonte("sans", 40), LIGHT, alpha=b)
     im.alpha_composite(cam)
     return im
 
@@ -173,7 +240,14 @@ def s7(t, d):
 
 
 def capa():
-    im, cam = base_video(0, 5.2, "Vídeo ilustrativo: Pexels", 560, 1100)
+    im = V.fundo_cena(0, 5.2)
+    im.alpha_composite(mapa(9.0), (0, 0))
+    cam = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    sombra(cam, 860, 1100, 0.95)
+    ImageDraw.Draw(cam).rectangle((0, 1100, W, H), fill=INK + (235,))
+    im.alpha_composite(cam)
+    topo(im, "Mapa: Agora Praça · Fonte: governo da Bolívia")
+    cam = Image.new("RGBA", im.size, (0, 0, 0, 0))
     escreve(cam, M, 1000, "COP31", fonte("sans-b", 54), RED2)
     bloco(cam, M, 1090, "Super El Niño abre a COP31 com a *Bolívia em emergência*", fonte("serif", 112))
     im.alpha_composite(cam)
