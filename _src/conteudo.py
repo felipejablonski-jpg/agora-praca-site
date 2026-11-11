@@ -12,7 +12,7 @@ NOTICIAS = [
     {
         "slug": "tres-em-cada-quatro-cidades-seca-alagamento-deslizamento-ibge-munic-2025", "capa": "img/capa/tres-em-cada-quatro-cidades-seca-alagamento-deslizamento-ibge-munic-2025.jpg", "capa_credito": "Ponte que ligava Lajeado a Arroio do Meio (RS) depois da cheia do rio Forqueta, em maio de 2024. Foto de arquivo: Rafa Neddermeyer/Agência Brasil (2024)",
         "data": "2026-11-11", "ordem": 1,
-        "editoria": "ciencia", "chapeu": "Clima",
+        "editoria": "ciencia", "chapeu": "Clima", "video": "munic-impactos",
         "titulo": "Três em cada quatro cidades do Brasil tiveram seca, alagamento ou deslizamento em dois anos, mostra IBGE",
         "linha_fina": "Foram 4.140 dos 5.571 municípios, contra 66,2% na pesquisa anterior, de 2020. A seca atingiu 59% das cidades, e só uma em cada dez tem lei ou plano para se adaptar à mudança do clima.",
         "para_voce": ("O QUE ACOMPANHAR", "Pergunte à prefeitura da sua cidade se ela tem plano diretor e plano para enfrentar seca, enchente e deslizamento. A Munic divulga os dados de cada município no site do IBGE."),
@@ -37,7 +37,7 @@ NOTICIAS = [
             "A edição anterior da pesquisa, a Munic 2024, divulgada em outubro de 2025, já tinha mostrado o tamanho de um único desastre: o evento climático de 2024 no Rio Grande do Sul atingiu 459 dos 497 municípios do estado (92,4%).",
             "Leia também no Agora Praça: \"Super El Niño abre a COP31 com a Bolívia em emergência: seca já matou 75 mil cabeças de gado\", de 10 de novembro.",
         ],
-        "credito_extra": "Gráfico: Agora Praça, com dados do IBGE. Foto de arquivo de 2024.",
+        "credito_extra": "Gráfico e vídeo: Agora Praça, com dados do IBGE e fotos de arquivo de Rafa Neddermeyer e Tomaz Silva (Agência Brasil) e da Aspar (divulgação).",
         "fontes": [
             ("Agência Brasil, Três em cada quatro municípios sofreram impacto ambiental em dois anos (11/11)", "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/tres-em-cada-quatro-municipios-sofreram-impacto-ambiental-em-dois-anos"),
             ("IBGE, Pesquisa de Informações Básicas Municipais (Munic)", "https://www.ibge.gov.br/estatisticas/sociais/educacao/10586"),
@@ -1709,6 +1709,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "munic-impactos": "Três em cada quatro cidades do Brasil tiveram seca, alagamento ou deslizamento em dois anos",
     "cop31-bolivia": "Super El Niño abre a COP31 com a Bolívia em emergência",
     "pena-renuncia": "Santiago Peña renuncia à Presidência do Paraguai em meio à crise do banco Ueno",
     "trump-salao-casa-branca": "Um dia depois da vitória democrata, Trump fala do salão de baile da Casa Branca",
