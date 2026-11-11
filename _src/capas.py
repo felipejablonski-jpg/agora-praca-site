@@ -273,6 +273,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "tres-em-cada-quatro-cidades-seca-alagamento-deslizamento-ibge-munic-2025": (
+        lambda: foto("img/fotos/ponte-lajeado-cheia-rafa-neddermeyer-abr-2024.jpg", foco=(0.5, 0.5)),
+        "Ponte que ligava Lajeado a Arroio do Meio (RS) depois da cheia do rio Forqueta, em maio de 2024. Foto de arquivo: Rafa Neddermeyer/Agência Brasil (2024)"),
     "super-el-nino-abre-cop31-bolivia-emergencia-seca": (
         lambda: foto("img/fotos/cop31-abertura-correa-do-lago-divulgacao-2026-11-09.jpg", foco=(0.15, 0.5)),
         "Sessão de abertura da COP31, em Antália, na Turquia, na segunda-feira (9). Foto: COP30/Divulgação"),
