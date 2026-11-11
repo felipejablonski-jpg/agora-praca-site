@@ -37,7 +37,7 @@ NOTICIAS = [
             "A edição anterior da pesquisa, a Munic 2024, divulgada em outubro de 2025, já tinha mostrado o tamanho de um único desastre: o evento climático de 2024 no Rio Grande do Sul atingiu 459 dos 497 municípios do estado (92,4%).",
             "Leia também no Agora Praça: \"Super El Niño abre a COP31 com a Bolívia em emergência: seca já matou 75 mil cabeças de gado\", de 10 de novembro.",
         ],
-        "credito_extra": "Gráfico e vídeo: Agora Praça, com dados do IBGE e fotos de arquivo de Rafa Neddermeyer e Tomaz Silva (Agência Brasil) e da Aspar (divulgação).",
+        "credito_extra": "Gráfico e vídeo: Agora Praça, com dados do IBGE e fotos de arquivo de Rafa Neddermeyer, Gilvan Rocha, Tânia Rêgo, Tomaz Silva e Paulo Pinto (Agência Brasil) e da Aspar (divulgação). Narração com voz sintética.",
         "fontes": [
             ("Agência Brasil, Três em cada quatro municípios sofreram impacto ambiental em dois anos (11/11)", "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/tres-em-cada-quatro-municipios-sofreram-impacto-ambiental-em-dois-anos"),
             ("IBGE, Pesquisa de Informações Básicas Municipais (Munic)", "https://www.ibge.gov.br/estatisticas/sociais/educacao/10586"),
