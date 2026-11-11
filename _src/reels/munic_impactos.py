@@ -42,9 +42,8 @@ def _foto(src):
 
 
 def pulso(t):
-    """Pequeno soco de zoom a cada batida."""
-    f = (t % B) / B
-    return 0.022 * math.exp(-f * 9)
+    """Sem soco de zoom na batida: Felipe pediu só o zoom contínuo (11/11/2026)."""
+    return 0.0
 
 
 def foto_tela(src, t, dur, foco=(0.5, 0.5), z0=1.0, z1=1.14, pan=0.0, escuro=0.0, area=H):
@@ -62,7 +61,7 @@ def foto_tela(src, t, dur, foco=(0.5, 0.5), z0=1.0, z1=1.14, pan=0.0, escuro=0.0
     p = min(1, t / dur)
     z = z0 + (z1 - z0) * p + pulso(t)
     cw, ch = im.width / z, im.height / z
-    cx = im.width / 2 + pan * (im.width - cw) / 2 * (2 * p - 1)
+    cx = im.width / 2  # sem deslocamento lateral: só o zoom (pedido do Felipe, 11/11/2026)
     cy = im.height / 2
     im = im.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize((W, area), Image.LANCZOS)
     tela = fundo()
@@ -86,9 +85,7 @@ def base(src, t, dur, y0=700, y1=1250, **kw):
 
 
 def flash(im, t, d=0.1):
-    """Clarão curto na entrada da cena, para marcar o corte na batida."""
-    if t < d:
-        im.alpha_composite(Image.new("RGBA", im.size, WHITE + (int(85 * (1 - t / d)),)))
+    """Sem clarão no corte: Felipe pediu só o zoom (11/11/2026)."""
     return im
 
 
