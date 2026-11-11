@@ -12,7 +12,7 @@ NOTICIAS = [
     {
         "slug": "ondas-de-calor-futuras-seis-meses-estudo-nature-communications", "capa": "img/capa/ondas-de-calor-futuras-seis-meses-estudo-nature-communications.jpg", "capa_credito": "Pessoas se protegem do sol durante onda de calor no Rio de Janeiro, em novembro de 2023. Foto de arquivo: Tomaz Silva/Agência Brasil (2023)",
         "data": "2026-11-11", "ordem": 2,
-        "editoria": "ciencia", "chapeu": "Ciência na Praça",
+        "editoria": "ciencia", "chapeu": "Ciência na Praça", "video": "ondas-calor",
         "titulo": "Ondas de calor do futuro podem durar seis meses e deixar os recordes recentes para trás, diz estudo",
         "linha_fina": "Pesquisa na Nature Communications comparou 22 ondas de calor de 2010 a 2023 com projeções até 2100. A América do Sul está entre as regiões que chegam perto do limite mesmo com corte forte de emissões.",
         "para_voce": ("O QUE ISSO MUDA", "O estudo aponta duas frentes: cortar emissões reduz a chance dos piores cenários, e as cidades precisam se preparar para um calor mais longo. No Brasil, só uma em cada dez cidades tem lei ou plano de adaptação ao clima, segundo o IBGE."),
@@ -39,7 +39,7 @@ NOTICIAS = [
             "Para cada dia do ano, os pesquisadores calcularam a temperatura máxima que só os 10% de dias mais quentes superavam entre 1961 e 1990. Há onda de calor quando a média das máximas da região fica acima desse limite por pelo menos três dias seguidos. Foram usados dois bancos de dados de temperatura e duas gerações de modelos climáticos.",
             "Leia também no Agora Praça: \"Três em cada quatro cidades do Brasil tiveram seca, alagamento ou deslizamento em dois anos, mostra IBGE\", de 11 de novembro.",
         ],
-        "credito_extra": "Gráfico: Agora Praça, com dados do estudo. Foto de arquivo de 2023.",
+        "credito_extra": "Gráfico e vídeo: Agora Praça, com dados do estudo. Fotos de arquivo de Tomaz Silva, Fernando Frazão, Paulo Pinto e Tânia Rêgo (Agência Brasil); vídeos ilustrativos do Pexels. Narração com voz sintética.",
         "fontes": [
             ("Aglas-Leitner et al., Recent extreme heatwaves are no match for future events, Nature Communications (5/11/2026)", "https://www.nature.com/articles/s41467-026-76809-5"),
             ("Universidade Livre de Berlim, comunicado sobre o estudo (6/11/2026)", "https://www.eurekalert.org/news-releases/1150843"),
@@ -1746,6 +1746,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "ondas-calor": "Ondas de calor do futuro podem durar seis meses, diz estudo",
     "munic-impactos": "Três em cada quatro cidades do Brasil tiveram seca, alagamento ou deslizamento em dois anos",
     "cop31-bolivia": "Super El Niño abre a COP31 com a Bolívia em emergência",
     "pena-renuncia": "Santiago Peña renuncia à Presidência do Paraguai em meio à crise do banco Ueno",
