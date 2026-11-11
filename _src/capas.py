@@ -273,6 +273,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "ondas-de-calor-futuras-seis-meses-estudo-nature-communications": (
+        lambda: foto("img/fotos/calor-rio-tomaz-silva-abr-nov-2023.jpg", foco=(0.6, 0.5)),
+        "Pessoas se protegem do sol durante onda de calor no Rio de Janeiro, em novembro de 2023. Foto de arquivo: Tomaz Silva/Agência Brasil (2023)"),
     "tres-em-cada-quatro-cidades-seca-alagamento-deslizamento-ibge-munic-2025": (
         lambda: foto("img/fotos/ponte-lajeado-cheia-rafa-neddermeyer-abr-2024.jpg", foco=(0.5, 0.5)),
         "Ponte que ligava Lajeado a Arroio do Meio (RS) depois da cheia do rio Forqueta, em maio de 2024. Foto de arquivo: Rafa Neddermeyer/Agência Brasil (2024)"),
