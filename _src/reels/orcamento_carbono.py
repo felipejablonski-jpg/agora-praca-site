@@ -32,9 +32,9 @@ P.CRED.update({
     F_TEJO: "Rio Tejo e floresta amazônica no Acre, outubro de 2026. Foto: Rafa Neddermeyer/Agência Brasil",
 })
 
-INICIO = 0.0  # ajustar com a gravação: segundo em que a fala começa, menos uns décimos
+INICIO = 8.34  # ajustar com a gravação: segundo em que a fala começa, menos uns décimos
 # cortes, em segundos do vídeo, dentro dos silêncios entre os parágrafos da narração (ajustar com silencedetect)
-CORTES = [0, 7.0, 17.5, 27.0, 35.0, 40.5, 46.0]
+CORTES = [0, 7.51, 21.51, 33.46, 42.26, 47.86, 54.0]
 
 
 def s1(t, d):
@@ -42,7 +42,7 @@ def s1(t, d):
     a = entra(t, 0, 0.3)
     escreve(cam, M, 930, "MENOS DE", fonte("sans-b", 70), WHITE, a)
     escreve(cam, M, 1010, "4 anos", fonte("serif", 250), RED2, a)
-    b = entra(t, 1.6, 0.35)
+    b = entra(t, 2.2, 0.35)
     bloco(cam, M, 1300, "de emissões até o planeta estourar o limite de *1,5°C*", fonte("serif", 66), alpha=b, dy=int(18 * (1 - b)))
     im.alpha_composite(cam)
     return im
@@ -55,21 +55,21 @@ def s2(t, d):
     escreve(cam, M, 560, "GLOBAL CARBON BUDGET 2026", fonte("sans-b", 42), RED2, a)
     escreve(cam, M, 620, "apresentado na COP31, na Turquia", fonte("serif", 54), WHITE, a)
     # o que resta: 150 bilhões de toneladas, contado em anos de 43,3
-    g = entra(t, 2.2, 0.4)
+    g = entra(t, 6.1, 0.4)
     if g > 0:
-        n = int(round(150 * ease((t - 2.2) / 1.0)))
+        n = int(round(150 * ease((t - 6.1) / 1.0)))
         escreve(cam, M, 790, "RESTAM", fonte("sans-b", 44), LIGHT, g)
         escreve(cam, M, 850, f"{n} bilhões", fonte("serif", 150), WHITE, g)
         escreve(cam, M, 1030, "DE TONELADAS DE CO2", fonte("sans-b", 46), WHITE, g)
     x0, x1 = M, W - M
     esc = (x1 - x0) / 150
-    g2 = entra(t, 5.0, 0.3)
+    g2 = entra(t, 9.8, 0.3)
     if g2 > 0:
         y = 1160
         dr.rectangle((x0, y, x1, y + 90), outline=GREY + (int(255 * g2),), width=4)
         ano = 43.3
         for i in range(4):
-            gi = entra(t, 5.4 + 0.6 * i, 0.45)
+            gi = entra(t, 10.2 + 0.6 * i, 0.45)
             if gi <= 0:
                 continue
             ini = i * ano
@@ -77,10 +77,11 @@ def s2(t, d):
             if ini >= 150:
                 break
             cor = RED2 if i % 2 == 0 else (200, 52, 45)
-            dr.rectangle((x0 + ini * esc + 2, y + 4, x0 + fim * esc - 2, y + 86), fill=cor + (255,))
+            if (fim - ini) * esc > 6:
+                dr.rectangle((x0 + ini * esc + 2, y + 4, x0 + fim * esc - 2, y + 86), fill=cor + (255,))
             if gi > 0.6 and ini + ano <= 150:
                 escreve(cam, int(x0 + ini * esc + 20), y + 18, f"ano {i + 1}", fonte("sans-b", 40), WHITE, 1)
-        b = entra(t, 6.0, 0.3)
+        b = entra(t, 10.3, 0.3)
         escreve(cam, M, y + 120, "Em 2026, o mundo deve emitir 43,3 bilhões", fonte("sans-b", 40), LIGHT, b)
     im.alpha_composite(cam)
     return im
@@ -90,11 +91,12 @@ def s3(t, d):
     im, cam = base(F_BOMBA, t, d, 560, 1100, foco=(0.6, 0.5), z0=1.0, z1=1.12)
     a = entra(t, 0, 0.3)
     escreve(cam, M, 820, "EMISSÕES DE COMBUSTÍVEIS FÓSSEIS", fonte("sans-b", 42), WHITE, a)
-    escreve(cam, M, 880, "−0,4%", fonte("serif", 230), RED2, a)
-    escreve(cam, M, 1140, "EM 2026", fonte("sans-b", 50), LIGHT, a)
-    b = entra(t, 4.2, 0.35)
+    n = entra(t, 2.0, 0.35)
+    escreve(cam, M, 880, "−0,4%", fonte("serif", 230), RED2, n)
+    escreve(cam, M, 1140, "EM 2026", fonte("sans-b", 50), LIGHT, n)
+    b = entra(t, 7.5, 0.35)
     y = bloco(cam, M, 1260, "Petróleo: *−1,9%*", fonte("serif", 84), alpha=b, dy=int(18 * (1 - b)))
-    c = entra(t, 5.2, 0.35)
+    c = entra(t, 8.3, 0.35)
     bloco(cam, M, y + 20, "choque de energia da guerra com o Irã", fonte("sans-b", 46), LIGHT, alpha=c)
     im.alpha_composite(cam)
     return im
@@ -103,9 +105,9 @@ def s3(t, d):
 def s4(t, d):
     im, cam = base(F_SP, t, d, 440, 900, foco=(0.55, 0.5), z0=1.02, z1=1.14)
     dr = ImageDraw.Draw(cam)
-    troca = 3.6
+    troca = 4.5
     if t < troca:
-        a = entra(t, 0.1, 0.3) * (1 - entra(t, troca - 0.25, 0.25))
+        a = entra(t, 1.8, 0.3) * (1 - entra(t, troca - 0.25, 0.25))
         y = bloco(cam, M, 900, "Queda puxada por *guerra* *não* *dura*", fonte("serif", 100), alpha=a)
         bloco(cam, M, y + 30, "avisam os cientistas do Global Carbon Project", fonte("sans-b", 44), LIGHT, alpha=a * entra(t, 0.8, 0.3))
     else:
@@ -131,7 +133,7 @@ def s5(t, d):
     im, cam = base(F_FUMACA, t, d, 620, 1160, foco=(0.5, 0.5), z0=1.0, z1=1.12)
     a = entra(t, 0, 0.3)
     escreve(cam, M, 900, "BRASIL", fonte("sans-b", 60), RED2, a)
-    b = entra(t, 1.4, 0.35)
+    b = entra(t, 1.9, 0.35)
     bloco(cam, M, 990, "Replanta floresta, mas *desmata* *mais* do que replanta", fonte("serif", 84), alpha=b, dy=int(18 * (1 - b)))
     im.alpha_composite(cam)
     return im
@@ -139,10 +141,10 @@ def s5(t, d):
 
 def s6(t, d):
     im, cam = base(F_TEJO, t, d, 620, 1160, foco=(0.4, 0.5), z0=1.0, z1=1.1)
-    a = entra(t, 0, 0.3)
+    a = entra(t, 0.4, 0.3)
     escreve(cam, M, 930, "MENOS DE", fonte("sans-b", 70), WHITE, a)
     escreve(cam, M, 1010, "4 anos", fonte("serif", 250), RED2, a)
-    b = entra(t, 1.6, 0.35)
+    b = entra(t, 2.1, 0.35)
     bloco(cam, M, 1300, "A COP31 negocia até *20* *de* *novembro*", fonte("serif", 66), alpha=b, dy=int(18 * (1 - b)))
     im.alpha_composite(cam)
     return im
