@@ -10,6 +10,40 @@ EDITORIAS = {
 # data no formato AAAA-MM-DD; a mais recente aparece primeiro.
 NOTICIAS = [
     {
+        "slug": "orcamento-de-carbono-menos-de-quatro-anos-global-carbon-budget-2026", "capa": "img/capa/orcamento-de-carbono-menos-de-quatro-anos-global-carbon-budget-2026.jpg", "capa_credito": "Queimada em área desmatada da floresta amazônica, entre Cruzeiro do Sul e Marechal Thaumaturgo (AC), em outubro de 2026. Foto: Rafa Neddermeyer/Agência Brasil (2026)",
+        "data": "2026-11-13", "ordem": 1,
+        "editoria": "ciencia", "chapeu": "Clima", "video": "orcamento-carbono",
+        "titulo": "Mundo tem menos de quatro anos de emissões antes de estourar o limite de 1,5°C, diz Global Carbon Budget",
+        "linha_fina": "Restam 150 bilhões de toneladas de CO2. As emissões de combustíveis fósseis devem cair 0,4% em 2026, em parte por causa da guerra com o Irã, mas o total ainda sobe, puxado pelo desmatamento.",
+        "para_voce": ("O QUE ACOMPANHAR", "A COP31, em Antália, na Turquia, vai até 20 de novembro. A conta do orçamento de carbono é a referência para medir se o que os países prometerem lá basta para o limite de 1,5°C."),
+        "texto": [
+            "O mundo pode emitir só mais 150 bilhões de toneladas de dióxido de carbono (CO2) antes de o aquecimento global chegar a 1,5°C acima dos níveis pré-industriais. No ritmo atual, isso dá menos de quatro anos. A conta é do Global Carbon Budget 2026, relatório anual do Global Carbon Project divulgado na terça-feira (10) e apresentado na COP31, a conferência do clima da ONU em Antália, na Turquia.",
+            "O relatório é produzido por uma equipe internacional de cientistas, coordenada pela Universidade de Exeter, no Reino Unido. Ele saiu junto com um artigo na revista científica Nature Climate Change.",
+            "## Uma queda que veio da guerra",
+            "A projeção é que as emissões de combustíveis fósseis caiam 0,4% em 2026, para 38,2 bilhões de toneladas de CO2. O petróleo responde pela maior parte da queda, com recuo de 1,9%. Segundo os cientistas, é provavelmente uma resposta de curto prazo ao choque de energia causado pela guerra com o Irã. O gás natural deve cair 0,3%, e o carvão deve subir 0,6%.",
+            "A expansão da energia solar e eólica também ajudou. Em 2026, essas fontes devem evitar 4,6 bilhões de toneladas de CO2, contra 0,28 bilhão em 2010.",
+            "\"Uma redução puxada em parte por choques geopolíticos não é uma solução sustentável para o clima\", afirmou Pierre Friedlingstein, da Universidade de Exeter, que liderou o estudo. Para Glen Peters, do centro norueguês Cicero, uma queda de um ano só vira pico se vier de mudança estrutural.",
+            "!fig img/carbono/variacao-2026.jpg|Variação projetada das emissões de CO2 de combustíveis fósseis em 2026, por país ou bloco e por combustível. Dados: Global Carbon Project. Gráfico: Agora Praça.",
+            "Entre os maiores emissores, a China, que responde por 32% das emissões fósseis do planeta, deve ter queda de 0,9%. Os Estados Unidos devem cair 1,3%, e a União Europeia, 1,5%. A Índia vai na direção contrária, com alta de 4,4%.",
+            "## O total ainda sobe",
+            "A queda nos fósseis não basta para reduzir o total. Somadas as emissões do uso da terra, como o desmatamento, o mundo deve emitir 43,3 bilhões de toneladas de CO2 em 2026, contra 42,8 bilhões em 2025. As emissões do uso da terra devem chegar a 5,1 bilhões de toneladas, em alta por causa de incêndios em turfeiras e da degradação de florestas no Sudeste Asiático, ligados à seca do El Niño.",
+            "A concentração de CO2 na atmosfera deve chegar a 427,7 partes por milhão neste ano, 54% acima do nível pré-industrial.",
+            "## O Brasil na conta",
+            "O relatório cita o Brasil ao lado da Rússia e da Indonésia: os três países têm áreas grandes de reflorestamento, mas as emissões do desmatamento ainda superam o que essas áreas absorvem. No mundo, o desmatamento emitiu cerca de 3,8 bilhões de toneladas de CO2 por ano entre 2016 e 2025, e o reflorestamento compensou mais ou menos metade disso.",
+            "Os dados do relatório olham para a média da última década. Em outubro, o Inpe informou que o desmatamento na Amazônia caiu ao menor nível da série histórica.",
+            "## O que o relatório não diz",
+            "O orçamento de carbono é uma estimativa, e o número muda a cada ano conforme os cientistas refazem a conta. Passar de 150 bilhões de toneladas não faz o planeta esquentar 1,5°C de um dia para o outro: a partir daí, voltar para baixo de 1,5°C passa a depender de retirar carbono da atmosfera. As tecnologias novas de remoção de CO2, sem contar o reflorestamento, compensam hoje menos de 30 minutos das emissões fósseis de um ano.",
+            "Leia também no Agora Praça: \"Ondas de calor do futuro podem durar seis meses e deixar os recordes recentes para trás, diz estudo\", de 11 de novembro.",
+        ],
+        "credito_extra": "Gráfico e vídeo: Agora Praça, com dados do Global Carbon Project. Fotos de arquivo de Rafa Neddermeyer e Tomaz Silva (Agência Brasil) e da COP31 (divulgação). Narração com voz sintética.",
+        "fontes": [
+            ("Global Carbon Budget, Fossil CO2 emissions decrease in 2026 (10/11/2026)", "https://globalcarbonbudget.org/fossil-co2-emissions-decrease-in-2026/"),
+            ("Future Earth, Global Carbon Budget: emissões fósseis devem cair levemente em 2026 (10/11/2026)", "https://futureearth.org/global-carbon-budget-foss-fuel-co%E2%82%82-emissions-projected-to-fall-slightly-in-2026/"),
+            ("Tyndall Centre, Universidade de East Anglia (10/11/2026)", "https://tyndall.ac.uk/news/fossil-co2-emissions-decrease-in-2026/"),
+            ("Agência Brasil/Radioagência Nacional, Inpe: desmatamento na Amazônia atinge menor nível de série histórica (16/10/2026)", "https://agenciabrasil.ebc.com.br/radioagencia-nacional/meio-ambiente/audio/2026-10/inpe-desmatamento-na-amazonia-atinge-menor-nivel-de-serie-historica"),
+        ],
+    },
+    {
         "slug": "ondas-de-calor-futuras-seis-meses-estudo-nature-communications", "capa": "img/capa/ondas-de-calor-futuras-seis-meses-estudo-nature-communications.jpg", "capa_credito": "Pessoas se protegem do sol durante onda de calor no Rio de Janeiro, em novembro de 2023. Foto de arquivo: Tomaz Silva/Agência Brasil (2023)",
         "data": "2026-11-11", "ordem": 2,
         "editoria": "ciencia", "chapeu": "Ciência na Praça", "video": "ondas-calor",
@@ -1746,6 +1780,7 @@ NOTICIAS = [
 ]
 
 VIDEOS = {
+    "orcamento-carbono": "Mundo tem menos de quatro anos de emissões antes de estourar 1,5°C",
     "ondas-calor": "Ondas de calor do futuro podem durar seis meses, diz estudo",
     "munic-impactos": "Três em cada quatro cidades do Brasil tiveram seca, alagamento ou deslizamento em dois anos",
     "cop31-bolivia": "Super El Niño abre a COP31 com a Bolívia em emergência",

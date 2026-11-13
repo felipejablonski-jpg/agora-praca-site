@@ -273,6 +273,9 @@ def foto_conter(src, caixa):
 # credito: o que aparece embaixo da capa na página da matéria.
 
 CAPAS = {
+    "orcamento-de-carbono-menos-de-quatro-anos-global-carbon-budget-2026": (
+        lambda: foto("img/fotos/acre-queimada-pasto-rafa-neddermeyer-abr-out-2026.jpg", foco=(0.62, 0.5)),
+        "Queimada em área desmatada da floresta amazônica, entre Cruzeiro do Sul e Marechal Thaumaturgo (AC), em outubro de 2026. Foto: Rafa Neddermeyer/Agência Brasil (2026)"),
     "ondas-de-calor-futuras-seis-meses-estudo-nature-communications": (
         lambda: foto("img/fotos/calor-rio-tomaz-silva-abr-nov-2023.jpg", foco=(0.6, 0.5)),
         "Pessoas se protegem do sol durante onda de calor no Rio de Janeiro, em novembro de 2023. Foto de arquivo: Tomaz Silva/Agência Brasil (2023)"),
